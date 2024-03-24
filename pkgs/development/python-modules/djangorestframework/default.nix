@@ -1,33 +1,41 @@
 { lib
 , buildPythonPackage
 , fetchFromGitHub
-, coreapi
+
+# build-system
+, setuptools
+
+# dependencies
 , django
+
+# tests
+, coreapi
 , django-guardian
-, pythonOlder
+, inflection
 , pytest-django
 , pytestCheckHook
-, pytz
 , pyyaml
 , uritemplate
 }:
 
 buildPythonPackage rec {
   pname = "djangorestframework";
-  version = "3.14.0";
-  format = "setuptools";
-  disabled = pythonOlder "3.6";
+  version = "3.15.1";
+  pyproject = true;
 
   src = fetchFromGitHub {
     owner = "encode";
     repo = "django-rest-framework";
     rev = version;
-    hash = "sha256-Fnj0n3NS3SetOlwSmGkLE979vNJnYE6i6xwVBslpNz4=";
+    hash = "sha256-G914NvxRmKGkxrozoWNUIoI74YkYRbeNcQwIG4iSeXU=";
   };
 
-  propagatedBuildInputs = [
+  build-system = [
+    setuptools
+  ];
+
+  dependencies = [
     django
-    pytz
   ];
 
   nativeCheckInputs = [
@@ -37,18 +45,15 @@ buildPythonPackage rec {
     # optional tests
     coreapi
     django-guardian
+    inflection
     pyyaml
     uritemplate
-  ];
-
-  pytestFlagsArray = [
-    # ytest.PytestRemovedIn8Warning: Support for nose tests is deprecated and will be removed in a future release.
-    "-W" "ignore::pytest.PytestRemovedIn8Warning"
   ];
 
   pythonImportsCheck = [ "rest_framework" ];
 
   meta = with lib; {
+    changelog = "https://www.django-rest-framework.org/community/${lib.versions.majorMinor version}-announcement/";
     description = "Web APIs for Django, made easy";
     homepage = "https://www.django-rest-framework.org/";
     maintainers = with maintainers; [ desiderius ];
