@@ -74,6 +74,8 @@ stdenv.mkDerivation rec {
     "-Dsystemd_sysusers_dir=${placeholder "out"}/lib/sysusers.d"
     "-Dsystemd_tmpfiles_dir=${placeholder "out"}/lib/tmpfiles.d"
     "-Dtests=false" # Too deep of a rabbit hole.
+    # TODO: investigate who should be fixed here.
+    "-Dc_args=-I${freerdp3}/include/winpr3"
   ];
 
   passthru = {
