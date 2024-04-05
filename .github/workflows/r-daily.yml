@@ -45,8 +45,13 @@ jobs:
           git fetch origin
           git merge origin/r-daily
           git fetch upstream
-          # in case of conflict, just get the files in r-modules from master and upload them
-          git merge upstream/master
+          # in case of conflict, uncomment the next 5 lines and comment the last
+          git checkout upstream/master -- pkgs/development/r-modules/default.nix
+          git checkout upstream/master -- pkgs/development/r-modules/cran-packages.nix
+          git checkout upstream/master -- pkgs/development/r-modules/bioc-packages.nix
+          git checkout upstream/master -- pkgs/development/r-modules/bioc-annotation-packages.nix
+          git checkout upstream/master -- pkgs/development/r-modules/bioc-experiment-packages.nix
+          #git merge upstream/master
 
       - name: Update R packages
         run: |
