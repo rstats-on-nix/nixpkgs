@@ -42,11 +42,12 @@ jobs:
         run: |
           git remote add upstream https://github.com/nixos/nixpkgs
           git checkout r-daily-source
-          #git fetch origin
-          #git merge origin/r-daily
+          git fetch origin
+          git merge origin/r-daily
           git fetch upstream
-          git reset --hard upstream/master
-          #git merge upstream/master
+          # in case of conflict, uncomment the next line
+          git checkout upstream/r-daily-source -- pkgs/development/r-modules/default.nix
+          git merge upstream/master
 
       - name: Update R packages
         run: |
