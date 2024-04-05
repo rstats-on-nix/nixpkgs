@@ -43,15 +43,16 @@ jobs:
           git remote add upstream https://github.com/nixos/nixpkgs
           git checkout r-daily-source
           git fetch origin
-          git merge origin/r-daily
+          # in case of conflict, commit this next line, and follow instructions in the next comment two lines below
+          #git merge origin/r-daily
           git fetch upstream
           # in case of conflict, uncomment the next 5 lines and comment the last
-          git checkout upstream/master -- pkgs/development/r-modules/default.nix
-          git checkout upstream/master -- pkgs/development/r-modules/cran-packages.nix
-          git checkout upstream/master -- pkgs/development/r-modules/bioc-packages.nix
-          git checkout upstream/master -- pkgs/development/r-modules/bioc-annotation-packages.nix
-          git checkout upstream/master -- pkgs/development/r-modules/bioc-experiment-packages.nix
-          #git merge upstream/master
+          #git checkout upstream/master -- pkgs/development/r-modules/default.nix
+          #git checkout upstream/master -- pkgs/development/r-modules/cran-packages.nix
+          #git checkout upstream/master -- pkgs/development/r-modules/bioc-packages.nix
+          #git checkout upstream/master -- pkgs/development/r-modules/bioc-annotation-packages.nix
+          #git checkout upstream/master -- pkgs/development/r-modules/bioc-experiment-packages.nix
+          git merge upstream/master
 
       - name: Update R packages
         run: |
