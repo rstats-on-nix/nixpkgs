@@ -1,11 +1,9 @@
 name: "Update cachix cache for bleeding edge"
 
 on:
-  workflow_run:
-    workflows: ["r-daily"]
   push:
     branches:
-      - r-daily-source
+      - r-daily
 
 jobs:
   r-update-cachix:
