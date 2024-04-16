@@ -29,10 +29,10 @@ jobs:
   
     - run:   |
          if [ "$RUNNER_OS" == "Linux" ]; then
-              nix-build --argstr system x86_64-linux
-              nix-build --argstr system aarch64-linux
+              nix-build --argstr system x86_64-linux cachix.nix
+              nix-build --argstr system aarch64-linux cachix.nix
          else
-              nix-build
+              nix-build cachix.nix
          fi
         
     - run: nix-store -qR --include-outputs $(nix-instantiate default.nix) | cachix push rstats-on-nix
