@@ -4,7 +4,7 @@ let
   inherit (pkgs) R quarto glibcLocalesUtf8 nix;
 };
  r_packages = builtins.attrValues {
-  inherit (pkgs.rPackages) tidyverse duckdb VariantAnnotation s2 qeML rJava data_table readxl fixest collapse rstanarm sf stars vapour quarto Rcpp terra geos devtools fledge fusen codetools jsonlite httr sys testthat knitr stringi blavaan gpboost igraph rmarkdown;
+  inherit (pkgs.rPackages) tidyverse duckdb VariantAnnotation s2 qeML rJava data_table readxl fixest collapse rstanarm sf stars vapour quarto Rcpp gdalcubes geos devtools fledge fusen codetools jsonlite httr sys testthat knitr stringi blavaan gpboost igraph rmarkdown;
 };
   tex = (pkgs.texlive.combine {
   inherit (pkgs.texlive) scheme-small;
