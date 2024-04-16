@@ -34,4 +34,4 @@ jobs:
          fi
         
     - run: nix-store -qR --include-outputs $(nix-instantiate default.nix) | cachix push rstats-on-nix
-    - run: nix-shell --run "echo OK"
+    - run: nix-shell cachix.nix --run "echo OK"
