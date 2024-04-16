@@ -40,7 +40,7 @@ jobs:
 
       - name: Synching fork
         run: |
-          git remote add upstream https://github.com/nixos/nixpkgs
+          git remote add upstream https://github.com/NixOS/nixpkgs
           git checkout r-daily-source
           git fetch origin
           # in case of conflict, comment this next line, and follow instructions in the next comment two lines below
