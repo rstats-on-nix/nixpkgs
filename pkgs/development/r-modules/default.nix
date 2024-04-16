@@ -443,7 +443,7 @@ let
     seqminer = with pkgs; [ zlib.dev bzip2 ];
     sf = with pkgs; [ gdal proj geos libtiff curl ];
     strawr = with pkgs; [ curl.dev ];
-    terra = with pkgs; [ gdal proj geos ] ++ lib.optional stdenv.isDarwin pkgs.libtiff;
+    terra = with pkgs; [ gdal proj geos ];
     apcf = with pkgs; [ geos ];
     SemiCompRisks = [ pkgs.gsl ];
     showtext = with pkgs; [ zlib libpng icu freetype.dev ];
