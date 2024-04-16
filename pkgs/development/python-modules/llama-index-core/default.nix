@@ -1,36 +1,37 @@
-{ lib
-, aiohttp
-, buildPythonPackage
-, dataclasses-json
-, deprecated
-, dirtyjson
-, fetchFromGitHub
-, fsspec
-, llamaindex-py-client
-, nest-asyncio
-, networkx
-, nltk
-, numpy
-, openai
-, pandas
-, pillow
-, poetry-core
-, pytest-asyncio
-, pytest-mock
-, pytestCheckHook
-, pythonOlder
-, pyyaml
-, requests
-, tree-sitter
-, sqlalchemy
-, tenacity
-, tiktoken
-, typing-inspect
+{
+  lib,
+  aiohttp,
+  buildPythonPackage,
+  dataclasses-json,
+  deprecated,
+  dirtyjson,
+  fetchFromGitHub,
+  fsspec,
+  llamaindex-py-client,
+  nest-asyncio,
+  networkx,
+  nltk,
+  numpy,
+  openai,
+  pandas,
+  pillow,
+  poetry-core,
+  pytest-asyncio,
+  pytest-mock,
+  pytestCheckHook,
+  pythonOlder,
+  pyyaml,
+  requests,
+  tree-sitter,
+  sqlalchemy,
+  tenacity,
+  tiktoken,
+  typing-inspect,
 }:
 
 buildPythonPackage rec {
   pname = "llama-index-core";
-  version = "0.10.20";
+  version = "0.10.29";
   pyproject = true;
 
   disabled = pythonOlder "3.8";
@@ -39,16 +40,14 @@ buildPythonPackage rec {
     owner = "run-llama";
     repo = "llama_index";
     rev = "refs/tags/v${version}";
-    hash = "sha256-F7k5gtmhFdn369Ws5PSJ/xTid6ONstoWPotk+DmDtLw=";
+    hash = "sha256-4Tamo5r7EKmLIVymFX9UbFY6vxhgl3dY7xntmDeGn4M=";
   };
 
   sourceRoot = "${src.name}/${pname}";
 
-  nativeBuildInputs = [
-    poetry-core
-  ];
+  build-system = [ poetry-core ];
 
-  propagatedBuildInputs = [
+  dependencies = [
     aiohttp
     dataclasses-json
     deprecated
@@ -77,9 +76,7 @@ buildPythonPackage rec {
     pytestCheckHook
   ];
 
-  pythonImportsCheck = [
-    "llama_index"
-  ];
+  pythonImportsCheck = [ "llama_index" ];
 
   disabledTestPaths = [
     # Tests require network access

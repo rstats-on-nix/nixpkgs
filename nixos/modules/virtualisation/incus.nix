@@ -60,8 +60,26 @@ let
   }'';
 
   # https://github.com/lxc/incus/blob/cff35a29ee3d7a2af1f937cbb6cf23776941854b/internal/server/instance/drivers/driver_qemu.go#L123
+  OVMF2MB = pkgs.OVMF.override {
+    secureBoot = true;
+    fdSize2MB = true;
+  };
   ovmf-prefix = if pkgs.stdenv.hostPlatform.isAarch64 then "AAVMF" else "OVMF";
   ovmf = pkgs.linkFarm "incus-ovmf" [
+    # 2MB must remain the default or existing VMs will fail to boot. New VMs will prefer 4MB
+    {
+      name = "OVMF_CODE.fd";
+      path = "${OVMF2MB.fd}/FV/${ovmf-prefix}_CODE.fd";
+    }
+    {
+      name = "OVMF_VARS.fd";
+      path = "${OVMF2MB.fd}/FV/${ovmf-prefix}_VARS.fd";
+    }
+    {
+      name = "OVMF_VARS.ms.fd";
+      path = "${OVMF2MB.fd}/FV/${ovmf-prefix}_VARS.fd";
+    }
+
     {
       name = "OVMF_CODE.4MB.fd";
       path = "${pkgs.OVMFFull.fd}/FV/${ovmf-prefix}_CODE.fd";
@@ -91,14 +109,16 @@ in
         {command}`incus` command line tool, among others.
       '';
 
-      package = lib.mkPackageOption pkgs "incus" { };
+      package = lib.mkPackageOption pkgs "incus-lts" { };
 
       lxcPackage = lib.mkPackageOption pkgs "lxc" { };
 
-      clientPackage = lib.mkPackageOption pkgs [
-        "incus"
-        "client"
-      ] { };
+      clientPackage = lib.mkOption {
+        type = lib.types.package;
+        default = cfg.package.client;
+        defaultText = lib.literalExpression "config.virtualisation.incus.package.client";
+        description = "The incus client package to use. This package is added to PATH.";
+      };
 
       preseed = lib.mkOption {
         type = lib.types.nullOr (lib.types.submodule { freeformType = preseedFormat.type; });
@@ -263,6 +283,7 @@ in
         {
           INCUS_LXC_TEMPLATE_CONFIG = "${pkgs.lxcfs}/share/lxc/config";
           INCUS_OVMF_PATH = ovmf;
+          INCUS_USBIDS_PATH = "${pkgs.hwdata}/share/hwdata/usb.ids";
           PATH = lib.mkForce serverBinPath;
         }
         (lib.mkIf (cfg.ui.enable) { "INCUS_UI" = cfg.ui.package; })

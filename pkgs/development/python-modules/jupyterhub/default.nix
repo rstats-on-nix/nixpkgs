@@ -72,14 +72,14 @@ in
 
 buildPythonPackage rec {
   pname = "jupyterhub";
-  version = "4.1.0";
+  version = "4.1.5";
   format = "setuptools";
 
   disabled = pythonOlder "3.7";
 
   src = fetchPypi {
     inherit pname version;
-    hash = "sha256-sKpNnbmpg5gWgLyoZ+15FSV4/oPJqDJ3TuE5Bbe3V0w=";
+    hash = "sha256-Y7ofxxhDbBUZRqWKO0A+xP6LP2JPsZW8HY5ww5sz4ZQ=";
   };
 
   # Most of this only applies when building from source (e.g. js/css assets are

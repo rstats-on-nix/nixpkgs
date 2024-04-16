@@ -176,7 +176,7 @@ assert withBootloader -> withEfi;
 let
   wantCurl = withRemote || withImportd;
   wantGcrypt = withResolved || withImportd;
-  version = "255.2";
+  version = "255.4";
 
   # Use the command below to update `releaseTimestamp` on every (major) version
   # change. More details in the commentary at mesonFlags.
@@ -194,7 +194,7 @@ stdenv.mkDerivation (finalAttrs: {
     owner = "systemd";
     repo = "systemd-stable";
     rev = "v${version}";
-    hash = "sha256-8SfJY/pcH4yrDeJi0GfIUpetTbpMwyswvSu+RSfgqfY=";
+    hash = "sha256-P1mKq+ythrv8MU7y2CuNtEx6qCDacugzfsPRZL+NPys=";
   };
 
   # On major changes, or when otherwise required, you *must* :
@@ -225,7 +225,7 @@ stdenv.mkDerivation (finalAttrs: {
     ./0017-meson.build-do-not-create-systemdstatedir.patch
   ] ++ lib.optional (stdenv.hostPlatform.isLinux && stdenv.hostPlatform.isGnu) [
     ./0018-timesyncd-disable-NSCD-when-DNSSEC-validation-is-dis.patch
-  ] ++ lib.optional (stdenv.hostPlatform.isPower || stdenv.hostPlatform.isRiscV) [
+  ] ++ lib.optional (stdenv.hostPlatform.isPower || stdenv.hostPlatform.isRiscV || stdenv.hostPlatform.isMips) [
     # Fixed upstream and included in the main and stable branches. Can be dropped
     # when bumping to >= v255.5.
     # https://github.com/systemd/systemd/issues/30448

@@ -71,6 +71,7 @@ let
     ghc948
     ghc963
     ghc964
+    ghc965
     ghc981
     ghc982
   ];
@@ -270,7 +271,7 @@ let
         cabal-install
         cabal2nix
         cachix
-        carp
+        # carp broken on 2024-04-09
         cedille
         client-ip-echo
         darcs
@@ -491,11 +492,11 @@ let
         compilerNames.ghc981
         compilerNames.ghc982
       ] released;
-      Cabal_3_10_2_1 = lib.subtractLists [
+      Cabal_3_10_3_0 = lib.subtractLists [
         compilerNames.ghc981
         compilerNames.ghc982
       ] released;
-      Cabal-syntax_3_10_1_0 = lib.subtractLists [
+      Cabal-syntax_3_10_3_0 = lib.subtractLists [
         compilerNames.ghc981
         compilerNames.ghc982
       ] released;
