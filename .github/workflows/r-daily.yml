@@ -36,7 +36,7 @@ jobs:
 
       - name: Fix terra and gdalcubes for darwin
         run: |
-          sed -i 's|terra = with pkgs; \[ pkg-config sqlite.dev proj.dev \];|terra = with pkgs; \[ pkg-config sqlite.dev proj.dev \] \+\+ lib.optional stdenv.isDarwin pkgs.libtiff pkgs.curl.dev;|g' pkgs/development/r-modules/default.nix
+          sed -i 's|terra = with pkgs; \[ pkg-config sqlite.dev proj.dev \];|terra = with pkgs; \[ pkg-config sqlite.dev proj.dev \] \+\+ lib.optional stdenv.isDarwin [ pkgs.libtiff pkgs.curl.dev ];|g' pkgs/development/r-modules/default.nix
           sed -i 's|gdalcubes = with pkgs; \[ proj.dev gdal sqlite.dev netcdf \];|gdalcubes = with pkgs; \[ proj.dev gdal sqlite.dev netcdf \] \+\+ lib.optional stdenv.isDarwin pkgs.libtiff;|g' pkgs/development/r-modules/default.nix
 
       - name: Updating files
