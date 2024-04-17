@@ -36,7 +36,7 @@ jobs:
 
       - name: Updating files
         run: |
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily-source/.github/workflows/update-cachix.yml -P .github/workflows/update-cachix.yml
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily-source/.github/workflows/update-cachix.yml -P .github/workflows/
           # start with environments
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/cachix.nix
