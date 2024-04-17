@@ -710,7 +710,7 @@ let
     ijtiff = [ pkgs.libtiff ];
     ragg = with pkgs; [ freetype.dev libpng.dev libtiff.dev zlib.dev libjpeg.dev bzip2.dev ] ++ lib.optional stdenv.isDarwin lerc.dev;
     qqconf = [ pkgs.fftw.dev ];
-    vapour = with pkgs; [ proj.dev gdal ];
+    vapour = with pkgs; [ proj.dev gdal ] ++ lib.optional stdenv.isDarwin pkgs.sqlite;
     ChemmineOB = [ pkgs.eigen ];
   };
 
