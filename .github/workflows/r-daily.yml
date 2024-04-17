@@ -16,8 +16,32 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          #fetch-depth: 0
           token: ${{ secrets.MY_PAT }}
+
+      - name: Configure git
+        run: |
+          git config --global user.name "Bruno Rodrigues"
+          git config --global user.email "bruno@brodrigues.co"
+
+      - name: Synching fork
+        run: |
+          git remote add upstream https://github.com/NixOS/nixpkgs
+          git checkout r-daily-source
+          git fetch upstream
+          git reset --hard upstream/master
+
+      - name: Updating files
+        run: |
+          # start with environments
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/cachix.nix
+          # get updated files from r-daily branch
+          cd pkgs/development/r-modules/
+          wget cran-packages.nix
+          wget bioc-packages.nix
+          wget bioc-annotation-packages.nix
+          wget bioc-experiment-packages.nix
  
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
@@ -32,27 +56,6 @@ jobs:
       - name: Build development environment
         run: |
           nix-build r-daily.nix
-
-      - name: Configure git
-        run: |
-          git config --global user.name "Bruno Rodrigues"
-          git config --global user.email "bruno@brodrigues.co"
-
-      - name: Synching fork
-        run: |
-          git remote add upstream https://github.com/NixOS/nixpkgs
-          git checkout r-daily-source
-          git fetch origin
-          # in case of conflict, comment this next line, and follow instructions in the next comment two lines below
-          #git merge origin/r-daily
-          git fetch upstream
-          # in case of conflict, uncomment the next 5 lines and comment the last
-          #git checkout upstream/master -- pkgs/development/r-modules/default.nix
-          #git checkout upstream/master -- pkgs/development/r-modules/cran-packages.nix
-          #git checkout upstream/master -- pkgs/development/r-modules/bioc-packages.nix
-          #git checkout upstream/master -- pkgs/development/r-modules/bioc-annotation-packages.nix
-          #git checkout upstream/master -- pkgs/development/r-modules/bioc-experiment-packages.nix
-          git merge upstream/master
 
       - name: Update R packages
         run: |
