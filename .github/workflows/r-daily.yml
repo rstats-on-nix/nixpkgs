@@ -34,13 +34,6 @@ jobs:
       - name: Change Bioconductor mirror
         run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
 
-      - name: Fix terra, vapour and gdalcubes for darwin
-        run: |
-          sed -i 's|terra = with pkgs; \[ pkg-config sqlite.dev proj.dev \];|terra = with pkgs; \[ pkg-config sqlite.dev proj.dev \] \+\+ lib.optional stdenv.isDarwin [ pkgs.libtiff pkgs.curl.dev ];|g' pkgs/development/r-modules/default.nix
-          sed -i 's|gdalcubes = with pkgs; \[ proj.dev gdal sqlite.dev netcdf \];|gdalcubes = with pkgs; \[ proj.dev gdal sqlite.dev netcdf \] \+\+ lib.optional stdenv.isDarwin pkgs.libtiff;|g' pkgs/development/r-modules/default.nix
-          sed -i 's|vapour = with pkgs; \[ proj.dev gdal \];|vapour = with pkgs; [ proj.dev gdal ] \+\+ lib.optional stdenv.isDarwin pkgs.sqlite.dev;|g' pkgs/development/r-modules/default.nix
-
-
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily-source/.github/workflows/update-cachix.yml -P .github/workflows/
