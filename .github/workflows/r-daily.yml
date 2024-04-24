@@ -40,14 +40,20 @@ jobs:
           sed -i 's|sha256 = "sha256-gIUSMTk7hb84d+6eObKC51Dthkxexgy9aObhOfBSAzA="|sha256 = "sha256-rOQSX5uXbSxTvMX8owx14w1O3EAVhIWcutsIDnK18DA="|g' pkgs/applications/science/math/R/default.nix
 
       - name: Fix for S4Vectors (https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045)
-        run: |
+        run: >
           sed -i '1518{
           a\
-              S4Vectors = old.S4Vectors.overrideAttrs (attrs: {\
-              env = (attrs.env or { }) // {\
-              NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -fpermissive";\
-              };\
-            });\
+          
+              S4Vectors = old.S4Vectors.overrideAttrs (attrs: {
+              
+              env = (attrs.env or { }) // {
+              
+              NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -fpermissive";
+              
+              };
+              
+            });
+            
           }' pkgs/development/r-modules/default.nix
 
       - name: Updating files
