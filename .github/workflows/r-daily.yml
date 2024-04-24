@@ -41,7 +41,7 @@ jobs:
 
       - name: Fix for S4Vectors (https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045)
         run: |
-          sed -i '1518{
+          sed -i '1518i{
           a\
               S4Vectors = old.S4Vectors.overrideAttrs (attrs: {\
               env = (attrs.env or { }) // {\
