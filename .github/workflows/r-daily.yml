@@ -37,7 +37,7 @@ jobs:
       - name: Update R
         run:  |
           sed -i 's|version = "4.3.3"|version = "4.4.0"|g' pkgs/applications/science/math/R/default.nix
-          sed -i 's|sha256 = "sha256-gIUSMTk7hb84d+6eObKC51Dthkxexgy9aObhOfBSAzA="|sha256 = ""|g' pkgs/applications/science/math/R/default.nix
+          sed -i 's|sha256 = "sha256-gIUSMTk7hb84d+6eObKC51Dthkxexgy9aObhOfBSAzA="|sha256 = "sha256-rOQSX5uXbSxTvMX8owx14w1O3EAVhIWcutsIDnK18DA="|g' pkgs/applications/science/math/R/default.nix
 
       - name: Updating files
         run: |
