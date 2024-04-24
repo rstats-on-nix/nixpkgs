@@ -43,13 +43,11 @@ jobs:
         run: |
           sed -i '1518{
           a\
-          
-              S4Vectors = old.S4Vectors.overrideAttrs (attrs: {
-              env = (attrs.env or { }) // {
-              NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -fpermissive";
-              };
-            });
-            
+              S4Vectors = old.S4Vectors.overrideAttrs (attrs: {\
+              env = (attrs.env or { }) // {\
+              NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -fpermissive";\
+              };\
+            });\
           }' pkgs/development/r-modules/default.nix
 
       - name: Updating files
