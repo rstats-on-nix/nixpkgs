@@ -51,6 +51,9 @@ jobs:
             S4Arrays = old.S4Arrays.overrideAttrs (attrs: {\
                 hardeningDisable = [ "format" ];\
             });\
+            XVector = old.XVector.overrideAttrs (attrs: {\
+                hardeningDisable = [ "format" ];\
+            });\
               terra = old.terra.overrideAttrs (attrs: {\
                 configureFlags = [\
                     "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"\
