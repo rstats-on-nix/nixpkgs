@@ -44,7 +44,7 @@ jobs:
          
       - name: Fix for S4Vectors (https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045) and sf, terra, vapour
         run: |
-          sed -i '1556 i\
+          sed -i '/flowClust = old\.flowClust\.override { platforms = lib\.platforms\.x86_64 \+\+ lib\.platforms\.x86; };/a \
             S4Vectors = old.S4Vectors.overrideAttrs (attrs: {\
                 hardeningDisable = [ "format" ];\
             });\
