@@ -38,7 +38,9 @@ jobs:
         run:  |
           sed -i 's|version = "4.3.3"|version = "4.4.0"|g' pkgs/applications/science/math/R/default.nix
           sed -i 's|sha256 = "sha256-gIUSMTk7hb84d+6eObKC51Dthkxexgy9aObhOfBSAzA="|sha256 = "sha256-rOQSX5uXbSxTvMX8owx14w1O3EAVhIWcutsIDnK18DA="|g' pkgs/applications/science/math/R/default.nix
-          sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix 
+         
+      - name: Fix for rJava
+        run: sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix 
          
       - name: Fix for S4Vectors (https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045)
         run: |
@@ -48,6 +50,26 @@ jobs:
               NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -Wno-format-security";\
               };\
             });\
+          ' pkgs/development/r-modules/default.nix
+
+      - name: Fix for sf, vapour and terra
+        run: |
+          sed -i '1524 i\
+              terra = pkgs.rPackages.terra.overrideAttrs (attrs: {\
+                configureFlags = [\
+                    "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"\
+                    ];\
+              });\
+              sf = pkgs.rPackages.sf.overrideAttrs (attrs: {\
+                configureFlags = [\
+                    "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"\
+                    ];\
+              });\
+              vapour = pkgs.rPackages.vapour.overrideAttrs (attrs: {\
+                configureFlags = [\
+                    "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"\
+                    ];\
+              });\
           ' pkgs/development/r-modules/default.nix
 
       - name: Updating files
