@@ -42,17 +42,15 @@ jobs:
       - name: Fix for rJava
         run: sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix 
          
-      - name: Fix for S4Vectors (https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045)
+      - name: Fix for S4Vectors (https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045) and sf, terra, vapour
         run: |
-          sed -i '1518 i\
-              S4Vectors = old.S4Vectors.overrideAttrs (attrs: {\
+          sed -i '1556 i\
+            S4Vectors = old.S4Vectors.overrideAttrs (attrs: {\
                 hardeningDisable = [ "format" ];\
             });\
-          ' pkgs/development/r-modules/default.nix
-
-      - name: Fix for sf, vapour and terra
-        run: |
-          sed -i '1524 i\
+            S4Arrays = old.S4Arrays.overrideAttrs (attrs: {\
+                hardeningDisable = [ "format" ];\
+            });\
               terra = old.terra.overrideAttrs (attrs: {\
                 configureFlags = [\
                     "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"\
