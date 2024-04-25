@@ -54,6 +54,9 @@ jobs:
             XVector = old.XVector.overrideAttrs (attrs: {\
                 hardeningDisable = [ "format" ];\
             });\
+            SparseArray = old.SparseArray.overrideAttrs (attrs: {\
+                hardeningDisable = [ "format" ];\
+            });\
               terra = old.terra.overrideAttrs (attrs: {\
                 configureFlags = [\
                     "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"\
