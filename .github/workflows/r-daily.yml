@@ -90,12 +90,12 @@ jobs:
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/cachix.nix
           # get updated files from r-daily branch
-          cd pkgs/development/r-modules/
-          rm *-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/cran-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.nix
+          #cd pkgs/development/r-modules/
+          #rm *-packages.nix
+          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/cran-packages.nix
+          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-packages.nix
+          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.nix
+          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.nix
  
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
