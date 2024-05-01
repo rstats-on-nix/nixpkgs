@@ -122,9 +122,9 @@ jobs:
         run: |
           cd pkgs/development/r-modules/
           mv cran-packages.nix.new cran-packages.nix
-          #mv bioc-packages.nix.new bioc-packages.nix
-          #mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
-          #mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
+          mv bioc-packages.nix.new bioc-packages.nix
+          mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
+          mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
 
       - name: Pushing updates
         run: |
