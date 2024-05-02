@@ -113,7 +113,7 @@ jobs:
 
       - name: Install development environment
         run: |
-          nix-env -f . -iA R rPackages.BiocManager rPackages.data_table
+          nix-env -f . --from-expression 'rWrapper.override{packages = [ rPackages.data_table rPackages.BiocManager ];}'
 
       - name: Update R packages
         run: |
