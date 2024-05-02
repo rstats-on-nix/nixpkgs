@@ -117,6 +117,7 @@ jobs:
 
       - name: Update R packages
         run: |
+          cd pkgs/development/r-modules/
           Rscript generate-r-packages.R cran > cran-packages.nix.new
           Rscript generate-r-packages.R bioc > bioc-packages.nix.new
           Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new
