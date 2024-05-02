@@ -113,7 +113,7 @@ jobs:
 
       - name: Install development environment
         run: |
-          nix-env --install --file pkgs/development/r-modules/generate-shell.nix
+          nix-env -f . -iA R rpackages.BiocManager rpackages.data_table
 
       - name: Update R packages
         run: |
