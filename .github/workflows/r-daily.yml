@@ -23,14 +23,14 @@ jobs:
         run: |
           git config --global user.name "Bruno Rodrigues"
           git config --global user.email "bruno@brodrigues.co"
-
+          
       - name: Synching fork
         run: |
           git remote add upstream https://github.com/NixOS/nixpkgs
           git checkout r-daily-source
           git fetch upstream
           git reset --hard upstream/master
-
+          
      # - name: Change Bioconductor mirror
      #   run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
 
@@ -86,7 +86,7 @@ jobs:
                     ];\
               });\
           ' pkgs/development/r-modules/default.nix
-
+          
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily-source/.github/workflows/update-cachix.yml -P .github/workflows/
@@ -111,18 +111,18 @@ jobs:
       - name: Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - name: Install development environment
-        run: |
-          nix-env -f . -iA rWrapper.override{packages = [ rPackages.data_table rPackages.BiocManager ];}
+     # - name: Build development environment
+     #   run: |
+     #     nix-build generate-shell.nix
 
       - name: Update R packages
         run: |
           cd pkgs/development/r-modules/
-          Rscript generate-r-packages.R cran > cran-packages.nix.new
-          Rscript generate-r-packages.R bioc > bioc-packages.nix.new
-          Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new
-          Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new
-
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R cran > cran-packages.nix.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
+          
       - name: Rename files
         run: |
           cd pkgs/development/r-modules/
@@ -130,7 +130,7 @@ jobs:
           mv bioc-packages.nix.new bioc-packages.nix
           mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
           mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
-
+          
       - name: Pushing updates
         run: |
           git checkout -b r-daily
