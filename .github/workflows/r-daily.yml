@@ -31,8 +31,8 @@ jobs:
           git fetch upstream
           git reset --hard upstream/master
 
-    #  - name: Change Bioconductor mirror
-    #    run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
+      - name: Change Bioconductor mirror
+        run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
 
       #- name: Remove escapeName
       #  run: sed -i 's|escapeName(name)|name|g' pkgs/development/r-modules/generate-r-packages.R
@@ -91,7 +91,7 @@ jobs:
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily-source/.github/workflows/update-cachix.yml -P .github/workflows/
           # start with environments
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
+          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/cachix.nix
           # get updated files from r-daily branch
           #cd pkgs/development/r-modules/
@@ -111,16 +111,17 @@ jobs:
       - name: Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - name: Build development environment
-        run: |
-          nix-build r-daily.nix
+     # - name: Build development environment
+     #   run: |
+     #     nix-build generate-shell.nix
 
       - name: Update R packages
         run: |
-          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R cran > cran-packages.nix.new"
-          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
-          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R 'bioc-annotation' > bioc-annotation-packages.nix.new"
-          nix-shell r-daily.nix --run "cd pkgs/development/r-modules/ && Rscript generate-r-packages.R 'bioc-experiment' > bioc-experiment-packages.nix.new"
+          cd pkgs/development/r-modules/
+          nix-shell generate-shell.nix --run Rscript generate-r-packages.R cran > cran-packages.nix.new
+          nix-shell generate-shell.nix --run Rscript generate-r-packages.R bioc > bioc-packages.nix.new
+          nix-shell generate-shell.nix --run Rscript generate-r-packages.R 'bioc-annotation' > bioc-annotation-packages.nix.new
+          nix-shell generate-shell.nix --run Rscript generate-r-packages.R 'bioc-experiment' > bioc-experiment-packages.nix.new
 
       - name: Rename files
         run: |
