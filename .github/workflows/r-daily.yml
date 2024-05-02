@@ -111,17 +111,16 @@ jobs:
       - name: Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-     # - name: Build development environment
-     #   run: |
-     #     nix-build generate-shell.nix
+      - name: Install development environment
+        run: |
+          nix-env --install --from-expression pkgs/development/r-modules/generate-shell.nix
 
       - name: Update R packages
         run: |
-          cd pkgs/development/r-modules/
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R cran > cran-packages.nix.new"
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
+          Rscript generate-r-packages.R cran > cran-packages.nix.new
+          Rscript generate-r-packages.R bioc > bioc-packages.nix.new
+          Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new
+          Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new
 
       - name: Rename files
         run: |
