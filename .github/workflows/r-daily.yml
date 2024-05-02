@@ -113,7 +113,7 @@ jobs:
 
       - name: Install development environment
         run: |
-          nix-env --install --from-expression pkgs/development/r-modules/generate-shell.nix
+          nix-env --install --file pkgs/development/r-modules/generate-shell.nix
 
       - name: Update R packages
         run: |
