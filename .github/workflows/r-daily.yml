@@ -34,8 +34,15 @@ jobs:
      # - name: Change Bioconductor mirror
      #   run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
 
-      #- name: Remove escapeName
-      #  run: sed -i 's|escapeName(name)|name|g' pkgs/development/r-modules/generate-r-packages.R
+      - name: Modify escapeName
+        run: | 
+          sed '56,58d' pkgs/development/r-modules/generate-r-packages.R
+          sed -i '/mirrorUrl <- mirrorUrls[mirrorType][[1]]/a \
+            escapeName <- function(name) {\
+              name <- gsub("\\bimport\\b", "r_import", name)\
+              gsub("\\bassert\\b", "r_assert", name)\
+              }\
+          ' pkgs/development/r-modules/generate-r-packages.R
 
 
       - name: Update R
