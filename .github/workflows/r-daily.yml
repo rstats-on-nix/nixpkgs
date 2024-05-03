@@ -39,7 +39,7 @@ jobs:
       - name: Fix for rJava and rtracklayer
         run: | 
           sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix 
-          sed -i 's|rtracklayer = \[ pkgs\.zlib\.dev \];|rtracklayer = \[ pkgs\.zlib\.dev pkgs\.curl\.dev \]|g' pkgs/development/r-modules/default.nix 
+          sed -i 's|rtracklayer = \[ pkgs\.zlib\.dev \];|rtracklayer = \[ pkgs\.zlib\.dev pkgs\.curl\.dev \];|g' pkgs/development/r-modules/default.nix 
           
       - name: Updating files
         run: |
