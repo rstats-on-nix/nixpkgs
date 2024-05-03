@@ -63,6 +63,7 @@ jobs:
         uses: DeterminateSystems/magic-nix-cache-action@main
 
       - name: Get patches
+        run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/patch_generate-r-packages.patch
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/remove_patch_r_440.patch
 
