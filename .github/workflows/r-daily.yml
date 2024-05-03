@@ -30,13 +30,7 @@ jobs:
           git checkout r-daily-source
           git fetch upstream
           git reset --hard upstream/master
-          
-      - name: Change Bioconductor mirror
-        run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
-
-      - name: Change nix-hash command
-        run: sed -i 's|nix-hash --type sha256 --base32 --flat|nix hash path --sri|g' pkgs/development/r-modules/generate-r-packages.R
-
+  
       - name: Update R
         run:  |
           sed -i 's|version = "4.3.3"|version = "4.4.0"|g' pkgs/applications/science/math/R/default.nix
@@ -92,6 +86,9 @@ jobs:
           # start with environments
           #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/cachix.nix
+          # get path for generate-r-packages.R
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/patch_generate-r-packages.patch
+          
           # get updated files from r-daily branch
           #cd pkgs/development/r-modules/
           #rm *-packages.nix
@@ -110,9 +107,8 @@ jobs:
       - name: Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-     # - name: Build development environment
-     #   run: |
-     #     nix-build generate-shell.nix
+      - name: Apply patch
+        run: git apply patch_generate-r-packages.patch
 
       - name: Update R packages
         run: |
