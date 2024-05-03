@@ -23,41 +23,35 @@ jobs:
         run: |
           git config --global user.name "Bruno Rodrigues"
           git config --global user.email "bruno@brodrigues.co"
-          
+
       - name: Synching fork
         run: |
           git remote add upstream https://github.com/NixOS/nixpkgs
           git checkout r-daily-source
           git fetch upstream
           git reset --hard upstream/master
-  
-      - name: Update R
-        run:  |
-          sed -i 's|version = "4.3.3"|version = "4.4.0"|g' pkgs/applications/science/math/R/default.nix
-          sed -i 's|sha256 = "sha256-gIUSMTk7hb84d+6eObKC51Dthkxexgy9aObhOfBSAzA="|sha256 = "sha256-rOQSX5uXbSxTvMX8owx14w1O3EAVhIWcutsIDnK18DA="|g' pkgs/applications/science/math/R/default.nix
-         
+
+
       - name: Fix for rJava and rtracklayer
-        run: | 
-          sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix 
-          sed -i 's|rtracklayer = \[ pkgs\.zlib\.dev \];|rtracklayer = \[ pkgs\.zlib\.dev pkgs\.curl\.dev \];|g' pkgs/development/r-modules/default.nix 
-          
+        run: |
+          sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix
+          sed -i 's|rtracklayer = \[ pkgs\.zlib\.dev \];|rtracklayer = \[ pkgs\.zlib\.dev pkgs\.curl\.dev \];|g' pkgs/development/r-modules/default.nix
+
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily-source/.github/workflows/update-cachix.yml -P .github/workflows/
           # start with environments
           #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/r-daily.nix
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/cachix.nix
-          # get path for generate-r-packages.R
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/patch_generate-r-packages.patch
-          
+
           # get updated files from r-daily branch
-          #cd pkgs/development/r-modules/
-          #rm *-packages.nix
-          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/cran-packages.nix
-          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-packages.nix
-          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.nix
-          #wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.nix
- 
+          cd pkgs/development/r-modules/
+          rm *-packages.nix
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/cran-packages.nix
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-packages.nix
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.nix
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.nix
+
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
         with:
@@ -67,6 +61,13 @@ jobs:
 
       - name: Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
+
+      - name: Get patches
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/patch_generate-r-packages.patch
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/remove_patch_r_440.patch
+
+      - name: Update R and remove backported patch
+        run: git apply remove_patch_r_440.patch
 
       - name: Apply patch
         run: git apply patch_generate-r-packages.patch
@@ -78,7 +79,7 @@ jobs:
           nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
           nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
           nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
-          
+
       - name: Rename files
         run: |
           cd pkgs/development/r-modules/
@@ -86,7 +87,7 @@ jobs:
           mv bioc-packages.nix.new bioc-packages.nix
           mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
           mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
-          
+
       - name: Pushing updates
         run: |
           git checkout -b r-daily
