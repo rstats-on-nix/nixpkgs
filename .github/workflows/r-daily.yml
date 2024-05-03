@@ -33,6 +33,11 @@ jobs:
           
       - name: Change Bioconductor mirror
         run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
+
+      - name: Only subset of packages for testimg
+        run: sed -i 's|pkgs <- pkgs[order(Package)]|pkgs <- head(pkgs[order(Package)], 10)|g' pkgs/development/r-modules/generate-r-packages.R
+
+        
      
       - name: Update R
         run:  |
