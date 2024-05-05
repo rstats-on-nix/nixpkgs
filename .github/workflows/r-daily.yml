@@ -67,8 +67,8 @@ jobs:
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/generate-r-packages_escapeName.patch
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/remove_patch_r_440.patch
 
-      - name: Update R and remove backported patch
-        run: git apply remove_patch_r_440.patch
+      #- name: Update R and remove backported patch
+      #  run: git apply remove_patch_r_440.patch
 
       - name: Apply patch
         run: git apply generate-r-packages_escapeName.patch
