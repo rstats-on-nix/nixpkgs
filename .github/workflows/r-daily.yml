@@ -64,7 +64,7 @@ jobs:
 
       - name: Get patches
         run: |
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/patch_generate-r-packages.patch
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/generate-r-packages_escapeName.patch
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/remove_patch_r_440.patch
 
       - name: Update R and remove backported patch
