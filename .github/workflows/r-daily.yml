@@ -114,6 +114,9 @@ jobs:
       - name: Apply patch
         run: git apply generate-r-packages_escapeName.patch
 
+      - name: Change Bioconductor mirror
+        run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
+
       - name: Update R packages
         run: |
           cd pkgs/development/r-modules/
