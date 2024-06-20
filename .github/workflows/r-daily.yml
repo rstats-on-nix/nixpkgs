@@ -31,12 +31,6 @@ jobs:
           git fetch upstream
           git reset --hard upstream/master
 
-
-      - name: Fix for rJava and rtracklayer
-        run: |
-          sed -i 's|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip \];|rJava = with pkgs; \[ zlib bzip2\.dev icu xz\.dev pcre\.dev jdk libzip libdeflate \];|g' pkgs/development/r-modules/default.nix
-          sed -i 's|rtracklayer = \[ pkgs\.zlib\.dev \];|rtracklayer = \[ pkgs\.zlib\.dev pkgs\.curl\.dev \];|g' pkgs/development/r-modules/default.nix
-
       - name: Fix for S4Vectors (only for darwin, https://github.com/Bioconductor/S4Vectors/commit/31853e4e97ff6bc3a8a2e0fdcc6dde72fb61c045) and sf, terra, vap our
         run: |
           sed -i '/flowClust = old/a \
@@ -106,16 +100,9 @@ jobs:
       - name: Get patches
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/generate-r-packages_escapeName.patch
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/remove_patch_r_440.patch
-
-      - name: Update R and remove backported patch
-        run: git apply remove_patch_r_440.patch
 
       - name: Apply patch
         run: git apply generate-r-packages_escapeName.patch
-
-      - name: Change Bioconductor mirror
-        run: sed -i 's|http://bioconductor\.statistik\.tu-dortmund\.de/packages/|http://bioconductor.org/packages/|g' pkgs/development/r-modules/generate-r-packages.R
 
       - name: Update R packages
         run: |
