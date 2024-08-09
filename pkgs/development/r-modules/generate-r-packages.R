@@ -2,7 +2,7 @@
 library(data.table)
 library(parallel)
 library(BiocManager)
-cl <- makeCluster(10)
+cl <- makeCluster(2)
 
 biocVersion <- BiocManager:::.version_map()
 biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "BiocStatus")]
@@ -54,7 +54,11 @@ nixPrefetch <- function(name, version) {
 }
 
 escapeName <- function(name) {
-    switch(name, "import" = "r_import", "assert" = "r_assert", name)
+
+  name <- gsub("\\bimport\\b", "r_import", name)
+
+  gsub("\\bassert\\b", "r_assert", name)
+
 }
 
 formatPackage <- function(name, version, sha256, depends, imports, linkingTo) {

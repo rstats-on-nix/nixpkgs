@@ -1705,6 +1705,43 @@ let
     RandomFieldsUtils = old.RandomFieldsUtils.override { platforms = lib.platforms.x86_64 ++ lib.platforms.x86; };
 
     flowClust = old.flowClust.override { platforms = lib.platforms.x86_64 ++ lib.platforms.x86; };
+  S4Vectors = old.S4Vectors.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+  S4Arrays = old.S4Arrays.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+  XVector = old.XVector.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+  SparseArray = old.SparseArray.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+  Rsamtools = old.Rsamtools.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+    rtracklayer = old.rtracklayer.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+    VariantAnnotation = old.VariantAnnotation.overrideAttrs (attrs: {
+      hardeningDisable = [ "format" ];
+  });
+    terra = old.terra.overrideAttrs (attrs: {
+      configureFlags = [
+          "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"
+          ];
+  });
+    sf = old.sf.overrideAttrs (attrs: {
+      configureFlags = [
+          "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"
+          ];
+  });
+    vapour = old.vapour.overrideAttrs (attrs: {
+      configureFlags = [
+          "--with-proj-lib=${pkgs.lib.getLib pkgs.proj}/lib"
+          ];
+  });
+
 
     RcppCGAL = old.RcppCGAL.overrideAttrs (_: {
       postPatch = "patchShebangs configure";
