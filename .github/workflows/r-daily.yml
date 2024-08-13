@@ -81,11 +81,11 @@ jobs:
 
           # get updated files from r-daily branch
           cd pkgs/development/r-modules/
-          rm *-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/cran-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.nix
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.nix
+          rm *-packages.json
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/cran-packages.json
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-packages.json
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.json
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.json
 
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
@@ -97,28 +97,21 @@ jobs:
       - name: Nix cache
         uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - name: Get patches
-        run: |
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/generate-r-packages_escapeName.patch
-
-      - name: Apply patch
-        run: git apply generate-r-packages_escapeName.patch
-
       - name: Update R packages
         run: |
           cd pkgs/development/r-modules/
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R cran > cran-packages.nix.new"
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.nix.new"
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.nix.new"
-          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.nix.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R cran > cran-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.json.new"
 
       - name: Rename files
         run: |
           cd pkgs/development/r-modules/
-          mv cran-packages.nix.new cran-packages.nix
-          mv bioc-packages.nix.new bioc-packages.nix
-          mv bioc-annotation-packages.nix.new bioc-annotation-packages.nix
-          mv bioc-experiment-packages.nix.new bioc-experiment-packages.nix
+          mv cran-packages.json.new cran-packages.json
+          mv bioc-packages.json.new bioc-packages.json
+          mv bioc-annotation-packages.json.new bioc-annotation-packages.json
+          mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
       - name: Pushing updates
         run: |
