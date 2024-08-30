@@ -87,6 +87,10 @@ jobs:
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-annotation-packages.json
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/pkgs/development/r-modules/bioc-experiment-packages.json
 
+      - name: Get patches for Bioc devel
+        run: |
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/bioc_patch.patch
+
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
         with:
@@ -120,9 +124,6 @@ jobs:
           git commit -m "daily update" || echo "no updated R packages in this period"
           git push --force origin r-daily
 
-      - name: Get patches for Bioc devel
-        run: |
-          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/bioc_patch.patch
       - name: Apply patch
         run: git apply bioc_patch.patch
 
