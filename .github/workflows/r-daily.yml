@@ -119,3 +119,30 @@ jobs:
           git add .
           git commit -m "daily update" || echo "no updated R packages in this period"
           git push --force origin r-daily
+
+      - name: Get patches for Bioc devel
+        run: |
+          wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/bioc_patch.patch
+      - name: Apply patch
+        run: git apply bioc_patch.patch
+
+      - name: Update R packages
+        run: |
+          cd pkgs/development/r-modules/
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.json.new"
+
+      - name: Rename files
+        run: |
+          cd pkgs/development/r-modules/
+          mv bioc-packages.json.new bioc-packages.json
+          mv bioc-annotation-packages.json.new bioc-annotation-packages.json
+          mv bioc-experiment-packages.json.new bioc-experiment-packages.json
+
+      - name: Pushing updates
+        run: |
+          git checkout -b r-bioc-devel
+          git add .
+          git commit -m "bioc-devel update" || echo "no updated R packages in this period"
+          git push --force origin r-daily-devel
