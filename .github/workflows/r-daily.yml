@@ -147,4 +147,4 @@ jobs:
           git checkout -b r-bioc-devel
           git add .
           git commit -m "bioc-devel update" || echo "no updated R packages in this period"
-          git push --force origin r-daily-devel
+          git push --force origin r-bioc-devel
