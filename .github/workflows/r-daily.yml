@@ -124,6 +124,7 @@ jobs:
           git commit -m "daily update" || echo "no updated R packages in this period"
           git push --force origin r-daily
 
+      # now update for bioc devel
       - name: Apply patch
         run: git apply bioc_patch.patch
 
