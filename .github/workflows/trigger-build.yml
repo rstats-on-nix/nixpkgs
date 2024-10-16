@@ -1,4 +1,4 @@
-name: Trigger Workflow in Another Repo with Data
+name: Trigger build tree workflow in rstats-on-nix/SOME_DATE
 
 on:
   push:
