@@ -1160,10 +1160,8 @@ let
       postPatch = "patchShebangs configure";
     });
 
-    data_table = old.data_table.overrideAttrs (attrs: {
-      env = (attrs.env or { }) // {
-        NIX_CFLAGS_COMPILE = attrs.env.NIX_CFLAGS_COMPILE + " -fopenmp";
-      };
+    data_table = old.data_table.overrideDerivation (attrs: {
+      NIX_CFLAGS_COMPILE = attrs.NIX_CFLAGS_COMPILE + " -fopenmp";
       patchPhase = "patchShebangs configure";
     });
 
