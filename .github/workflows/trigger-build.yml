@@ -1,4 +1,3 @@
-# .github/workflows/push-trigger.yml
 name: Trigger Workflow in Another Repo with Data
 
 on:
