@@ -1797,7 +1797,7 @@ let
     });
 
     textshaping = old.textshaping.overrideAttrs (attrs: {
-      env.NIX_LDFLAGS = "-lfribidi -lharfbuzz";
+      NIX_LDFLAGS = "-lfribidi -lharfbuzz";
     });
 
     httpuv = old.httpuv.overrideAttrs (_: {
