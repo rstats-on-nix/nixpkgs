@@ -14,25 +14,23 @@ assert (!blas.isILP64) && (!lapack.isILP64);
 
 stdenv.mkDerivation rec {
   pname = "R";
-  version = "4.2.1";
+  version = "4.1.2";
 
   src = fetchurl {
     url = "https://cran.r-project.org/src/base/R-${lib.versions.major version}/${pname}-${version}.tar.gz";
-    sha256 = "sha256-TVLbSG0nhI5UYT1O6XetlS7AjOF4B+G1JbEM1ENsZD8=";
+    sha256 = "sha256-IDYiXp9yB9TOCX5Ulyrs2qi0DX2ZEc0mSR+sWg+rOK8=";
   };
 
   dontUseImakeConfigure = true;
 
-  nativeBuildInputs = [ pkg-config ];
   buildInputs = [
     bzip2 gfortran libX11 libXmu libXt libXt libjpeg libpng libtiff ncurses
     pango pcre2 perl readline texLive xz zlib less texinfo graphviz icu
-    bison imake which blas lapack curl tcl tk jdk
+    pkg-config bison imake which blas lapack curl tcl tk jdk
   ] ++ lib.optionals stdenv.isDarwin [ Cocoa Foundation libobjc libcxx ];
 
   patches = [
     ./no-usr-local-search-paths.patch
-    ./test-reg-packages.patch
   ];
 
   # Test of the examples for package 'tcltk' fails in Darwin sandbox. See:
@@ -92,7 +90,7 @@ stdenv.mkDerivation rec {
   postFixup = "echo ${which} > $out/nix-support/undetected-runtime-dependencies";
 
   doCheck = true;
-  preCheck = "export HOME=$TMPDIR; export TZ=CET; bin/Rscript -e 'sessionInfo()'";
+  preCheck = "export TZ=CET; bin/Rscript -e 'sessionInfo()'";
 
   enableParallelBuilding = true;
 
