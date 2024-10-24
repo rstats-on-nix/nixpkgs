@@ -775,7 +775,7 @@ let
     DropletUtils = [ pkgs.zlib ];
     RMariaDB = [ pkgs.libmysqlclient ];
     ijtiff = [ pkgs.libtiff ];
-    ragg = with pkgs; [ freetype libpng libtiff zlib libjpeg bzip2 ] ++ lib.optional stdenv.hostPlatform.isDarwin pkgs.lerc.dev;
+    ragg = with pkgs; [ freetype libpng libtiff zlib libjpeg bzip2 ] ++ lib.optional stdenv.hostPlatform.isDarwin lerc.dev;
     qqconf = [ pkgs.fftw ];
     spFW = [ pkgs.fftw ];
     qspray = with pkgs; [ gmp mpfr ];
