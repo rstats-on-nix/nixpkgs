@@ -1,0 +1,44 @@
+diff --git a/configure b/configure
+index aa9a93f..9a9c7ef 100755
+--- a/configure
++++ b/configure
+@@ -5,19 +5,26 @@ echo "Running configure script"
+ # Find compiler
+ CC=`"${R_HOME}"/bin/R CMD config CC`
+
+-# Detect whether -latomic is needed during linking. This is needed on some
+-# platforms, notably ARM (Raspberry Pi).
+-echo "#include <stdint.h>
+-uint64_t v;
+-int main() {
+-    return (int)__atomic_load_n(&v, __ATOMIC_ACQUIRE);
+-}" | ${CC} -x c - -o /dev/null > /dev/null 2>&1
+-
+-if [ $? -eq 0 ]; then
+-  echo "-latomic linker flag not needed."
+-else
+-  echo "-latomic linker flag needed."
+-  EXTRA_PKG_LIBS=-latomic
++# Detect platform and architecture
++OS=$(uname -s)
++ARCH=$(uname -m)
++
++# Check if the platform is Linux and the architecture is ARM64
++if [ "$OS" = "Linux" ] && [ "$ARCH" = "arm64" ]; then
++  # Detect whether -latomic is needed during linking. This is needed on some
++  # ARM platforms, notably Raspberry Pi.
++  echo "#include <stdint.h>
++  uint64_t v;
++  int main() {
++      return (int)__atomic_load_n(&v, __ATOMIC_ACQUIRE);
++  }" | ${CC} -x c - -o /dev/null > /dev/null 2>&1
++
++  if [ $? -eq 0 ]; then
++    echo "-latomic linker flag not needed."
++  else
++    echo "-latomic linker flag needed."
++    EXTRA_PKG_LIBS="-latomic"
++  fi
+ fi
+
+ case "$CC" in
