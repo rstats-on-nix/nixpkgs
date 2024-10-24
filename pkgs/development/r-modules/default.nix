@@ -401,7 +401,7 @@ let
     LOMAR = [ pkgs.gmp ];
     littler = [ pkgs.libdeflate ];
     lpsymphony = with pkgs; [ pkg-config gfortran gettext ];
-    lwgeom = with pkgs; [ proj geos gdal ];
+    lwgeom = with pkgs; [ proj geos gdal ] ++ lib.optional stdenv.hostPlatform.isDarwin libtiff;
     rsbml = [ pkgs.pkg-config ];
     rvg = [ pkgs.libpng ];
     MAGEE = [ pkgs.zlib pkgs.bzip2 ];
