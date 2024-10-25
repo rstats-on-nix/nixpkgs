@@ -203,8 +203,8 @@
     },
     "CoSIAdata": {
       "name": "CoSIAdata",
-      "version": "1.4.0",
-      "sha256": "1mld9j54ywkgz63brf8lmfi57f1hmclyv3m9lw201wyni48nx377",
+      "version": "1.4.1",
+      "sha256": "094f3b2r659q3mlrzm6n2wvw13x8l1gll42a8win8kqbnkdd3jmj",
       "depends": ["ExperimentHub"]
     },
     "ConnectivityMap": {
@@ -751,7 +751,7 @@
       "name": "MetaScope",
       "version": "1.4.0",
       "sha256": "1kaisvhp66g95w4dycw8jzsxh00f2c193rjcla6l5k2dn5rnsyr9",
-      "depends": ["BiocFileCache", "Biostrings", "Matrix", "MultiAssayExperiment", "Rbowtie2", "Rsamtools", "S4Vectors", "SummarizedExperiment", "data_table", "dplyr", "ggplot2", "magrittr", "readr", "rlang", "stringr", "taxize", "tibble", "tidyr"]
+      "depends": ["BiocFileCache", "Biostrings", "Matrix", "MultiAssayExperiment", "Rbowtie2", "Rsamtools", "S4Vectors", "SummarizedExperiment", "data_table", "dplyr", "ggplot2", "magrittr", "readr", "rlang", "stringr", "tibble", "tidyr"]
     },
     "MethylAidData": {
       "name": "MethylAidData",
@@ -1637,9 +1637,9 @@
     },
     "curatedPCaData": {
       "name": "curatedPCaData",
-      "version": "1.0.0",
-      "sha256": "0wqvg0z19lxyqbbsl7fbq12jgycpqycx45vy24z4sph48kz2ag3w",
-      "depends": ["AnnotationHub", "ExperimentHub", "MultiAssayExperiment", "RaggedExperiment", "S4Vectors", "rlang"]
+      "version": "1.0.4",
+      "sha256": "180lhsh2si7vnr2xysb4225rbympx32kgxxvkis66r26qxr9z144",
+      "depends": ["AnnotationHub", "ExperimentHub", "MultiAssayExperiment", "RaggedExperiment", "S4Vectors", "reshape2", "rlang"]
     },
     "curatedTBData": {
       "name": "curatedTBData",
@@ -2351,8 +2351,8 @@
     },
     "scMultiome": {
       "name": "scMultiome",
-      "version": "1.4.1",
-      "sha256": "0rgcg8qhpap7wnlndf9bmild55yxv21zdn89hs5h1503rfchlx2d",
+      "version": "1.4.2",
+      "sha256": "1lmly57dabvh2wcd8nhc7wksppx54v1xkk90izpv3i2k8gpyiwsx",
       "depends": ["AnnotationHub", "AzureStor", "DelayedArray", "ExperimentHub", "GenomicRanges", "HDF5Array", "MultiAssayExperiment", "S4Vectors", "SingleCellExperiment", "SummarizedExperiment", "checkmate", "rhdf5"]
     },
     "scRNAseq": {

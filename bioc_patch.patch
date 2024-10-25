@@ -1,0 +1,24 @@
+diff --git a/pkgs/development/r-modules/generate-r-packages.R b/pkgs/development/r-modules/generate-r-packages.R
+index fb15ec40ad22..10905dd10d4b 100755
+--- a/pkgs/development/r-modules/generate-r-packages.R
++++ b/pkgs/development/r-modules/generate-r-packages.R
+@@ -14,12 +14,8 @@ library(jsonlite)
+ locale <- Sys.setlocale(locale = "C")
+ 
+ biocVersion <- BiocManager:::.version_map()
+-biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "BiocStatus")]
+-if ("release" %in% biocVersion$BiocStatus) {
+-  biocVersion <-  as.numeric(as.character(biocVersion[biocVersion$BiocStatus == "release", "Bioc"]))
+-} else {
+-  biocVersion <-  max(as.numeric(as.character(biocVersion$Bioc)))
+-}
++
++biocVersion <- subset(biocVersion, BiocStatus == "devel")$Bioc
+ 
+ mirrorUrls <- list( bioc=paste0("http://bioconductor.org/packages/", biocVersion, "/bioc/src/contrib/")
+                   , "bioc-annotation"=paste0("http://bioconductor.org/packages/", biocVersion, "/data/annotation/src/contrib/")
+@@ -115,4 +111,3 @@ if (mirrorType != "cran") {
+ cat(toJSON(list(extraArgs=extraArgs, packages=c(pkgs, brokenPkgs)), pretty=TRUE))
+ cat("\n")
+ write("done", stderr())
+-
