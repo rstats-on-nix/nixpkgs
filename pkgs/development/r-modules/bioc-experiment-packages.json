@@ -2489,8 +2489,8 @@
     },
     "systemPipeRdata": {
       "name": "systemPipeRdata",
-      "version": "2.14.4",
-      "sha256": "1jl65qpwp4mk3zc10w28ksaivki8cw06mlx8bfbkwqsd6canwn3a",
+      "version": "2.14.5",
+      "sha256": "1yrq1vyc0pmp3iv621cvdsavlarcca3z4bbxfzbg0ny3fyqp67pb",
       "depends": ["BiocGenerics", "Biostrings", "jsonlite", "remotes"]
     },
     "tartare": {
