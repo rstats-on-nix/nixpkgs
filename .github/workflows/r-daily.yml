@@ -42,14 +42,14 @@ jobs:
       #      git cherry-pick --abort
       #      exit 1
       #    fi
-          
-      - name: Cherry-pick phart PR
+
+      - name: Cherry-pick sklearn2pmml PR
         run: |
           set -e
           # Fetch the PR from upstream
-          git fetch upstream pull/446370/head:pr-446370
+          git fetch upstream pull/494361/head:pr-494361
           # Try cherry-pick
-          if git cherry-pick pr-446370; then
+          if git cherry-pick pr-494361; then
             echo "Cherry-pick successful"
           else
             echo "Cherry-pick failed, aborting"
