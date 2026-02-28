@@ -56,6 +56,19 @@ jobs:
             git cherry-pick --abort
           fi
 
+      - name: Cherry-pick jpmml-statsmodels PR
+        run: |
+          set -e
+          # Fetch the PR from upstream
+          git fetch upstream pull/495154/head:pr-495154
+          # Try cherry-pick
+          if git cherry-pick pr-495154; then
+            echo "Cherry-pick successful"
+          else
+            echo "Cherry-pick failed, aborting"
+            git cherry-pick --abort
+          fi
+
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/.github/workflows/update-cachix.yml -P .github/workflows/
