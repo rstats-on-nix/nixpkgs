@@ -121,7 +121,7 @@ jobs:
 
       - name: Add libuv build input for fs
         run: |
-          sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.libuv.dev ];' pkgs/development/r-modules/default.nix
+          sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
 
       - name: Install Nix
         uses: DeterminateSystems/nix-installer-action@main
