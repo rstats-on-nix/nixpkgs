@@ -830,6 +830,7 @@ let
     Rserve = [ pkgs.openssl ];
     Rssa = [ pkgs.fftw.dev ];
     rsvg = [ pkgs.pkg-config ];
+    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];
     runjags = [ pkgs.jags ];
     tomledit = with pkgs; [
       cargo
