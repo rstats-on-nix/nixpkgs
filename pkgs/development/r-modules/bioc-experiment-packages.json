@@ -89,9 +89,9 @@
     },
     "BeadArrayUseCases": {
       "name": "BeadArrayUseCases",
-      "version": "1.47.0",
-      "sha256": "0jh4fgz7wl4ihfri27ri5gxwyqmbvi5rfm4rqhsdbgjzc912x00d",
-      "depends": ["GEOquery", "limma"]
+      "version": "1.48.0",
+      "sha256": "0gsp001ncmjrfxiqj254y15j3hyg4i92prrzjaxwkgx2q935j08y",
+      "depends": ["GEOquery", "beadarray", "limma"]
     },
     "BeadSorted_Saliva_EPIC": {
       "name": "BeadSorted.Saliva.EPIC",
@@ -1421,9 +1421,9 @@
     },
     "beadarrayExampleData": {
       "name": "beadarrayExampleData",
-      "version": "1.47.0",
-      "sha256": "0r9dl64qcgnfzpadlibw4q6q9acjzgs9wayih7fraqn7cm9w22d9",
-      "depends": ["Biobase"]
+      "version": "1.48.0",
+      "sha256": "1hm0sv901ngvc1iji55x8f1989vy1qp7bp0hspibra9817qqbjc8",
+      "depends": ["Biobase", "beadarray"]
     },
     "beta7": {
       "name": "beta7",
