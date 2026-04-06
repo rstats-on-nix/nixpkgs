@@ -14783,6 +14783,8 @@ self: super: with self; {
 
   pyplatec = callPackage ../development/python-modules/pyplatec { };
 
+  pypmml = callPackage ../development/python-modules/pypmml { };
+
   pypng = callPackage ../development/python-modules/pypng { };
 
   pypoint = callPackage ../development/python-modules/pypoint { };
