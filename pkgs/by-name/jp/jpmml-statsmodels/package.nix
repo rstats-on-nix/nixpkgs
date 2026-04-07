@@ -7,18 +7,21 @@
   nix-update-script,
 }:
 
-maven.buildMavenPackage rec {
+let
   pname = "jpmml-statsmodels";
-  version = "1.3.4";
+  version = "1.3.12";
+in
+maven.buildMavenPackage {
+  inherit pname version;
 
   src = fetchFromGitHub {
     owner = "jpmml";
     repo = "jpmml-statsmodels";
-    tag = "${version}";
-    hash = "sha256-VA1/q9aQxXyxj8C5MEoTZQz34gYb1/Iugqu6ougCGnc=";
+    tag = version;
+    hash = "sha256-gI6pl3kFbCSRzGiZSS+NbTwhQPwwqZcJ7SQUw6NlZBI=";
   };
 
-  mvnHash = "sha256-1F8eE3pbSi3INscLlXWMyhWV4v2A5uO10hXXzAam8Dw=";
+  mvnHash = "sha256-2t32hvO6NOaojWJFzczO+BxvVvW0ljbHwYRqCbpJKEc=";
 
   mvnParameters = "-B package";
 

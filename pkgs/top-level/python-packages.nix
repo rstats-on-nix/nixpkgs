@@ -7915,6 +7915,8 @@ self: super: with self; {
 
   jproperties = callPackage ../development/python-modules/jproperties { };
 
+  jpmml-evaluator-python = callPackage ../development/python-modules/jpmml-evaluator-python { };
+
   jpylyzer = callPackage ../development/python-modules/jpylyzer { };
 
   jpype1 = callPackage ../development/python-modules/jpype1 { };
