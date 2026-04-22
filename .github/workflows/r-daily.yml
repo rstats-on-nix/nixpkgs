@@ -226,9 +226,10 @@ jobs:
           new_nixPrefetch <- c(
           "nixPrefetch <- function(name, version) {",
           "  prevPkg <- prevPkgs[[escapeName(name)]]",
-          "  if (!is.null(prevPkg) && prevPkg$version == version)",
-          "    return(c(hash=prevPkg$sha256, version=version))",
-          "  else {",
+          "  if (!is.null(prevPkg) && prevPkg$version == version) {",
+          "    hash <- if (is.null(prevPkg$sha256)) NA_character_ else as.character(prevPkg$sha256)",
+          "    return(c(hash=hash, version=as.character(version)))",
+          "  } else {",
           "    url <- paste0(mirrorUrl, name, \"_\", version, \".tar.gz\")",
           "    tmp <- tempfile(pattern=paste0(name, \"_\", version), fileext=\".tar.gz\")",
           "    cmd1 <- paste0(\"wget -q -O '\", tmp, \"' '\", url, \"'\")",
@@ -247,7 +248,7 @@ jobs:
           "           sys_res <- 0",
           "       }",
           "    }",
-          "    if (sys_res != 0) return(c(hash=NA_character_, version=version))",
+          "    if (sys_res != 0) return(c(hash=NA_character_, version=as.character(version)))",
           "    cmd_hash <- paste0(\"nix-hash --type sha256 --base32 --flat '\", tmp, \"'\")",
           "    res <- system(cmd_hash, intern=TRUE)",
           "    res <- res[nzchar(res)]",
@@ -255,7 +256,7 @@ jobs:
           "    hash <- if (length(res) == 0) NA_character_ else res[length(res)]",
           "    echo_cmd <- paste0(\"echo >&2 '  added \", name, \" v\", version, \"'\")",
           "    system(echo_cmd)",
-          "    return(c(hash=hash, version=version))",
+          "    return(c(hash=as.character(hash), version=as.character(version)))",
           "  }",
           "}"
           )
