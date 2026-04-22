@@ -7,7 +7,7 @@ cl <- makeCluster(10)
 biocVersion <- BiocManager:::.version_map()
 biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "BiocStatus")]
 if ("release" %in% biocVersion$BiocStatus) {
-  biocVersion <-  as.numeric(as.character(biocVersion[biocVersion$BiocStatus == "release", "Bioc"]))
+  biocVersion <-  as.numeric(as.character(biocVersion[biocVersion$BiocStatus == "release", "Bioc"]))[1]
 } else {
   biocVersion <-  max(as.numeric(as.character(biocVersion$Bioc)))
 }
@@ -48,7 +48,10 @@ nixPrefetch <- function(name, version) {
     cmd <- paste0(cmd, " && nix-hash --type sha256 --base32 --flat '", tmp, "'")
     cmd <- paste0(cmd, " && echo >&2 '  added ", name, " v", version, "'")
     cmd <- paste0(cmd, " ; rm -rf '", tmp, "'")
-    system(cmd, intern=TRUE)
+    res <- system(cmd, intern=TRUE)
+    res <- res[nzchar(res)]
+    if (length(res) > 1) res <- res[length(res)]
+    res
   }
 
 }
