@@ -217,12 +217,12 @@ jobs:
       - name: Harden generation script
         run: |
           FILE="pkgs/development/r-modules/generate-r-packages.R"
-          # Disable parallelization for stability
-          sed -i 's/^cl <- makeCluster.*/cl <- NULL/' "$FILE"
-          # Enforce scalarity for formatPackage arguments
-          sed -i "/formatPackage <- function/a \\    name <- as.character(name[1]); version <- as.character(version[1]); sha256 <- as.character(sha256[1]); depends <- as.character(depends[1]); imports <- as.character(imports[1]); linkingTo <- as.character(linkingTo[1]);" "$FILE"
-          # Capture only hash by silencing stderr and taking last line
-          sed -i 's/res <- system(cmd, intern=TRUE)/res <- system(paste0("(", cmd, ") 2>\/dev\/null"), intern=TRUE)/' "$FILE"
+          # The upstream script uses `system(cmd, intern=TRUE)` which captures stdout.
+          # On CI, Nix experimentalfeature warnings may be emitted to stdout,
+          # causing nixPrefetch to return a multi-line vector instead of a single hash.
+          # `unbox(sha256)` then throws "Only atomic vectors of length 1 can be unboxed".
+          # Fix: replace the bare system() call with one that takes only the last non-empty line.
+          sed -i 's/    system(cmd, intern=TRUE)/    { res <- system(cmd, intern=TRUE); res <- res[nzchar(res)]; if (length(res) == 0) NA_character_ else res[length(res)] }/' "$FILE"
 
       - name: Update R packages
         run: |
