@@ -18453,6 +18453,8 @@ self: super: with self; {
 
   sphfile = callPackage ../development/python-modules/sphfile { };
 
+  sphobjinv = callPackage ../development/python-modules/sphobjinv { };
+
   sphinx = callPackage ../development/python-modules/sphinx { };
 
   sphinx-argparse = callPackage ../development/python-modules/sphinx-argparse { };
