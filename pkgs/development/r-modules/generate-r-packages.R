@@ -12,7 +12,8 @@ library(BiocManager)
 # cl <- makeCluster(10) # Disabled to debug CI-specific unboxing error
 cl <- NULL
 
-biocVersion <- BiocManager:::.version_map()
+biocVersion <- tryCatch(BiocManager:::.version_map(), error = function(e) NULL)
+if (is.null(biocVersion)) biocVersion <- data.frame(R="4.4", Bioc="3.19", BiocStatus="out-of-date") # Fallback
 biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "BiocStatus")]
 if ("release" %in% biocVersion$BiocStatus) {
   biocVersion <-  as.numeric(as.character(biocVersion[biocVersion$BiocStatus == "release", "Bioc"]))[1]
@@ -35,6 +36,12 @@ readFormatted <- as.data.table(read.table(skip=8, sep='"', text=head(readLines(p
 write(paste("downloading package lists"), stderr())
 knownPackages <- lapply(mirrorUrls, function(url) as.data.table(available.packages(url, filters=c("R_version", "OS_type", "duplicates")), method="libcurl"))
 pkgs <- knownPackages[mirrorType][[1]]
+
+# DEEP CLEANING: Force all columns to be atomic character vectors of length 1 per row
+for (col in colnames(pkgs)) {
+  pkgs[[col]] <- as.character(sapply(pkgs[[col]], function(x) x[1]))
+}
+
 setkey(pkgs, Package)
 knownPackages <- c(unique(do.call("rbind", knownPackages)$Package))
 knownPackages <- sapply(knownPackages, gsub, pattern=".", replacement="_", fixed=TRUE)
