@@ -29,7 +29,7 @@ jobs:
           git remote add upstream https://github.com/NixOS/nixpkgs
           git checkout r-daily-source
           git fetch upstream
-          # git reset --hard upstream/master
+          git reset --hard upstream/master
 
       #- name: Cherry-pick R bump
       #  run: |
@@ -213,6 +213,16 @@ jobs:
 
       # - name: Check cran-packages.json
       #   run: grep -n -A6 -B1 '"BiocManager":' pkgs/development/r-modules/cran-packages.json
+
+      - name: Harden generation script
+        run: |
+          FILE="pkgs/development/r-modules/generate-r-packages.R"
+          # Disable parallelization for stability
+          sed -i 's/^cl <- makeCluster.*/cl <- NULL/' "$FILE"
+          # Enforce scalarity for formatPackage arguments
+          sed -i "/formatPackage <- function/a \\    name <- as.character(name[1]); version <- as.character(version[1]); sha256 <- as.character(sha256[1]); depends <- as.character(depends[1]); imports <- as.character(imports[1]); linkingTo <- as.character(linkingTo[1]);" "$FILE"
+          # Capture only hash by silencing stderr and taking last line
+          sed -i 's/res <- system(cmd, intern=TRUE)/res <- system(paste0("(", cmd, ") 2>\/dev\/null"), intern=TRUE)/' "$FILE"
 
       - name: Update R packages
         run: |
