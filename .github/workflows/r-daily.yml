@@ -106,6 +106,22 @@ jobs:
             git cherry-pick --abort
           fi
 
+      - name: Cherry-pick quartodoc and dependencies
+        run: |
+          set -e
+          # Add your personal fork as a dedicated remote
+          git remote add personal https://github.com/b-rodrigues/nixpkgs.git
+          git fetch personal add_quartodoc
+          # Cherry-pick the 4 commits (quartodoc + its 3 dependencies)
+          # This range works because I based the branch on upstream/master
+          if git cherry-pick personal/add_quartodoc~4..personal/add_quartodoc; then
+            echo "Cherry-pick of quartodoc successful"
+          else
+            echo "Cherry-pick failed - this might happen if python-packages.nix has conflicts"
+            git cherry-pick --abort
+            exit 1
+          fi
+
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/.github/workflows/update-cachix.yml -P .github/workflows/
