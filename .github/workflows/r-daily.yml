@@ -199,20 +199,20 @@ jobs:
             "s|sha256 = \".*\";|sha256 = \"$SHA\";|" \
             pkgs/development/julia-modules/registry.nix
 
-      - name: Bump BiocManager in cran-packages.json
-        run: |
-          FILE="pkgs/development/r-modules/cran-packages.json"
+      # - name: Bump BiocManager in cran-packages.json
+      #   run: |
+      #     FILE="pkgs/development/r-modules/cran-packages.json"
 
-          sed -i '
-            /"BiocManager": {/,/}/ {
-              s|"version": "1\.30\.26"|"version": "1.30.27"|
-              s|"sha256": ".*"|"sha256": "1dgv0gfa7ff3w96dax8p7jna1bf2652sav2mhn82gj02jvqdrgxc"|
-            }
-          ' "$FILE"
+      #     sed -i '
+      #       /"BiocManager": {/,/}/ {
+      #         s|"version": "1\.30\.26"|"version": "1.30.27"|
+      #         s|"sha256": ".*"|"sha256": "1dgv0gfa7ff3w96dax8p7jna1bf2652sav2mhn82gj02jvqdrgxc"|
+      #       }
+      #     ' "$FILE"
 
 
-      - name: Check cran-packages.json
-        run: grep -n -A6 -B1 '"BiocManager":' pkgs/development/r-modules/cran-packages.json
+      # - name: Check cran-packages.json
+      #   run: grep -n -A6 -B1 '"BiocManager":' pkgs/development/r-modules/cran-packages.json
 
       - name: Update R packages
         run: |
