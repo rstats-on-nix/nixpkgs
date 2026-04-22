@@ -9,8 +9,9 @@ biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "Bioc
 if ("release" %in% biocVersion$BiocStatus) {
   biocVersion <-  as.numeric(as.character(biocVersion[biocVersion$BiocStatus == "release", "Bioc"]))[1]
 } else {
-  biocVersion <-  max(as.numeric(as.character(biocVersion$Bioc)))
+  biocVersion <-  max(as.numeric(as.character(biocVersion$Bioc)))[1]
 }
+biocVersion <- as.character(biocVersion[1])
 
 mirrorUrls <- list( bioc=paste0("http://bioconductor.org/packages/", biocVersion, "/bioc/src/contrib/")
                   , "bioc-annotation"=paste0("http://bioconductor.org/packages/", biocVersion, "/data/annotation/src/contrib/")
@@ -26,6 +27,7 @@ readFormatted <- as.data.table(read.table(skip=8, sep='"', text=head(readLines(p
 write(paste("downloading package lists"), stderr())
 knownPackages <- lapply(mirrorUrls, function(url) as.data.table(available.packages(url, filters=c("R_version", "OS_type", "duplicates")), method="libcurl"))
 pkgs <- knownPackages[mirrorType][[1]]
+pkgs <- pkgs[Package == "ordinalClust"]
 setkey(pkgs, Package)
 knownPackages <- c(unique(do.call("rbind", knownPackages)$Package))
 knownPackages <- sapply(knownPackages, gsub, pattern=".", replacement="_", fixed=TRUE)
@@ -50,7 +52,8 @@ nixPrefetch <- function(name, version) {
     cmd <- paste0(cmd, " ; rm -rf '", tmp, "'")
     res <- system(cmd, intern=TRUE)
     res <- res[nzchar(res)]
-    if (length(res) > 1) res <- res[length(res)]
+    if (length(res) == 0) return(NA_character_)
+    res <- as.character(res[length(res)])[1]
     res
   }
 
@@ -61,6 +64,14 @@ escapeName <- function(name) {
 }
 
 formatPackage <- function(name, version, sha256, depends, imports, linkingTo) {
+    # Ensure all inputs are scalar character
+    name <- as.character(name[1])
+    version <- as.character(version[1])
+    sha256 <- as.character(sha256[1])
+    depends <- as.character(depends[1])
+    imports <- as.character(imports[1])
+    linkingTo <- as.character(linkingTo[1])
+
     attr <- gsub(".", "_", escapeName(name), fixed=TRUE)
     options(warn=5)
     depends <- paste( if (is.na(depends)) "" else gsub("[ \t\n]+", "", depends)
@@ -83,7 +94,7 @@ clusterExport(cl, c("nixPrefetch","readFormatted", "mirrorUrl", "mirrorType", "k
 pkgs <- pkgs[order(Package)]
 
 write(paste("updating", mirrorType, "packages"), stderr())
-pkgs$sha256 <- parApply(cl, pkgs, 1, function(p) nixPrefetch(p[1], p[2]))
+pkgs$sha256 <- as.character(parApply(cl, pkgs, 1, function(p) nixPrefetch(p[1], p[2])))
 nix <- apply(pkgs, 1, function(p) formatPackage(p[1], p[2], p[18], p[4], p[5], p[6]))
 write("done", stderr())
 
