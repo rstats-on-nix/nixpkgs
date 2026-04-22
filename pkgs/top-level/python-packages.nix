@@ -12831,6 +12831,8 @@ self: super: with self; {
 
   plum-py = callPackage ../development/python-modules/plum-py { };
 
+  plum-dispatch = callPackage ../development/python-modules/plum-dispatch { };
+
   plumbum = callPackage ../development/python-modules/plumbum { };
 
   pluralizer = callPackage ../development/python-modules/pluralizer { };
