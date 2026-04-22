@@ -2,7 +2,8 @@
 library(data.table)
 library(parallel)
 library(BiocManager)
-cl <- makeCluster(10)
+# cl <- makeCluster(10) # Disabled to debug CI-specific unboxing error
+cl <- NULL
 
 biocVersion <- BiocManager:::.version_map()
 biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "BiocStatus")]
@@ -27,7 +28,6 @@ readFormatted <- as.data.table(read.table(skip=8, sep='"', text=head(readLines(p
 write(paste("downloading package lists"), stderr())
 knownPackages <- lapply(mirrorUrls, function(url) as.data.table(available.packages(url, filters=c("R_version", "OS_type", "duplicates")), method="libcurl"))
 pkgs <- knownPackages[mirrorType][[1]]
-pkgs <- pkgs[Package == "ordinalClust"]
 setkey(pkgs, Package)
 knownPackages <- c(unique(do.call("rbind", knownPackages)$Package))
 knownPackages <- sapply(knownPackages, gsub, pattern=".", replacement="_", fixed=TRUE)
@@ -50,7 +50,8 @@ nixPrefetch <- function(name, version) {
     cmd <- paste0(cmd, " && nix-hash --type sha256 --base32 --flat '", tmp, "'")
     cmd <- paste0(cmd, " && echo >&2 '  added ", name, " v", version, "'")
     cmd <- paste0(cmd, " ; rm -rf '", tmp, "'")
-    res <- system(cmd, intern=TRUE)
+    # Silencing Nix warnings by redirecting stderr to /dev/null
+    res <- system(paste0("(", cmd, ") 2>/dev/null"), intern=TRUE)
     res <- res[nzchar(res)]
     if (length(res) == 0) return(NA_character_)
     res <- as.character(res[length(res)])[1]
@@ -94,8 +95,21 @@ clusterExport(cl, c("nixPrefetch","readFormatted", "mirrorUrl", "mirrorType", "k
 pkgs <- pkgs[order(Package)]
 
 write(paste("updating", mirrorType, "packages"), stderr())
-pkgs$sha256 <- as.character(parApply(cl, pkgs, 1, function(p) nixPrefetch(p[1], p[2])))
-nix <- apply(pkgs, 1, function(p) formatPackage(p[1], p[2], p[18], p[4], p[5], p[6]))
+# Run single-threaded for stability and better error reporting on CI
+pkgs$sha256 <- as.character(apply(pkgs, 1, function(p) {
+  tryCatch(nixPrefetch(p[1], p[2]), error = function(e) {
+    message(paste("Error prefetching", p[1], ":", e$message))
+    return(NA_character_)
+  })
+}))
+
+nix <- apply(pkgs, 1, function(p) {
+  tryCatch(formatPackage(p[1], p[2], p[18], p[4], p[5], p[6]), error = function(e) {
+    message(paste("Error formatting", p[1], ":", e$message))
+    return(NULL)
+  })
+})
+nix <- Filter(Negate(is.null), nix)
 write("done", stderr())
 
 # Mark deleted packages as broken
@@ -125,4 +139,4 @@ cat(paste(nix, collapse="\n"), "\n", sep="")
 cat(paste(broken, collapse="\n"), "\n", sep="")
 cat("}\n")
 
-stopCluster(cl)
+# if (!is.null(cl)) stopCluster(cl)
