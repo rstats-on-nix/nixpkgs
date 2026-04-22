@@ -90,7 +90,9 @@ formatPackage <- function(name, version, sha256, depends, imports, linkingTo) {
     paste0("  ", attr, " = derive2 { name=\"", name, "\"; version=\"", version, "\"; sha256=\"", sha256, "\"; depends=[", depends, "]; };")
 }
 
-clusterExport(cl, c("nixPrefetch","readFormatted", "mirrorUrl", "mirrorType", "knownPackages"))
+if (!is.null(cl)) {
+  clusterExport(cl, c("nixPrefetch","readFormatted", "mirrorUrl", "mirrorType", "knownPackages"))
+}
 
 pkgs <- pkgs[order(Package)]
 
