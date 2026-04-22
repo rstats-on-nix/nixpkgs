@@ -217,12 +217,24 @@ jobs:
       - name: Harden generation script
         run: |
           FILE="pkgs/development/r-modules/generate-r-packages.R"
-          # The upstream script uses `system(cmd, intern=TRUE)` which captures stdout.
-          # On CI, Nix experimentalfeature warnings may be emitted to stdout,
-          # causing nixPrefetch to return a multi-line vector instead of a single hash.
-          # `unbox(sha256)` then throws "Only atomic vectors of length 1 can be unboxed".
-          # Fix: replace the bare system() call with one that takes only the last non-empty line.
-          sed -i 's/    system(cmd, intern=TRUE)/    { res <- system(cmd, intern=TRUE); res <- res[nzchar(res)]; if (length(res) == 0) NA_character_ else res[length(res)] }/' "$FILE"
+          cat << 'EOF' > patch.R
+          lines <- readLines("pkgs/development/r-modules/generate-r-packages.R")
+          idx <- grep("system\\(cmd, intern=TRUE\\)", lines)
+          lines[idx] <- "    { res <- system(cmd, intern=TRUE); res <- res[nzchar(res)]; if (length(res) == 0) NA_character_ else res[length(res)] }"
+          idx2 <- grep("cmd <- paste0\\(cmd, \" \\|\\| wget -q -O '\", tmp, \"' '\", archiveUrl, \"'\"\\)", lines)
+          if (length(idx2) > 0) {
+            fallback <- c(
+            "      base_version <- sub(\"-[0-9]+$\", \"\", version)",
+            "      url_base <- paste0(mirrorUrl, name, \"_\", base_version, \".tar.gz\")",
+            "      archiveUrl_base <- paste0(mirrorUrl, \"Archive/\", name, \"/\", name, \"_\", base_version, \".tar.gz\")",
+            "      cmd <- paste0(cmd, \" || wget -q -O '\", tmp, \"' '\", url_base, \"'\")",
+            "      cmd <- paste0(cmd, \" || wget -q -O '\", tmp, \"' '\", archiveUrl_base, \"'\")"
+            )
+            lines <- append(lines, fallback, after=idx2[1])
+          }
+          writeLines(lines, "pkgs/development/r-modules/generate-r-packages.R")
+          EOF
+          Rscript patch.R
 
       - name: Update R packages
         run: |
