@@ -1,4 +1,11 @@
-#!/usr/bin/env Rscript
+# Set up robust error reporting
+options(error = function() {
+  cat("\n--- R TRACEBACK ---\n", file=stderr())
+  traceback(2, file=stderr())
+  cat("\n-------------------\n", file=stderr())
+  quit(status = 1)
+})
+
 library(data.table)
 library(parallel)
 library(BiocManager)
@@ -99,13 +106,16 @@ pkgs <- pkgs[order(Package)]
 write(paste("updating", mirrorType, "packages"), stderr())
 # Run single-threaded for stability and better error reporting on CI
 pkgs$sha256 <- as.character(apply(pkgs, 1, function(p) {
+  write(paste("Processing:", p[1], p[2]), stderr()) # DEBUG LOG
   tryCatch(nixPrefetch(p[1], p[2]), error = function(e) {
     message(paste("Error prefetching", p[1], ":", e$message))
     return(NA_character_)
   })
 }))
 
+message("Generating Nix expressions...")
 nix <- apply(pkgs, 1, function(p) {
+  write(paste("Formatting:", p[1]), stderr()) # DEBUG LOG
   tryCatch(formatPackage(p[1], p[2], p[18], p[4], p[5], p[6]), error = function(e) {
     message(paste("Error formatting", p[1], ":", e$message))
     return(NULL)
