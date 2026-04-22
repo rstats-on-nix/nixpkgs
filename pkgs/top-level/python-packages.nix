@@ -16713,6 +16713,8 @@ self: super: with self; {
 
   quart-trio = callPackage ../development/python-modules/quart-trio { };
 
+  quartodoc = callPackage ../development/python-modules/quartodoc { };
+
   quaternion = callPackage ../development/python-modules/quaternion { };
 
   qudida = callPackage ../development/python-modules/qudida { };
