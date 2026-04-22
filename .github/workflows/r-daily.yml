@@ -216,11 +216,12 @@ jobs:
 
       - name: Harden generation script
         run: |
-          FILE="pkgs/development/r-modules/generate-r-packages.R"
-          cat << 'EOF' > patch.R
-          lines <- readLines("pkgs/development/r-modules/generate-r-packages.R")
+          cat << 'EOF' > pkgs/development/r-modules/patch.R
+          lines <- readLines("generate-r-packages.R")
           idx <- grep("system\\(cmd, intern=TRUE\\)", lines)
-          lines[idx] <- "    { res <- system(cmd, intern=TRUE); res <- res[nzchar(res)]; if (length(res) == 0) NA_character_ else res[length(res)] }"
+          if (length(idx) > 0) {
+            lines[idx] <- "    { res <- system(cmd, intern=TRUE); res <- res[nzchar(res)]; if (length(res) == 0) NA_character_ else res[length(res)] }"
+          }
           idx2 <- grep("cmd <- paste0\\(cmd, \" \\|\\| wget -q -O '\", tmp, \"' '\", archiveUrl, \"'\"\\)", lines)
           if (length(idx2) > 0) {
             fallback <- c(
@@ -232,9 +233,10 @@ jobs:
             )
             lines <- append(lines, fallback, after=idx2[1])
           }
-          writeLines(lines, "pkgs/development/r-modules/generate-r-packages.R")
+          writeLines(lines, "generate-r-packages.R")
           EOF
-          Rscript patch.R
+          cd pkgs/development/r-modules/
+          nix-shell generate-shell.nix --run "Rscript patch.R"
 
       - name: Update R packages
         run: |
