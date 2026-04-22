@@ -9,6 +9,7 @@
   importlib-resources,
   plum-dispatch,
   pydantic,
+  pythonAtLeast,
   pythonOlder,
   pyyaml,
   requests,
@@ -27,7 +28,7 @@ buildPythonPackage rec {
   version = "0.11.1";
   pyproject = true;
 
-  disabled = pythonOlder "3.10";
+  disabled = pythonOlder "3.10" || pythonAtLeast "3.14";
 
   src = fetchPypi {
     inherit pname version;

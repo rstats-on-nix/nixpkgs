@@ -7,6 +7,7 @@
   hatchling,
   ipython,
   numpy,
+  pythonAtLeast,
   pythonOlder,
   rich,
   sybil,
@@ -19,7 +20,7 @@ buildPythonPackage rec {
   version = "2.8.0";
   pyproject = true;
 
-  disabled = pythonOlder "3.10";
+  disabled = pythonOlder "3.10" || pythonAtLeast "3.14";
 
   src = fetchPypi {
     pname = "plum_dispatch";
