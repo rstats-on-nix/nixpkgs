@@ -134,7 +134,11 @@ write("done", stderr())
 # Mark deleted packages as broken
 setkey(readFormatted, V2)
 markBroken <- function(name) {
-  str <- paste0(readFormatted[name], collapse='"')
+  # Robustly handle multiple entries by taking only the first one
+  dt_row <- readFormatted[name]
+  if (nrow(dt_row) == 0) return("")
+  str <- as.character(paste0(dt_row[1], collapse='"'))[1]
+
   if(sum(grep("broken = true;", str)))
     return(str)
   write(paste("marked", name, "as broken"), stderr())
