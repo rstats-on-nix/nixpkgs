@@ -98,6 +98,19 @@ jobs:
             exit 1
           fi
 
+      - name: Cherry-pick R update
+        run: |
+          set -e
+          git remote add rstats-on-nix https://github.com/rstats-on-nix/nixpkgs.git || true
+          git fetch rstats-on-nix b3f832245b6438ae422fd414acf922c200d667f3
+          if git cherry-pick b3f832245b6438ae422fd414acf922c200d667f3; then
+            echo "Cherry-pick successful"
+          else
+            echo "Cherry-pick failed, aborting"
+            git cherry-pick --abort
+            exit 1
+          fi
+
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/.github/workflows/update-cachix.yml -P .github/workflows/
