@@ -55,31 +55,7 @@ jobs:
             echo "Cherry-pick failed, aborting"
             git cherry-pick --abort
           fi
-
-      - name: Cherry-pick fix skl2onnx PR
-        run: |
-          set -e
-          git fetch upstream pull/505958/head
-          if git cherry-pick 6a4cf18e0b7ba2ee3cf160c8446a95d154a080d0 d31cf4a3206f72382dd5bd5a53917274be56d4d5; then
-            echo "Cherry-pick successful"
-          else
-            echo "Cherry-pick failed, aborting"
-            git cherry-pick --abort
-          fi
-    
-      - name: Cherry-pick skl2onnx PR
-        run: |
-          set -e
-          # Fetch the PR from upstream
-          git fetch upstream pull/505944/head:pr-505944
-          # Try cherry-pick
-          if git cherry-pick pr-505944; then
-            echo "Cherry-pick successful"
-          else
-            echo "Cherry-pick failed, aborting"
-            git cherry-pick --abort
-          fi
-
+   
       - name: Cherry-pick jpmml-statsmodels PR
         run: |
           set -e
