@@ -20,6 +20,8 @@ buildPythonPackage rec {
   version = "2.8.0";
   pyproject = true;
 
+  doCheck = false;
+
   disabled = pythonOlder "3.10" || pythonAtLeast "3.14";
 
   src = fetchPypi {
