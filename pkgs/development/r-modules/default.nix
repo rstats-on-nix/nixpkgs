@@ -1986,6 +1986,15 @@ let
       postPatch = "patchShebangs configure";
     });
 
+    rpart = old.rpart.overrideAttrs (attrs: {
+      postPatch = ''
+        sed -i '1i #include <Rinternals.h>\nSEXP Rf_findVarInFrame(SEXP, SEXP);' src/rpart_callback.c
+      '';
+      env = (attrs.env or { }) // {
+        NIX_CFLAGS_COMPILE = (attrs.env.NIX_CFLAGS_COMPILE or "") + " -Wno-error=implicit-function-declaration -Wno-error=int-conversion";
+      };
+    });
+
     rshift = old.rshift.overrideAttrs (attrs: {
       postPatch = "patchShebangs configure";
     });
