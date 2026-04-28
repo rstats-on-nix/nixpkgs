@@ -98,12 +98,12 @@ jobs:
             exit 1
           fi
 
-      - name: Cherry-pick R update
+      - name: Cherry-pick R 4.6.0 update
         run: |
           set -e
           git remote add rstats-on-nix https://github.com/rstats-on-nix/nixpkgs.git || true
-          git fetch rstats-on-nix b3f832245b6438ae422fd414acf922c200d667f3
-          if git cherry-pick b3f832245b6438ae422fd414acf922c200d667f3; then
+          git fetch rstats-on-nix 5303bdbb476c26bde2a58cf09f27303fc8ca238a
+          if git cherry-pick 5303bdbb476c26bde2a58cf09f27303fc8ca238a; then
             echo "Cherry-pick successful"
           else
             echo "Cherry-pick failed, aborting"
