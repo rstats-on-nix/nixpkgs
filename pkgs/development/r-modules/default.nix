@@ -1883,10 +1883,20 @@ let
       prePatch = "cd r";
       postPatch = ''
         patchShebangs configure
+        substituteInPlace src/arrow_cpp11.h \
+          --replace-fail 'Rf_findVarInFrame(self, arrow::r::symbols::xp)' \
+                         'R_getVarEx(arrow::r::symbols::xp, self, (Rboolean)FALSE, R_NilValue)' \
+          --replace-fail 'Rf_findVarInFrame(r6, arrow::r::symbols::xp)' \
+                         'R_getVarEx(arrow::r::symbols::xp, r6, (Rboolean)FALSE, R_NilValue)' \
+          --replace-fail 'Rf_findVarInFrame3(arrow::r::ns::arrow, r6_class, FALSE)' \
+                         'R_getVarEx(r6_class, arrow::r::ns::arrow, (Rboolean)FALSE, R_UnboundValue)'
       '';
       buildInputs = attrs.buildInputs ++ [
         pkgs.arrow-cpp
       ];
+      env = (attrs.env or { }) // {
+        NIX_CFLAGS_COMPILE = (attrs.env.NIX_CFLAGS_COMPILE or "") + " -fpermissive";
+      };
     });
 
     gifski = old.gifski.overrideAttrs (attrs: {
