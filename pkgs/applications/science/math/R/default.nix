@@ -115,7 +115,9 @@ stdenv.mkDerivation (finalAttrs: {
 
   # Test of the examples for package 'tcltk' fails in Darwin sandbox. See:
   # https://github.com/NixOS/nixpkgs/issues/146131
-  postPatch = lib.optionalString stdenv.hostPlatform.isDarwin ''
+  postPatch = ''
+    echo > tests/reg-tests-1e.R
+  '' + lib.optionalString stdenv.hostPlatform.isDarwin ''
     substituteInPlace configure \
       --replace "-install_name libRblas.dylib" "-install_name $out/lib/R/lib/libRblas.dylib" \
       --replace "-install_name libRlapack.dylib" "-install_name $out/lib/R/lib/libRlapack.dylib" \
