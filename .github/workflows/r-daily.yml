@@ -98,20 +98,6 @@ jobs:
             exit 1
           fi
 
-      - name: Cherry-pick R 4.6.0 update
-        run: |
-         set -e
-         git remote add rstats-on-nix https://github.com/rstats-on-nix/nixpkgs.git || true
-         git fetch rstats-on-nix update_r_460:refs/remotes/rstats-on-nix/update_r_460
-         BASE=$(git merge-base HEAD rstats-on-nix/update_r_460)
-         if git cherry-pick "$BASE..rstats-on-nix/update_r_460"; then
-           echo "Cherry-pick successful"
-         else
-           echo "Cherry-pick failed, aborting"
-           git cherry-pick --abort
-           exit 1
-         fi
-
       - name: Updating files
         run: |
           wget https://raw.githubusercontent.com/rstats-on-nix/nixpkgs/r-daily/.github/workflows/update-cachix.yml -P .github/workflows/
@@ -297,6 +283,20 @@ jobs:
           mv bioc-packages.json.new bioc-packages.json
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
+
+      - name: Cherry-pick R 4.6.0 update
+        run: |
+         set -e
+         git remote add rstats-on-nix https://github.com/rstats-on-nix/nixpkgs.git || true
+         git fetch rstats-on-nix update_r_460:refs/remotes/rstats-on-nix/update_r_460
+         BASE=$(git merge-base HEAD rstats-on-nix/update_r_460)
+         if git cherry-pick "$BASE..rstats-on-nix/update_r_460"; then
+           echo "Cherry-pick successful"
+         else
+           echo "Cherry-pick failed, aborting"
+           git cherry-pick --abort
+           exit 1
+         fi
 
       - name: Pushing updates
         run: |
