@@ -294,7 +294,10 @@ jobs:
            exit 1
          fi
 
-
+      - name: Add CFLAGS=-std=gnu17 to udunits for Clang C23 compatibility
+        run: |
+          sed -i '/meta = {/i\  configureFlags = [ "CFLAGS=-std=gnu17" ];' pkgs/by-name/ud/udunits/package.nix
+          
       - name: Add libuv build input for fs
         run: |
           sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
