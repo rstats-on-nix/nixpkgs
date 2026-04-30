@@ -314,6 +314,22 @@ jobs:
       - name: Add libuv build input for fs
         run: |
           sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
+
+      - name: Update R packages, again
+        run: |
+          cd pkgs/development/r-modules/
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R cran > cran-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc > bioc-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-annotation > bioc-annotation-packages.json.new"
+          nix-shell generate-shell.nix --run "Rscript generate-r-packages.R bioc-experiment > bioc-experiment-packages.json.new"
+
+      - name: Rename files, again
+        run: |
+          cd pkgs/development/r-modules/
+          mv cran-packages.json.new cran-packages.json
+          mv bioc-packages.json.new bioc-packages.json
+          mv bioc-annotation-packages.json.new bioc-annotation-packages.json
+          mv bioc-experiment-packages.json.new bioc-experiment-packages.json
  
       - name: Pushing updates
         run: |
