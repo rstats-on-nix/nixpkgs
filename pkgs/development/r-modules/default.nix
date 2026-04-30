@@ -3157,6 +3157,13 @@ let
       '';
     });
 
+    rts2 = old.rts2.overrideAttrs (attrs: {
+      postPatch = ''
+        mkdir -p inst/include
+        echo '// stan_meta_header.hpp (stub)' > inst/include/stan_meta_header.hpp
+      '';
+    });
+
     webfakes = old.webfakes.overrideAttrs (_: {
       postPatch = "patchShebangs configure";
     });
