@@ -3119,24 +3119,35 @@ let
 
     Rhdf5lib =
       let
-        hdf5 = pkgs.hdf5_1_10;
+        hdf5 = pkgs.hdf5;
       in
       old.Rhdf5lib.overrideAttrs (attrs: {
         propagatedBuildInputs = attrs.propagatedBuildInputs ++ [
           hdf5.dev
           pkgs.libaec
         ];
+
+        # Skip bundled biocmake/cmake HDF5 build; use system hdf5 instead
+        preConfigure = ''
+          echo "#!/bin/sh" > configure
+          chmod +x configure
+        '';
+
         patches = [ ./patches/Rhdf5lib.patch ];
+        postPatch = ''
+          substituteInPlace R/zzz.R --replace-fail '@hdf5@' '${hdf5}'
+        '';
+
+        postInstall = ''
+          mkdir -p $out/library/Rhdf5lib/include
+          ln -s ${hdf5.dev}/include/* $out/library/Rhdf5lib/include/
+        '';
+
         passthru.hdf5 = hdf5;
       });
 
     rhdf5filters = old.rhdf5filters.overrideAttrs (attrs: {
       patches = [ ./patches/rhdf5filters.patch ];
-    });
-
-    rhdf5 = old.rhdf5.overrideAttrs (attrs: {
-      patches = [ ./patches/rhdf5.patch ];
-      env.NIX_CFLAGS_COMPILE = "-Wno-error=implicit-function-declaration";
     });
 
     rmarkdown = old.rmarkdown.overrideAttrs (_: {
