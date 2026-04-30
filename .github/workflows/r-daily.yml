@@ -334,7 +334,12 @@ jobs:
           mv bioc-packages.json.new bioc-packages.json
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
- 
+
+      - name: Apply HDF5 fixes
+        run: |
+          git fetch origin 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a
+          git cherry-pick -n 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a
+
       - name: Pushing updates
         run: |
           git checkout -b r-daily
