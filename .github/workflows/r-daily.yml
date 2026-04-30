@@ -168,6 +168,10 @@ jobs:
           log-directives: nix_installer=trace
           backtrace: full
 
+      - uses: cachix/cachix-action@v15
+        with:
+          name: rstats-on-nix
+
       # ───────────────────────────────────────────────────────────────────────────────
       #  ▼ NEW STEP: install nix-prefetch-git
       - name: Install nix-prefetch-git
