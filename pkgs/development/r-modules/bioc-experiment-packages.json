@@ -1,2610 +1,2617 @@
 {
   "extraArgs": {
-    "biocVersion": "3.22"
+    "biocVersion": "3.23"
   },
   "packages": {
     "ALL": {
       "name": "ALL",
-      "version": "1.52.0",
-      "sha256": "1mjw5wqsip2m85lyb9zxzv68bnp2p0a86lf7h4pmw7wf8675yqfc",
+      "version": "1.53.0",
+      "sha256": "0w9z9sdvz70rg8ifzm15702d118gxw6pgz1kpxsbvmhdyd6xnhjn",
       "depends": ["Biobase"]
     },
     "ALLMLL": {
       "name": "ALLMLL",
-      "version": "1.50.0",
-      "sha256": "012ch9yl5j6s7dy086f9643d6gvaqvqpmblvwv2cqrncqvhz980v",
+      "version": "1.51.0",
+      "sha256": "15h05mhqnggq0cwj5sacdxqi7nk3f3kb9x78vaicyrg7ipkypp64",
       "depends": ["affy"]
     },
     "ARRmData": {
       "name": "ARRmData",
-      "version": "1.46.0",
-      "sha256": "09h68kr79dqi65xbc0wgid2ac8c7958hrnlfsx0ng5w9q2vjqfqs",
+      "version": "1.47.0",
+      "sha256": "18rpwyh6ihnpkg16qxmclzj1xqayqgdn1h6xiikbf0fr48hsmwp5",
       "depends": []
     },
     "ASICSdata": {
       "name": "ASICSdata",
-      "version": "1.30.0",
-      "sha256": "1mr7cxqi68mdnc65d3fq1m02hbyp2shr2j2c60rkcf09saqh7v5h",
+      "version": "1.31.0",
+      "sha256": "1s604kkwixv6lg82v6h6y04inbng5glqjmqdcwz0l92k4hhdvd4d",
       "depends": []
     },
     "AWAggregatorData": {
       "name": "AWAggregatorData",
-      "version": "1.0.0",
-      "sha256": "11sf6i4xhnmijvsvxrm07rddpagn6sd9ykpsz9yxa4f4q4z6wd3p",
+      "version": "1.1.0",
+      "sha256": "0nn3b7cqckzxp18mmcapg87shsd6nm20dzi3n4v77hx26ysi5049",
       "depends": ["ExperimentHub"]
     },
     "Affyhgu133A2Expr": {
       "name": "Affyhgu133A2Expr",
-      "version": "1.46.0",
-      "sha256": "0yl5h630mlcpylfr2gp7i97l2y2gwbz0w0z6sprd3qd2a7bga9sw",
+      "version": "1.47.0",
+      "sha256": "1fzkm210gw686ys1x1yr585jfmr79fyxpv5rh7r5bdz9fbhkyrl2",
       "depends": []
     },
     "Affyhgu133Plus2Expr": {
       "name": "Affyhgu133Plus2Expr",
-      "version": "1.44.0",
-      "sha256": "0skq48qffh87lrj69fzbvafjijwalp5f5i7y2pna6hszdj42xgm7",
+      "version": "1.45.0",
+      "sha256": "0l5qkqyjhcgl394sx9zbqgr9mws359z51q5480ffv2pp6rgrs6nk",
       "depends": []
     },
     "Affyhgu133aExpr": {
       "name": "Affyhgu133aExpr",
-      "version": "1.48.0",
-      "sha256": "1k1m3b86m46vrwb5cas9s38czc8ldgjq5wsjsml3pd5j8l3n2b3z",
+      "version": "1.49.0",
+      "sha256": "10wqm7qmn26171zra5968wl9k8ksz1kfm4aqgks8l0da11hpgl13",
       "depends": []
     },
     "AffymetrixDataTestFiles": {
       "name": "AffymetrixDataTestFiles",
-      "version": "0.48.0",
-      "sha256": "04bjwipqjdmmzx5xc950cvzs14sag9a9pcmy6ibywxx2g69sl1xs",
+      "version": "0.49.0",
+      "sha256": "0nbvf1m9mqb29xc7hc6rpp9jw5gx2aqy1mlpbmq9qhmhdzswkxwv",
       "depends": []
     },
     "Affymoe4302Expr": {
       "name": "Affymoe4302Expr",
-      "version": "1.48.0",
-      "sha256": "0qz6ln4vxsyv4hg01wdagr6gfdkf1s7amlszdk0adlr7h3c6aqzq",
+      "version": "1.49.0",
+      "sha256": "1s0rx311visgiabmqqif6ashwx481a355dzzd1ni5bdyinn9lyp3",
       "depends": []
     },
     "AmpAffyExample": {
       "name": "AmpAffyExample",
-      "version": "1.50.0",
-      "sha256": "0r6p4hmdy1rqi1ijikygwmr3imcs12djw5y3a2rcpis8ziwwjiyv",
+      "version": "1.51.0",
+      "sha256": "0qwnrkg8m3h8cdvy8hpdql1g7xpf4vz06550mwaayw88xrsp0xc0",
       "depends": ["affy"]
-    },
-    "AneuFinderData": {
-      "name": "AneuFinderData",
-      "version": "1.38.0",
-      "sha256": "0k7xj1kb5cdz9j4hnf10kh9qp6hkc2vlsj6z01ybs9g9fski86v7",
-      "depends": []
     },
     "AshkenazimSonChr21": {
       "name": "AshkenazimSonChr21",
-      "version": "1.40.0",
-      "sha256": "1s6l9b1xhp0i6fcafwqwg3873v9ajld6s7jr33kr4jwpfca43cl3",
+      "version": "1.41.0",
+      "sha256": "0v0ac7wgn4gkg8p7a7zqn234qaim9nzqlcrib51i95ixyfb05cll",
       "depends": []
     },
     "AssessORFData": {
       "name": "AssessORFData",
-      "version": "1.28.0",
-      "sha256": "12889bfg3fgvhch1sr6b3z11cbp08qi5qnsjlckdn98hi4m1fwgp",
+      "version": "1.29.0",
+      "sha256": "1dzfggiqpdmqn1xhb59d3lkk1xdsd5fkmvbigbviwbig9jqiqhvs",
       "depends": ["DECIPHER", "RSQLite"]
     },
     "BeadArrayUseCases": {
       "name": "BeadArrayUseCases",
-      "version": "1.47.0",
-      "sha256": "0jh4fgz7wl4ihfri27ri5gxwyqmbvi5rfm4rqhsdbgjzc912x00d",
-      "depends": ["GEOquery", "limma"]
+      "version": "1.49.0",
+      "sha256": "02dpikqyvlb2kd8z5v1ip0iz2ysdyrfnwwxbd7zp2q07i2j8dq9z",
+      "depends": ["GEOquery", "beadarray", "limma"]
     },
     "BeadSorted_Saliva_EPIC": {
       "name": "BeadSorted.Saliva.EPIC",
-      "version": "1.18.0",
-      "sha256": "1xbry0rdwyhm1xsxv55ppiivsi40yrzd04h5pkb9bdi1rymcwvx4",
+      "version": "1.19.0",
+      "sha256": "11r554vp5fv8gpdsij3194k4maxxijvq88wh4na704jg2zdsj6g1",
       "depends": ["ExperimentHub", "minfi"]
     },
     "BioImageDbs": {
       "name": "BioImageDbs",
-      "version": "1.18.0",
-      "sha256": "0l6j1a86qg4vrs0pww16vcp1z86dn79kbqrp4njhpvcwlbwxgsjm",
+      "version": "1.19.0",
+      "sha256": "0zb8a134zwvhirfizdmjfyksh68bkdng8ps678dpa7l20bjb6z9s",
       "depends": ["AnnotationHub", "EBImage", "ExperimentHub", "animation", "einsum", "filesstrings", "magick", "magrittr", "markdown", "rmarkdown"]
     },
     "BioPlex": {
       "name": "BioPlex",
-      "version": "1.16.1",
-      "sha256": "0kighz3gcr8vdqzl7zh24a1mh3v5j4jfmyfblc1vmhg4s0anr8b2",
+      "version": "1.17.1",
+      "sha256": "1l79r07wkk79cv58n7hjhl21zm9ddsjmnaavdv9i6fmp181sfx4a",
       "depends": ["BiocFileCache", "GEOquery", "SummarizedExperiment", "graph"]
     },
     "BloodCancerMultiOmics2017": {
       "name": "BloodCancerMultiOmics2017",
-      "version": "1.30.1",
-      "sha256": "1dq7d4k8zwbgk6nyqfvicqy33f86rkygmhn3jjrv25nfasj9jifr",
+      "version": "1.31.1",
+      "sha256": "1zz9v05lh377hqggcdg32j0qr2yyv8nbpc7chnckv8r290d4pgas",
       "depends": ["Biobase", "DESeq2", "RColorBrewer", "SummarizedExperiment", "beeswarm", "devtools", "dplyr", "ggdendro", "ggplot2", "glmnet", "gtable", "ipflasso", "reshape2", "scales", "survival", "tibble"]
     },
     "CCl4": {
       "name": "CCl4",
-      "version": "1.48.0",
-      "sha256": "1hk1cky8w8cs9js46srgjj38x7j67w0a4kqi3i2v62rzi6v9f601",
+      "version": "1.49.0",
+      "sha256": "14c32nb594fr8zj7g6kf0rwi7bvficjvsh91nnlraba04k0rpzps",
       "depends": ["Biobase", "limma"]
     },
     "CENTREprecomputed": {
       "name": "CENTREprecomputed",
-      "version": "1.0.0",
-      "sha256": "0msldaw5yfrxa836irnmndzivc399x2pjcbzs5bydriphgqln30n",
+      "version": "1.1.0",
+      "sha256": "070w35q72wy2fzkmypba76wb4kwh2fyvzb8fiip5k9fagxh1i705",
       "depends": ["BiocGenerics", "DBI", "ExperimentHub", "RSQLite"]
     },
     "CLL": {
       "name": "CLL",
-      "version": "1.50.0",
-      "sha256": "1vn11fz1hdny8nznv5bn6q38qjb5hf53r4yxa6mb92dbycxbfm0m",
+      "version": "1.51.0",
+      "sha256": "1jpl5kn6fz4ixm4kvz8ikyj7hmg1m2l4xb8y6v8l6b75blrjh6ai",
       "depends": ["Biobase", "affy"]
     },
     "CLLmethylation": {
       "name": "CLLmethylation",
-      "version": "1.30.0",
-      "sha256": "03pcybz187j5sf23mrhf55a8cb4s9g951gql27d98zq4iiw1dyz4",
+      "version": "1.31.0",
+      "sha256": "17gmas4g3g0ckblskrb82wi0d95s9ras6gliydb751vlqvy0m9fb",
       "depends": ["ExperimentHub", "SummarizedExperiment"]
     },
     "COHCAPanno": {
       "name": "COHCAPanno",
-      "version": "1.46.0",
-      "sha256": "00gfd96bk1m9a0y8ba6ri495iaw0bfa6b335z8n8zgs6bzbjxdgf",
+      "version": "1.47.0",
+      "sha256": "0kgfvhiw5d9xbdzbskylrg0sbkf6g9cplyncsr2b9pjnk1s53mmm",
       "depends": []
     },
     "CONFESSdata": {
       "name": "CONFESSdata",
-      "version": "1.38.0",
-      "sha256": "1ywlyc1q51013lmlg5asqs67yngvhbyykzgm3m6yq07b5bcqbq9g",
+      "version": "1.39.0",
+      "sha256": "0d4rrnd1wwqw05a475gb8mki8dhsfjipfc8sa8xqlk99bgl59d4w",
       "depends": []
     },
     "COPDSexualDimorphism_data": {
       "name": "COPDSexualDimorphism.data",
-      "version": "1.46.0",
-      "sha256": "11rvd7kbgprzbr7ax04s9i5gdfl8yikg5gxz7kf6aj6p1aahkdbq",
+      "version": "1.47.0",
+      "sha256": "04mmssfz4jq0hmjc977ib25mb8xikp2fzl6zbg9hwgs1lmf6hjwc",
       "depends": []
     },
     "COSMIC_67": {
       "name": "COSMIC.67",
-      "version": "1.46.0",
-      "sha256": "0i8qpny2bch62zgh1jjlm9a66yjpiw90g3hpyizjnrgr9lzyn295",
+      "version": "1.47.0",
+      "sha256": "1snj8wddagii7csdly3p4cazh81a61gi9kq9icnq8jm01iw43s3v",
       "depends": ["GenomicRanges", "SummarizedExperiment", "VariantAnnotation"]
     },
     "CRCL18": {
       "name": "CRCL18",
-      "version": "1.30.0",
-      "sha256": "1fic6bzvwsy6yyjndmwz0q8zcck2p61lrb7b9p90a8zwi3gvfl01",
+      "version": "1.31.0",
+      "sha256": "0r25g63xbpgs6f5y7db5cagiqjlmy7zd0smcssircq8n22jdkzj6",
       "depends": ["Biobase"]
     },
     "CardinalWorkflows": {
       "name": "CardinalWorkflows",
-      "version": "1.42.0",
-      "sha256": "11cv9z9dyx0bwrssgv7l6v8g80y4g6p0vj7nmbv7kfi8kwc50dvl",
+      "version": "1.43.0",
+      "sha256": "0864b61vkrz9aa7y9yfa52az9qn3fyliwz1i3w8kr5pfwkvb12ml",
       "depends": ["Cardinal"]
     },
     "CellMapperData": {
       "name": "CellMapperData",
-      "version": "1.36.0",
-      "sha256": "1jfk300bcx45l8bib6rf9bg2sl6xz37yql2188474nvb30glqkzx",
+      "version": "1.37.0",
+      "sha256": "1ddfb73gci885khrgjvnpycdzgrafalim6d09wpf23vq8zfw59hc",
       "depends": ["CellMapper", "ExperimentHub"]
     },
     "ChAMPdata": {
       "name": "ChAMPdata",
-      "version": "2.42.0",
-      "sha256": "03x2p6kq4vyr6vg08nymzarjk4dxgsyazcbjf3yf0ryhnfbah8xf",
+      "version": "2.43.0",
+      "sha256": "1qqfb5607jf6wzni5yz2xi5q38xzmxq9bpl47d32rpnray7m4aww",
       "depends": ["BiocGenerics", "GenomicRanges"]
     },
     "ChIPDBData": {
       "name": "ChIPDBData",
-      "version": "1.0.0",
-      "sha256": "03ii79v6xqv21lp8bzpijnzvyqa1cnv8gij0v4wxpas84f5bnlqv",
+      "version": "1.1.0",
+      "sha256": "10cmb4xn606vi66lb9gv72j1izz6wn8kd5x11fzy5wf1bp3ig7cp",
       "depends": ["ExperimentHub"]
     },
     "ChIPXpressData": {
       "name": "ChIPXpressData",
-      "version": "1.48.0",
-      "sha256": "05hg53338mvlh6bz27zqpig0445xmdrw5m7c7nw464skc0s7kdpk",
+      "version": "1.49.0",
+      "sha256": "0ijw9agpysrm50wpn7sr4xnxp66jbzdg5vmym1cid43123126dgg",
       "depends": ["bigmemory"]
     },
     "ChIPexoQualExample": {
       "name": "ChIPexoQualExample",
-      "version": "1.34.0",
-      "sha256": "17kyrrnl47fajdwmdilmmgyzcpc7qr20c7v71c71bqwl5pvf97hs",
+      "version": "1.35.0",
+      "sha256": "00cf2i1qr5gvrbb17hspfhgqss1vy7p7qrw6hpcxg7shaabddy8s",
       "depends": []
     },
     "ChimpHumanBrainData": {
       "name": "ChimpHumanBrainData",
-      "version": "1.48.0",
-      "sha256": "08z70qr2zxbx27ppp6q4dvjr45zrpkz09jfrf0wcq9q6rrzd2kpw",
+      "version": "1.49.0",
+      "sha256": "0ac103mrnr6zp33j4mxccs11j0dhdf5aj4n310s20q0z6jdmbib9",
       "depends": ["affy", "hexbin", "limma", "qvalue", "statmod"]
     },
     "CluMSIDdata": {
       "name": "CluMSIDdata",
-      "version": "1.26.0",
-      "sha256": "1mi9jfzsvq009k5wz1a82pv465n9n8d01jqisq3yf47xjmsnssin",
+      "version": "1.27.0",
+      "sha256": "0iqk6zs5fzky7wr72fn5m7ybnlq4ngc9fg0cslm0wxdz0hc9cza7",
       "depends": []
     },
     "CoSIAdata": {
       "name": "CoSIAdata",
-      "version": "1.10.0",
-      "sha256": "1jihpjiyibx9a0ygvvlk2x1szypm6jhf0xwb17y56nr3yb8xyl19",
+      "version": "1.11.0",
+      "sha256": "1nqbhk34jvhj0v5wz4hzpw1z7549gg7jdp520ncm28n16jc5n1y8",
       "depends": ["ExperimentHub"]
     },
     "ConnectivityMap": {
       "name": "ConnectivityMap",
-      "version": "1.46.0",
-      "sha256": "1k0dps8j3q59hn4mv7g92kf8h8hyjr1xnmz8a1wrxdmiqi0zjdl4",
+      "version": "1.47.0",
+      "sha256": "09bd31gjadvkby74r5kmfypsrfh864h1igw6zzhgb6aynwz5fgp6",
       "depends": []
     },
     "CopyNeutralIMA": {
       "name": "CopyNeutralIMA",
-      "version": "1.28.0",
-      "sha256": "07b8bc38xcrxmq8y4fl5bnf0gghv1agsp7w31xj15il8c7dp8g5n",
+      "version": "1.29.0",
+      "sha256": "1l2np638x20mckwp6h0cfvansqlfy94h08blpfci44yxgyzz1n8a",
       "depends": ["ExperimentHub", "Rdpack"]
     },
     "CopyhelpeR": {
       "name": "CopyhelpeR",
-      "version": "1.42.0",
-      "sha256": "1bnili7srnzapbmy1rh6ql2zmk0y7yzpbmdqbs6rri7wkq03frzf",
+      "version": "1.43.0",
+      "sha256": "1350zd8zmh8sycbkmx80xvrvixgjmizabq6ixfi2m9inqgck6rdg",
       "depends": []
     },
     "CytoMethIC": {
       "name": "CytoMethIC",
-      "version": "1.6.0",
-      "sha256": "1887q2k69yhn4vx9iax6yc1vksrb0pz7y88198x201qrksjx0jhq",
+      "version": "1.7.0",
+      "sha256": "0ha0h64r1nbq804kaj57n1rvb3wrly2ib7ka0b2gdbhpmll7kci1",
       "depends": ["BiocManager", "BiocParallel", "ExperimentHub", "sesame", "sesameData"]
     },
     "DAPARdata": {
       "name": "DAPARdata",
-      "version": "1.40.0",
-      "sha256": "1nv971z10cdnx9j4lv6hfwwcsn53fh74k4g6hs0rqqywg4ccz0zg",
+      "version": "1.41.0",
+      "sha256": "1s0q7s5gfaig25qkjzj4wi6zcg29xymi2z9dagildnsjyavzrzzj",
       "depends": ["MSnbase"]
     },
     "DExMAdata": {
       "name": "DExMAdata",
-      "version": "1.18.0",
-      "sha256": "05623d8wjk4db0ac43frqn700pgx024vpby8yj4iz2pri9cjw6b2",
+      "version": "1.19.0",
+      "sha256": "0m8a184widinhk4v3rbi7vlva4hjygn33svgmzdw8h30lxqb6n0z",
       "depends": ["Biobase"]
     },
     "DLBCL": {
       "name": "DLBCL",
-      "version": "1.50.0",
-      "sha256": "1lx42nm5mpx3ds09l316iyx8l50250k4pz1nd8qk9g7hzn5m5rqz",
+      "version": "1.51.0",
+      "sha256": "0yz46l2b83z56whj7blwci2ws5jqmkylhv81jhjd9lmkj41ygy3s",
       "depends": ["Biobase", "graph"]
     },
     "DMRcatedata": {
       "name": "DMRcatedata",
-      "version": "2.28.0",
-      "sha256": "0zilswq95yhqwvxbhh6mn0ma9653na53g53y545kkbn4p2cdmvf0",
+      "version": "2.29.0",
+      "sha256": "195rnvxf0wdp4x99bjdhhvgyp54hi1qv0nmbdd6a39mf3d3ma72g",
       "depends": ["ExperimentHub", "GenomicFeatures", "Gviz", "IlluminaHumanMethylation450kanno_ilmn12_hg19", "IlluminaHumanMethylationEPICanno_ilm10b4_hg19", "plyr", "readxl", "rtracklayer"]
+    },
+    "DMRsegaldata": {
+      "name": "DMRsegaldata",
+      "version": "0.99.7",
+      "sha256": "0i56rc8m0j6d8i5kyd0v9nqx2ynqidq0m1szsp2vihbqrr04n9bq",
+      "depends": ["ExperimentHub"]
     },
     "DNAZooData": {
       "name": "DNAZooData",
-      "version": "1.10.0",
-      "sha256": "1hb0xm5iynjssvjm98jknp0f63s61p41f4gsvbqlhl1amdggzwq1",
+      "version": "1.11.0",
+      "sha256": "18ywfx1n4g51pdr5vl7qxb4sx79y0g9qvhzh2xcq86q1gl3zia9c",
       "depends": ["BiocFileCache", "HiCExperiment", "S4Vectors", "rjson"]
     },
     "DeSousa2013": {
       "name": "DeSousa2013",
-      "version": "1.46.0",
-      "sha256": "1iz0h8qldrqb4vib22mq0z5lm436j6im9lzs1jqmf4bmr5r2z0w3",
+      "version": "1.47.0",
+      "sha256": "0qq9k8z9w9n3mac0anilh3sr6njwxjxq0wx52k9dnbiigqd4mx5p",
       "depends": ["AnnotationDbi", "Biobase", "ConsensusClusterPlus", "ROCR", "affy", "cluster", "frma", "frmaTools", "gplots", "hgu133plus2_db", "hgu133plus2frmavecs", "pamr", "rgl", "siggenes", "survival", "sva"]
     },
     "DoReMiTra": {
       "name": "DoReMiTra",
-      "version": "1.0.0",
-      "sha256": "1i1njmfndwh9m63kpp2ym5jxy5bqygynx681hydzr4ya33hczpax",
+      "version": "1.1.2",
+      "sha256": "09r9mrbkqx5i1wgdwff6zbshh9hvpcdaf4aafcgkzghd7qxsgdq7",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "glue", "scater"]
     },
     "DonaPLLP2013": {
       "name": "DonaPLLP2013",
-      "version": "1.48.0",
-      "sha256": "0wbgg6xpl5f4xrh9np2gy0lmp3jf3njzf8wmcqcyh65xvspjl005",
+      "version": "1.49.0",
+      "sha256": "00npyispkzq04yp9srksggxxasi938zjkhfa9cpqx2mcqwv2hkd2",
       "depends": ["EBImage"]
     },
     "DropletTestFiles": {
       "name": "DropletTestFiles",
-      "version": "1.20.0",
-      "sha256": "0z8a9bk80g0kb0llxh603wwlgkjxca5kh8ifrxspjgjjp33i8j5d",
+      "version": "1.21.0",
+      "sha256": "1g47gc8hfayjgxy1xp33wdl121xb654nwqsjbi6cl6h5xjj5nlxb",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors"]
     },
     "DrugVsDiseasedata": {
       "name": "DrugVsDiseasedata",
-      "version": "1.46.0",
-      "sha256": "166s6m9vj4sd9qbrxfbsp1my4kcnh0b85g4b90ksy71q9pfk2hhz",
+      "version": "1.47.0",
+      "sha256": "06sr8pjkw9651rpigmhxqv9q5zhdnf7ng15csp2jk51zy9bdir6j",
       "depends": []
     },
     "DuoClustering2018": {
       "name": "DuoClustering2018",
-      "version": "1.28.0",
-      "sha256": "0l9h160d4y2gay3zs4j4fv4a24ppk3ml5db5s6bqq2jkbnxc1si9",
+      "version": "1.29.0",
+      "sha256": "1qvh9sjrjdv3gd0fvg72gkv71s7by75sp4c9q2rvhwbjpfpbdvan",
       "depends": ["ExperimentHub", "dplyr", "ggplot2", "ggthemes", "magrittr", "mclust", "purrr", "reshape2", "tidyr", "viridis"]
     },
     "DvDdata": {
       "name": "DvDdata",
-      "version": "1.46.0",
-      "sha256": "1m45kpafn321h070gcd1nd3q753ijv08sqywldflmzdjhdamashx",
+      "version": "1.47.0",
+      "sha256": "1v71d6bwpvj67525wxnb4fmhjiv0x9ccszmkjnqidx6djnv2vw0s",
       "depends": []
     },
     "EGSEAdata": {
       "name": "EGSEAdata",
-      "version": "1.38.0",
-      "sha256": "1pvkalvcdl2v3kjrzrsypjqf619rqn4yivccfj3dr5ksn5zlix9p",
+      "version": "1.39.0",
+      "sha256": "133mj3yhmvj3xbydaij9wvii7hyy4yf1smsl4f4zq9sb80sp9ncv",
       "depends": []
     },
     "ELMER_data": {
       "name": "ELMER.data",
-      "version": "2.34.0",
-      "sha256": "0gv9gpih4l2p36i017kw63ypxfrnacwjr8wa8n0byngjcvifc5i6",
+      "version": "2.35.0",
+      "sha256": "18cjrfi8gy31msy0vcm7fkzycrvjgyzys0vgzsp395z8xhvrr340",
       "depends": ["GenomicRanges"]
+    },
+    "EMTscoreData": {
+      "name": "EMTscoreData",
+      "version": "0.99.10",
+      "sha256": "0k8n30a3pckznkca2qnif3gq8xrn2wmc7bslnfa1sqjvq81pv7fa",
+      "depends": ["AnnotationHub", "ExperimentHub", "Seurat", "SingleCellExperiment", "SummarizedExperiment", "ggplot2"]
     },
     "EatonEtAlChIPseq": {
       "name": "EatonEtAlChIPseq",
-      "version": "0.48.0",
-      "sha256": "0f6mmjzbyp46dbxmmy11z5z4s0irl4dwkqvj4rky9chb3nfrccrs",
+      "version": "0.49.0",
+      "sha256": "14hgdj62n8h7qxhwqh67g3d88jnii7b2dsy5rymwqs4xmparql0y",
       "depends": ["GenomicRanges", "ShortRead", "rtracklayer"]
     },
     "EpiMix_data": {
       "name": "EpiMix.data",
-      "version": "1.12.0",
-      "sha256": "1zmadz02vxw5ipzb03xamn1ccnfdh1fn1ibii5vgyr4dj3gp6qx2",
+      "version": "1.13.0",
+      "sha256": "04z7vgkq5npmqf97pzd2v1kbz02hai194bc67v78q35j1ccvh25g",
       "depends": ["ExperimentHub"]
     },
     "EpipwR_data": {
       "name": "EpipwR.data",
-      "version": "1.4.0",
-      "sha256": "14ha82qk26rks8idl0229zz4kmnps5raaf5rfai7a866zccsi79d",
+      "version": "1.5.0",
+      "sha256": "03jsinym530mr630kdrp8hl49jqsq1vxqw8p2h4vcf4fp3iq7dsk",
       "depends": ["ExperimentHub"]
     },
     "FANTOM3and4CAGE": {
       "name": "FANTOM3and4CAGE",
-      "version": "1.46.0",
-      "sha256": "0drb9ifq4vcnxjp0a5cyqzdy206zk6yy7vq569s86bgb0m254knx",
+      "version": "1.47.0",
+      "sha256": "1qgqgh0rd1cnk44rirgbrz2cckvqcn71i6q4bvhp999ksq9s9llz",
       "depends": []
     },
     "FIs": {
       "name": "FIs",
-      "version": "1.38.0",
-      "sha256": "0qkpj9kl0xb6yhs7fgln6khywdfcdkq63lk79kpw1lnz8id1nxkc",
+      "version": "1.39.0",
+      "sha256": "0spjawlda67253l66v82qjfcq86i0lgl7k45spri2g5lj913pkks",
       "depends": []
     },
     "FieldEffectCrc": {
       "name": "FieldEffectCrc",
-      "version": "1.20.0",
-      "sha256": "03r075qdnp3951scr9jhr1v8yr548p250d4qwz2a8cj4792i79rg",
+      "version": "1.21.0",
+      "sha256": "0y2n0z6n59sawhgrwhzfhaklh6miw9fikh2y2gpn102dblqqj323",
       "depends": ["AnnotationHub", "BiocStyle", "DESeq2", "ExperimentHub", "RUnit", "SummarizedExperiment"]
     },
     "Fletcher2013a": {
       "name": "Fletcher2013a",
-      "version": "1.46.0",
-      "sha256": "00crh51ff2bwzh0x8xysd7lanmhiycf69qc187bghpyil2pg2lad",
+      "version": "1.47.0",
+      "sha256": "1ni0b1fssyg0p2rlf4bz5dd5hrb38l7qw52ib1n9h2a1i93fw48s",
       "depends": ["Biobase", "VennDiagram", "gplots", "limma"]
     },
     "Fletcher2013b": {
       "name": "Fletcher2013b",
-      "version": "1.46.0",
-      "sha256": "0z5rn4j5q2sq9d14yblcxmlc8bii477r4xyisza49p3mk78dqql4",
+      "version": "1.47.1",
+      "sha256": "0wsmapah92w2ljwyrb0flkxw35di6lbdvaa0q0ga3kmdzad9mz1f",
       "depends": ["Fletcher2013a", "RColorBrewer", "RTN", "RedeR", "igraph"]
     },
     "FlowSorted_Blood_450k": {
       "name": "FlowSorted.Blood.450k",
-      "version": "1.48.0",
-      "sha256": "183kpb9kj496yp96x9r808vbs123gkk9nbyfp2hgxbq6av85mmc5",
+      "version": "1.49.0",
+      "sha256": "02m9p231g5nwqaqkgh1p6ydbfdv467z6qzzk3myx8rxxlh0469jf",
       "depends": ["minfi"]
     },
     "FlowSorted_Blood_EPIC": {
       "name": "FlowSorted.Blood.EPIC",
-      "version": "2.14.0",
-      "sha256": "0f4ak94idsq9f4p21337vkrhjn8y79sa3f5m2asxvbczgdgjm1pa",
+      "version": "2.15.0",
+      "sha256": "06h1kcxjwgbwpxcg70ik84yd59k5asj3npk4vsyv3zw85y65z0kh",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "genefilter", "minfi", "nlme", "quadprog"]
     },
     "FlowSorted_CordBlood_450k": {
       "name": "FlowSorted.CordBlood.450k",
-      "version": "1.38.0",
-      "sha256": "0wqdyxd1kqs3z3yg0hbg8hq8dq76z32ldwf6468rmx8vd0qy7jzp",
+      "version": "1.39.0",
+      "sha256": "041dn9gwvgyqyn41x52raibzcym9bqpwyf6lgbvn472jqrvd5f0s",
       "depends": ["minfi"]
     },
     "FlowSorted_CordBloodCombined_450k": {
       "name": "FlowSorted.CordBloodCombined.450k",
-      "version": "1.26.0",
-      "sha256": "0w3aqnldq7xwv15fhm4dn4xysbw37ipxr6nmmdf0pvjg19dkfl7n",
+      "version": "1.27.0",
+      "sha256": "0bp9fnyqzlqqqmi17yz20a4fnrq76h0f300wwmagjm5qsmy93638",
       "depends": ["AnnotationHub", "ExperimentHub", "IlluminaHumanMethylation450kanno_ilmn12_hg19", "IlluminaHumanMethylationEPICanno_ilm10b4_hg19", "SummarizedExperiment", "minfi"]
     },
     "FlowSorted_CordBloodNorway_450k": {
       "name": "FlowSorted.CordBloodNorway.450k",
-      "version": "1.36.0",
-      "sha256": "0zfz15h1yar07r75h3la24mb3lm4l89hs1r1x8sf2gkbji1absa7",
+      "version": "1.37.0",
+      "sha256": "19w3wqjc3q2vdn81lxqmwbv3hkh9w6xlqa97garcwn2nfsj6wm0f",
       "depends": ["minfi"]
     },
     "FlowSorted_DLPFC_450k": {
       "name": "FlowSorted.DLPFC.450k",
-      "version": "1.46.0",
-      "sha256": "13g4cfi10ca0yhsbj89a5mhi6ayzlss8i7pzap9mh8fksxk4yq7p",
+      "version": "1.47.0",
+      "sha256": "0lbxgrdxh595fhh7mw783zkl4qld8zkmqvid98xrwvhalbk0whaf",
       "depends": ["minfi"]
     },
     "GIGSEAdata": {
       "name": "GIGSEAdata",
-      "version": "1.28.0",
-      "sha256": "0ahxh8l3j199dvv91l9p59ida8mf51mglxhf49jf7y0dvvjvg98q",
+      "version": "1.29.0",
+      "sha256": "1y016pvx03h7ixravbbjgw3nwms6xp7cpy7pqvhyq8xp0la35zps",
       "depends": []
     },
     "GSBenchMark": {
       "name": "GSBenchMark",
-      "version": "1.30.0",
-      "sha256": "1jxi6wln72xf89qdgz4lz4xaagr8d53n6sv6vmc0jbqw4rkhd5pd",
+      "version": "1.31.0",
+      "sha256": "0vbgjw9mzd2bsq80zpxxzajcvps1bh7z8baff854v2pg268blv9j",
       "depends": []
     },
     "GSE103322": {
       "name": "GSE103322",
-      "version": "1.16.0",
-      "sha256": "02pf1130i4jr1djgj147bdq673fi8pnw8wsbj508ddxhkz2ksmyx",
+      "version": "1.17.0",
+      "sha256": "0jh988idsgrgkhi67w5ppx6ihb3h3r01sbjd8ll6fmnirv9khgad",
       "depends": ["Biobase", "GEOquery"]
     },
     "GSE13015": {
       "name": "GSE13015",
-      "version": "1.18.0",
-      "sha256": "1b86vmqn1c7dw66954qnkph6k50blycb3ynp3y5p3k489lxk169x",
+      "version": "1.19.0",
+      "sha256": "1nj8fimpy5s62b4na7gg031a1mbbjnkzpwwkdjhjrd0kaaix8r35",
       "depends": ["Biobase", "GEOquery", "SummarizedExperiment", "preprocessCore"]
     },
     "GSE159526": {
       "name": "GSE159526",
-      "version": "1.16.0",
-      "sha256": "02h9ybhxl5klckpv07yxm1fy5shgl8g6rxr5qq6sp4l3jk6vs72h",
+      "version": "1.17.0",
+      "sha256": "16v9dm9nang03jg4isi7jalyh98anhkxabw9ydw28cfn8j7my3n8",
       "depends": []
     },
     "GSE62944": {
       "name": "GSE62944",
-      "version": "1.38.0",
-      "sha256": "11a381sq8cganljx6z21lay50ngrdlnp80g1sb02y80hvh4mdqbd",
+      "version": "1.39.0",
+      "sha256": "17wyajg0hawgm0j85nhpzi75c4vwxfmfkpl27m200azycqi5i80n",
       "depends": ["Biobase", "GEOquery"]
     },
     "GSVAdata": {
       "name": "GSVAdata",
-      "version": "1.46.0",
-      "sha256": "1my450czcqr30y6llpmhsxnah7rdbq93j70kavcbcd5w5l1ggq0r",
-      "depends": ["Biobase", "GSEABase", "SummarizedExperiment", "hgu95a_db"]
+      "version": "1.47.3",
+      "sha256": "0s9fj36jc4xbqlrcn48pixl0l3kxsbgbpw1zr6711ky0qi9n6gvx",
+      "depends": ["Biobase", "GSEABase", "Matrix", "SpatialExperiment", "SummarizedExperiment"]
     },
     "GWASdata": {
       "name": "GWASdata",
-      "version": "1.48.0",
-      "sha256": "1fp8hm7045alvr02w0klijlyqm2f3ap2vndk0xa537cjfj1yxpcy",
+      "version": "1.49.0",
+      "sha256": "0kmm9c8m8ly6gin8c0hflik2yd6fcqkx65f2ld14jl3kh06naxc3",
       "depends": ["GWASTools"]
     },
     "GenomicDistributionsData": {
       "name": "GenomicDistributionsData",
-      "version": "1.18.0",
-      "sha256": "1phk9fcf25xp94j6300mah8bxp2xhnzp8fm3ilqkxx2gmnbxl6hl",
+      "version": "1.19.0",
+      "sha256": "073kpcdlbijaygkm4ygm93iz9ih4iq6jv1dz0bhq1ba3hd5xksin",
       "depends": ["AnnotationFilter", "AnnotationHub", "BSgenome", "ExperimentHub", "GenomeInfoDb", "GenomicFeatures", "GenomicRanges", "data_table", "ensembldb"]
     },
     "GeuvadisTranscriptExpr": {
       "name": "GeuvadisTranscriptExpr",
-      "version": "1.38.0",
-      "sha256": "0zgpihyy8rxcfnznpylva2iyzw5pn442a19g5df0chwr847n4cj7",
+      "version": "1.39.0",
+      "sha256": "15xf0c1ky6w7fi76aqsp2a37xyhbiw4l7kqvq5s8hqbpwfglivk9",
       "depends": []
     },
     "HCAData": {
       "name": "HCAData",
-      "version": "1.26.0",
-      "sha256": "0l7ysy52w4nj4jb8vp7rm219hlnla9qxaqpgcmkn9q2wvbzrdcds",
+      "version": "1.27.0",
+      "sha256": "1fncx6p2gxy2jzhlkd921cl1k2fpjzfcwz5i4kdcj5hksr3lf4ab",
       "depends": ["AnnotationHub", "ExperimentHub", "HDF5Array", "SingleCellExperiment"]
     },
     "HCATonsilData": {
       "name": "HCATonsilData",
-      "version": "1.8.0",
-      "sha256": "1p7hdkm58w35r6d9hgkbq0ns7i8qgm7a9zd5g81cbl1cxl49fh7d",
+      "version": "1.9.0",
+      "sha256": "0hhvn7xmrqllv619x1f4crhgd7qbadakk5ghqfxcixrrclk56f2f",
       "depends": ["ExperimentHub", "HDF5Array", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "SummarizedExperiment", "base64enc", "htmltools", "rmarkdown"]
     },
     "HD2013SGI": {
       "name": "HD2013SGI",
-      "version": "1.50.0",
-      "sha256": "1yxjlmjjy1qj43yjzp109pcj2c3r4slhs5lmvsj2q2px3fp90ak5",
+      "version": "1.51.0",
+      "sha256": "0a1aycqnqkjk38hc44qfmhylr64w9n3gfap886670ksg5v42r5ni",
       "depends": ["EBImage", "LSD", "RColorBrewer", "geneplotter", "gplots", "limma", "splots", "vcd"]
     },
     "HDCytoData": {
       "name": "HDCytoData",
-      "version": "1.30.0",
-      "sha256": "041kgn0jzd410hj001642m2ga2bamz6bbjsg2f261zyik35cxhsn",
+      "version": "1.31.0",
+      "sha256": "0f56i0zn50bk8w40ib120dzw9cvsflggvib3k7ib6fqar1kkkysc",
       "depends": ["ExperimentHub", "SummarizedExperiment", "flowCore"]
     },
     "HEEBOdata": {
       "name": "HEEBOdata",
-      "version": "1.48.0",
-      "sha256": "0028dg3p40hs84vy6c3cdmv36j97gvizv0dnmacslsx8p1d7kx0r",
+      "version": "1.49.0",
+      "sha256": "0ixvmyj3j3im2z75ifxvlwsjr9xypaklpx5kxzwlvah0214skbdm",
       "depends": []
     },
     "HIVcDNAvantWout03": {
       "name": "HIVcDNAvantWout03",
-      "version": "1.50.0",
-      "sha256": "1175j53352601v2dmgh8pihii3fj4yy9c87ij3qxw3dsmg28dx9c",
+      "version": "1.51.0",
+      "sha256": "1xbm92farbx66a3dja1ka0xpzgs4w1yw1q2ad0y0zhvh16b116j0",
       "depends": []
     },
     "HMP16SData": {
       "name": "HMP16SData",
-      "version": "1.30.0",
-      "sha256": "0dp0lbfa5h9613vbv2fj2zmi6r846zq1dfcz7vlhxynmhc229ib1",
+      "version": "1.31.0",
+      "sha256": "1r78h3if1x3csxrqz6pgnmprpmpypsj1xgi4zx78z25j3wmk84qp",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "assertthat", "dplyr", "kableExtra", "knitr", "magrittr", "readr", "stringr", "tibble"]
     },
     "HMP2Data": {
       "name": "HMP2Data",
-      "version": "1.24.0",
-      "sha256": "0vmx3pc0vfalarjzbblysb9ji191gkr51rhpbkpsa893dp361q5w",
+      "version": "1.25.0",
+      "sha256": "1wxr569cgc0wp7hc5h9szgmzczxxhg6fr8l6y7m9178s3l7kpf8l",
       "depends": ["AnnotationHub", "ExperimentHub", "MultiAssayExperiment", "S4Vectors", "SummarizedExperiment", "assertthat", "data_table", "dplyr", "kableExtra", "knitr", "magrittr", "phyloseq", "readr"]
     },
     "HSMMSingleCell": {
       "name": "HSMMSingleCell",
-      "version": "1.30.0",
-      "sha256": "0a5na2c9m3v3iz5wls8csazrw6nfs25cdg1klq8z5n6p68y6fr8d",
+      "version": "1.31.0",
+      "sha256": "1iym8gzvlhi3xply61drdbshvpb7adgkbrw4ccwd299h95x6w6fh",
       "depends": []
     },
     "HarmanData": {
       "name": "HarmanData",
-      "version": "1.38.0",
-      "sha256": "1lwb9bg1a081ri7kjk876198hlzsd3z3bg534si3ji5iamwhqqsp",
+      "version": "1.39.0",
+      "sha256": "0rsllnr042hfj86hx4s1wyh3riqsdp9cpms6n6nls6wsd9a2gqnk",
       "depends": []
     },
     "HarmonizedTCGAData": {
       "name": "HarmonizedTCGAData",
-      "version": "1.32.0",
-      "sha256": "13ns6mx47kj3ij2sfpjfiqviqc6c38hnqbiskgglm32r46cp50ph",
+      "version": "1.33.0",
+      "sha256": "0saxyxd51gild5ckfwlbpvx8ihvi3w6hkp845ghyq4cm86davvz6",
       "depends": ["ExperimentHub"]
     },
     "HelloRangesData": {
       "name": "HelloRangesData",
-      "version": "1.36.0",
-      "sha256": "1dz95k894vwzn5dh92qrkr9asvzhh6vcvc781s4fixxp0cg88riv",
+      "version": "1.37.0",
+      "sha256": "0z6jwc79ki4wq6ipf9d2aw9hfm45bw9ldw3rx7dklr9fglmify12",
       "depends": []
     },
     "HiBED": {
       "name": "HiBED",
-      "version": "1.8.0",
-      "sha256": "0caphr7ws9bpmhfn8d3yrlarrb8bx71agdjfmj9v1llq973shfvv",
+      "version": "1.9.0",
+      "sha256": "1dh6nkpn6ljnknfai16p8rprzsc917mbg9awf5lvdkl20zi49fal",
       "depends": ["AnnotationHub", "FlowSorted_Blood_EPIC", "FlowSorted_DLPFC_450k", "SummarizedExperiment", "dplyr", "minfi", "tibble"]
     },
     "HiCDataHumanIMR90": {
       "name": "HiCDataHumanIMR90",
-      "version": "1.30.0",
-      "sha256": "0ps0ak0gd03b1fm9zazh86qfcp47wkb3mh43vkzqbkcm8sx3b4vx",
+      "version": "1.31.0",
+      "sha256": "1bj5q397lwp62aj0x68pqxqf8wn4kdwmiysrcrmd2k9wqdr7w3wq",
       "depends": []
     },
     "HiCDataLymphoblast": {
       "name": "HiCDataLymphoblast",
-      "version": "1.46.0",
-      "sha256": "1j2mipl1zgpf9jivfl652pmx0r42pgjjcx2iwq4xml2srvy3yd3f",
+      "version": "1.47.0",
+      "sha256": "0jabp99q8gs46rcsr8wnk510zcqprp78hhfzyrmvzfnwrw5xczpi",
       "depends": []
     },
     "HiContactsData": {
       "name": "HiContactsData",
-      "version": "1.12.0",
-      "sha256": "0r9r9jvvr0fyvxmmgvm8c1bx8svn999q5rv7d9fiysjc1q2njc38",
+      "version": "1.13.0",
+      "sha256": "028d7fj46q9xjcw1b9vb1hh8lv9zsmrd1187z4qd3iq4gsi3sgnr",
       "depends": ["AnnotationHub", "BiocFileCache", "ExperimentHub"]
     },
     "HighlyReplicatedRNASeq": {
       "name": "HighlyReplicatedRNASeq",
-      "version": "1.22.0",
-      "sha256": "075mi739jgr5h5zjxgd5qhqxmpqsqwzmr6dmvga7gmcyslldjkqg",
+      "version": "1.23.0",
+      "sha256": "0jf7jwnpcxchnq41j135i8c082p12vjpg5s68p3nwwvkz7pbhg4m",
       "depends": ["ExperimentHub", "S4Vectors", "SummarizedExperiment"]
     },
     "Hiiragi2013": {
       "name": "Hiiragi2013",
-      "version": "1.46.0",
-      "sha256": "0zx30v78dn3j7kzsq5ajf58d0n37lvfw0jingqx5llp5bbcx8nd6",
+      "version": "1.47.0",
+      "sha256": "1p2d6vpss2s61n82p6wy7nq86zjhfw0nw9wi8ws3hhq6nxs1h7pp",
       "depends": ["Biobase", "KEGGREST", "MASS", "RColorBrewer", "affy", "boot", "clue", "cluster", "genefilter", "geneplotter", "gplots", "gtools", "lattice", "latticeExtra", "mouse4302_db", "xtable"]
     },
     "HumanAffyData": {
       "name": "HumanAffyData",
-      "version": "1.36.0",
-      "sha256": "0ax8wvz0i26awn04kz54li1vr2cnzmpkgjk8fivaq331s571c1zk",
+      "version": "1.37.0",
+      "sha256": "1kf00h99ddsaanbhfhjmgifjpwds204na3ksp4h80r5kxyp2lqyx",
       "depends": ["Biobase", "ExperimentHub"]
+    },
+    "HumanRetinaLRSData": {
+      "name": "HumanRetinaLRSData",
+      "version": "0.99.5",
+      "sha256": "1ysx1r4qp46nz7ni36fj0h4pwnfn5qlva732b3w92ny8y2cpjadc",
+      "depends": ["BiocFileCache", "SummarizedExperiment", "osfr"]
     },
     "IHWpaper": {
       "name": "IHWpaper",
-      "version": "1.38.0",
-      "sha256": "1y20kwnmhzhwhmg87c0ja7m5lh4m2n35mq1v80qpahmjarqds9qf",
+      "version": "1.39.0",
+      "sha256": "0qffi81pv5v4iwibqar58qssxn1il4d75wms7p5ndafj8yzahm18",
       "depends": ["Biobase", "BiocGenerics", "BiocParallel", "DESeq2", "IHW", "Rcpp", "SummarizedExperiment", "cowplot", "dplyr", "fdrtool", "genefilter", "ggplot2", "qvalue"]
     },
     "ITALICSData": {
       "name": "ITALICSData",
-      "version": "2.48.0",
-      "sha256": "0f6snn6vm65af11ql8y57gl467v5jk9vimpajqaa0fxzakmg49ql",
+      "version": "2.49.0",
+      "sha256": "05apya316ply68xa6hgqhwjkndpppga2yywv77vdzf6rhvw7zsnf",
       "depends": []
     },
     "Illumina450ProbeVariants_db": {
       "name": "Illumina450ProbeVariants.db",
-      "version": "1.46.0",
-      "sha256": "07q21x5hya6lrdj2f2ssm7s98768bh8099fzwc87s9k57kif074y",
+      "version": "1.47.0",
+      "sha256": "0rnrcv2g25nsch571xb5nw5fvybk7i8cnfka7kb109m4pp0mn33w",
       "depends": []
     },
     "IlluminaDataTestFiles": {
       "name": "IlluminaDataTestFiles",
-      "version": "1.48.0",
-      "sha256": "0kpdk82dsbzygga36vwkys7db6dd27m2xxfp4a16ban8ypkd06nq",
+      "version": "1.49.0",
+      "sha256": "1wk9vi6m9ybf7d9c1kjxn5xyhwk7lb4b9qm73n2ayf2qahxfxrmm",
       "depends": []
     },
     "Iyer517": {
       "name": "Iyer517",
-      "version": "1.52.0",
-      "sha256": "0p2308qcfhyp47cms60qfjh0pb044gb0zx79jhp38g71zzrp5jry",
+      "version": "1.53.0",
+      "sha256": "0rsdijcxhcv1x7r6pldj6i6x2xbair304sxldqr9474f3c2kmin0",
       "depends": ["Biobase"]
     },
     "JASPAR2014": {
       "name": "JASPAR2014",
-      "version": "1.46.0",
-      "sha256": "0bm4wgh3m9lwzfgrxyd1yjk4rz3m4xjz213qpa430p712as2kjz4",
+      "version": "1.47.0",
+      "sha256": "0w8j30nk8hzmmdwqxb25d4j38v382s3zvlp3g6skxhw7l89sdzxm",
       "depends": ["Biostrings"]
     },
     "JASPAR2016": {
       "name": "JASPAR2016",
-      "version": "1.38.0",
-      "sha256": "0yi6xb6zmdgf1892kqhybpnh6sbyh66nxx9qnvh9416d7lcacasv",
+      "version": "1.39.0",
+      "sha256": "0vq8617bhhl9m90ikapzz5qkrlgzs56rbfj939230nmxlip8gwyf",
       "depends": []
     },
     "JohnsonKinaseData": {
       "name": "JohnsonKinaseData",
-      "version": "1.6.0",
-      "sha256": "0j3xddfyhf5pcm6hqvmx0czm9k18mfkaczhh5q34hr2hlgykhkll",
+      "version": "1.7.0",
+      "sha256": "0nqh39vnlrddamjrxpf8c68z1pi1wwpv8zm27ik51qlfs6wkjvbf",
       "depends": ["BiocParallel", "ExperimentHub", "checkmate", "dplyr", "purrr", "stringr", "tidyr"]
     },
     "KEGGandMetacoreDzPathwaysGEO": {
       "name": "KEGGandMetacoreDzPathwaysGEO",
-      "version": "1.30.0",
-      "sha256": "03mpx4q4chr81jqyk160kmahp2rvclzzprlcyvmrm2l2y1w0928k",
+      "version": "1.31.0",
+      "sha256": "086qzkn7qbavds6i6sps9ai4xwk8x6gjwyqccji2naixl3q3pk21",
       "depends": ["Biobase", "BiocGenerics"]
     },
     "KEGGdzPathwaysGEO": {
       "name": "KEGGdzPathwaysGEO",
-      "version": "1.48.0",
-      "sha256": "11kb9hkz45w8mzh7nlvl4s4r70pkbqw53lq5879vfzb84ym0j7cr",
+      "version": "1.49.0",
+      "sha256": "09bkgzb9wpj3y5h2wif12mqln683ybd7gfg145i3rz84b4mrzfkh",
       "depends": ["Biobase", "BiocGenerics"]
     },
     "KOdata": {
       "name": "KOdata",
-      "version": "1.36.0",
-      "sha256": "1zy4rf5cgwd8g26ljbppj784yd7sam2fd16zj6jl79j13687qp4i",
+      "version": "1.37.0",
+      "sha256": "0wwkjmvnpzd8g5767ppa3dcbvy6z1mi69giy19ygfdxx7lhw880s",
       "depends": []
     },
     "LRcellTypeMarkers": {
       "name": "LRcellTypeMarkers",
-      "version": "1.18.0",
-      "sha256": "01bdnmsp0liv3cmjch0d4jr89mp9qvm5l0fmbf1q937v1czhxzbv",
+      "version": "1.19.0",
+      "sha256": "1lbnky89nqpqq6yafrdk8gfycbl6h1hhyx2hk8jhgnrs7g08mplq",
       "depends": ["ExperimentHub"]
     },
     "LegATo": {
       "name": "LegATo",
-      "version": "1.4.0",
-      "sha256": "1dih665skqs9sfyn16x7sf5spmqklnpnbqp6pblgv9yjskimr2g4",
+      "version": "1.5.0",
+      "sha256": "1dcl23xkr5qww2y365d3aa9cd1q54z88kfdms8r8c0nkclznrqpa",
       "depends": ["MultiAssayExperiment", "S4Vectors", "SummarizedExperiment", "animalcules", "data_table", "dplyr", "ggplot2", "magrittr", "plyr", "rlang", "stringr", "tibble", "tidyr", "tidyselect"]
     },
     "LiebermanAidenHiC2009": {
       "name": "LiebermanAidenHiC2009",
-      "version": "0.48.0",
-      "sha256": "1pyciny079yfhdr5z4yhqalhbzxg41gxlzhh5x0x7hcj6f995iyy",
+      "version": "0.49.0",
+      "sha256": "1k1l5z5d2xqb79x39zn1wbf0m4fngrxr3vjlkm0a30nnmw154bh7",
       "depends": ["IRanges", "KernSmooth"]
     },
     "ListerEtAlBSseq": {
       "name": "ListerEtAlBSseq",
-      "version": "1.42.0",
-      "sha256": "15cap23lszbkwbg8vlxcrgr8pz5awlw5nqhbni5phi4nk0zhcf89",
+      "version": "1.43.0",
+      "sha256": "0i9avmcp6vl737sryvqqld2qgp1ldh07k65bkzvzvj0rzgl1v5al",
       "depends": ["methylPipe"]
     },
     "LungCancerACvsSCCGEO": {
       "name": "LungCancerACvsSCCGEO",
-      "version": "1.46.0",
-      "sha256": "08pwdd4yjx7il3s0gcy61q6lqk9q9hx2hyawxx1sfk06d0mp4w6a",
+      "version": "1.47.0",
+      "sha256": "1j2bvi5n4vk2sk0cgw244a8x8y7q6dsp3l3hnr1ggvmcyfqw5w75",
       "depends": []
     },
     "LungCancerLines": {
       "name": "LungCancerLines",
-      "version": "0.48.0",
-      "sha256": "1fgl56k932fyv97nqhjy9b3sb9193s0vl5w03wllzbccpmhcjm61",
+      "version": "0.49.2",
+      "sha256": "1kw45zi9p52psx0ahik5b7imy79j0xx74z0bsjxy7xnjq998yvmk",
       "depends": ["Rsamtools"]
     },
     "M3DExampleData": {
       "name": "M3DExampleData",
-      "version": "1.36.0",
-      "sha256": "11bs5w72wwy5yx7wp1wnj7s08a9wjw5slc3z550p8h7xgjb8lrrm",
+      "version": "1.37.0",
+      "sha256": "17rv6m3qswxfr57ram4pi67mhff4giv5a39g9dsmybx0r7l8996b",
       "depends": []
     },
     "MACSdata": {
       "name": "MACSdata",
-      "version": "1.18.0",
-      "sha256": "1vvn2v99mch4g7vmbx8gdgdfmjjfxsb67rx0b8r0jhg4pz4k3sya",
+      "version": "1.19.0",
+      "sha256": "14vw5r0ab1bfjlm39f0q0lrcs335dyaqba5i365d9b00aba6bqyk",
       "depends": []
     },
     "MAQCsubset": {
       "name": "MAQCsubset",
-      "version": "1.48.0",
-      "sha256": "10ddcgwymcj42s2s9rk3gacslb72bmpivpliak5vqnnvp677lz61",
+      "version": "1.49.0",
+      "sha256": "0yv123jlac72kfpr4136hkzs95gslzc2ynfxdclhsscfn4zmjpby",
       "depends": ["Biobase", "affy", "lumi"]
     },
     "MEDIPSData": {
       "name": "MEDIPSData",
-      "version": "1.46.0",
-      "sha256": "1ih626dm019lyz0xk8qqwxpx93d7gy710b5vc855f512xjgd6qr2",
+      "version": "1.47.0",
+      "sha256": "0xfkn293k382601vfiwrf8l7zwi2cbpqzdvzy3f1wwsn1n4wsida",
       "depends": []
     },
     "MEEBOdata": {
       "name": "MEEBOdata",
-      "version": "1.48.0",
-      "sha256": "11ijkxbns273a1j5v01fcj22s4gxnvysfwrxk1dk0l0z7yxb849p",
+      "version": "1.49.0",
+      "sha256": "1w1140mb1b3pkiza9r7n13iishyipdqxgyjvj8dkizm51f4aj8hf",
       "depends": []
     },
     "MMDiffBamSubset": {
       "name": "MMDiffBamSubset",
-      "version": "1.46.0",
-      "sha256": "1g9inkba5v2a34ymr2iphr27q9xxx1xmswd8pvivcl7mxinylwin",
+      "version": "1.47.0",
+      "sha256": "02bj6xy6m69x8zbxk3rkz6arck37pn9j10pr4zz2vijc6g3yqx79",
       "depends": []
     },
     "MOFAdata": {
       "name": "MOFAdata",
-      "version": "1.26.0",
-      "sha256": "1jf38p14q76fdkxmnsf2k6vax84qbg5h810kmni3jgcyk93rlph4",
+      "version": "1.27.0",
+      "sha256": "197jxh2ygp1bbggg10f8zv16zmpcrfc0q47x0ri17df3sly2dbmp",
       "depends": []
     },
     "MSMB": {
       "name": "MSMB",
-      "version": "1.28.0",
-      "sha256": "0c51n1sygxpz7y01rdkvh9ssacmhl9h29zbpimk9gywwaf1cvcrn",
+      "version": "1.29.0",
+      "sha256": "1drky88qy7g13piss35q9ljbhw2cq966lf22spky4kigwkpzirlw",
       "depends": ["tibble"]
     },
     "MUGAExampleData": {
       "name": "MUGAExampleData",
-      "version": "1.30.0",
-      "sha256": "1f0mr6vr8w5sf2rpv3g6n9jig2chd72bcm6sxl9zi9gjf5m62c76",
+      "version": "1.31.0",
+      "sha256": "1w8i9x3xxcrj3yvkc4r3yy3i3cqg2rlhlg91cz4id3ykg4v8afsm",
       "depends": []
     },
     "MerfishData": {
       "name": "MerfishData",
-      "version": "1.12.0",
-      "sha256": "0nc5cq7c9izxnssjkilk4hdh5hbbfx50raq7pp17d1k0p46cwz5d",
+      "version": "1.13.0",
+      "sha256": "16asbygxa2wpfisx45dqxaw0j7ak20m9b5scwbglbfg7nijvzvf6",
       "depends": ["AnnotationHub", "BumpyMatrix", "EBImage", "ExperimentHub", "HDF5Array", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "SummarizedExperiment"]
     },
     "MetaGxBreast": {
       "name": "MetaGxBreast",
-      "version": "1.30.0",
-      "sha256": "0sl6i50mklix2pci65gkvh5qbrh21agi9a7l86il29kxvxrl92hk",
+      "version": "1.31.0",
+      "sha256": "09dma7ava3zdfjbczd9sy6s6w0jbpnn0f2dfdmkd7b6xwm8kq6wa",
+      "depends": ["AnnotationHub", "Biobase", "ExperimentHub", "SummarizedExperiment", "impute", "lattice"]
+    },
+    "MetaGxOvarian": {
+      "name": "MetaGxOvarian",
+      "version": "1.31.0",
+      "sha256": "14rivvj6syv61qxc27s14hv4qrpynv8in0gb1ggcs9d3fxpgs6sd",
       "depends": ["AnnotationHub", "Biobase", "ExperimentHub", "SummarizedExperiment", "impute", "lattice"]
     },
     "MetaGxPancreas": {
       "name": "MetaGxPancreas",
-      "version": "1.30.0",
-      "sha256": "0bs69iix53w2wymhb7bm7r976s64ivgzzwfmdglih7isjbmpsy48",
+      "version": "1.31.0",
+      "sha256": "13v5q3mz8br7250a94dxh2cfda11n3xrnwy7dg628icdaqrm2fcg",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "impute"]
     },
     "MetaScope": {
       "name": "MetaScope",
-      "version": "1.10.0",
-      "sha256": "0dx4c9grcx2amazi1h2365kf4x0n3vj1qw0nsqq8dclxdfqlvbvf",
-      "depends": ["BiocFileCache", "Biostrings", "Matrix", "MultiAssayExperiment", "Rbowtie2", "Rsamtools", "S4Vectors", "SummarizedExperiment", "data_table", "dplyr", "ggplot2", "magrittr", "readr", "rlang", "stringr", "taxonomizr", "tibble", "tidyr"]
+      "version": "1.99.10",
+      "sha256": "171g32l09lcp118yxhfha50gp4kvixrzypi839iiywmr2zfnf092",
+      "depends": ["BiocFileCache", "Biostrings", "Matrix", "MultiAssayExperiment", "Rbowtie2", "Rsamtools", "S4Vectors", "SummarizedExperiment", "data_table", "dplyr", "ggplot2", "magrittr", "purrr", "readr", "rlang", "stringr", "taxonomizr", "tibble", "tidyr"]
     },
     "MethylAidData": {
       "name": "MethylAidData",
-      "version": "1.42.0",
-      "sha256": "0mv2ymq13n463i0q77473rn75m8x4yx9kp8s3h1nyq2dq163pbdz",
+      "version": "1.43.0",
+      "sha256": "0lmld6d8ab38bxx80rjn27953hri3har02plgzbpxg8z82bdallx",
       "depends": ["MethylAid"]
     },
     "MethylSeqData": {
       "name": "MethylSeqData",
-      "version": "1.20.0",
-      "sha256": "1lifp6c8g9zigmx37jg2bpaj18rma5bhg01hyhys0spxhg9333qb",
+      "version": "1.21.0",
+      "sha256": "0bz31bd8fm69wna9xh4ywsjgsampk5hi7a3lip1cpgmgq34gapx8",
       "depends": ["ExperimentHub", "GenomeInfoDb", "GenomicRanges", "HDF5Array", "IRanges", "S4Vectors", "SummarizedExperiment", "rhdf5"]
     },
     "MicrobiomeBenchmarkData": {
       "name": "MicrobiomeBenchmarkData",
-      "version": "1.12.0",
-      "sha256": "0lbxi4zrfg1bkgml65pv5z045q1aj9b7kibvm4y5dbwiysy8v37h",
+      "version": "1.13.0",
+      "sha256": "09l9340cmxnwzq276slldbsxc93y792vj24nyn9wndifp63c19nh",
       "depends": ["BiocFileCache", "S4Vectors", "SummarizedExperiment", "TreeSummarizedExperiment", "ape"]
     },
     "MouseAgingData": {
       "name": "MouseAgingData",
-      "version": "1.6.0",
-      "sha256": "1kkmk1bxzhj1d8aps3xhz6sv65pb017x097l9ffv60hs7xh9i84v",
+      "version": "1.7.1",
+      "sha256": "07fbzy3k2g996f3njb31bswq5bg5xbyk0xj9r3l79idhpigx4776",
       "depends": ["AnnotationHub", "ExperimentHub", "SingleCellExperiment"]
     },
     "MouseGastrulationData": {
       "name": "MouseGastrulationData",
-      "version": "1.24.0",
-      "sha256": "0ir2iscavrbg5rsg6d5yql0pgvpg44drm3ccfj9v86q4ilbwbrhg",
+      "version": "1.25.0",
+      "sha256": "1czk8838d1g2r8fpcagpzghgbsdna43myn8szhrbqqws76dyw3ak",
       "depends": ["BiocGenerics", "BumpyMatrix", "ExperimentHub", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "SummarizedExperiment"]
     },
     "MouseThymusAgeing": {
       "name": "MouseThymusAgeing",
-      "version": "1.18.0",
-      "sha256": "0l6nzjh61l6gwhia1pvqmqdbpmd2lb8f7zxvmalvq6994361d00i",
+      "version": "1.19.0",
+      "sha256": "0b4dsgldrh1l70ph2ci6xp435q9w57gsvq9wq8yadldg9yxld52q",
       "depends": ["BiocGenerics", "ExperimentHub", "S4Vectors", "SingleCellExperiment", "SummarizedExperiment"]
+    },
+    "MutSeqRData": {
+      "name": "MutSeqRData",
+      "version": "0.99.4",
+      "sha256": "163chpwiih4zcf9wxxmvjdynxylk84iy7likxi4wyxim3d7kpimp",
+      "depends": []
     },
     "NCIgraphData": {
       "name": "NCIgraphData",
-      "version": "1.46.0",
-      "sha256": "0hvbka2agc36why969kmw5lpwkqmgrjgbzsrf7gpimi0qbg3kb94",
+      "version": "1.47.0",
+      "sha256": "0p965ly5b9hcf1acxcm8pkdv5xs2n533qz9p5rzix5g9c7hap8lw",
       "depends": []
     },
     "NGScopyData": {
       "name": "NGScopyData",
-      "version": "1.30.0",
-      "sha256": "0qf6pvi2xlp35g2qy1vhsxzk414n03hv7nrvwhw9a9fkrr0i30ml",
+      "version": "1.31.0",
+      "sha256": "0ingwhahkgiqaqxkla3v6x2w3w2di51icpby022j66k612z8i3s7",
       "depends": []
     },
     "NanoporeRNASeq": {
       "name": "NanoporeRNASeq",
-      "version": "1.20.0",
-      "sha256": "0r2lpwg1j4820qwpz5vh0kdf10mywj9b8nafbsqpv7b8l53rp571",
+      "version": "1.21.0",
+      "sha256": "16i0fb1vqdblcvjbc6yaacrk01mcgknafaha82mra1g6l0wk587z",
       "depends": ["ExperimentHub"]
     },
     "NestLink": {
       "name": "NestLink",
-      "version": "1.26.0",
-      "sha256": "04fikwnmv8j0dx4fs4w48rjbbcxz74853kx7xilx9vsgcazv6z5b",
+      "version": "1.27.0",
+      "sha256": "103xsf1z6ggfacvy5q56l7qir1ch7y1jr1dhr0hvx8m2f3zp38aq",
       "depends": ["AnnotationHub", "Biostrings", "ExperimentHub", "ShortRead", "gplots", "protViz"]
     },
     "NetActivityData": {
       "name": "NetActivityData",
-      "version": "1.12.0",
-      "sha256": "0z6zpni568zjcddhp17q2m8yb5ky43ij9maci3gcd0jxg6xbx3y0",
+      "version": "1.13.0",
+      "sha256": "1782r433cxvk9awnjzb1rcdvv57nm7zd10c8animq52spbahxia9",
       "depends": []
     },
     "Neve2006": {
       "name": "Neve2006",
-      "version": "0.48.0",
-      "sha256": "0awdy9r4dq3m4qa5n9nddjhknwqan80j631hfbd6nal5cqdp9apk",
+      "version": "0.49.0",
+      "sha256": "0il1rhjxc270j06fw0g30qjkblafs5wgi0ybb6cn5jzp8xp88zh9",
       "depends": ["Biobase", "annotate", "hgu133a_db"]
     },
     "NxtIRFdata": {
       "name": "NxtIRFdata",
-      "version": "1.16.0",
-      "sha256": "0kcb2q6q3p85cxmglf0krdypqh10ff6zhvb8dr25q72f4a4ag6v7",
+      "version": "1.17.0",
+      "sha256": "1ik2ykvmgwfx107xj9di1rkdbc33wa0grq41rfy0n6jnzgyxccfw",
       "depends": ["BiocFileCache", "ExperimentHub", "R_utils", "rtracklayer"]
     },
     "OMICsPCAdata": {
       "name": "OMICsPCAdata",
-      "version": "1.28.0",
-      "sha256": "126jrdhg98gxhpi5x34c5071nizmwm421z1gxn4bg62r8sff2sbg",
+      "version": "1.29.0",
+      "sha256": "0vr65sdgxzl241xxkxh8v0lryg22m0g4znjjpj1v8d7z59m690w1",
       "depends": ["MultiAssayExperiment"]
     },
     "ObMiTi": {
       "name": "ObMiTi",
-      "version": "1.18.0",
-      "sha256": "1mvcx4mqs11yycvx9z13b2wnzqf17arz9rb1zkxdvnwl02m4bwcw",
+      "version": "1.19.0",
+      "sha256": "0i72d8vw6fpvbs2np4kshp4v65pbn1icrqijjgdkbdl20zsy1q0v",
       "depends": ["ExperimentHub", "SummarizedExperiment"]
     },
     "OnassisJavaLibs": {
       "name": "OnassisJavaLibs",
-      "version": "1.32.0",
-      "sha256": "1bf588i0p0mkal8iqsy5jp3rwhslnlfmxawi4s41nwvxqbkv3m9i",
+      "version": "1.33.0",
+      "sha256": "1vnwyrhix5hjhw7blwrqpf9z4g5fz17vsmdny7snn0nw9vly2pc1",
       "depends": ["rJava"]
     },
     "PCHiCdata": {
       "name": "PCHiCdata",
-      "version": "1.38.0",
-      "sha256": "09254lzpflrd4ljd9l8xvy459lm6a20gy86n8haqpamadcb1dp4w",
+      "version": "1.39.0",
+      "sha256": "1c19bn8rfa154yf49bwc9gcljkynippza3ms0pb4nh9w6vqz0ghb",
       "depends": ["Chicago"]
     },
     "PREDAsampledata": {
       "name": "PREDAsampledata",
-      "version": "0.50.0",
-      "sha256": "1hywjj9vx4g17dlr3y34cql2h2mwlzbv1n7bxqz6cxld4mn01lym",
+      "version": "0.51.0",
+      "sha256": "0m5a5v6s8dhi0za1164lwp18y60i95gz4gbg6xna9d3n8c1vdr14",
       "depends": ["Biobase", "PREDA", "affy", "annotate"]
     },
     "PWMEnrich_Dmelanogaster_background": {
       "name": "PWMEnrich.Dmelanogaster.background",
-      "version": "4.44.0",
-      "sha256": "0la6xkrnsyffb9isxkicsj5njppl6brkyk4gggksq2xgm15xz2ji",
+      "version": "4.45.0",
+      "sha256": "197gy6zs6a24yb17zkac754v5hrqxbzdw04ifwam666g15g1nzyl",
       "depends": ["PWMEnrich"]
     },
     "PWMEnrich_Hsapiens_background": {
       "name": "PWMEnrich.Hsapiens.background",
-      "version": "4.44.0",
-      "sha256": "1kpbx51bi31xc350g2b8hv43vgwhr8r9cx0hnwrcaiccv9s0g88j",
+      "version": "4.45.0",
+      "sha256": "0lvk8zqwbplaprnyjm58061m8diwwhmj2isigjx6pk7nca1r7dwn",
       "depends": ["PWMEnrich"]
     },
     "PWMEnrich_Mmusculus_background": {
       "name": "PWMEnrich.Mmusculus.background",
-      "version": "4.44.0",
-      "sha256": "0cidhk3sg8bva48pi5faald8kz78ziwdlidfksys5yxmj5w8r8nd",
+      "version": "4.45.0",
+      "sha256": "0vgncgx1986pqaaz4ymqjax85yzqss8mi2fsqc9mp9ib43jakx3q",
       "depends": ["PWMEnrich"]
     },
     "PasillaTranscriptExpr": {
       "name": "PasillaTranscriptExpr",
-      "version": "1.38.0",
-      "sha256": "0ny1i7ydpcpx3krf990pqm33c2pn4fjsrr4c2475d22d1inykqga",
+      "version": "1.39.0",
+      "sha256": "0rh1rx7i12d85d932d9znw26lkhfyf7il06wfxq7zb6clc9jllqv",
       "depends": []
     },
     "PathNetData": {
       "name": "PathNetData",
-      "version": "1.46.0",
-      "sha256": "1awkx0gz192l7ilq2q6yvpikfq4rmk15d7v4n8lld8y8fjqjaz8v",
+      "version": "1.47.0",
+      "sha256": "0p8ksn2il88c9pbylkbp6c4dvgi6956f9fzdrk1k6nad6r73iiap",
       "depends": []
     },
     "PepsNMRData": {
       "name": "PepsNMRData",
-      "version": "1.28.0",
-      "sha256": "0rkclg1719lzwnlsy0mvm147hzd2qf2hiq2vc84ndyka62x3xhkz",
+      "version": "1.29.0",
+      "sha256": "1ma7msdiblzhq2s6zisc0bawj52df265d4kv5ymqj5s685ja36if",
       "depends": []
     },
     "PhyloProfileData": {
       "name": "PhyloProfileData",
-      "version": "1.24.0",
-      "sha256": "0dk1bgw0q570hnzv767dj117qkcwgdlwmxbpv1cpx96hp3lcg40x",
+      "version": "1.25.0",
+      "sha256": "11xrprc4k42r2gxzfsymq9ypn9rj07fwvy6mwb5lbf18s8p7jl6c",
       "depends": ["BiocStyle", "Biostrings", "ExperimentHub"]
     },
     "ProData": {
       "name": "ProData",
-      "version": "1.48.0",
-      "sha256": "0acrygq3sjpmmys6i0aybcl986c1ln0qm9hbbppif4pqfll9fz4c",
+      "version": "1.49.0",
+      "sha256": "1jzbma668c6wvxdlpnqcsa520qprfwpahgnpiwyiwk8xqpzvhw5f",
       "depends": ["Biobase"]
     },
     "ProteinGymR": {
       "name": "ProteinGymR",
-      "version": "1.4.0",
-      "sha256": "0h0ivmglj3f1256m2fqbl1mnw2jbzdw9hwjdgvlkba6z5jixr81s",
+      "version": "1.5.1",
+      "sha256": "039l2sv35paaanmxijmm9r4g4is9hwd5wjnnwfhqfj790bchsh36",
       "depends": ["AnnotationHub", "ExperimentHub", "dplyr", "htmltools", "lifecycle", "purrr", "queryup", "rlang", "spdl", "stringr", "tidyr", "tidyselect"]
     },
     "PtH2O2lipids": {
       "name": "PtH2O2lipids",
-      "version": "1.36.0",
-      "sha256": "1nvxhhf9n6x8421wx16gyqywnw6y25vvllw40ak73c97m8gl920j",
+      "version": "1.37.0",
+      "sha256": "06d2zn9yfijnvk2im48v4h63hagc5968n4rx429c1sgvdwh5ma0c",
       "depends": ["CAMERA", "LOBSTAHS", "xcms"]
     },
     "QDNAseq_hg19": {
       "name": "QDNAseq.hg19",
-      "version": "1.40.0",
-      "sha256": "1qgxxw9bp30acafcdfphslfc2aba8hs5msld9q3c8nzxcaagh10s",
+      "version": "1.41.0",
+      "sha256": "1kfvdw4bppx2dpkcqid1x7vrxynmn9cvb7wyx9qksvbqa1k2cy98",
       "depends": ["QDNAseq"]
     },
     "QDNAseq_mm10": {
       "name": "QDNAseq.mm10",
-      "version": "1.40.0",
-      "sha256": "06krdc5fl0r0cwdgcp5nl6r3nkz5i82nhq7y04qf0njch5a4aslj",
+      "version": "1.41.0",
+      "sha256": "0zbfndbc6dj4a8gpir72kmsxmzrvm2j7c0vnz2nb46zdl57drj8k",
       "depends": ["QDNAseq"]
     },
     "QUBICdata": {
       "name": "QUBICdata",
-      "version": "1.38.0",
-      "sha256": "0vaxpd1kp7zvzxhbj3kjzg0rxd62bix6qwp0mwd8np07skcx6kzc",
-      "depends": []
-    },
-    "RGMQLlib": {
-      "name": "RGMQLlib",
-      "version": "1.30.0",
-      "sha256": "1dx37lhblihdcqzr5lc1j79rzc03hfvxyyfqcm6grnmicbpqapxc",
+      "version": "1.39.0",
+      "sha256": "08n3ph64db22fsx6p55al6w6i2qz411arsw3pp4hll787ais0ah0",
       "depends": []
     },
     "RITANdata": {
       "name": "RITANdata",
-      "version": "1.34.0",
-      "sha256": "1lc1v3j5rgh171v0730h7p1dibj6p7pfs7cy1jfq0y9wkwgsr8pn",
+      "version": "1.35.0",
+      "sha256": "12ys3myhg29d5jyqm25dxpr0q1njfhglvi1njnjbam81bck2ry98",
       "depends": []
     },
     "RMassBankData": {
       "name": "RMassBankData",
-      "version": "1.48.0",
-      "sha256": "15l5w79kyf7c5mmi2lv6mhzw7zr5yjiyxbxg741cw1d5c456msfk",
+      "version": "1.49.0",
+      "sha256": "14yzixag1ghilhz9p40bs74nsafc0cm6s4znhfkc0yldb16g59dy",
       "depends": []
     },
     "RNAmodR_Data": {
       "name": "RNAmodR.Data",
-      "version": "1.24.0",
-      "sha256": "0pfbdyml16wwbjhm1vk8ivwj2mkmrvlllyj4kzy21x5ifphfnc5g",
+      "version": "1.25.0",
+      "sha256": "14im8i8g049mv3dvwa2r42fn66zc02jh6sv5zv2qgawdnnspjixv",
       "depends": ["ExperimentHub", "ExperimentHubData"]
     },
     "RNAseqData_HNRNPC_bam_chr14": {
       "name": "RNAseqData.HNRNPC.bam.chr14",
-      "version": "0.48.0",
-      "sha256": "024qj2yfrgknc7dnymwc71sibk3q1l0vdsxscl93nn9a5bdxv0c0",
+      "version": "0.49.0",
+      "sha256": "09jgjpxdvpdy45bw3cpan6ml6hdcvzp3q7r7xg645xbrr1i2yj9d",
       "depends": []
     },
     "RRBSdata": {
       "name": "RRBSdata",
-      "version": "1.30.0",
-      "sha256": "0zxjjn6bg6s3vr97kv0b78cxihwmbcw87mc068rc1ykjvwn84kab",
+      "version": "1.31.0",
+      "sha256": "1fy2fq7dnn6r9gw2j832dgl9955aqxm7q5nq2dnfcwdnms6zndsh",
       "depends": ["BiSeq"]
     },
     "RTCGA_CNV": {
       "name": "RTCGA.CNV",
-      "version": "1.38.0",
-      "sha256": "13v3w9fsh8k9j009ak7n4x3phxi22wyqhv723n4fmr0i83hfll2h",
+      "version": "1.39.0",
+      "sha256": "0jk5w2w46q9hnnb0bnzqkkdnklrrs40ij6j93bb3fxikf0gvns1l",
       "depends": ["RTCGA"]
     },
     "RTCGA_PANCAN12": {
       "name": "RTCGA.PANCAN12",
-      "version": "1.38.0",
-      "sha256": "14fbkxnh1mmdn29hcf7wa82wffxchk7b1j5wpxr9njiljz7cw7fm",
+      "version": "1.39.0",
+      "sha256": "1m9hxv70yhadg07ppnd87kgkc2g1w1j36zh920s2hilxnbyash9z",
       "depends": ["RTCGA"]
     },
     "RTCGA_RPPA": {
       "name": "RTCGA.RPPA",
-      "version": "1.38.0",
-      "sha256": "15pl2g8rhf10yx6m52w5zlwfxbhkxg7zx6vh9z6karqclb259hih",
+      "version": "1.39.0",
+      "sha256": "1z58wzfshdggfl87np0dg0jmsqcjvwp0s1r19jjiywvwqc192k33",
       "depends": ["RTCGA"]
     },
     "RTCGA_clinical": {
       "name": "RTCGA.clinical",
-      "version": "20151101.40.0",
-      "sha256": "08sjb2gmadi8jybqiwjgfkabiw8jw05wr7v3snsixmngdmmbkvmy",
+      "version": "20151101.41.0",
+      "sha256": "0lqxip1f1bm4dia6f3xrczy4ivm8hmhlzibndbickqvhdw5h6xwd",
       "depends": ["RTCGA"]
     },
     "RTCGA_mRNA": {
       "name": "RTCGA.mRNA",
-      "version": "1.38.0",
-      "sha256": "10drpj8glsr4cy4k8j2mmcyi50721qhwn8vly66g7izgv3iq4p0h",
+      "version": "1.39.0",
+      "sha256": "1yidxx7h8vlbhb74qkgdz8b1js4mysqqsy2q22wym2adpjh7j46v",
       "depends": ["RTCGA"]
     },
     "RTCGA_methylation": {
       "name": "RTCGA.methylation",
-      "version": "1.38.0",
-      "sha256": "107ap38i1fn1ry5hla4pp7yx3gvp0id74z5z15h0wmkyprf8gxma",
+      "version": "1.39.0",
+      "sha256": "0fc9mx8np7w46xfsd1zng2v7r3crqf0wxypyg06m8nng71ii03dc",
       "depends": ["RTCGA"]
     },
     "RTCGA_miRNASeq": {
       "name": "RTCGA.miRNASeq",
-      "version": "1.38.0",
-      "sha256": "17kjlv7h3g1frf3cij8hy5mpcjlimxssnbx0znqzzz7b8v9c4qqg",
+      "version": "1.39.0",
+      "sha256": "0capsg2ac450l4livg32164pplzyqw79nfjv6rwcla4yf31aaqil",
       "depends": ["RTCGA"]
     },
     "RTCGA_mutations": {
       "name": "RTCGA.mutations",
-      "version": "20151101.40.0",
-      "sha256": "1b8zljadnnmly77rgzria1klaq8rrvw5p6ngh4sp0k06k9rii1kf",
+      "version": "20151101.41.0",
+      "sha256": "0g608p225fnn9md5snr9x5ixgcb1j265z1nxw7zd4pccvxgbsx18",
       "depends": ["RTCGA"]
     },
     "RTCGA_rnaseq": {
       "name": "RTCGA.rnaseq",
-      "version": "20151101.40.0",
-      "sha256": "0zb323yhl845fsd4zhzr6frr6kj5gvc50pjf8a1bbyzn3hd0jkp2",
+      "version": "20151101.41.0",
+      "sha256": "0ijcmixp9djj1ny6x4z80p7qdgwwxsbdjc7iic8lvf8qvv0nmkfj",
       "depends": ["RTCGA"]
     },
     "RUVnormalizeData": {
       "name": "RUVnormalizeData",
-      "version": "1.30.0",
-      "sha256": "1cp6vfwxjnmwll506crabim0fxvl8n4vrn64f9zxl9nip06wvn9j",
+      "version": "1.31.0",
+      "sha256": "1469rh1ji2vgmifisywrrrgnz4pb4g86l4hr7a5008slh769pkw4",
       "depends": ["Biobase"]
     },
     "RcisTarget_hg19_motifDBs_cisbpOnly_500bp": {
       "name": "RcisTarget.hg19.motifDBs.cisbpOnly.500bp",
-      "version": "1.30.0",
-      "sha256": "0cnrbmlqpqwnpr13df6mqsjm7q9vfhh385dr8qrci9hks95d3xsy",
+      "version": "1.31.0",
+      "sha256": "13jpajchqd9wgjqdcs6slc9wnrx03nw52j1gc5w2493asnawxywq",
       "depends": ["data_table"]
     },
     "ReactomeGSA_data": {
       "name": "ReactomeGSA.data",
-      "version": "1.24.0",
-      "sha256": "0pngrmd7hjbq6sgii8sjjn74c1f707i0n24k6w7h0ixnd0cclq07",
+      "version": "1.25.0",
+      "sha256": "11g43wb8zl8s01q80v7yhia7c1acygjsrqllw8jfidnj22n304nd",
       "depends": ["ReactomeGSA", "Seurat", "edgeR", "limma"]
     },
     "RegParallel": {
       "name": "RegParallel",
-      "version": "1.28.0",
-      "sha256": "02zg31xcppgxlwms6bpx7pqk6phwkzj21i1is3mpiqss5xci71xh",
+      "version": "1.29.0",
+      "sha256": "0s85calpmdizfbnrjgcqgqamxqmbqakhs6fy9bjz8abmrrvarwbx",
       "depends": ["arm", "data_table", "doParallel", "foreach", "iterators", "stringr", "survival"]
     },
     "RforProteomics": {
       "name": "RforProteomics",
-      "version": "1.48.0",
-      "sha256": "09g1rvh77h8fgi83wmq1g5yfpqlqj70wdp4d82rjz07h1k5zbc3h",
+      "version": "1.49.0",
+      "sha256": "18a1lrg5xf16cb54525gzkj1gb3lv7vhdgij4bfz865fll77fpnw",
       "depends": ["BiocManager", "MSnbase", "R_utils", "biocViews"]
     },
     "RnBeads_hg19": {
       "name": "RnBeads.hg19",
-      "version": "1.42.0",
-      "sha256": "0w65041bihbd9anh2qnrd1sgvaxi1gx9l5d7h9s5bz1qmcnj9l0q",
+      "version": "1.43.0",
+      "sha256": "1ffchrlnv0nrxa0c32hd1viyyng4lgznpmjhyvqbp091li94rpns",
       "depends": ["GenomicRanges"]
     },
     "RnBeads_hg38": {
       "name": "RnBeads.hg38",
-      "version": "1.42.1",
-      "sha256": "1dlnqkywcf0gwsfxhkhjxl6vpyvsdw5kpiv6p4zlgw4x4g7f24rp",
+      "version": "1.43.1",
+      "sha256": "0wx50armdncyfim56py4jnpnxr6bhfafxjfilp47hypgrmrdycw5",
       "depends": ["GenomicRanges"]
     },
     "RnBeads_mm10": {
       "name": "RnBeads.mm10",
-      "version": "2.18.0",
-      "sha256": "1mim2n4jzxlqr1hkwswy6zqjw36h7jpal18fyxjq15s466w2qwf7",
+      "version": "2.19.0",
+      "sha256": "0z8p2jd6cz8svnsk4hf9xil603g4j9nryq4rddx1zdk4f1h379mv",
       "depends": ["GenomicRanges"]
     },
     "RnBeads_mm9": {
       "name": "RnBeads.mm9",
-      "version": "1.42.0",
-      "sha256": "0b6g843qhqhr7y0ab8c9pgzd717in765205p8d21h5zv4ijzd18n",
+      "version": "1.43.0",
+      "sha256": "11xym3df4z4v842r37m3zmp4wdhahcwxdnhq0qrjdi5fpvc6vxx6",
       "depends": ["GenomicRanges"]
     },
     "RnBeads_rn5": {
       "name": "RnBeads.rn5",
-      "version": "1.42.0",
-      "sha256": "0wlyv0s3xm6s1iavflxgrbm6idapgz9b7blg1dxqj5kldargpv00",
+      "version": "1.43.0",
+      "sha256": "1hgl2x07bwgq5yn6g6ih9idmxdcfx7bwzcl8bxlp03jwpi83g4mk",
       "depends": ["GenomicRanges"]
     },
     "RnaSeqSampleSizeData": {
       "name": "RnaSeqSampleSizeData",
-      "version": "1.42.0",
-      "sha256": "0214glgxg6fmppal2my8sya8y97l5lb8x00cqyh8qby3la2cpfj3",
+      "version": "1.43.0",
+      "sha256": "11a5kc6fiv045153xpq6f6917cc39gvbxyps1xg5a2512f9wb8jv",
       "depends": ["edgeR"]
     },
     "SBGNview_data": {
       "name": "SBGNview.data",
-      "version": "1.24.0",
-      "sha256": "1qpxymydwb1j647ds9bxzww1q2p7n15mkxd5wzhqij44zysgndw1",
+      "version": "1.25.0",
+      "sha256": "1haw62a8yqm0assj9dgnjfjj8g1fk4gadnrvyq5m8rl5ab8nhd06",
       "depends": ["bookdown", "knitr", "rmarkdown"]
     },
     "SCLCBam": {
       "name": "SCLCBam",
-      "version": "1.42.0",
-      "sha256": "0snfnascxykwsk4gkz6yka3gk86cb72znfkp924rcadczmq3qnhw",
+      "version": "1.43.0",
+      "sha256": "152i1jl9n1v6424yyizxdm61lj31g45y9kqczgrnxl6hz7qw584s",
       "depends": []
     },
     "SFEData": {
       "name": "SFEData",
-      "version": "1.12.0",
-      "sha256": "11p8js42b19nnbwc807nj1q48pzyjrf9ikr3npd6a10vsd2bq7p8",
+      "version": "1.13.0",
+      "sha256": "0kmq6yjilg8z0s0xk4b4828qrpzjwjgg3p1y70ydcs7s3pqcqpb6",
       "depends": ["AnnotationHub", "BiocFileCache", "ExperimentHub"]
     },
     "SNAData": {
       "name": "SNAData",
-      "version": "1.56.0",
-      "sha256": "184fin4nmsx5dahygzxa1g8k1q91x5c20whxwrac40vm5i4jynlp",
+      "version": "1.57.0",
+      "sha256": "1lngkyfda82x492gw01ba1s0a5awhn3s9y86msci9mr205x2g1mk",
       "depends": ["graph"]
     },
     "SNAGEEdata": {
       "name": "SNAGEEdata",
-      "version": "1.46.0",
-      "sha256": "0yca7a18l73jbd52b1pj2xkvfq586xxvcannsdfi45vqss6ysrgc",
+      "version": "1.47.0",
+      "sha256": "1p2c3a5b63a2gizfm3lhsgb8d404ac0fkr6mnpcm0swsw4sd9ccy",
       "depends": []
     },
     "SNPhoodData": {
       "name": "SNPhoodData",
-      "version": "1.40.0",
-      "sha256": "17697pw5yfj91kybbw21fxn2ay73m1xchspsndj6zdldiq3x3bjr",
+      "version": "1.41.0",
+      "sha256": "152iw77a6xnkq27b2c42f5vcf0vkbkxfyqgqy3avc1l5rk2kkrkj",
       "depends": []
     },
     "STexampleData": {
       "name": "STexampleData",
-      "version": "1.18.0",
-      "sha256": "126payb07zhikv681zcprhi17syx8d3kfa8b6kvncxal87bmjlmj",
+      "version": "1.19.0",
+      "sha256": "0kcfnkal0154j8a861h8yyzwhyk9ix9s5540fg5wm49kn61amrpl",
       "depends": ["ExperimentHub", "SingleCellExperiment", "SpatialExperiment"]
     },
     "SVM2CRMdata": {
       "name": "SVM2CRMdata",
-      "version": "1.42.0",
-      "sha256": "0qfavad398hi0kb2f4gb47vk2cmyf3g9sdcpjglq1zh1g5pd74xp",
+      "version": "1.43.0",
+      "sha256": "1ly21j6xxryb8qvmqx0rrn6h9ncyjphvh2k3vnikpfqramwp486n",
       "depends": []
     },
     "SimBenchData": {
       "name": "SimBenchData",
-      "version": "1.18.0",
-      "sha256": "13lx1cd6mqf71k8n5p586a0gmd918jp2iqv9imxp8kckran09wgc",
+      "version": "1.19.0",
+      "sha256": "0lzn6ffh3sbszi2gza314zkiz89mfyyb9v73gdlhxcnnn6yhl5d2",
       "depends": ["ExperimentHub", "S4Vectors"]
     },
     "Single_mTEC_Transcriptomes": {
       "name": "Single.mTEC.Transcriptomes",
-      "version": "1.38.0",
-      "sha256": "1hjyad7ink2sbb7maf5gp3fwhf83cfk9a20acpf05xlb570iyf07",
+      "version": "1.39.0",
+      "sha256": "13zlkqkjhldgacvpjvszdq1zg8krkjymgyda4bz76v5wra81vqpp",
       "depends": []
     },
     "SingleCellMultiModal": {
       "name": "SingleCellMultiModal",
-      "version": "1.22.0",
-      "sha256": "0asc4cskfalp1dmcv8h5zd9ml7jbcrmsbiz8xchziq4ypbhfsmq8",
+      "version": "1.23.0",
+      "sha256": "11h960q5ivligz59bz6ajxfvqwxxdnihdzhrgv36vq18xdr4219m",
       "depends": ["AnnotationHub", "BiocBaseUtils", "BiocFileCache", "ExperimentHub", "HDF5Array", "Matrix", "MultiAssayExperiment", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "SummarizedExperiment"]
     },
     "SingleMoleculeFootprintingData": {
       "name": "SingleMoleculeFootprintingData",
-      "version": "1.18.0",
-      "sha256": "1lhjh8l009b3lzxvgi948s9aq73zp29z2nfal76n32hl9yhhb6cr",
+      "version": "1.19.0",
+      "sha256": "0qwadn0yvgnm1qqi1hz56ira1k14ny15c4n84nxhnyr553w2l3rg",
       "depends": ["ExperimentHub"]
     },
     "SomatiCAData": {
       "name": "SomatiCAData",
-      "version": "1.48.0",
-      "sha256": "1y42zpfxi7saq01004xhs0r1z7gh1nv79i1clbljm7nzfvhdcy0x",
+      "version": "1.49.0",
+      "sha256": "02142sc7w0vrj5vapizb2cfd4xfqiyvd56xwwdq8j4n30sblg9ss",
       "depends": []
     },
     "SomaticCancerAlterations": {
       "name": "SomaticCancerAlterations",
-      "version": "1.46.0",
-      "sha256": "1rcwa33grss5mfwskbrjcnsygmxfzw138919xz740aywpywk1arc",
+      "version": "1.47.0",
+      "sha256": "062asyhzjf3akhfg1gk9ydc1v1ny2sml4i6ndfq5ysrrbvbdhgs4",
       "depends": ["GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SpatialDatasets": {
       "name": "SpatialDatasets",
-      "version": "1.8.0",
-      "sha256": "1dyll6yn5lwy1shqvgrblam345ra98vap3j8pp291h04k01gxgli",
+      "version": "1.9.0",
+      "sha256": "1bx0cf88d4gb8rr7w27mvqwv7c3vz0v4cjp99d9z776r0wkih4gm",
       "depends": ["ExperimentHub", "SpatialExperiment"]
     },
     "SpikeIn": {
       "name": "SpikeIn",
-      "version": "1.52.0",
-      "sha256": "18p3j8gq480p5yrjhxnmdcrg9w6z1p2dr8v6zpm85gdlyadimns2",
+      "version": "1.53.0",
+      "sha256": "1m3gbqman44hks2garp9d8scy64n2g7d6mpxmrpzyf8pq6gv44c7",
       "depends": ["affy"]
     },
     "SpikeInSubset": {
       "name": "SpikeInSubset",
-      "version": "1.50.0",
-      "sha256": "0kjx1rrvsyd12lh5qbwpnqdd1z9k3157vc9gvw06mfqdp56sqclr",
+      "version": "1.51.0",
+      "sha256": "0xmkb7zmmgvfhjghxzbbm25p0kh8yld7mx44b7vvp1p72vg90niq",
       "depends": ["Biobase", "affy"]
     },
     "SubcellularSpatialData": {
       "name": "SubcellularSpatialData",
-      "version": "1.6.0",
-      "sha256": "1w2lq33h3ajg3isjgy79vgq8rxpbyhrbdc899yadigdvzq6v8181",
+      "version": "1.7.0",
+      "sha256": "1ndz72hyjid5n53qvrch6553mhacbbs91md7ncvblq6c2i089988",
       "depends": ["Matrix", "SpatialExperiment", "dplyr", "hexbin"]
     },
     "TBX20BamSubset": {
       "name": "TBX20BamSubset",
-      "version": "1.46.0",
-      "sha256": "1c6421rmqh5h64mvab50n84ysl31afd9fk963hnlsqh83vadj0aj",
+      "version": "1.47.0",
+      "sha256": "1r0ql7z2xi657x4didcfaa3cbiy1gzwg5s4j30sshkzv2xn9swv6",
       "depends": ["Rsamtools", "xtable"]
     },
     "TCGAMethylation450k": {
       "name": "TCGAMethylation450k",
-      "version": "1.46.0",
-      "sha256": "1ify4lhkjc9jwslpdqdgcj96xv27pqlrdvm2a559rfzljvnhrhvh",
+      "version": "1.47.0",
+      "sha256": "17swm98jzjic8ifnwmq43l5iqn2jy8acfih1ls62wl20hd1g96f7",
       "depends": []
     },
     "TCGAWorkflowData": {
       "name": "TCGAWorkflowData",
-      "version": "1.34.0",
-      "sha256": "07bi0n0gxfmadmmz3d0hbdgxi5srjhrlg28fk8g98xbmahx41lrw",
+      "version": "1.35.0",
+      "sha256": "0kdwam83sd9zdn2bysqyfq3i8k0y0z4i9axkjn9dmw8yxkdd2494",
       "depends": ["SummarizedExperiment"]
     },
     "TCGAbiolinksGUI_data": {
       "name": "TCGAbiolinksGUI.data",
-      "version": "1.30.0",
-      "sha256": "0pb16qz7a3dn89bibg9l2jnyb5xr7h5ndj5s31nskx2y5fwxrxf3",
+      "version": "1.31.0",
+      "sha256": "1rbyp21xacqsvibmw32k3aq3d8rwws6mbsz2ssns5q7sj0dj9cbh",
       "depends": []
     },
     "TCGAcrcmRNA": {
       "name": "TCGAcrcmRNA",
-      "version": "1.30.0",
-      "sha256": "06sy27f391fwkjapg2g0ms43cgxpksrcqxrlis9wgx7mqyhgj686",
+      "version": "1.31.0",
+      "sha256": "0nx18w600vbyq3y3m43j5zqla7ylg678w4ba66wc01akfcyl95bb",
       "depends": ["Biobase"]
     },
     "TCGAcrcmiRNA": {
       "name": "TCGAcrcmiRNA",
-      "version": "1.30.0",
-      "sha256": "1n399w723c33j160nifp1ikxf39j186cvl9fpzmaqjszix2y1hkl",
+      "version": "1.31.0",
+      "sha256": "17nxi24bhd8fb1rqyfrhxkd6wzz0ypxjqcckkz849i6hxwqnzcqg",
       "depends": ["Biobase"]
     },
     "TENET_ExperimentHub": {
       "name": "TENET.ExperimentHub",
-      "version": "1.2.0",
-      "sha256": "1ix80cfz2iixk1zmnag7m8gsz5mx9ar7q5w9g3kfvx7h0pjl5q6w",
+      "version": "1.3.0",
+      "sha256": "16lp9dqmrcj5fjz27jd0i584sn20l12bxb386jx5dqay4wzlgcwa",
       "depends": ["ExperimentHub", "GenomicRanges", "MultiAssayExperiment", "SummarizedExperiment", "ggplot2"]
     },
     "TENxBUSData": {
       "name": "TENxBUSData",
-      "version": "1.24.0",
-      "sha256": "1809nhifxz8k4q5gqbx6nsayjmijz927h0pwia72yzhz7rsdcfy2",
+      "version": "1.25.0",
+      "sha256": "0kjsf3v7c6d4cy7hcffc4d3pr0vcllvf9vfsmpa58ccvp1y26gw3",
       "depends": ["AnnotationHub", "BiocGenerics", "ExperimentHub"]
     },
     "TENxBrainData": {
       "name": "TENxBrainData",
-      "version": "1.30.0",
-      "sha256": "1jnhmnnmzpvgqh2q7aasjpi4gjxqr0a6kxcwyb7if24gx21qz52z",
+      "version": "1.31.0",
+      "sha256": "0xv2zjhc11zjvqxyzwnfia1384byjvap97m32wc7rmbicpwfb8j6",
       "depends": ["AnnotationHub", "ExperimentHub", "HDF5Array", "SingleCellExperiment"]
     },
     "TENxPBMCData": {
       "name": "TENxPBMCData",
-      "version": "1.28.0",
-      "sha256": "0qpg8qvl6v9n3h21na130r70rgyq79zrzf5yjg3n4hwj70xa9md1",
+      "version": "1.29.0",
+      "sha256": "1n5cxbshxs9r5qjfpr416rzcq5z6ajid21bz359rxyvhy1zv8qha",
       "depends": ["AnnotationHub", "ExperimentHub", "HDF5Array", "SingleCellExperiment"]
     },
     "TENxVisiumData": {
       "name": "TENxVisiumData",
-      "version": "1.18.0",
-      "sha256": "0f7hacc4yvibs22hxqnykwj5dmjs89q7ad0ib620yb457sihj49c",
+      "version": "1.19.0",
+      "sha256": "1g0ykagl5y5fq1k9qx3izrpfhjij6ii8mja2j4kq4k11z1yi9fja",
       "depends": ["ExperimentHub", "SpatialExperiment"]
     },
     "TENxXeniumData": {
       "name": "TENxXeniumData",
-      "version": "1.6.0",
-      "sha256": "0f2pgb6rf47074ln2c40n6kc8ml7ra3sh2yyasj2qa79nc7c2125",
+      "version": "1.7.0",
+      "sha256": "1mz8l5afbc6843cr9gr3mf6kvmzv5g4sdhnmwm4jbrzcinq5nqjr",
       "depends": ["BumpyMatrix", "ExperimentHub", "SpatialExperiment", "SpatialFeatureExperiment", "SummarizedExperiment"]
     },
     "TMExplorer": {
       "name": "TMExplorer",
-      "version": "1.20.0",
-      "sha256": "1c2c17w7h1688xyd2c8pcf4jplxpyqlw6kpr51lkc9vvhgzjz2nh",
+      "version": "1.21.0",
+      "sha256": "1br60mq4qwh01nrysrygwn0fgshil8975q1159b427pd4yd7vjjb",
       "depends": ["BiocFileCache", "Matrix", "SingleCellExperiment"]
     },
     "TabulaMurisData": {
       "name": "TabulaMurisData",
-      "version": "1.28.0",
-      "sha256": "1z71wj91hb71cr6d7bn7xkl1fdb9sp8bj3vv2nbli9mzbpsrg4nd",
+      "version": "1.29.0",
+      "sha256": "0d4v34lrh2l895r4n45z4jag90bznv8f3cs29gsvsr7i027134i9",
       "depends": ["ExperimentHub"]
     },
     "TabulaMurisSenisData": {
       "name": "TabulaMurisSenisData",
-      "version": "1.16.0",
-      "sha256": "0zn537c0dzqhnaqfpld3j10xxxdpcg7xrk6n8sdxr3hrm3fr4q0m",
+      "version": "1.17.0",
+      "sha256": "1246nc8l9j9jndq80r5yd6d01i7y3xbjjf92ss6yaxhk8kdnk2km",
       "depends": ["AnnotationHub", "ExperimentHub", "HDF5Array", "SingleCellExperiment", "SummarizedExperiment", "gdata"]
     },
     "TargetScoreData": {
       "name": "TargetScoreData",
-      "version": "1.46.0",
-      "sha256": "14ijsmy1frdzclda2xn7rps6vslqf3wgjc64r5sprmbqzhkyxb0k",
+      "version": "1.47.0",
+      "sha256": "016bcxqggcrkr7gqhv5zmmm2wkd43zp3ihpw4042wzyqnvbq9hsf",
       "depends": []
     },
     "TargetSearchData": {
       "name": "TargetSearchData",
-      "version": "1.48.0",
-      "sha256": "1d3g1q7pmb4szv61bds54wkqr62wicm1415v9wvj9ixy6aw4kn8j",
+      "version": "1.49.0",
+      "sha256": "0adx1ayzfa6gi3jcqzv3jz5l3r1did73k4n49p612fn2m9xcrvq7",
       "depends": []
-    },
-    "TimerQuant": {
-      "name": "TimerQuant",
-      "version": "1.39.0",
-      "sha256": "071x0kkn7963mfrgpq2zrxa1hznyzcyjy33cracj6ifnh92jd1x0",
-      "depends": ["deSolve", "dplyr", "ggplot2", "gridExtra", "locfit", "shiny"]
     },
     "TransOmicsData": {
       "name": "TransOmicsData",
-      "version": "1.6.0",
-      "sha256": "0b74g5ad0v7y1jqzvsg3bvvcxj4gybdsnw48niw5f5lgs2yi82jj",
+      "version": "1.7.0",
+      "sha256": "1ian79k6ywflp2g2b2gcmd2ckn16rfs6va0rl17z5g1zcf7q8j7c",
       "depends": ["S4Vectors"]
     },
     "TumourMethData": {
       "name": "TumourMethData",
-      "version": "1.8.0",
-      "sha256": "1dpv623rfr1ns6svbnjjamhm0h2am7sha2dqwq5n1msrpwizp2x2",
+      "version": "1.9.0",
+      "sha256": "0mz8dsf13gp34avcwcd8ms25c0zwhn70m8ibzgl15lhn4hdi666z",
       "depends": ["ExperimentHub", "GenomicRanges", "HDF5Array", "R_utils", "SummarizedExperiment", "rhdf5"]
     },
     "VariantToolsData": {
       "name": "VariantToolsData",
-      "version": "1.34.0",
-      "sha256": "0cg2cv1l9hyxakdmk0zzk91yy2wcw2lkax8903bbczx9gh70rj91",
+      "version": "1.35.2",
+      "sha256": "0xpcgl5s91kiyxc8z0s9x9id930c3rl0d1b52wynn6cc69p8j0qh",
       "depends": ["BiocGenerics", "GenomicRanges", "VariantAnnotation"]
     },
     "VectraPolarisData": {
       "name": "VectraPolarisData",
-      "version": "1.14.0",
-      "sha256": "08bnkvj618iysnrsccrwx6ymr6chv2mgiw6jv4k4ix1apf5snnhs",
+      "version": "1.15.0",
+      "sha256": "1x1zyp1mjp0gcnvm8h0rrv77pcaivj3vwi486gw1y0shn1cn4h13",
       "depends": ["ExperimentHub", "SpatialExperiment"]
     },
     "WES_1KG_WUGSC": {
       "name": "WES.1KG.WUGSC",
-      "version": "1.42.0",
-      "sha256": "019x7kjdl1rbm9f6plg2hyy0hd1a6xjk0gywsxba0hs7z8j5zhs2",
+      "version": "1.43.0",
+      "sha256": "05xzgw08k5a0w9yxd4jfnipxs9bxxmcmcqdb1i0j1lfp20nifx1k",
       "depends": []
     },
     "WGSmapp": {
       "name": "WGSmapp",
-      "version": "1.22.0",
-      "sha256": "1dgb8xwpww87x2xwsi98jbx145sdpxkfl5aqmdyj73l6l7qa57rj",
+      "version": "1.23.0",
+      "sha256": "0yvs6c8wqv9aabqddmljfsfdbf660psh5a6wnqhx3mn3722cy5dl",
       "depends": ["GenomicRanges"]
     },
     "WeberDivechaLCdata": {
       "name": "WeberDivechaLCdata",
-      "version": "1.12.0",
-      "sha256": "0rshzaijgqzrmg37xv891gsml6whv5iv11wdcisv68cdvbg77ymx",
+      "version": "1.13.0",
+      "sha256": "0blch1kb02iwzfdpl9qv9vs5v80a9ap41map7ync9dvcyx2l6yv2",
       "depends": ["ExperimentHub", "SingleCellExperiment", "SpatialExperiment"]
     },
     "XhybCasneuf": {
       "name": "XhybCasneuf",
-      "version": "1.48.0",
-      "sha256": "0yb52pcafndjlw6i3lxvip4ddx6na1x6lnpf46fmwg95b9ak656f",
+      "version": "1.49.0",
+      "sha256": "1s7m04hkkk7v30g02k4z2ds6jji1kzw450v71l4l41pb2yahhm8z",
       "depends": ["RColorBrewer", "affy", "ath1121501cdf", "tinesath1cdf"]
     },
     "adductData": {
       "name": "adductData",
-      "version": "1.26.0",
-      "sha256": "1mdydvw79inp0vzvvzmpikfn7l8qvi2b71qqx7i7b2dydg094j12",
+      "version": "1.27.0",
+      "sha256": "0c520jvbvqkqsvwak6wqxcqypyf46g1ia5496ks3acq18xlz6l0k",
       "depends": ["AnnotationHub", "ExperimentHub"]
     },
     "affycompData": {
       "name": "affycompData",
-      "version": "1.48.0",
-      "sha256": "0sfzh3pcgxyqnjj5xn4qibq75nbz6yd9cnxyx3rgx02ksnc89f92",
+      "version": "1.49.0",
+      "sha256": "0cpmr6536nipr1h1jrr777j58payh1nkk8chgpi5pxd98806cxxl",
       "depends": ["Biobase", "affycomp"]
     },
     "affydata": {
       "name": "affydata",
-      "version": "1.58.0",
-      "sha256": "1kyn382a7hx1w0gk54yln35canlr6adnghi2x63qsqjxaxd5hcby",
+      "version": "1.59.0",
+      "sha256": "1ss81nl0kq559idi26a6rrl15csh1bxyp00z6zh4c7isaq7fpvc7",
       "depends": ["affy"]
     },
     "airway": {
       "name": "airway",
-      "version": "1.30.0",
-      "sha256": "1lfaf74357ij6albfqjxhk81135mj9pj6xh88pai6cwq4ndigwkq",
+      "version": "1.31.0",
+      "sha256": "1xcw4ji9rq0cjyy1jm4w9s2fpp1lrylcx7ldjn0qxjqavjl6bz8f",
       "depends": ["SummarizedExperiment"]
     },
     "antiProfilesData": {
       "name": "antiProfilesData",
-      "version": "1.46.0",
-      "sha256": "0nmxm2gkdr3il85vw589si6aiq8fkw6aqyc59rw2jn8chl2vqqik",
+      "version": "1.47.0",
+      "sha256": "0m138i4bcr37dfz4gnwrxd416vx1fhrjhw6jcab2lhafi09hx88n",
       "depends": ["Biobase"]
     },
     "aracne_networks": {
       "name": "aracne.networks",
-      "version": "1.36.0",
-      "sha256": "1ddqimz9fwx3rff72pj7hbr51vsq9h685mc86xhsvfxzv19hnz9c",
+      "version": "1.37.0",
+      "sha256": "1hivjshw6mmxh6w6xwmkva090sa5fdh8m200j0y9dzrzh4qw0ffh",
       "depends": ["viper"]
     },
     "bcellViper": {
       "name": "bcellViper",
-      "version": "1.46.0",
-      "sha256": "0hyr23p5r9a3ap8n1srvzblgxxsqw5x8xqmvqc7s9rsq33vgfnn7",
+      "version": "1.47.0",
+      "sha256": "069pyfzw6ak49q9rpbhwl8mpq69mdb375qq6m3963xmfrpc38n2i",
       "depends": ["Biobase"]
     },
     "beadarrayExampleData": {
       "name": "beadarrayExampleData",
-      "version": "1.47.0",
-      "sha256": "0r9dl64qcgnfzpadlibw4q6q9acjzgs9wayih7fraqn7cm9w22d9",
-      "depends": ["Biobase"]
+      "version": "1.49.0",
+      "sha256": "1bahgbpbzf5l638542hl4b2qn85xwbs32192wb25rr951n7z7pb3",
+      "depends": ["Biobase", "beadarray"]
     },
     "beta7": {
       "name": "beta7",
-      "version": "1.48.0",
-      "sha256": "0zi8ids611s28991xflmqfk8vkcn9x48m9p1mllgzy8jsg9pnywq",
+      "version": "1.49.0",
+      "sha256": "013vm8xjiiy241f6skvnxrbfgf9inmf0vq71yx385rqkjhbncy2l",
       "depends": ["marray"]
     },
     "biotmleData": {
       "name": "biotmleData",
-      "version": "1.34.0",
-      "sha256": "1bnjfxh3zfibfzir22vyf28cd9z1fz72i1pj5rdpvlpn721dwn1q",
+      "version": "1.35.0",
+      "sha256": "0f5byig28wbs2glfhp8klifx3dl0i6835z0vixlaw2975csd7jyj",
       "depends": []
     },
     "biscuiteerData": {
       "name": "biscuiteerData",
-      "version": "1.24.0",
-      "sha256": "01pla9g71zy6aa37qdaq71qn6w54xsvpc2b70b3dnp94p55d742c",
+      "version": "1.25.0",
+      "sha256": "05nr6yj460bb2w8masg8vjfnl8y2pa2s095iaghfdvx61nyrm5pg",
       "depends": ["AnnotationHub", "ExperimentHub", "GenomicRanges", "curl"]
     },
     "bladderbatch": {
       "name": "bladderbatch",
-      "version": "1.48.0",
-      "sha256": "1k1zr6k5acznw70xhkicf9l3pa75ij2jcqj502wnkf72dqls5saf",
+      "version": "1.49.0",
+      "sha256": "1mxpfbskqsz69abb4niazgs3w0mhwfwqkr1nwarqwvzg8cp4nlch",
       "depends": ["Biobase"]
     },
     "blimaTestingData": {
       "name": "blimaTestingData",
-      "version": "1.30.0",
-      "sha256": "081g0yadwy9w4px5zz0mdcf5i1xrvs1871h9pwz9sfymi9flsjr1",
+      "version": "1.31.0",
+      "sha256": "03bskwan1mhk0s62ixj9833zzy96wbiyxnx7lwals2bsx54vk5d1",
       "depends": []
     },
     "bodymapRat": {
       "name": "bodymapRat",
-      "version": "1.26.0",
-      "sha256": "0w48mxlpp8wa0jiqi6ig4x6dgxyaq9ng8fjr8xhiad7yxr29wifp",
+      "version": "1.27.0",
+      "sha256": "075znhv3n82bmkgbxj5fbx9zz8h2qmqihqsf7fbnwg6kp0p3if35",
       "depends": ["ExperimentHub", "SummarizedExperiment"]
     },
     "breakpointRdata": {
       "name": "breakpointRdata",
-      "version": "1.28.0",
-      "sha256": "05k79dmgv8a74z77i29vanqm5ql1f3893ry98qkixdxa4nspgcii",
+      "version": "1.29.0",
+      "sha256": "00y14m1bb5agj3z71j1mb3fx30fx7nz7xzj9bxwcc7xqs8p7pa27",
       "depends": []
     },
     "breastCancerMAINZ": {
       "name": "breastCancerMAINZ",
-      "version": "1.48.0",
-      "sha256": "13jmy8bg9wkm57xwbvdmp0xf2c4x12ic8vn9bws7h0i87f198d9c",
+      "version": "1.49.0",
+      "sha256": "0rv33a3116vklwghmb6n1shzf9adv7wnm0wr9a896zl8djj48jq2",
       "depends": []
     },
     "breastCancerNKI": {
       "name": "breastCancerNKI",
-      "version": "1.48.0",
-      "sha256": "13q95dlpq2rx0mnmf7c8af07hywgchznh3mc6is4b57y9iyph0q2",
+      "version": "1.49.0",
+      "sha256": "08awz4qcr9v7mxxrszfmqff8qy1yzbp4fgwx2xbngja3s38vl2pf",
       "depends": []
     },
     "breastCancerTRANSBIG": {
       "name": "breastCancerTRANSBIG",
-      "version": "1.48.0",
-      "sha256": "068cl5zyphqdwyisxj6bf3bj8cdxkn25g21x8mz4bci0v1x0l7lj",
+      "version": "1.49.0",
+      "sha256": "1a46jcfjkg3xy7bvnagx2l4dyykywvik3krlirl5llbkn91pjhhy",
       "depends": []
     },
     "breastCancerUNT": {
       "name": "breastCancerUNT",
-      "version": "1.48.0",
-      "sha256": "0p3v5gfnrr6phgl5sxl0slk4clj0i7mwclflc0ryz3ylx6gfnsqb",
+      "version": "1.49.0",
+      "sha256": "0pa7isihs0ixf82hmbzmf2nz0a9rrw3mshm4sz0qz6y2p5r7cy6k",
       "depends": []
     },
     "breastCancerUPP": {
       "name": "breastCancerUPP",
-      "version": "1.48.0",
-      "sha256": "1vbmxslkzjknzakqzrv8nc8glaxcqa3y8zcjw4wb4ri1nh3kf3f8",
+      "version": "1.49.0",
+      "sha256": "12zf5waib5qaa1a3szbzvvd7nbjzl9hz0c24n80dd510h41n0gd8",
       "depends": []
     },
     "breastCancerVDX": {
       "name": "breastCancerVDX",
-      "version": "1.48.0",
-      "sha256": "0d69y514aidwmacyba3phs6mgsl46rjjmm4f6gmdczfpw0cka1lj",
+      "version": "1.49.0",
+      "sha256": "07xjbfqc0kpay9b3hyjcdnf66v4wkyz76r9f6mc7bmjjai0hdan5",
       "depends": []
     },
     "brgedata": {
       "name": "brgedata",
-      "version": "1.32.0",
-      "sha256": "1vclawjvp49qfb9zdrlrkm4p305vqp9hnxymppiw7yvld33cbbqw",
+      "version": "1.33.0",
+      "sha256": "19n2yyav47r1v0hn9v5q1pn9mm68xh8vmd9bc4c9xjz12qc2kpjy",
       "depends": ["Biobase", "SummarizedExperiment"]
     },
     "bronchialIL13": {
       "name": "bronchialIL13",
-      "version": "1.48.0",
-      "sha256": "0yqhpg0662lizxd7v2y75q0fj3am97bcwfpwnq4vkk47vzqbk4qv",
+      "version": "1.49.0",
+      "sha256": "12z1bg8fa26aqvfwi9gxn3lxlcd0h1ns8b5scr5p6d8kl5hgdjjy",
       "depends": ["affy"]
     },
     "bsseqData": {
       "name": "bsseqData",
-      "version": "0.48.0",
-      "sha256": "0975d86m2icfpm5ljk3w307nn46f6vjc901a1n1dd7wr6p5a08zf",
+      "version": "0.49.0",
+      "sha256": "13ay6mw1pqj2r3icn9mm6j1irwm9jgwbsp4626n2hxqm8fjbakyb",
       "depends": ["bsseq"]
     },
     "bugphyzz": {
       "name": "bugphyzz",
-      "version": "1.4.0",
-      "sha256": "1rw8xbgkmn5hjxac3p6f4w3nkf4s4vyy8zsy54wi8xnfbzqwz1k5",
+      "version": "1.5.0",
+      "sha256": "176jddyj2q5fn4mif1pjr3ff95fcsylnyqi49yi82idw2dqwj2wb",
       "depends": ["BiocFileCache", "S4Vectors", "dplyr", "httr2", "purrr", "stringr", "tidyr", "tidyselect"]
     },
     "cMap2data": {
       "name": "cMap2data",
-      "version": "1.46.0",
-      "sha256": "188r5lcd5hrhsizxq2dqhynvbi1v89mymldm05hkmpldi2qbqh7g",
+      "version": "1.47.0",
+      "sha256": "0badi1dgrsqj3s883jd0kd1d26rx04zpjv5vbyfhm051wvzppzf8",
       "depends": []
     },
     "cancerdata": {
       "name": "cancerdata",
-      "version": "1.48.0",
-      "sha256": "1g61242lgpvgsbih7p8dcibc689ald1wnv7rksf9lnvbrxvw7abs",
+      "version": "1.49.0",
+      "sha256": "09n0lbrnm91fy03kxzpibmc5nnlpf8vj99970yf54mpallxdyqsn",
       "depends": ["Biobase"]
     },
     "ccdata": {
       "name": "ccdata",
-      "version": "1.36.0",
-      "sha256": "15w9sqrhs50sxgp4ghndvhiyvdzn4xy41yy6lzz3yvzaq31qn62q",
+      "version": "1.37.0",
+      "sha256": "022agd3mjsm6hr54ya3xzvh2zjyhvj2fsljmc3nmyv4gs7yfrkw1",
       "depends": []
     },
     "celarefData": {
       "name": "celarefData",
-      "version": "1.28.0",
-      "sha256": "11n6kqj765rh0shw1brp9sswsvrvxa02b5r7z08xgjvqbabv8gv5",
+      "version": "1.29.0",
+      "sha256": "0im6i8h0g3af89xm6bq5z57i2akhxmjy0h2yh3hw0cnfcrr43j4w",
       "depends": []
     },
     "celldex": {
       "name": "celldex",
-      "version": "1.20.0",
-      "sha256": "0bpyf7rgxdy6an1r3w1qsnklhlhfvsgknshk0dxk1r54p32jw6bz",
+      "version": "1.21.0",
+      "sha256": "1qf7aw4a4g89gnnv01izyfa5km7pgknhmcg9x4530xjng4v00av4",
       "depends": ["AnnotationDbi", "AnnotationHub", "DBI", "DelayedArray", "DelayedMatrixStats", "ExperimentHub", "Matrix", "RSQLite", "S4Vectors", "SummarizedExperiment", "alabaster_base", "alabaster_matrix", "alabaster_se", "gypsum", "jsonlite"]
     },
     "cfToolsData": {
       "name": "cfToolsData",
-      "version": "1.8.0",
-      "sha256": "086nhzr2n54m8sb444dy05j3fkr6vpqp4klpjhx38fvl6g41kpy0",
+      "version": "1.9.0",
+      "sha256": "1rirslg5cv6n3fc888ffrabfs86ggwhycfd7sc37gmsb192r4017",
       "depends": ["ExperimentHub"]
     },
     "chipenrich_data": {
       "name": "chipenrich.data",
-      "version": "2.34.0",
-      "sha256": "19gnpdwizk822gs3cylmdd0zqacikxy7mziff1zqakq25kkzxlcq",
+      "version": "2.35.0",
+      "sha256": "1c5k0w8y3ixkfzbcddn8y4h86862ygm3724wbqpmdh6f8ypwhaxv",
       "depends": ["AnnotationDbi", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors", "readr", "rtracklayer"]
     },
     "chipseqDBData": {
       "name": "chipseqDBData",
-      "version": "1.26.0",
-      "sha256": "0s0xdf52daii0i77s8clpxavqwlaz5nia0sxi814q50d9p14xdph",
+      "version": "1.27.0",
+      "sha256": "1dk5ajrc76sj86qr5c6397syi9wll6ddj39lf8g34xnx388xjdm1",
       "depends": ["AnnotationHub", "ExperimentHub", "Rsamtools", "S4Vectors"]
-    },
-    "chromstaRData": {
-      "name": "chromstaRData",
-      "version": "1.36.0",
-      "sha256": "0v8blcacwixqzdpqalx3bajakn0nmkmagpdzccfpi7ry3sazl2f4",
-      "depends": []
     },
     "clustifyrdatahub": {
       "name": "clustifyrdatahub",
-      "version": "1.20.0",
-      "sha256": "18g7m5nxgzrimfi0kalsk8k09nl76fy8dwwzx6qcbijxlqlz55qy",
+      "version": "1.21.0",
+      "sha256": "0yzaar79jb4s8pm7r313c3jqw81n982k6aywss6a1gikhygiadxr",
       "depends": ["ExperimentHub"]
     },
     "cnvGSAdata": {
       "name": "cnvGSAdata",
-      "version": "1.46.0",
-      "sha256": "013ihcpylm8flfhic4j5hz6gwbwsgv1abjw8b4bqrxbkjkiv8xv2",
+      "version": "1.47.0",
+      "sha256": "0cppkypfb524ficzdshiwvhdmkcxcr4a3g4a6xjjzd6csa734snk",
       "depends": ["cnvGSA"]
     },
     "colonCA": {
       "name": "colonCA",
-      "version": "1.52.0",
-      "sha256": "0vkdx969yh11jl9nr0nxbxb2c91ld1y2rr705zl7kry2g36lspmr",
+      "version": "1.53.0",
+      "sha256": "0yrdx7zfmfnm0isd2fwkdjky6jrdh922bvpvr6wlcaljl36s7332",
       "depends": ["Biobase"]
     },
     "crisprScoreData": {
       "name": "crisprScoreData",
-      "version": "1.14.0",
-      "sha256": "0fnl7yl6yzpllirwk21bkrxk0i7arrh4n4cx04hirbl25jzj309s",
+      "version": "1.15.0",
+      "sha256": "1p30jf5sjpk3x2hxwvi4ykv1a8k56dnz89hwz03spk6h2g4sxs9x",
       "depends": ["AnnotationHub", "ExperimentHub"]
     },
     "curatedAdipoArray": {
       "name": "curatedAdipoArray",
-      "version": "1.22.0",
-      "sha256": "16kndy95hx1kqbjcvmc4v2wixyi2mzw349v98p2cz1lpjr1kh4s3",
+      "version": "1.23.0",
+      "sha256": "1d3ay1icffkp74yy53dlxq6szqwpdch2wnczmyrf1386yikbi1ix",
       "depends": []
     },
     "curatedAdipoChIP": {
       "name": "curatedAdipoChIP",
-      "version": "1.26.0",
-      "sha256": "0j0sbkb0p0ppclykrxzxxg78cf2al6ljkpn8324l4mzgvi7znrd4",
+      "version": "1.27.0",
+      "sha256": "1v5ws552r8kjfm38v9ka2n0ball4jv8x31m1zywkgy00may4577j",
       "depends": ["ExperimentHub", "SummarizedExperiment"]
     },
     "curatedAdipoRNA": {
       "name": "curatedAdipoRNA",
-      "version": "1.26.0",
-      "sha256": "1l23xxm7g2fyf8ikjvh3j6a6n2l281y9zyric554w813ylk158vj",
+      "version": "1.27.0",
+      "sha256": "15l5byxn1526jzn7qjd09lwv8isglnmf5nq4q47livpvalihw66l",
       "depends": ["SummarizedExperiment"]
     },
     "curatedBladderData": {
       "name": "curatedBladderData",
-      "version": "1.46.0",
-      "sha256": "1gc4bfqnkhyndhp3m4l98zqbp12fn1p2p8bkxwamqsm7l9m9jsyh",
+      "version": "1.47.0",
+      "sha256": "1410b1hdi4r13ncag2cfmqm58x4pmqs5nhrd0qr0783391axhaq7",
       "depends": ["affy"]
     },
     "curatedBreastData": {
       "name": "curatedBreastData",
-      "version": "2.38.0",
-      "sha256": "1x8nn2qr777cdadwmjk1njs39i0ikl52w2p0g699x0583nafwnzq",
+      "version": "2.39.1",
+      "sha256": "04l3p28lxil3mnbykmbwwmx4gi6hci36v5gpmwbh1janbhba66aj",
       "depends": ["Biobase", "BiocStyle", "XML", "ggplot2", "impute"]
+    },
+    "curatedCRCData": {
+      "name": "curatedCRCData",
+      "version": "2.43.1",
+      "sha256": "1669jw0rrz437sqm8iadqa6a62bl5jl33y8ys1c2wcf9bf1bnn87",
+      "depends": ["Biobase", "BiocGenerics"]
     },
     "curatedMetagenomicData": {
       "name": "curatedMetagenomicData",
-      "version": "3.18.0",
-      "sha256": "09rjp8cywcd1jlb51l0l1xx5slahbv23hnzhiwldrrns0mfqqirc",
+      "version": "3.19.0",
+      "sha256": "18qannlh5mksazwxqhg3nrljnfg1cnsp69d40b8nvx0y9jj6pjk1",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "TreeSummarizedExperiment", "dplyr", "magrittr", "mia", "purrr", "rlang", "stringr", "tibble", "tidyr", "tidyselect"]
     },
     "curatedOvarianData": {
       "name": "curatedOvarianData",
-      "version": "1.48.0",
-      "sha256": "1vbj1f792rz3wxh5fw158sbwfj47h26byx3m2sb7nn3lbl45v6y5",
+      "version": "1.49.0",
+      "sha256": "1k54sryspc9009372iw9ckccgwl1f85f9idjpmcv93wzpg65yvm1",
       "depends": ["Biobase", "BiocGenerics"]
     },
     "curatedPCaData": {
       "name": "curatedPCaData",
-      "version": "1.6.0",
-      "sha256": "0y4r6b7d2gkbw2fj8q67ndcrva2yj3vi737dqwl34ar73iks2w51",
+      "version": "1.7.0",
+      "sha256": "1xg3z22n35wlnsjj5hdnyxmfbdwdgkkincai74q2cd28q081zz3z",
       "depends": ["AnnotationHub", "ExperimentHub", "MultiAssayExperiment", "RaggedExperiment", "S4Vectors", "reshape2", "rlang"]
     },
     "curatedTBData": {
       "name": "curatedTBData",
-      "version": "2.6.0",
-      "sha256": "18lysvr3bsq612fkwsijb2wn5qdndcrhwgdx65rj8hd3kn63wdbx",
+      "version": "2.7.0",
+      "sha256": "0vw149b4q46j16q4awwh6d0hqd39wyv09f4s1pah6m29s6714ihm",
       "depends": ["AnnotationHub", "ExperimentHub", "MultiAssayExperiment", "rlang"]
     },
     "curatedTCGAData": {
       "name": "curatedTCGAData",
-      "version": "1.32.1",
-      "sha256": "12643ypyvzz565p28h3vaqak85pnwbf1vw5xml0xf250916xy6nl",
+      "version": "1.33.2",
+      "sha256": "0xqa2il474py5f39k0sx2lqw4wn95ik11w01ma8fma7w65rm1k0p",
       "depends": ["AnnotationHub", "ExperimentHub", "HDF5Array", "MultiAssayExperiment", "S4Vectors", "SummarizedExperiment"]
     },
     "davidTiling": {
       "name": "davidTiling",
-      "version": "1.50.0",
-      "sha256": "0dpxwv5v3s80jbwbmsix2x1mva6208c7a2yp3mvhkhvczdmnvjqf",
+      "version": "1.51.0",
+      "sha256": "0by3qa19vpkmx6kpsh41gx62xc6ckq3faa7gzw584s28z1a3f2sp",
       "depends": ["Biobase", "GO_db", "tilingArray"]
     },
     "depmap": {
       "name": "depmap",
-      "version": "1.24.0",
-      "sha256": "0sg4325aj0vkzvmpsr6zymf71247c8bp44bpjkpqxsxgiqs4a9ns",
+      "version": "1.25.0",
+      "sha256": "19x1a67rrhkwcjj674aasymlmxc3brbdc5z6n14skcx180alsw6p",
       "depends": ["AnnotationHub", "BiocFileCache", "ExperimentHub", "curl", "dplyr", "httr2", "tibble"]
     },
     "derfinderData": {
       "name": "derfinderData",
-      "version": "2.28.0",
-      "sha256": "1lrc2jsay23pgzx8pdisr33xa7a081px7m9gixrjgz7g2ibx4iki",
+      "version": "2.29.0",
+      "sha256": "1zq0in3iphirv481v9x8w5vbj25apk9nksjsvmk4xccbjdl18c6i",
       "depends": []
     },
     "diffloopdata": {
       "name": "diffloopdata",
-      "version": "1.38.0",
-      "sha256": "0xnizpp04fg8f9nslyyygpqsh7lkb0ziqijrqpvj59gfpn12lgzh",
+      "version": "1.39.0",
+      "sha256": "1qxmmbc4qkddk9sp7l59dp8dl2ky5z0wxlzyn0jv06r7a3nji0ax",
       "depends": []
     },
     "diggitdata": {
       "name": "diggitdata",
-      "version": "1.42.0",
-      "sha256": "1xcnzw9yqg055i353b5d192050hkag635kdj63m0hfl63i34faa8",
+      "version": "1.43.0",
+      "sha256": "1a11kyhir6x83r56bh848wj7kh5mw8kx8pn13fbwvmv150l23d6s",
       "depends": ["Biobase", "viper"]
+    },
+    "dominatRData": {
+      "name": "dominatRData",
+      "version": "0.99.1",
+      "sha256": "14izz3c68k371gm68ibdnqp8wrdyv0m1fcsgiq07v98hkrmjhqsy",
+      "depends": []
     },
     "dorothea": {
       "name": "dorothea",
-      "version": "1.22.0",
-      "sha256": "140l6slrhgqic7d3ayq9201v0mkyyxnc93zpcdg3gldyhx6jcybd",
+      "version": "1.23.0",
+      "sha256": "0fxcdzxyzr6zvmw1s6drzkdpwf17c75l6xflkd8grm5z90xlg4ha",
       "depends": ["bcellViper", "decoupleR", "dplyr", "magrittr"]
     },
     "dressCheck": {
       "name": "dressCheck",
-      "version": "0.48.0",
-      "sha256": "043m5isrhg8b37pqirjmxskpw5s2m4h1grxav1d4igh3isl5324l",
+      "version": "0.49.0",
+      "sha256": "19vl59q7i08zx76xybz6f0vkqi3rcr84lvjpn8rhn1a5cy147l0x",
       "depends": ["Biobase"]
     },
     "dyebiasexamples": {
       "name": "dyebiasexamples",
-      "version": "1.50.0",
-      "sha256": "10kvaj9a0h73jhq29l724x4vp7znd3hai5pja2288idzjfdp82jv",
+      "version": "1.51.0",
+      "sha256": "0w7rsxlhcf4r5la0k0h4yq3jszv2ffk97jqsnrbk0m5cy4149q6d",
       "depends": ["GEOquery", "marray"]
     },
     "easierData": {
       "name": "easierData",
-      "version": "1.16.0",
-      "sha256": "0rbymp4dk0vj779s3zbmxz7sgxd60424ngkbgvsh957w0fg034by",
+      "version": "1.17.0",
+      "sha256": "16vwccfl36ba616iidgl4x66943g9bipcwdrf1dqyrs69nzqvk1p",
       "depends": ["AnnotationHub", "ExperimentHub", "SummarizedExperiment"]
     },
     "ecoliLeucine": {
       "name": "ecoliLeucine",
-      "version": "1.50.0",
-      "sha256": "1qi6ia5ncx9qyiwvbs1lgj8p5wwjbfhvzfdnvh5rl954wzm38b18",
+      "version": "1.51.0",
+      "sha256": "0lh5q04ywg43j73pnsxfxq0xh3ibgc2ib68f71qfx3wpmby4pir0",
       "depends": ["affy", "ecolicdf"]
     },
     "emtdata": {
       "name": "emtdata",
-      "version": "1.18.0",
-      "sha256": "1ivl8igsm7pjlapnl2zb04i81fasg4fsbhzch5m29d7xhrg8hw06",
+      "version": "1.19.0",
+      "sha256": "09xn7hkjrhlpbyq1y97v5c3mdqcl4gld4m0agjsfspf40qi6s7fv",
       "depends": ["ExperimentHub", "SummarizedExperiment", "edgeR"]
     },
     "eoPredData": {
       "name": "eoPredData",
-      "version": "1.4.0",
-      "sha256": "11g5jqvqb7zkgygbi09yg0ql0prq968ww19dbk07rzn12iysah8a",
+      "version": "1.5.0",
+      "sha256": "0m8vf8x55ddwhd5pr7lrncmcvlahg555hija1aqi2zndjbl5jzgy",
       "depends": ["ExperimentHub"]
     },
     "epimutacionsData": {
       "name": "epimutacionsData",
-      "version": "1.14.0",
-      "sha256": "1jh6r2r6nlwkhny8wj6wzq15yl9xwl6i4sp33jzlg9mbl7v37y0i",
+      "version": "1.15.0",
+      "sha256": "1zl38ar4d125km7yym8n42gndamlbnsq3172hss1pwbhp8bi6g9l",
       "depends": []
     },
     "estrogen": {
       "name": "estrogen",
-      "version": "1.56.0",
-      "sha256": "16l5a4f8f0b5m05c1psgwd1974gb1s6wrql30crnyj7qb0v51v05",
+      "version": "1.57.0",
+      "sha256": "0kl0jkg2cm1zs4f8kxaaqcz0xw2b2a35n20bymn1zw6ydd9p3vfc",
       "depends": []
     },
     "etec16s": {
       "name": "etec16s",
-      "version": "1.38.0",
-      "sha256": "01m24s9ij834byznvz4gxwqmj0azl54v2yvmjc7f177jqmai4hai",
+      "version": "1.39.0",
+      "sha256": "01ak4a3ywbm5vkpps5d8qvlq6szdz994n38pmiczv703ls0cy3f5",
       "depends": ["Biobase", "metagenomeSeq"]
     },
     "ewceData": {
       "name": "ewceData",
-      "version": "1.18.0",
-      "sha256": "01zifm6d9vpcpsd3axyvmxxncm5pssdln69fgvj3fidrzdh0bfg6",
+      "version": "1.19.0",
+      "sha256": "0k9fijmry754864qdfcl0idmyqbd93sjf4jwmbpfnh5rzfidw6j2",
       "depends": ["ExperimentHub"]
     },
     "faahKO": {
       "name": "faahKO",
-      "version": "1.50.0",
-      "sha256": "11p66b0m6ng19dl8r3vsdfmfxax573yp0mx960idhip2a0b3w5zx",
+      "version": "1.51.0",
+      "sha256": "0zn2q9npcjy7p4qd5lnpb7n4ql6xm3vvk4afbbc1nxv7nqilq589",
       "depends": ["xcms"]
     },
     "fabiaData": {
       "name": "fabiaData",
-      "version": "1.48.0",
-      "sha256": "0xijk9ri8vwwsfh8kn6rqz44vbdynscg8xny6924ba9acmdmjf5f",
+      "version": "1.49.0",
+      "sha256": "09sq4r8swwmcd0mkh1165nsn40bw2gvhvw4bm6xqxl8z372pk4cp",
       "depends": ["Biobase"]
     },
     "ffpeExampleData": {
       "name": "ffpeExampleData",
-      "version": "1.48.0",
-      "sha256": "05xsvnvk0xvhmpbf107ab2vs8q1057rmjz0n1grshf6lx7zabmlf",
+      "version": "1.49.0",
+      "sha256": "0khr5x8xs9m1ia9w3v48zzpf8b9v423vbfygsdgpa8nlkqc3h3sn",
       "depends": ["lumi"]
     },
     "fibroEset": {
       "name": "fibroEset",
-      "version": "1.52.0",
-      "sha256": "1qa9j5lwcllqlqrqa8jr4yg431qh7gi5nbsfwsc2gdy5qjg7an7q",
+      "version": "1.53.0",
+      "sha256": "0pmzp4yj2r4p4rahqqcwabdw4p8h8z3l10ik0lfis9x24f1s53f4",
       "depends": ["Biobase"]
     },
     "fission": {
       "name": "fission",
-      "version": "1.30.0",
-      "sha256": "1jr6sdh3ri6brxlxgfp05hwxq40m3s172bvbpygvdx7paiw76i4y",
+      "version": "1.31.0",
+      "sha256": "0gh5ldqkiswy0clk9pz6x471cvq1px6myqipns6h9dww2cvwdndi",
       "depends": ["SummarizedExperiment"]
     },
     "flowPloidyData": {
       "name": "flowPloidyData",
-      "version": "1.36.0",
-      "sha256": "1sk6shfsb7pd61pa63ynrp2cj5ka66z0vmdy22f22clglg2jq8xl",
+      "version": "1.37.0",
+      "sha256": "0rdpqxjn1cwxahqxm5ma9pqg9f699y32vkbc6xp3zic35h1lh9p8",
       "depends": []
     },
     "flowWorkspaceData": {
       "name": "flowWorkspaceData",
-      "version": "3.22.0",
-      "sha256": "16a5qqhqi3gdki8r0z9w745vpywc5pa8wf0q8vb0hgbynj595a3r",
+      "version": "3.23.0",
+      "sha256": "1z56nqxxwvrxkqjl5s9kp76ph27xi66qy97z3x3bm7x3c60v33vp",
       "depends": []
     },
     "fourDNData": {
       "name": "fourDNData",
-      "version": "1.10.0",
-      "sha256": "0zmbmycxdblwah9d8wh6nwdhpikhz0d9pcaqhjlhczffykc9idsd",
+      "version": "1.11.0",
+      "sha256": "1m2sz3s12ycjxlfscm9f89vl3wh5ffi8y79x4zl2ni5qwc48g3nz",
       "depends": ["BiocFileCache", "GenomicRanges", "HiCExperiment", "IRanges", "S4Vectors"]
     },
     "frmaExampleData": {
       "name": "frmaExampleData",
-      "version": "1.46.0",
-      "sha256": "14sp10wjkrb2pa0q0jmv1bzsa1qnc303gsriiqa8j0vv7jwmhza9",
+      "version": "1.47.0",
+      "sha256": "0v9gakcbrrhgzbwj10gpzkfqzgp4rp9p7x8igpk0blfx69wvhrk1",
       "depends": []
     },
     "furrowSeg": {
       "name": "furrowSeg",
-      "version": "1.38.0",
-      "sha256": "024n2z4k4kjcaxbdymkfk48nnmf2y3fg2k77s1p5a88r4xzxxxxg",
+      "version": "1.39.0",
+      "sha256": "09m229l4qsfzjf754240qbld9gz2iizm1n5a321l7h0vdyhmhf3j",
       "depends": ["EBImage", "abind", "dplyr", "locfit", "tiff"]
     },
     "gDNAinRNAseqData": {
       "name": "gDNAinRNAseqData",
-      "version": "1.10.0",
-      "sha256": "0p50pf9ka0kcy4bqbyjswy60xd0al19lbcq752vsbxnivhpb3ijw",
+      "version": "1.11.0",
+      "sha256": "1narvk6jcm4siq640pxxfcf9ziarwdab934fls6g2nri9lvbxrzf",
       "depends": ["BiocGenerics", "ExperimentHub", "RCurl", "Rsamtools", "XML"]
     },
     "gDRtestData": {
       "name": "gDRtestData",
-      "version": "1.8.0",
-      "sha256": "0yjs7qpi3jnlavhlrhfxy0zpjlwflpv8nycwiq37sb41xlrgcqq1",
+      "version": "1.9.2",
+      "sha256": "1vs9ac3c201rify13wgzrrikgd1w7616qk3dq320g6gf5qpdcnrz",
       "depends": ["checkmate", "data_table"]
     },
     "gageData": {
       "name": "gageData",
-      "version": "2.48.0",
-      "sha256": "1l449mnb2r5ssiyzq92z5q2sdshwgi05a0ydhr44p30hq1bsxb3k",
+      "version": "2.49.0",
+      "sha256": "0qbhqrg8wmg8683785vwmlrcliapiinfr2dmyzglmjxdkq63v9j1",
       "depends": []
     },
     "gaschYHS": {
       "name": "gaschYHS",
-      "version": "1.48.0",
-      "sha256": "0ia45zy3cimzl3vkbrnjfpsw4j06l0k20indzlxl2im3kmqvmmz6",
+      "version": "1.49.0",
+      "sha256": "0k9mqncl7m7vj6wffsn4gvd4xmz2w0k27lyzmf0gp28v523sr23l",
       "depends": ["Biobase"]
     },
     "gcspikelite": {
       "name": "gcspikelite",
-      "version": "1.48.0",
-      "sha256": "1pm7g0b9yr1ivi001305nhxxvksrhcp82mvfaxcbs8dxficvr8vk",
+      "version": "1.49.0",
+      "sha256": "03994a9k8mfypvx57sckz3kz9rjwdbv4k8spid5vprqgh3jpl8gi",
       "depends": []
     },
     "geneLenDataBase": {
       "name": "geneLenDataBase",
-      "version": "1.46.0",
-      "sha256": "0nq3y5kfiay6ns6n3wwh5nvxra98lqrlbxi84ww586n7bbamxqhd",
+      "version": "1.47.0",
+      "sha256": "1w2fmd2rk0z85d0p3grld6n9dvldahqdk81m09yzvd4i82dx5rgh",
       "depends": ["GenomicFeatures", "rtracklayer", "txdbmaker"]
     },
     "genomationData": {
       "name": "genomationData",
-      "version": "1.42.0",
-      "sha256": "1bpi46irqvxr881iqdlb5lllbyzgphr5bl4pci6zhpaf8gcb8k17",
+      "version": "1.43.0",
+      "sha256": "1ym6hqzj65nzz2bi3lx8b0h8ah5m3j2s3ny1z45rbj3b17acs9g2",
       "depends": []
     },
     "golubEsets": {
       "name": "golubEsets",
-      "version": "1.52.0",
-      "sha256": "0mphq9hk18y747g0m9fcyc36g37ajp5c8109skr36qhllsjyskcq",
+      "version": "1.53.0",
+      "sha256": "1hc1mb1jqaywn2h1n31azf2pbqr2xh5xchb3nyiyc9fa9dfdyy5q",
       "depends": ["Biobase"]
     },
     "gpaExample": {
       "name": "gpaExample",
-      "version": "1.22.0",
-      "sha256": "0gmv6yki2x11dwxxyz1lv57vkmxdzz3qzyw3da56zcmb65pcsrsp",
+      "version": "1.23.0",
+      "sha256": "1qgs93vzb55av64qh7g6wfj7i64fr5y2hrgcw5f23xrkw57wqrj6",
       "depends": []
     },
     "grndata": {
       "name": "grndata",
-      "version": "1.42.0",
-      "sha256": "0d9rx0b1nnik86anvh5ifpah580msa46m32cxvxm36fpj603zd70",
+      "version": "1.43.0",
+      "sha256": "14pl8733my0r7bmhh1w3cbqqzrsik2k9j4gvnh9diadr9hq142pw",
       "depends": []
     },
     "h5vcData": {
       "name": "h5vcData",
-      "version": "2.30.0",
-      "sha256": "09x31c7nrfimxv6l4y9d30rn4bmzqalrgpzldx6zmmffhyn7ck51",
+      "version": "2.31.0",
+      "sha256": "035r4gzd06xvk1794r226ijlmmw92kw5azrza30y4aijjm4ybfq5",
       "depends": []
     },
     "hapmap100khind": {
       "name": "hapmap100khind",
-      "version": "1.52.0",
-      "sha256": "043p38bg792by43m4zfzrqm04x4fs3ikcy1m95mkg60p479f6w0c",
+      "version": "1.53.0",
+      "sha256": "0l9w2j68m72wvbbvsxp05nbrbfdir4rp8ib3yysa9jaasygg616q",
       "depends": []
     },
     "hapmap100kxba": {
       "name": "hapmap100kxba",
-      "version": "1.52.0",
-      "sha256": "1zad5ayz45cr77l105jygq400f5xq74fynf4c9kqrp8fw2iqqqlc",
+      "version": "1.53.0",
+      "sha256": "0b2xs89wd11v8dvj68aq9bm5knb1hqpkgdc4ja3d4jlx4216dglh",
       "depends": []
     },
     "hapmap500knsp": {
       "name": "hapmap500knsp",
-      "version": "1.52.0",
-      "sha256": "06gsmsmczzlmiysq8n4868cwqg2qw7kjvdmfaq930s8a15sf6qdi",
+      "version": "1.53.0",
+      "sha256": "1b1j8c6v1vlhvfl8179qvlby06z4l8s58k3a97ms145l4jk770x2",
       "depends": []
     },
     "hapmap500ksty": {
       "name": "hapmap500ksty",
-      "version": "1.52.0",
-      "sha256": "137ixd8m88i9vvpkigm88p1kapxidcpcs3scnz5grdz5dimdgnjd",
+      "version": "1.53.0",
+      "sha256": "0gjixx47m5jf3rdyl08zwwfnhsw5xix1w71w87frkf73asd0x714",
       "depends": []
     },
     "hapmapsnp5": {
       "name": "hapmapsnp5",
-      "version": "1.52.0",
-      "sha256": "1a3qllhrzg3d5jarqglwk2npr3bl288jxc8n0fhcg022gfpsyy2k",
+      "version": "1.53.0",
+      "sha256": "1gxhqlakinpiq3d7rrxr00y7sihlgy73ih07dw7dcmq82y1p0qka",
       "depends": []
     },
     "hapmapsnp6": {
       "name": "hapmapsnp6",
-      "version": "1.52.0",
-      "sha256": "0g077wgn2f5gfl04x7pnhwbglgw5mfr9ys9ya2618v3aiq6v4zds",
+      "version": "1.53.0",
+      "sha256": "0l7wi4hfdy5vc0nmds3qhvwkm0235ljq6913n4h1fsqg1sy4747i",
       "depends": []
     },
     "harbChIP": {
       "name": "harbChIP",
-      "version": "1.48.0",
-      "sha256": "1pnc6bgpjjk68jva1mncwnlmwps15b6bkq9b4z780ggwjqyzc3ms",
+      "version": "1.49.0",
+      "sha256": "1cyd0w79743y6sfgirfmzyyfd1g23k9xjwas0pp16bdwi1hz4m6f",
       "depends": ["Biobase", "Biostrings", "IRanges"]
     },
     "healthyControlsPresenceChecker": {
       "name": "healthyControlsPresenceChecker",
-      "version": "1.14.0",
-      "sha256": "1zqcbqkgwbvysgbb4grmbnam1j8xjcmyjlwv243hq8xpx2f5y1rf",
+      "version": "1.15.0",
+      "sha256": "12qk15mpbhakwrlwj79b8rdz0c6gv2irn2cchdlym1475cyv5ry3",
       "depends": ["GEOquery", "geneExpressionFromGEO", "magrittr", "xml2"]
     },
     "healthyFlowData": {
       "name": "healthyFlowData",
-      "version": "1.48.0",
-      "sha256": "1vfjln6w68i2zidxi7f19jjhrqhn21l7gcjsh23z206q33q8dx95",
+      "version": "1.49.0",
+      "sha256": "13i6h7sv344mlh3740kiw4jccjgazavyvllms7q0pxrx0nqm0nnw",
       "depends": ["flowCore"]
     },
     "hgu133abarcodevecs": {
       "name": "hgu133abarcodevecs",
-      "version": "1.48.0",
-      "sha256": "1f96v90k5qngcpi7z92g9ngbs28n8ldsy5vdi2xgnzyhwjrsxzpd",
+      "version": "1.49.0",
+      "sha256": "17qzd38j82isaxxac7zyvxb0sbxfwv1989ym5vl2viyn22q8v9n4",
       "depends": []
     },
     "hgu133plus2CellScore": {
       "name": "hgu133plus2CellScore",
-      "version": "1.30.0",
-      "sha256": "0c1w7n62iiz6nhm1d3rkmwlx4ry7b35jvgdgdh06x0kg1bbcqrqm",
+      "version": "1.31.0",
+      "sha256": "1s5l92hw7y7gsdzl4lrayg44a0d3nvrjbjzlvpraibkj5rfy90ap",
       "depends": ["Biobase"]
     },
     "hgu133plus2barcodevecs": {
       "name": "hgu133plus2barcodevecs",
-      "version": "1.48.0",
-      "sha256": "1579nvs7zrn37s3rdnmj2nfqv7f4ljhi21fz2ih904ps7nm82q1d",
+      "version": "1.49.0",
+      "sha256": "0f3y99sdjsmy1y7xwfg8s74aqy842glfkacp3l9yxwbghywp5jnc",
       "depends": []
     },
     "hgu2beta7": {
       "name": "hgu2beta7",
-      "version": "1.50.0",
-      "sha256": "1sbsykivp7fd3fhsrhm8wbmz8sfsdh1yfsqz8hwn92xa9hlvcavm",
+      "version": "1.51.0",
+      "sha256": "0sg7fl232npc1rr26b52dk3wamcpwb7avsxr5f62bjziywkgj21j",
       "depends": []
-    },
-    "homosapienDEE2CellScore": {
-      "name": "homosapienDEE2CellScore",
-      "version": "1.6.0",
-      "sha256": "15m2mnyhxpa417203k93632z0707cf949qi1lxywxh84blzjlg47",
-      "depends": ["BiocGenerics", "DESeq2", "ExperimentHub", "MatrixGenerics", "Rtsne", "S4Vectors", "SummarizedExperiment", "getDEE2"]
     },
     "humanHippocampus2024": {
       "name": "humanHippocampus2024",
-      "version": "1.2.0",
-      "sha256": "1ykr2z2wmakdg2990my8wmq4m6pinavmrna67rys8alwyl2qk7fq",
+      "version": "1.3.0",
+      "sha256": "0v46ydssj7bf0mrwlb3akqh42b89aw0zydrn6qh678nlqs49qkz5",
       "depends": ["ExperimentHub", "SpatialExperiment", "SummarizedExperiment"]
     },
     "humanStemCell": {
       "name": "humanStemCell",
-      "version": "0.50.0",
-      "sha256": "1vynp6rm0fn4p5x7hmksl5zyga3vr4qaxy9jsv3r2ckcqbfyxfl8",
+      "version": "0.51.0",
+      "sha256": "1x2n47gah0260ysh60x5hbjspj0gd0hplkm7zk9mbvm4377hyb2p",
       "depends": ["Biobase", "hgu133plus2_db"]
     },
     "iModMixData": {
       "name": "iModMixData",
-      "version": "1.0.0",
-      "sha256": "0fnswaz695698z3gp20i380z36yjlqv747cnly0cy735wl71fywj",
+      "version": "1.1.0",
+      "sha256": "1mqbm8q2xp60dsn4nwbz58zvhccqqj7shgz1bxw1l8r6m636m57y",
       "depends": ["ExperimentHub"]
     },
     "imcdatasets": {
       "name": "imcdatasets",
-      "version": "1.18.0",
-      "sha256": "0fqjdnd898bf4m63jfj64zbhq30ffxbhrvsjy6410xlwsykxkx31",
+      "version": "1.19.0",
+      "sha256": "0a246hkywxgf4ywkjzz22fli6h6p8qlzylv9nvv21aw3lzh8sn16",
       "depends": ["DelayedArray", "ExperimentHub", "HDF5Array", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "cytomapper"]
     },
     "kidpack": {
       "name": "kidpack",
-      "version": "1.52.0",
-      "sha256": "1njiigblsm4gd6ic53kng65xzvaggwq7szjzbls0l4pz5kqccr4s",
+      "version": "1.53.0",
+      "sha256": "1v0zyw12lallz0w0jxp7m41b1ynw1xgip81y6znrwaqqyjc5bhy5",
       "depends": ["Biobase"]
     },
     "leeBamViews": {
       "name": "leeBamViews",
-      "version": "1.46.0",
-      "sha256": "1v043x75bcxkvxz0681vdzqakj0d7w10pvy3aqkr9kzqxzhckqwj",
+      "version": "1.47.0",
+      "sha256": "06mv4ycinbaaadab5y7zr9nf9lnb97zz032dwqiipxs1gyclcznl",
       "depends": ["BSgenome", "Biobase", "GenomicAlignments", "GenomicRanges", "IRanges", "Rsamtools", "S4Vectors"]
     },
     "leukemiasEset": {
       "name": "leukemiasEset",
-      "version": "1.46.0",
-      "sha256": "1qywbf12lwxg30vmiar5943s149smc67j224bm938gz5b2mznyiz",
+      "version": "1.47.0",
+      "sha256": "00c13jkl0vpb99ibmrxjms1iq3kl4vzp6fag2051kkp63fnwf3vl",
       "depends": ["Biobase"]
     },
     "lumiBarnes": {
       "name": "lumiBarnes",
-      "version": "1.50.0",
-      "sha256": "1fz1a6z7abr4vzi2dzs3qklh00ppigq1b86pfdnag7i2sjl3n0lq",
+      "version": "1.51.0",
+      "sha256": "194awrjmfcgih4f7zxkydv2lfzn0kqraybn913cnbi4c0qs1flgj",
       "depends": ["Biobase", "lumi"]
     },
     "lungExpression": {
       "name": "lungExpression",
-      "version": "0.48.0",
-      "sha256": "18mgb4f67k4aa9bcygc3pb7c8qccvdzwwmp5zk3nklmkfyj4njai",
+      "version": "0.49.0",
+      "sha256": "15g64nyvin7bbmsa243ggzq7q6a098yy4rmkkdkbia65kywmrazi",
       "depends": ["Biobase"]
     },
     "lydata": {
       "name": "lydata",
-      "version": "1.36.0",
-      "sha256": "1hi58vamj784m54v1wcibkvvbz7a2xnd2w4cj8gxf0fik1hh9gjg",
+      "version": "1.37.0",
+      "sha256": "1ml3ibrjdriiaqcgnpgiviiyifl8wvjc3g14kwz7q2gh3qlhf1l1",
       "depends": []
     },
     "mCSEAdata": {
       "name": "mCSEAdata",
-      "version": "1.30.0",
-      "sha256": "1zz13hnk129ic8n5brrbbwz44v6vqihp1r49zdanqf5r12a5vfdz",
+      "version": "1.31.1",
+      "sha256": "1d6cp4w9m4la53nx2a3ad1s2vc6d1v2nqhcks6dvzhwfzyv6smb6",
       "depends": ["GenomicRanges"]
     },
     "macrophage": {
       "name": "macrophage",
-      "version": "1.26.0",
-      "sha256": "0ljan2icrpiivfy7cvn0d6hil81y1jrwwzh9g0p0jfq2liay791s",
+      "version": "1.27.0",
+      "sha256": "19xv7958ddzis18fli10x923bjxlnpm98djgz3pj56x4509npzry",
       "depends": []
     },
     "mammaPrintData": {
       "name": "mammaPrintData",
-      "version": "1.46.0",
-      "sha256": "1gqyv8bn0acxl0injr9zn264iv1yskf1dm0clj91s0v8zvv0a29k",
+      "version": "1.47.0",
+      "sha256": "1ii9r55mbncwfw053wz76vi5apxcz87r26n49cx2lsbzf5q6if9x",
       "depends": []
     },
     "maqcExpression4plex": {
       "name": "maqcExpression4plex",
-      "version": "1.54.0",
-      "sha256": "1fvc3kn4f1qjwhqfxfxx8xz27rd005q2f533yq4mk1qp5ykbz6bk",
+      "version": "1.55.0",
+      "sha256": "1slqncs9k4wxlf4kccdwbyc5rgb7iikrn3v962jpdx397gvaayhd",
       "depends": []
     },
     "marinerData": {
       "name": "marinerData",
-      "version": "1.10.0",
-      "sha256": "1q4avfv9gyjqb9yjwyaw4hjh92blkz9bc34gcrmyg4ff1apsikk6",
+      "version": "1.11.0",
+      "sha256": "10dnvsyms5s3i3nhp8sp590v6fjzvr85w1rzydf3fk40y1z3717d",
       "depends": ["ExperimentHub"]
     },
     "mcsurvdata": {
       "name": "mcsurvdata",
-      "version": "1.28.0",
-      "sha256": "1yg39bq5g1yc3bgnfkzwdbhvw1y5yq47370rp2hpff5z1gbikp4g",
+      "version": "1.29.0",
+      "sha256": "14lp2nf1wi2p46l9r2xn5j9dvfv52mmvv8igs0rgf51ar2r29bak",
       "depends": ["AnnotationHub", "Biobase", "ExperimentHub"]
     },
     "metaMSdata": {
       "name": "metaMSdata",
-      "version": "1.46.0",
-      "sha256": "0wkc0cx11444xxijsmwp0qx55rmfpw60cl3z5vxk3dg0vv253jl6",
+      "version": "1.47.0",
+      "sha256": "0hj5247c6kyzwl513gg1wrbnwylkbh1ckwkd2brp4nbw72552w3y",
       "depends": []
     },
     "methylclockData": {
       "name": "methylclockData",
-      "version": "1.18.0",
-      "sha256": "09rrwxgil154iaiyk1rdxv3rzva5pzwnlrxyraw2shkb8pll9h1s",
+      "version": "1.19.0",
+      "sha256": "1ij371na1id1wvpgbsd6yzfd9h04dnmmnp54g4j636zmkxkcv3c7",
       "depends": ["ExperimentHub", "ExperimentHubData"]
     },
     "miRNATarget": {
       "name": "miRNATarget",
-      "version": "1.48.0",
-      "sha256": "0i3a3ibrkhi2xvcs1bv7vna1p67av686jfhd4hfscvnl6fzjngna",
+      "version": "1.49.0",
+      "sha256": "0smr8g7l3nmr2ypls1hzva64qpj80gwj1s1qd7graiagbip70i01",
       "depends": ["Biobase"]
     },
     "miRcompData": {
       "name": "miRcompData",
-      "version": "1.40.0",
-      "sha256": "1vd7jm0pnav1npjz6h0b0m3nl5g6kahh0l71hlsncibyfa2fpdyz",
+      "version": "1.41.0",
+      "sha256": "1j15vz1v0r2ywai2frpzbz10m75110jbpwxgsyjmihp1gmqidvw8",
       "depends": []
     },
     "microRNAome": {
       "name": "microRNAome",
-      "version": "1.32.0",
-      "sha256": "0yf0cysdkvfk0yjp1i14d0hi9pqz10v17qqq8afa8y8syqnrc0ay",
+      "version": "1.33.0",
+      "sha256": "00w6nlv5qhzriakbbmprwvn237rn6ap26nk9bbp43l18n6v0l38k",
       "depends": ["SummarizedExperiment"]
     },
     "microbiomeDataSets": {
       "name": "microbiomeDataSets",
-      "version": "1.18.0",
-      "sha256": "1qwngw67dniv096na16z5j0wrm7vm70apmknmvp5icjai84fbl38",
+      "version": "1.19.0",
+      "sha256": "14hisc622qxfyfj5h80fjjzmx2kx2r3qd44v7cdprqlfhjqk8n1m",
       "depends": ["BiocGenerics", "Biostrings", "ExperimentHub", "MultiAssayExperiment", "SummarizedExperiment", "TreeSummarizedExperiment", "ape"]
     },
     "minfiData": {
       "name": "minfiData",
-      "version": "0.56.0",
-      "sha256": "19x9m6dmbbzk0r3slgwslykns4aacghcw589wfzfrhsb08h30hrv",
+      "version": "0.57.0",
+      "sha256": "1n1z1gx3q3zv0y1m81gw635n400n7vyyrgbg1ja512x24njijxjj",
       "depends": ["IlluminaHumanMethylation450kanno_ilmn12_hg19", "IlluminaHumanMethylation450kmanifest", "minfi"]
     },
     "minfiDataEPIC": {
       "name": "minfiDataEPIC",
-      "version": "1.36.0",
-      "sha256": "19na2s5w6k5yqqvv3pilcwdqalqav3y9jm74xqns9q3s9664sva5",
+      "version": "1.37.0",
+      "sha256": "0afsjqpk2pjhxk6cfffkq8np5jnqapnl99z53hncxajmpa3f6pcg",
       "depends": ["IlluminaHumanMethylationEPICanno_ilm10b2_hg19", "IlluminaHumanMethylationEPICmanifest", "minfi"]
     },
     "minionSummaryData": {
       "name": "minionSummaryData",
-      "version": "1.40.0",
-      "sha256": "0b3pcd3ahym4nczfap6ykdxrxfg8h8zcyvz5bms16qbvgq1g25d3",
+      "version": "1.41.0",
+      "sha256": "1b5yirnwmz2ws9aq1criaaf309rpixynrxibr6ia31rxf7sy31ip",
       "depends": []
     },
     "mosaicsExample": {
       "name": "mosaicsExample",
-      "version": "1.48.0",
-      "sha256": "12qdjlq0sn0h47qi57xqx8gg28ydkjxnvl5lm91dcbfpr9x5fm0r",
+      "version": "1.49.0",
+      "sha256": "10xzgiid8kd9ssl0611cnpkh024cnpkq3szh9nrab5n70mf2rks1",
       "depends": []
     },
     "mouse4302barcodevecs": {
       "name": "mouse4302barcodevecs",
-      "version": "1.48.0",
-      "sha256": "1w4rqhmzsy1hs3x8jycx1qvwsr0050d45p74sj6088kxwhn3yahm",
+      "version": "1.49.0",
+      "sha256": "044b53s0ci7dvm1iw0ikmp1kk8906r14imrjc0dsrlr546amx1by",
       "depends": []
     },
     "msPurityData": {
       "name": "msPurityData",
-      "version": "1.38.0",
-      "sha256": "1b5pqq7bk4hxcvpr3svz0i9a2xpis420xc630v2klf76g28z4zsc",
+      "version": "1.39.1",
+      "sha256": "1s7p7c0852dbrf4cfh0fwvwy72clp239r6kzd8x9f2sjx0qmqyqm",
       "depends": []
     },
     "msd16s": {
       "name": "msd16s",
-      "version": "1.30.0",
-      "sha256": "1l31xrfwnznjnx31mlj8bh2v890lyczzcvlm5mlsjbcqpd3zj6rv",
+      "version": "1.31.0",
+      "sha256": "0y3m4yd5phmyjlkdyhll6psz8ikh3qzpjjjydss8nffcvsaman3j",
       "depends": ["Biobase", "metagenomeSeq"]
     },
     "msdata": {
       "name": "msdata",
-      "version": "0.50.0",
-      "sha256": "11cshqs2siajn6ssqpdchw11x7f4x224d76fkcfsqgjczr5zgfb0",
+      "version": "0.51.2",
+      "sha256": "0r23xlgmd8169lwgglmjadj28lbzhj3i2gzfh5z4574lzi1q139f",
       "depends": []
     },
     "msigdb": {
       "name": "msigdb",
-      "version": "1.18.0",
-      "sha256": "00sf9j20fi81dni318j1szy7sryxh7xfyhvgkzhmar3ljc4g5grh",
+      "version": "1.19.0",
+      "sha256": "1pb3fg33dnk70cx8ajr01kg58l4qis98s8067nkwzssj57nfwhz9",
       "depends": ["AnnotationDbi", "AnnotationHub", "ExperimentHub", "GSEABase", "org_Hs_eg_db", "org_Mm_eg_db"]
     },
     "msqc1": {
       "name": "msqc1",
-      "version": "1.38.0",
-      "sha256": "0njigw0qy1jwb3xi5h5jak9wyvn7fyy41vy1l5cyc64bdrx7i1ms",
+      "version": "1.39.0",
+      "sha256": "08dcsrq64a1hfzrglkrbqdmmd6hpw6yyf3jd9y7006f315w5amf2",
       "depends": ["lattice"]
     },
     "mtbls2": {
       "name": "mtbls2",
-      "version": "1.40.0",
-      "sha256": "0v85jrh094dcrqnrjmn65c33zyxl839nr9540fdjs1s6fvsck76r",
+      "version": "1.41.0",
+      "sha256": "0pa6zzvb1zibvwidh0qc6qsw915x8xc4zkfnbp0adwp3fsvkw4bd",
       "depends": []
     },
     "muSpaData": {
       "name": "muSpaData",
-      "version": "1.2.0",
-      "sha256": "1fdh8kpw7jjbn2y0v7nwszrkr6wbmwa6qbcbg7p0h606g2i1jbxg",
+      "version": "1.3.0",
+      "sha256": "0f3dcx6jizkj79cpp1ra7qqr0crd3f5m8b633p212x7rnadp55vh",
       "depends": ["ExperimentHub"]
     },
     "muleaData": {
       "name": "muleaData",
-      "version": "1.6.0",
-      "sha256": "0p5ckxgi94x252ysj60mfm718rl3c66gvahl4ad9ks3nh955zmy4",
+      "version": "1.7.0",
+      "sha256": "16z7plbymcfdrhyv5s3xwpkhbizg5xgcra4y9fb6ykqqmxac1a7r",
       "depends": []
     },
     "multiWGCNAdata": {
       "name": "multiWGCNAdata",
-      "version": "1.8.0",
-      "sha256": "11h4llyzm8wh70nznqpvrf94prjv1j2pmrqwwsc9zqnl0q6zfdp3",
+      "version": "1.9.0",
+      "sha256": "0xmcfmmqkjmhwyp0h6apgfdjjj84m5fwx6acgiw3v1rw0cf72rmm",
       "depends": ["ExperimentHub"]
     },
     "muscData": {
       "name": "muscData",
-      "version": "1.24.0",
-      "sha256": "1fqr21y5ac30i1riz07rnaqz4qd5hkmj7hcx60mvkmc77nbyn4kh",
+      "version": "1.25.0",
+      "sha256": "094hr0a4mrsij3gidz8p4czm715kid4mk1psl77bzlgnldp62g9g",
       "depends": ["ExperimentHub", "SingleCellExperiment"]
     },
     "mvoutData": {
       "name": "mvoutData",
-      "version": "1.46.0",
-      "sha256": "1s9ih74dgbj1lbazbmf9kawk2s9vxhm21hnwbm3y73s11sp201wm",
+      "version": "1.47.0",
+      "sha256": "15505z337kwipghn772717q09dzk4c69gaqbjcxnqa2xsw2qg82s",
       "depends": ["Biobase", "affy", "lumi"]
     },
     "nanotubes": {
       "name": "nanotubes",
-      "version": "1.26.0",
-      "sha256": "03f9saxsl7d1qqs88m49ryjbr0rz99jcm7sphvla5r8vbxh9q28c",
+      "version": "1.27.0",
+      "sha256": "11vmi7naclx890synklrwp7364z1rbq3l4n447rdisk0jw1b4lm6",
       "depends": []
     },
     "nmrdata": {
       "name": "nmrdata",
-      "version": "1.0.0",
-      "sha256": "193cn9p1r0nbk02qrflmgka4inz5wyn8bavy23aryx09nbi18rs1",
+      "version": "1.1.0",
+      "sha256": "0z4fj6dl097f7hsaygd78kqazlxnmrdviqs4ipw7r8h3drd7ja70",
       "depends": ["ExperimentHub"]
     },
     "nullrangesData": {
       "name": "nullrangesData",
-      "version": "1.16.0",
-      "sha256": "1injh2pr35h76ra33yi81w2lisxhnx671a81ifm048c83g4kgcxf",
+      "version": "1.17.0",
+      "sha256": "0ijz0xv86q42ybabhpjap7ml7gyrjn6qis5f34cwnra7snzc0z2i",
       "depends": ["ExperimentHub", "GenomicRanges", "InteractionSet"]
     },
     "oct4": {
       "name": "oct4",
-      "version": "1.26.0",
-      "sha256": "043q8hz2y5mwg0lzraz74dc356jb4disdfy67crym8kzw75xvskb",
+      "version": "1.27.0",
+      "sha256": "1apg3nhfaz8jy4gvwp85p7q6972phslkxidk4pzyd5wxrmlm8jm0",
       "depends": []
     },
     "octad_db": {
       "name": "octad.db",
-      "version": "1.12.0",
-      "sha256": "071ih0v1a72v35a45hdjq5f90szkngnqplvl20gyz7igjxa5m1gn",
+      "version": "1.13.0",
+      "sha256": "14naipa417gzr41mvjiwkkmbaq18znsjzl9zz7n70z5l07ivn3lp",
       "depends": ["ExperimentHub"]
     },
     "optimalFlowData": {
       "name": "optimalFlowData",
-      "version": "1.22.0",
-      "sha256": "1gswibl826rxp87dip5dp5jdb9ishjfwg0znvly5h9vi1b9fls6z",
+      "version": "1.23.0",
+      "sha256": "1zchvyzg6dqgvcfyd44bc2wg0ah0rcsx7vcbnfgwvvr91zxkm8df",
       "depends": []
     },
     "orthosData": {
       "name": "orthosData",
-      "version": "1.8.0",
-      "sha256": "1falm70igwgsy720sgg7zc8jcx22fbl5h6v2m15zpsmqhvgzszl4",
+      "version": "1.9.0",
+      "sha256": "1ap8kp3kbx392a2c0d86pksk76kjw5v4vaxb751qmzy3hbbmkfih",
       "depends": ["AnnotationHub", "BiocFileCache", "ExperimentHub", "HDF5Array", "SummarizedExperiment", "stringr"]
     },
     "pRolocdata": {
       "name": "pRolocdata",
-      "version": "1.48.0",
-      "sha256": "1z7kiva4w6qkqq4dcnjf2693nj68l8s5l94fq2y1qm06rpr22g9v",
+      "version": "1.49.0",
+      "sha256": "1y4nclj326kxgg8s03wlf8756dsyhi7p44hyb6bxiyx6yhzyfb9y",
       "depends": ["Biobase", "MSnbase"]
     },
     "pasilla": {
       "name": "pasilla",
-      "version": "1.38.0",
-      "sha256": "0k5fzak7286bc8xb54g46ls6hh3d000z19pafd943qhsbziivglk",
+      "version": "1.39.0",
+      "sha256": "0binf59n4cj89bvrmysgqhbmbiqpaxwag0rv27qgp595bh5vhg44",
       "depends": ["DEXSeq"]
     },
     "pasillaBamSubset": {
       "name": "pasillaBamSubset",
-      "version": "0.48.0",
-      "sha256": "0hgsj2mzvwlji539rjpbb4jrb4dbs5lwww1kyzigyraxgx4q199y",
+      "version": "0.49.0",
+      "sha256": "1s2hdcq2lf8w36sqmd67na8basa59ir0wdmf2937pcfv9snqblib",
       "depends": []
     },
     "pd_atdschip_tiling": {
       "name": "pd.atdschip.tiling",
-      "version": "0.48.0",
-      "sha256": "0yssbbk9mmjn23d7bxvjk9ykrv3dpxbbil0441cf4h0xj9kngj5g",
+      "version": "0.49.0",
+      "sha256": "11q209y7pa90nx55gwmhs1120s610p4ci7y1dc2ism4lpkkxjgl9",
       "depends": ["Biostrings", "DBI", "IRanges", "RSQLite", "S4Vectors", "oligo", "oligoClasses"]
     },
     "pepDat": {
       "name": "pepDat",
-      "version": "1.30.0",
-      "sha256": "19avnvkh49njz5j988zdrz6ixxnffmn8vx4dml7qbqvmksldpkk5",
+      "version": "1.31.0",
+      "sha256": "1hgmsc1r1vcyqxk8p7cwaizbbnjgj7g7g40cqxs75n85a7zaa1wk",
       "depends": ["GenomicRanges"]
     },
     "plotgardenerData": {
       "name": "plotgardenerData",
-      "version": "1.16.0",
-      "sha256": "1hfaibz61fyf4i29v3zbsb2h8pgwnz085pq4dagfk8mrggcr8psy",
+      "version": "1.17.0",
+      "sha256": "09q4i4kd1x7521gj4irf8ibsd33y1dz5yjpd1s8fnjs0005y1dhd",
       "depends": []
     },
     "prebsdata": {
       "name": "prebsdata",
-      "version": "1.46.0",
-      "sha256": "1y1x557j0qa7h81r85dzrxanm16hw7gqlxnih61yp85zi8pbpsgp",
+      "version": "1.47.0",
+      "sha256": "02z1xmfiggbbqjs7i60xz8319l4am7n1jiv9g1xknx1rsl9rm0w2",
       "depends": []
     },
     "preciseTADhub": {
       "name": "preciseTADhub",
-      "version": "1.18.0",
-      "sha256": "1zhzywzzynyracbb7mzkjv6lrhg59kd29327asn4lzqvm00j3x8b",
+      "version": "1.19.0",
+      "sha256": "02ziw1ic72lwhv2isr3ngzrr3gp9frrhpshdpvyq77ykb64my891",
       "depends": ["ExperimentHub"]
     },
     "prostateCancerCamcap": {
       "name": "prostateCancerCamcap",
-      "version": "1.38.0",
-      "sha256": "0434njc56vbnvizhr9imbz4swxwl4vzyybw5bk4cswbhmx8pnx0b",
+      "version": "1.39.0",
+      "sha256": "0h6xa7504fzs3nm6vdwq4j0bvf4jj0r5byrmhzm11c66i73br749",
       "depends": ["Biobase"]
     },
     "prostateCancerGrasso": {
       "name": "prostateCancerGrasso",
-      "version": "1.38.0",
-      "sha256": "166cjy7cv8wiqcbfadq33lmdxkkrv2pkxx7mqdna77j9hhspkp42",
+      "version": "1.39.0",
+      "sha256": "0szg42x6fisxr0khgv7v7qxnypyc5is1wfsrwwy9ij75y3fsbiq3",
       "depends": ["Biobase"]
     },
     "prostateCancerStockholm": {
       "name": "prostateCancerStockholm",
-      "version": "1.38.0",
-      "sha256": "0ws6ya01q54v8s2p1mzi6cwq7bdplzi4ll81zfhaa77njm13fwjs",
+      "version": "1.39.0",
+      "sha256": "1d37q25y48mnndf5j1v4c6xfa2clg02mxy0f4gqfm458qqc87shr",
       "depends": ["Biobase"]
     },
     "prostateCancerTaylor": {
       "name": "prostateCancerTaylor",
-      "version": "1.38.0",
-      "sha256": "1jh4dj32yq99qrm4mjfw9zdqfxnypyv6ihd5bd6wyfz93cxsk09m",
+      "version": "1.39.0",
+      "sha256": "1hl5dss64srvp7glx48qxbkb52lxsm8v48dd4b499nx8qjp8ni0r",
       "depends": ["Biobase"]
     },
     "prostateCancerVarambally": {
       "name": "prostateCancerVarambally",
-      "version": "1.38.0",
-      "sha256": "06rb8wndpvhx3d4d3j4d0gjsf0inpjmnljj7f19dbb5vaivx2kdd",
+      "version": "1.39.0",
+      "sha256": "0xcf77jdkpvpq9wxh9s624wdg6j4nk2wlv5g099hfhisnpllvmgv",
       "depends": ["Biobase"]
     },
     "ptairData": {
       "name": "ptairData",
-      "version": "1.18.0",
-      "sha256": "1glgpjxmd7284bh43m5f76m41618qzrf0042xfb0msgd72kw1y44",
+      "version": "1.19.0",
+      "sha256": "009ra1w8nk1mfk1aq7v5fj2rvz9ri5injkickmvfpz9k4xmkd0lp",
       "depends": ["rhdf5", "signal"]
     },
     "pumadata": {
       "name": "pumadata",
-      "version": "2.46.0",
-      "sha256": "1v2fqd67dby7pd4rfyxj3nyj2ybjxmiin7dac7ndz67afvp4x2pq",
+      "version": "2.47.0",
+      "sha256": "0qihisf98qkdwifg3rfjrvdlswhj3spipyvya089k649wa4swi62",
       "depends": ["Biobase", "oligo", "puma"]
-    },
-    "qPLEXdata": {
-      "name": "qPLEXdata",
-      "version": "1.27.0",
-      "sha256": "15fq5yzpipp2g7fx6nh766ykq84rr82yi6cccq7kqi9c1aywgwbf",
-      "depends": ["MSnbase", "dplyr", "knitr", "qPLEXanalyzer"]
-    },
-    "rRDPData": {
-      "name": "rRDPData",
-      "version": "1.30.0",
-      "sha256": "03h236aix85qvhl7mwxwqd9a0h44zwhr3q9gav4kbkv0ygcv8xgy",
-      "depends": ["rRDP"]
     },
     "raerdata": {
       "name": "raerdata",
-      "version": "1.8.0",
-      "sha256": "02npp08f861zyf09ikwv7ihmf5hq58mbqbl3nshb7zi6scgf1xmz",
+      "version": "1.9.0",
+      "sha256": "1r5azqmdvfyngf9l3hi62p2vwsz2r1xhahnb915x4s5r3gnkrz3v",
       "depends": ["BiocGenerics", "ExperimentHub", "Rsamtools", "SingleCellExperiment", "rtracklayer"]
     },
     "rcellminerData": {
       "name": "rcellminerData",
-      "version": "2.32.0",
-      "sha256": "1pvlgxv4sz22mxj4ycqcck5qh6ba57rf8f0lgsijsafw8ybl86z3",
+      "version": "2.33.0",
+      "sha256": "08287szbxm463xdq4p4hzvjxhplna2ak07vg3xpqyrd2famfrdsx",
       "depends": ["Biobase"]
     },
     "rheumaticConditionWOLLBOLD": {
       "name": "rheumaticConditionWOLLBOLD",
-      "version": "1.48.0",
-      "sha256": "1rjh49drkki6mwlzw2xw05mh8mnnazi2clbvhrzapiali03snii7",
+      "version": "1.49.0",
+      "sha256": "0kcw692iszllv2mwd9xqfnrgkqw0mlsbz1k7hjp7nn8k020cypfm",
       "depends": []
     },
     "sampleClassifierData": {
       "name": "sampleClassifierData",
-      "version": "1.34.0",
-      "sha256": "0i8jh942mapk8lk0amnxfqsqjkrxkisjnna19c5vpjisp3lqw5gc",
+      "version": "1.35.0",
+      "sha256": "1fzvx683xrv50yrf1qsp69ygz94fa4ilpx6c3nw48zziz9ggaq2n",
       "depends": ["SummarizedExperiment"]
     },
     "scATAC_Explorer": {
       "name": "scATAC.Explorer",
-      "version": "1.16.0",
-      "sha256": "1r8my1c9xqnqmj2lz4ka1w499af72160qmynrspvkvqbgr4vcssz",
+      "version": "1.17.0",
+      "sha256": "0rn7jp8is3i8hf7746vl26s9p8wif6xsv10yn58nh116k90f7avp",
       "depends": ["BiocFileCache", "Matrix", "S4Vectors", "SingleCellExperiment", "data_table", "zellkonverter"]
     },
     "scMultiome": {
       "name": "scMultiome",
-      "version": "1.10.0",
-      "sha256": "1xk54r7vs67z1b808hsyxyghrsps7kd9mb7ihm2zac1b4jic7myl",
+      "version": "1.11.0",
+      "sha256": "11yf3rp48ml61k48py5ik7wfi5gycn2a8s7ramxqpfq16dr7wzav",
       "depends": ["AnnotationHub", "AzureStor", "ExperimentHub", "GenomicRanges", "HDF5Array", "MultiAssayExperiment", "S4Vectors", "SingleCellExperiment", "SummarizedExperiment", "alabaster_matrix", "checkmate", "rhdf5"]
     },
     "scRNAseq": {
       "name": "scRNAseq",
-      "version": "2.24.0",
-      "sha256": "15491c51cmlxms21s0w42vjfmm46c4bm9cg1r3c0fja8pcvzixq7",
+      "version": "2.25.0",
+      "sha256": "0msv2ir95rmlfjb6jpfwpyxzqxjnrs200v5zahhm5nb5sr7x4zbw",
       "depends": ["AnnotationDbi", "AnnotationHub", "BiocGenerics", "DBI", "DelayedArray", "ExperimentHub", "GenomicFeatures", "GenomicRanges", "Matrix", "RSQLite", "S4Vectors", "SingleCellExperiment", "SparseArray", "SummarizedExperiment", "alabaster_base", "alabaster_matrix", "alabaster_sce", "ensembldb", "gypsum", "jsonlite"]
     },
     "scTHI_data": {
       "name": "scTHI.data",
-      "version": "1.22.0",
-      "sha256": "0nvib6shlxgxk8ca9nwklwaa61rwv9gmg5xpvg6xjzaq6i87bbn2",
+      "version": "1.23.0",
+      "sha256": "1sjay8l46fr36ak1shqzzg9a2hjcscpfn8xbdcs6mx7hsabkln70",
       "depends": []
     },
     "scaeData": {
       "name": "scaeData",
-      "version": "1.6.0",
-      "sha256": "110bpnqk1c6laa9drf8qm3k7c4bc410jrazszx8gkc7qzhfpdgqc",
+      "version": "1.7.0",
+      "sha256": "002f0rw81fyxdy91mzklf40049xi0i472bcb5p5ppsmqdgp92h1w",
       "depends": ["ExperimentHub"]
     },
     "scanMiRData": {
       "name": "scanMiRData",
-      "version": "1.16.0",
-      "sha256": "15hs0bpc75a16n32bz2aj4cw53gy7mp78cih21k048mjd7mhr2r6",
+      "version": "1.17.0",
+      "sha256": "0b2lx216i1xsb9k167qzabbv0y7xf4ahvcn5fc9l8spxkgmgzjsl",
       "depends": ["scanMiR"]
     },
     "scpdata": {
       "name": "scpdata",
-      "version": "1.18.0",
-      "sha256": "049qrzjj26s41q0nl3q85bz91lwpd5j3i1c4gxwbavm0izhhk3ym",
+      "version": "1.19.0",
+      "sha256": "11kj6nvlb9mw74k5hz264pdayjlrx4lliywq7yxna3xs09vz23bh",
       "depends": ["AnnotationHub", "ExperimentHub", "QFeatures", "S4Vectors", "SingleCellExperiment"]
     },
     "seq2pathway_data": {
       "name": "seq2pathway.data",
-      "version": "1.42.0",
-      "sha256": "0w2dwgqsmg70jmrcsm3z5lwmb80j20h232p26b6n0bxpv77a67r5",
+      "version": "1.43.0",
+      "sha256": "1w35w7y0man622njxwyy63s3dgls8zwys6y9sq0bmyrymx8ippl3",
       "depends": []
     },
     "seqc": {
       "name": "seqc",
-      "version": "1.44.0",
-      "sha256": "0mya6ssiclcf1b82xwib7d4klp5mgg3f7i1jlhdkzpzhmsa7ms8k",
+      "version": "1.45.0",
+      "sha256": "04r55fa1ai578av7s8h0hzk4hx95113bksr2qgphxc2cj7qmxdps",
       "depends": ["Biobase"]
     },
     "serumStimulation": {
       "name": "serumStimulation",
-      "version": "1.46.0",
-      "sha256": "1bf7cckj7wmkqmmz2zslms70n1ma0z2ffbrvmk8k2qbj01x7y99s",
+      "version": "1.47.0",
+      "sha256": "11316swlswmw05ia55zvmxxw6samh6kxdx6v9wdg774p9vvj1811",
       "depends": []
     },
     "sesameData": {
       "name": "sesameData",
-      "version": "1.28.0",
-      "sha256": "1vlb8hb7fvijlxqnrqqd46iy0ph75pd8xnfgsbp6n6q3xs1vxv79",
+      "version": "1.29.10",
+      "sha256": "1mcxyhzcav3qnsmfdhsdx6l2gwrl30c3ks0sjhb71vpv4dpjqf9l",
       "depends": ["AnnotationHub", "ExperimentHub", "GenomicRanges", "IRanges", "S4Vectors", "Seqinfo", "readr", "stringr"]
     },
     "seventyGeneData": {
       "name": "seventyGeneData",
-      "version": "1.46.0",
-      "sha256": "18hxf9faz25r72895c03861dpkhphc2018gvvsq07w2cyv0c5hag",
+      "version": "1.47.0",
+      "sha256": "0nkfl0mhhswjjyrcw0z04xbfcjmd8732g1y07nrq7vxzws1i027d",
       "depends": []
     },
     "shinyMethylData": {
       "name": "shinyMethylData",
-      "version": "1.30.0",
-      "sha256": "0m3map34wjvakb5adfkybsrmwm8f2zc2kzq8gxmw411lay2zznz5",
+      "version": "1.31.0",
+      "sha256": "059124cb56d4345d9hcfd249i7rcf2ynwnrx2lb0gwzih8bfhb57",
       "depends": []
     },
     "signatureSearchData": {
       "name": "signatureSearchData",
-      "version": "1.24.0",
-      "sha256": "0i7fc8d4c8npa5wh6kiwv6jy4js97wiryjnyjlds43zdpkm75gjm",
+      "version": "1.25.0",
+      "sha256": "053hgnbxj0gk00bgdcjjnwaspd8sqjypxxdrqsidjpd0mrvpyy9x",
       "depends": ["Biobase", "ExperimentHub", "R_utils", "affy", "dplyr", "limma", "magrittr", "rhdf5"]
     },
     "simpIntLists": {
       "name": "simpIntLists",
-      "version": "1.46.0",
-      "sha256": "09f24md2rj3xwi8szlc3ibdjiqfr50mrjm5ia8mhnm9mf9df1svq",
+      "version": "1.47.0",
+      "sha256": "0hxsry5iqsmqpn4swfsskl25dvs69f3yd8x310f7kr2h5bgb0gzn",
       "depends": []
     },
     "smokingMouse": {
       "name": "smokingMouse",
-      "version": "1.8.0",
-      "sha256": "1zvkavy9my7h29zx3izah6vrwjixyrmddmjqfw8d269qh6qyx71i",
+      "version": "1.9.0",
+      "sha256": "0js4n3v65yfbxxnzcswv430i65dvg8cwypz0rqg6vwynbc8nzb8p",
       "depends": []
     },
     "spatialDmelxsim": {
       "name": "spatialDmelxsim",
-      "version": "1.16.0",
-      "sha256": "1r53gi64qyvghnh948s2v4mc73y3hjq62j2bm34wycdk03n6q53w",
+      "version": "1.17.0",
+      "sha256": "1xsz2qa1bazv6r66xgvy6vxh53zya7b9bp4halk5195rpzvkvlck",
       "depends": ["ExperimentHub", "SummarizedExperiment"]
     },
     "spatialLIBD": {
       "name": "spatialLIBD",
-      "version": "1.22.0",
-      "sha256": "02hmqwa78had3lf6214a6wav6y50wxy3ysnk80krzixr4girb9jz",
+      "version": "1.23.2",
+      "sha256": "1d71niv849b1svqxdcnxiiljfd1cs3zqs37ckrr2qd91xxlsszy1",
       "depends": ["AnnotationHub", "BiocFileCache", "BiocGenerics", "ComplexHeatmap", "DT", "ExperimentHub", "GenomicRanges", "IRanges", "Matrix", "MatrixGenerics", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "SummarizedExperiment", "benchmarkme", "circlize", "cowplot", "dplyr", "edgeR", "ggplot2", "golem", "jsonlite", "limma", "magick", "paletteer", "plotly", "png", "rlang", "rtracklayer", "scater", "scuttle", "sessioninfo", "shiny", "shinyWidgets", "statmod", "tibble", "viridisLite"]
     },
     "spqnData": {
       "name": "spqnData",
-      "version": "1.22.0",
-      "sha256": "0q9svnb7z7x9mx1pnz6gf1lsbsrf4sxanrk2352spr44vlmy45l3",
+      "version": "1.23.0",
+      "sha256": "13vm74jsw7nlhssi3rvgzsrvi36swiq6baw1gn6shhxqcgjpcy86",
       "depends": ["SummarizedExperiment"]
     },
     "stemHypoxia": {
       "name": "stemHypoxia",
-      "version": "1.46.0",
-      "sha256": "03xca5y9lh6dwvgd69kh0dkq6isiql99knfky8p8n549lgqac5d3",
+      "version": "1.47.0",
+      "sha256": "0yr99bdb8d31xn00qb8nrx9yjyh8wa22bv63ircl6phdhdjf9hfj",
       "depends": []
     },
     "systemPipeRdata": {
       "name": "systemPipeRdata",
-      "version": "2.14.6",
-      "sha256": "1j7h40hcm0gyahmlilvlb83ddmwrarqn319qwpnrgwcji8fm92jd",
+      "version": "2.15.6",
+      "sha256": "0rwi026zb52w1h5zzys8k10fsi6bdkw0y9n7ij2a3pwsqzdynayz",
       "depends": ["BiocGenerics", "Biostrings", "jsonlite", "remotes"]
     },
     "tartare": {
       "name": "tartare",
-      "version": "1.24.0",
-      "sha256": "0m6zydmyrn6rl4iidbsyiwh0mhs4i8dnwm2cq3nsb6279kjim15n",
+      "version": "1.25.0",
+      "sha256": "1imza36hsq3fkisyi5ak91frahdxqcyin7hqhh1wgar7ldlk3hyw",
       "depends": ["AnnotationHub", "ExperimentHub"]
     },
     "timecoursedata": {
       "name": "timecoursedata",
-      "version": "1.20.0",
-      "sha256": "0l44m6cw3p0qxmvp1427n7k4dvpskfnd9dk9ym2f73js3x3f54cp",
+      "version": "1.21.0",
+      "sha256": "0js40i12g3n68niiv39sm85hdbywbva230c3sg610danfzx0dwzx",
       "depends": ["SummarizedExperiment"]
     },
     "tinesath1cdf": {
       "name": "tinesath1cdf",
-      "version": "1.48.0",
-      "sha256": "156rvd0jljn2xn1pw32n3qd4qa180rrl6r1qw41pd9pj7hx8bsx0",
+      "version": "1.49.0",
+      "sha256": "1n9l4psi9mkbnib91gjm0fz99bpyy5hzasad6rv3x8jg8xsx8ayg",
       "depends": []
     },
     "tinesath1probe": {
       "name": "tinesath1probe",
-      "version": "1.48.0",
-      "sha256": "0jc96qx9m09dxd8jxi0f0jpm0i1i4x7vg84rsvvjil3xfyqg25aq",
+      "version": "1.49.0",
+      "sha256": "178ydvbrkr1mhn4gyd434c4i9xch8z0iip83mnhc59gx0msd4mlx",
       "depends": ["AnnotationDbi"]
     },
     "tissueTreg": {
       "name": "tissueTreg",
-      "version": "1.30.0",
-      "sha256": "0hiywrd90xiw17bzfi3zx0mbi5y70ah43wwgwd8xm6hhzr0bdkar",
+      "version": "1.31.0",
+      "sha256": "1ddaf0pd519s9xlarlq2c5n78zvdi7zmqhdm21a1rvawvzd35nzd",
       "depends": []
     },
     "tofsimsData": {
       "name": "tofsimsData",
-      "version": "1.38.0",
-      "sha256": "1k5s0gkg7rsyip9r6m9y9jy56fibc1522zh7bn6bnl9b1grk7ax0",
+      "version": "1.39.0",
+      "sha256": "0fszm9qw9xcinf27lswf2pydbyn9glamnbzi812s37lsvdwkg26m",
       "depends": []
     },
     "topdownrdata": {
       "name": "topdownrdata",
-      "version": "1.32.0",
-      "sha256": "12q8sp562r6qngzdny4lxdp2z9ya717wdr1g4aqi5cb4f4wqj7ny",
+      "version": "1.33.0",
+      "sha256": "04hnpcz2a7jiv6mgd9zal4rf9r3wd6pzhf214l1n62i66c77dg85",
       "depends": ["topdownr"]
     },
     "tuberculosis": {
       "name": "tuberculosis",
-      "version": "1.16.0",
-      "sha256": "0c8vdk3gnd6s6yqbzaf0p4wp77imxg4bd0mww6zjwg3a9al90dw5",
+      "version": "1.17.0",
+      "sha256": "16m8ny696jd859pxzqy6zbb73hfxs7scrvrk7xmh8f3fzc2gxp3v",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "dplyr", "magrittr", "purrr", "rlang", "stringr", "tibble", "tidyr"]
     },
     "tweeDEseqCountData": {
       "name": "tweeDEseqCountData",
-      "version": "1.48.0",
-      "sha256": "1rp7v0rh0hjvcv0kn8mmjkvqywigai05yl53xvjv2wqxv1c6k2dg",
+      "version": "1.49.0",
+      "sha256": "007fm5g9lql5yisrjw5h89jjlx50kqd47vc6d0y839jxbg20q434",
       "depends": ["Biobase"]
     },
     "tximportData": {
       "name": "tximportData",
-      "version": "1.38.0",
-      "sha256": "0wkqwkhwbpnzjba8hi8w1wx697c521j9sscmd53hy8m458wqksdn",
+      "version": "1.39.0",
+      "sha256": "18hd54563fkh7c5vpfqslrajrzlqaygmrycxyavg7674ngaciqx9",
       "depends": []
     },
     "vulcandata": {
       "name": "vulcandata",
-      "version": "1.32.0",
-      "sha256": "0sgb0jy9ks9j46m13brld21m9xgrwji0922fl22m32b5j7a0yj8i",
+      "version": "1.33.0",
+      "sha256": "1w02dzxhdd50s7sp75p2agdkyv6j3n0xqjih1zaw0jvw01pqs5cd",
       "depends": []
     },
     "xcoredata": {
       "name": "xcoredata",
-      "version": "1.14.0",
-      "sha256": "10d2ssw7li4qgyhlk46z70p1bca18ysjvrikhj927cy8016wk8lc",
+      "version": "1.15.0",
+      "sha256": "0j4hg05akjvda0x0pjjmq9lafcg8wha8rssiwrj96lrm5mhp7a6d",
       "depends": ["ExperimentHub"]
     },
     "yeastCC": {
       "name": "yeastCC",
-      "version": "1.50.0",
-      "sha256": "010d64x7md355qcix54s9ybn1w72rblla5nnr656zaagvnaf5yq7",
+      "version": "1.51.0",
+      "sha256": "0qqc474dqa94qq3c4vh5q3flx7jlnn3lmpkasmzw0kxw9ixg584n",
       "depends": ["Biobase"]
     },
     "yeastExpData": {
       "name": "yeastExpData",
-      "version": "0.56.0",
-      "sha256": "079pg02prdwc6sc58mdb4qf3bp9jcqnijv35n8hfp7rd6xba0gyx",
+      "version": "0.57.0",
+      "sha256": "14vcjmsvxi7nki59r9b3ikk2a0mdlsi5bigra5js42k36qql8zyv",
       "depends": ["graph"]
     },
     "yeastGSData": {
       "name": "yeastGSData",
-      "version": "0.48.0",
-      "sha256": "1wmlvmdfjyqhk2rx8iy9x6wmnff6n95y5ygk86ygjkdhzrmnaxcv",
+      "version": "0.49.0",
+      "sha256": "0sbrhx4pgf047bgcaay4bnaajn5r542ndpal4qfg2nph6b6mr1zf",
       "depends": []
     },
     "yeastNagalakshmi": {
       "name": "yeastNagalakshmi",
-      "version": "1.46.0",
-      "sha256": "16afzgcpspks8ccipkbhdzr4s0mx6x47qiyl5vdn5isp9c6snk6h",
+      "version": "1.47.0",
+      "sha256": "0g9kiny67v2cibfk57pgkzm4ixw3bjdwrdkvchjiz52g5nkg48c8",
       "depends": []
     },
     "yeastRNASeq": {
       "name": "yeastRNASeq",
-      "version": "0.48.0",
-      "sha256": "09vyr5yld130l53nw6wd0xl8kwvxflrgnm7p4vrqg36d8mafbaq0",
+      "version": "0.49.0",
+      "sha256": "1ckv3f2z87j6bwkbspgj4piabi7ami3fbxqbb09lps57f7fni0c6",
       "depends": []
     },
     "zebrafishRNASeq": {
       "name": "zebrafishRNASeq",
-      "version": "1.30.0",
-      "sha256": "1l0bkdi23xs6iym514kpy48yymfm1cs9njn2gg6gn0b7mmkxdyqi",
+      "version": "1.31.0",
+      "sha256": "1k1hxvhfkm0wawax1hbsqgzwrwrhzz0wdyx4pnkb5p4d13fpkd7c",
       "depends": []
     },
     "ABAData": {
       "name": "ABAData",
       "version": "1.0.0",
       "sha256": "1p2q03c87ilwfz7gbypkfi0n3m9m3c4z6ci9b5v4pr46q4ppl7s9",
+      "depends": [],
+      "broken": true
+    },
+    "AneuFinderData": {
+      "name": "AneuFinderData",
+      "version": "1.38.0",
+      "sha256": "0k7xj1kb5cdz9j4hnf10kh9qp6hkc2vlsj6z01ybs9g9fski86v7",
       "depends": [],
       "broken": true
     },
@@ -2699,18 +2706,18 @@
       "depends": [],
       "broken": true
     },
-    "MetaGxOvarian": {
-      "name": "MetaGxOvarian",
-      "version": "1.27.0",
-      "sha256": "0p748si4axvdslb487y240y2c4ap7mpyvr9z1s5849fn3zi05pgj",
-      "depends": ["AnnotationHub", "Biobase", "ExperimentHub", "SummarizedExperiment", "impute", "lattice"],
-      "broken": true
-    },
     "Mulder2012": {
       "name": "Mulder2012",
       "version": "0.10.0",
       "sha256": "1dlk8nrvpfk4byii5yssss016yz3qc8ndldgj44p97bqs4nfnjb4",
       "depends": ["HTSanalyzeR", "KEGG_db", "MASS", "PANR", "RedeR", "igraph", "org_Hs_eg_db", "pvclust"],
+      "broken": true
+    },
+    "RGMQLlib": {
+      "name": "RGMQLlib",
+      "version": "1.30.0",
+      "sha256": "1dx37lhblihdcqzr5lc1j79rzc03hfvxyyfqcm6grnmicbpqapxc",
+      "depends": [],
       "broken": true
     },
     "RIPSeekerData": {
@@ -2753,6 +2760,13 @@
       "version": "1.10.0",
       "sha256": "0p0y8mkcg99dpwvp7spxx047kyr7mdflnnlfpb4i232q0yxz2z03",
       "depends": ["ExperimentHub", "GenomicAlignments", "GenomicRanges"],
+      "broken": true
+    },
+    "TimerQuant": {
+      "name": "TimerQuant",
+      "version": "1.39.0",
+      "sha256": "071x0kkn7963mfrgpq2zrxa1hznyzcyjy33cracj6ifnh92jd1x0",
+      "depends": ["deSolve", "dplyr", "ggplot2", "gridExtra", "locfit", "shiny"],
       "broken": true
     },
     "alpineData": {
@@ -2825,11 +2839,11 @@
       "depends": ["AnnotationDbi", "Biobase", "GGtools", "GenomicRanges", "hgfocus_db"],
       "broken": true
     },
-    "curatedCRCData": {
-      "name": "curatedCRCData",
-      "version": "2.2.0",
-      "sha256": "0p4jgmg3234siglzf1klzq70vgrsnxcz4w2fw16h34m7jkrhiqas",
-      "depends": ["BiocGenerics", "nlme"],
+    "chromstaRData": {
+      "name": "chromstaRData",
+      "version": "1.36.0",
+      "sha256": "0v8blcacwixqzdpqalx3bajakn0nmkmagpdzccfpi7ry3sazl2f4",
+      "depends": [],
       "broken": true
     },
     "dsQTL": {
@@ -2907,6 +2921,13 @@
       "version": "1.6.0",
       "sha256": "033afw26ng2vc0fj3ipljmrq8vm0q5nbr7gh78i5vmpnkh4d5wgp",
       "depends": ["Biobase", "GGBase"],
+      "broken": true
+    },
+    "homosapienDEE2CellScore": {
+      "name": "homosapienDEE2CellScore",
+      "version": "1.6.0",
+      "sha256": "15m2mnyhxpa417203k93632z0707cf949qi1lxywxh84blzjlg47",
+      "depends": ["BiocGenerics", "DESeq2", "ExperimentHub", "MatrixGenerics", "Rtsne", "S4Vectors", "SummarizedExperiment", "getDEE2"],
       "broken": true
     },
     "ind1KG": {
@@ -2991,6 +3012,20 @@
       "version": "1.14.0",
       "sha256": "1bldyvjsv5wwzasg9sbsivyi7m2ypc17mqjglsl22fjkykm92h4s",
       "depends": ["ExperimentHub"],
+      "broken": true
+    },
+    "qPLEXdata": {
+      "name": "qPLEXdata",
+      "version": "1.27.0",
+      "sha256": "15fq5yzpipp2g7fx6nh766ykq84rr82yi6cccq7kqi9c1aywgwbf",
+      "depends": ["MSnbase", "dplyr", "knitr", "qPLEXanalyzer"],
+      "broken": true
+    },
+    "rRDPData": {
+      "name": "rRDPData",
+      "version": "1.30.0",
+      "sha256": "03h236aix85qvhl7mwxwqd9a0h44zwhr3q9gav4kbkv0ygcv8xgy",
+      "depends": ["rRDP"],
       "broken": true
     },
     "restfulSEData": {
