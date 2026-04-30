@@ -335,6 +335,11 @@ jobs:
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
+      - name: Commit intermediate changes before HDF5 cherry-pick
+        run: |
+          git add .
+          git commit -m "intermediate: libuv fix and second R package update"
+
       - name: Apply HDF5 fixes
         run: |
           git fetch origin 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a
