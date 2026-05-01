@@ -1982,6 +1982,10 @@ let
       ];
     });
 
+    fixest = old.fixest.overrideAttrs (attrs: {
+      postPatch = "patchShebangs configure";
+    });
+
     h3o = old.h3o.overrideAttrs (attrs: {
       postPatch = "patchShebangs configure";
     });
