@@ -83,13 +83,13 @@
 
 stdenv.mkDerivation (finalAttrs: {
   pname = "gdal" + lib.optionalString useMinimalFeatures "-minimal";
-  version = "3.12.4";
+  version = "3.13.0";
 
   src = fetchFromGitHub {
     owner = "OSGeo";
     repo = "gdal";
     tag = "v${finalAttrs.version}";
-    hash = "sha256-sD/ZAOvMWK2+AGw6wgziDsheH+hwUwhd7i2f65cjFKg=";
+    hash = "sha256-YktQa3E4W87J8qXK/1Bg5BwD3ysQfRg/MH7sN7pEx98=";
   };
 
   nativeBuildInputs = [
@@ -257,8 +257,10 @@ stdenv.mkDerivation (finalAttrs: {
   ];
   disabledTestPaths = [
     # tests that attempt to make network requests
+    "gcore/basic_test.py::test_hint_http"
     "gcore/vsis3.py"
     "gdrivers/gdalhttp.py"
+    "gdrivers/hdf5multidim.py::test_hdf5_multimdim_eos_grid_dimension_list"
     "gdrivers/wms.py"
   ]
   ++ lib.optionals stdenv.hostPlatform.isDarwin [
