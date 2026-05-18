@@ -95,6 +95,19 @@ jobs:
             git cherry-pick --abort
           fi
 
+      - name: Cherry-pick jmmpl-evaluator (java)
+        run: |
+          set -e
+          # Fetch the PR from upstream
+          git fetch upstream pull/507555/head:pr-507555
+          # Try cherry-pick
+          if git cherry-pick pr-507555; then
+            echo "Cherry-pick successful"
+          else
+            echo "Cherry-pick failed, aborting"
+            git cherry-pick --abort
+          fi
+
       - name: Cherry-pick quartodoc and dependencies
         run: |
           set -e
