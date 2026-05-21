@@ -17404,6 +17404,7 @@ self: super: with self; {
   rxv = callPackage ../development/python-modules/rxv { };
 
   ryd-client = callPackage ../development/python-modules/ryd-client { };
+  ryxpress = callPackage ../development/python-modules/ryxpress { };
 
   rzpipe = callPackage ../development/python-modules/rzpipe { };
 
@@ -19231,6 +19232,7 @@ self: super: with self; {
   tailscale = callPackage ../development/python-modules/tailscale { };
 
   takethetime = callPackage ../development/python-modules/takethetime { };
+  talvez = callPackage ../development/python-modules/talvez { };
 
   tami4edgeapi = callPackage ../development/python-modules/tami4edgeapi { };
 
