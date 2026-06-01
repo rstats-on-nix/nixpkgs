@@ -108,6 +108,19 @@ jobs:
             git cherry-pick --abort
           fi
 
+      - name: Cherry-pick arrow update
+        run: |
+          set -e
+          # Fetch the PR from upstream
+          git fetch upstream pull/524340/head:pr-524340
+          # Try cherry-pick
+          if git cherry-pick pr-524340; then
+            echo "Cherry-pick successful"
+          else
+            echo "Cherry-pick failed, aborting"
+            git cherry-pick --abort
+          fi
+
       - name: Cherry-pick quartodoc and dependencies
         run: |
           set -e
