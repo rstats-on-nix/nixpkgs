@@ -16,6 +16,6 @@ let
     LC_PAPER = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
 
-    buildInputs = [ system_packages r_packages tex ];
+    buildInputs = [ system_packages r_packages ];
 
   }
