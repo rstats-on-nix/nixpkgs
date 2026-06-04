@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - r-daily
+      - r-daily-source
 
 jobs:
   r-update-cachix:
