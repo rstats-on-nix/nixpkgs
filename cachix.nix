@@ -4,7 +4,7 @@ let
   inherit (pkgs) R rstudio quarto glibcLocalesUtf8 nix;
 };
  r_packages = builtins.attrValues {
-  inherit (pkgs.rPackages) tidyverse networkscaleup mlpack multinma cbq rts2 OpenMx glmmrBase seqtrie Boom psBayesborrow duckdb VariantAnnotation FlexReg s2 qeML rJava data_table readxl fixest collapse rstanarm terra sf stars vapour quarto Rcpp gdalcubes geos devtools fledge fusen codetools jsonlite httr sys testthat knitr stringi blavaan gpboost igraph rmarkdown;
+  inherit (pkgs.rPackages) tidyverse networkscaleup mlpack arrow duckdb rJava data_table readxl fixest collapse rstanarm terra sf stars vapour quarto Rcpp geos devtools fledge fusen codetools jsonlite httr sys testthat knitr stringi blavaan gpboost igraph rmarkdown;
 };
   in
   pkgs.mkShell {
