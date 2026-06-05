@@ -121,6 +121,19 @@ jobs:
             git cherry-pick --abort
           fi
 
+      - name: Cherry-pick gdal update
+        run: |
+          set -e
+          # Fetch the PR from upstream
+          git fetch upstream pull/518799/head:pr-518799
+          # Try cherry-pick
+          if git cherry-pick pr-518799; then
+            echo "Cherry-pick successful"
+          else
+            echo "Cherry-pick failed, aborting"
+            git cherry-pick --abort
+          fi
+
       - name: Cherry-pick quartodoc and dependencies
         run: |
           set -e
