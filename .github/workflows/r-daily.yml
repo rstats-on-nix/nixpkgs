@@ -336,20 +336,6 @@ jobs:
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
-      - name: Cherry-pick R 4.6.0 update
-        run: |
-         set -e
-         git remote add rstats-on-nix https://github.com/rstats-on-nix/nixpkgs.git || true
-         git fetch rstats-on-nix update_r_460:refs/remotes/rstats-on-nix/update_r_460
-         BASE=$(git merge-base HEAD rstats-on-nix/update_r_460)
-         if git cherry-pick "$BASE..rstats-on-nix/update_r_460"; then
-           echo "Cherry-pick successful"
-         else
-           echo "Cherry-pick failed, aborting"
-           git cherry-pick --abort
-           exit 1
-         fi
-
       - name: Add libuv build input for fs
         run: |
           sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
