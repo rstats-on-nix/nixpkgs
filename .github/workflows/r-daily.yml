@@ -336,9 +336,9 @@ jobs:
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
-      - name: Add libuv build input for fs
-        run: |
-          sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
+    #  - name: Add libuv build input for fs
+    #    run: |
+    #      sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
 
       - name: Update R packages, again
         run: |
@@ -356,15 +356,15 @@ jobs:
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
-      - name: Commit intermediate changes before fixes cherry-pick
-        run: |
-          git add .
-          git commit -m "intermediate: libuv fix and second R package update"
+   #   - name: Commit intermediate changes before fixes cherry-pick
+   #     run: |
+   #       git add .
+   #       git commit -m "intermediate: libuv fix and second R package update"
 
-      - name: Apply HDF5, rts2, fixest fixes
-        run: |
-          git fetch origin 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a bf2bb8fae4b47a43af269c00f96a7db194bd3311 8f4071674734f08e4292ccd76cac18db92503760
-          git cherry-pick -n 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a bf2bb8fae4b47a43af269c00f96a7db194bd3311 8f4071674734f08e4292ccd76cac18db92503760
+  #    - name: Apply HDF5, rts2, fixest fixes
+  #      run: |
+  #        git fetch origin 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a bf2bb8fae4b47a43af269c00f96a7db194bd3311 8f4071674734f08e4292ccd76cac18db92503760
+  #        git cherry-pick -n 791022b4acdd5f68c7bdf8354cdf2f7a20fdd64a bf2bb8fae4b47a43af269c00f96a7db194bd3311 8f4071674734f08e4292ccd76cac18db92503760
 
       - name: Pushing updates
         run: |
