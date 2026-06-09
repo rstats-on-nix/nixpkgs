@@ -336,10 +336,13 @@ jobs:
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
-    #  - name: Add libuv build input for fs
-    #    run: |
-    #      sed -i '/rsvg = \[ pkgs.pkg-config \];/a\    fs = [ pkgs.which pkgs.pkg-config pkgs.libuv.dev pkgs.cmake ];' pkgs/development/r-modules/default.nix
-
+      - name: Add patchShebangs for tsitter and tstoml
+        run: |
+          sed -i '/patchShebangs src\/library\/ps\/configure/a\
+              patchShebangs src/library/tsitter/configure\
+              patchShebangs src/library/tstoml/configure' \
+            pkgs/development/r-modules/default.nix
+      
       - name: Update R packages, again
         run: |
           cd pkgs/development/r-modules/
