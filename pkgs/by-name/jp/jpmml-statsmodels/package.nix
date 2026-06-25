@@ -21,7 +21,7 @@ maven.buildMavenPackage {
     hash = "sha256-gI6pl3kFbCSRzGiZSS+NbTwhQPwwqZcJ7SQUw6NlZBI=";
   };
 
-  mvnHash = "sha256-2t32hvO6NOaojWJFzczO+BxvVvW0ljbHwYRqCbpJKEc=";
+  mvnHash = "sha256-4ia8fIvuVqAwLVcf2BoylHZ0ny0Im3RYnQnaGIZjdxo=";
 
   mvnParameters = "-B package";
 
