@@ -1973,6 +1973,10 @@ let
       postPatch = "patchShebangs configure";
     });
 
+    RSQLite = old.RSQLite.overrideAttrs (attrs: {
+      postPatch = "patchShebangs configure";
+    });
+
     fixest = old.fixest.overrideAttrs (attrs: {
       postPatch = "patchShebangs configure";
     });

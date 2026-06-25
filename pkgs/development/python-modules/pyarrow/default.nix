@@ -19,6 +19,9 @@
   setuptools,
   setuptools-scm,
   oldest-supported-numpy,
+  scikit-build-core,
+  libcst,
+  ninja,
 }:
 
 let
@@ -35,7 +38,10 @@ buildPythonPackage rec {
   nativeBuildInputs = [
     cmake
     cython
+    libcst
+    ninja
     pkg-config
+    scikit-build-core
     setuptools
     setuptools-scm
     oldest-supported-numpy

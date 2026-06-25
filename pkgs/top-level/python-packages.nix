@@ -13650,7 +13650,7 @@ self: super: with self; {
 
   pyarr = callPackage ../development/python-modules/pyarr { };
 
-  pyarrow = callPackage ../development/python-modules/pyarrow { inherit (pkgs) arrow-cpp cmake; };
+  pyarrow = callPackage ../development/python-modules/pyarrow { inherit (pkgs) arrow-cpp cmake ninja; };
 
   pyarrow-hotfix = callPackage ../development/python-modules/pyarrow-hotfix { };
 

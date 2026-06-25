@@ -3,23 +3,23 @@
   stdenv,
   buildPythonPackage,
   fetchFromGitHub,
-  poetry-core,
+  hatchling,
   pytestCheckHook,
 }:
 
 buildPythonPackage rec {
   pname = "sh";
-  version = "2.2.2";
+  version = "2.3.0";
   pyproject = true;
 
   src = fetchFromGitHub {
     owner = "amoffat";
     repo = "sh";
     tag = version;
-    hash = "sha256-5B+Bsxv2X1BHEMg8uv56ex//6EKEcLmte7ozcKzul/c=";
+    hash = "sha256-xtrT8fac7eJeGZ15yQqdYUqILcY1jUCVajX/j0ljl7Q=";
   };
 
-  nativeBuildInputs = [ poetry-core ];
+  nativeBuildInputs = [ hatchling ];
 
   nativeCheckInputs = [ pytestCheckHook ];
 
