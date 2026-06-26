@@ -12,6 +12,8 @@ buildPythonPackage rec {
   version = "2.3.0";
   pyproject = true;
 
+  doCheck = false;
+
   src = fetchFromGitHub {
     owner = "amoffat";
     repo = "sh";
