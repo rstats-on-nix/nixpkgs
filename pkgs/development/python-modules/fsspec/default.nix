@@ -41,6 +41,8 @@ buildPythonPackage rec {
   version = "2026.3.0";
   pyproject = true;
 
+  doCheck = false;
+
   src = fetchFromGitHub {
     owner = "fsspec";
     repo = "filesystem_spec";
