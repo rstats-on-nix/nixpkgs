@@ -53,6 +53,11 @@ stdenv.mkDerivation (finalAttrs: {
 
   dontStrip = true;
 
+  postPatch = ''
+    substituteInPlace bin/quarto.js \
+      --replace-fail "syntax-highlighting" "highlight-style"
+  '';
+
   preFixup = ''
     wrapProgram $out/bin/quarto \
       --set-default QUARTO_DENO ${lib.getExe deno} \
