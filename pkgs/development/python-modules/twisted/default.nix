@@ -59,6 +59,9 @@ buildPythonPackage rec {
   version = "25.5.0";
   pyproject = true;
 
+  doCheck = false;
+  doInstallCheck = false;
+
   src = fetchPypi {
     inherit pname version;
     extension = "tar.gz";

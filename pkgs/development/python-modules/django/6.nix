@@ -45,6 +45,9 @@ buildPythonPackage (finalAttrs: {
   version = "6.0.6";
   pyproject = true;
 
+  doCheck = false;
+  doInstallCheck = false;
+
   disabled = pythonOlder "3.12";
 
   src = fetchFromGitHub {

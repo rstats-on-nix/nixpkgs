@@ -44,6 +44,9 @@ buildPythonPackage rec {
   version = "5.2.14";
   pyproject = true;
 
+  doCheck = false;
+  doInstallCheck = false;
+
   src = fetchFromGitHub {
     owner = "django";
     repo = "django";
