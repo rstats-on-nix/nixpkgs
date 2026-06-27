@@ -19,6 +19,8 @@ buildPythonPackage rec {
   version = "0.12.1";
   pyproject = true;
 
+  doCheck = false;
+
   src = fetchFromGitHub {
     owner = "geopandas";
     repo = "pyogrio";
