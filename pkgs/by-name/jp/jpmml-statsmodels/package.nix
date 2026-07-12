@@ -9,7 +9,7 @@
 
 let
   pname = "jpmml-statsmodels";
-  version = "1.3.12";
+  version = "1.3.13";
 in
 maven.buildMavenPackage {
   inherit pname version;
@@ -18,12 +18,30 @@ maven.buildMavenPackage {
     owner = "jpmml";
     repo = "jpmml-statsmodels";
     tag = version;
-    hash = "sha256-gI6pl3kFbCSRzGiZSS+NbTwhQPwwqZcJ7SQUw6NlZBI=";
+    hash = "sha256-QVJhJliHLST5MJV9OZVC+jTk8vV+bUu7i2IL6GSqK34=";
   };
 
-  mvnHash = "sha256-4ia8fIvuVqAwLVcf2BoylHZ0ny0Im3RYnQnaGIZjdxo=";
+  mvnHash = "sha256-Q0b45RdpdVfaLe+LdIKbvey/wGX/DYVGJWuL/L0d5Ag=";
+
+  # go-offline-maven-plugin only fetches pinned JARs/POMs, not the
+  # ever-changing maven-metadata.xml timestamps, so the FOD hash is stable
+  # even when Maven Central publishes new versions of unrelated packages.
+  buildOffline = true;
+
+  # go-offline-maven-plugin cannot handle "dynamic" test dependencies
+  # (those resolved at test runtime rather than declared in the POM).
+  # List them explicitly so they end up in the offline repo.
+  manualMvnArtifacts = [
+    "org.apache.maven.surefire:surefire-junit-platform:3.5.5"
+    "org.junit.jupiter:junit-jupiter-engine:5.14.3"
+    "org.junit.platform:junit-platform-launcher:1.14.3"
+  ];
 
   mvnParameters = "-B package";
+
+  strictDeps = true;
+
+  __structuredAttrs = true;
 
   nativeBuildInputs = [ makeBinaryWrapper ];
 
