@@ -21,7 +21,7 @@ maven.buildMavenPackage {
     hash = "sha256-QVJhJliHLST5MJV9OZVC+jTk8vV+bUu7i2IL6GSqK34=";
   };
 
-  mvnHash = "sha256-Q0b45RdpdVfaLe+LdIKbvey/wGX/DYVGJWuL/L0d5Ag=";
+  mvnHash = "sha256-6Dd3JFJSoYNn9i+jsb9yDLLnAqWS0oeHXGx/Xll5cBo=";
 
   # go-offline-maven-plugin only fetches pinned JARs/POMs, not the
   # ever-changing maven-metadata.xml timestamps, so the FOD hash is stable
