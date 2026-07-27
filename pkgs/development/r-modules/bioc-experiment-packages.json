@@ -503,8 +503,8 @@
     },
     "HDCytoData": {
       "name": "HDCytoData",
-      "version": "1.32.0",
-      "sha256": "1zah1xd9kksd8apvxisjp3w6xhwcqzb2kvrfgikf5jhv2kn98vcz",
+      "version": "1.32.1",
+      "sha256": "1h4dad2m17mj80jr93gzpsnvyfbzgi5c4y9nika5h8w23xlrdr8j",
       "depends": ["ExperimentHub", "SummarizedExperiment", "flowCore"]
     },
     "HEEBOdata": {
@@ -1169,8 +1169,8 @@
     },
     "STexampleData": {
       "name": "STexampleData",
-      "version": "1.20.0",
-      "sha256": "0l3bjpz7wrvy084yh9fji6icmydz0g371hqz6ip5kdwazvxg03g1",
+      "version": "1.20.1",
+      "sha256": "13raknf211qzcwgi7rdbda8plfjl753rk5ihd4iiccg9rszp44vk",
       "depends": ["ExperimentHub", "SingleCellExperiment", "SpatialExperiment"]
     },
     "SVM2CRMdata": {
@@ -1379,8 +1379,8 @@
     },
     "WeberDivechaLCdata": {
       "name": "WeberDivechaLCdata",
-      "version": "1.14.0",
-      "sha256": "05cmiy976y5rphzfjxmvwlrn966f5glida18ckxvwnd4n829fawg",
+      "version": "1.14.1",
+      "sha256": "1qdjb9z2znsgf05rd5bxxr3klr70r6875x2b8axwm0hrfky7map8",
       "depends": ["ExperimentHub", "SingleCellExperiment", "SpatialExperiment"]
     },
     "XhybCasneuf": {
@@ -1637,9 +1637,9 @@
     },
     "curatedBreastData": {
       "name": "curatedBreastData",
-      "version": "2.40.0",
-      "sha256": "08p5yhwyb0gx1xw9azyhj0dnzk7vhxznpds02bcarzzi1cxz8k06",
-      "depends": ["Biobase", "BiocStyle", "XML", "ggplot2", "impute"]
+      "version": "2.40.3",
+      "sha256": "1pckvpz5lqrcspyhnqgdvcp2dxa48lhjf9pa6ymx2y0yg5f4yz36",
+      "depends": ["Biobase", "BiocFileCache", "BiocStyle", "XML", "ggplot2", "impute"]
     },
     "curatedCRCData": {
       "name": "curatedCRCData",
@@ -2003,8 +2003,8 @@
     },
     "imcdatasets": {
       "name": "imcdatasets",
-      "version": "1.20.0",
-      "sha256": "19ix38415hl7f6y61bn299cbc2b1dlp5kipg2h7ks5n019syl0rn",
+      "version": "1.20.1",
+      "sha256": "0krkhbb1sp31y4iakrx0v1fc5l6h6jbqkvqsma61vnqymkcvwlv6",
       "depends": ["DelayedArray", "ExperimentHub", "HDF5Array", "S4Vectors", "SingleCellExperiment", "SpatialExperiment", "cytomapper"]
     },
     "kidpack": {
