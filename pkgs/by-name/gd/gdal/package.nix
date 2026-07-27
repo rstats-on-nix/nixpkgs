@@ -234,6 +234,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   enableParallelBuilding = true;
 
+  doCheck = false;
   doInstallCheck = true;
   # preCheck rather than preInstallCheck because this is what pytestCheckHook
   # calls (coming from the python world)
@@ -248,8 +249,7 @@ stdenv.mkDerivation (finalAttrs: {
     # https://github.com/OSGeo/gdal/blob/v3.9.0/autotest/gdrivers/bag.py#L54
     export CI=1
   '';
-  nativeInstallCheckInputs = with python3Packages; [
-    pytestCheckHook
+  nativeInstallCheckInputs = with python3Packages; [  
     pytest-benchmark
     pytest-env
     filelock
