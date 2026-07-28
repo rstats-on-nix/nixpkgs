@@ -455,6 +455,9 @@ let
     RcppDPR = [ pkgs.gsl ]; # for gsl-config via RcppGSL
     RcppGSL = [ pkgs.gsl ]; # for gsl-config
     RcppMeCab = [ pkgs.mecab ]; # for mecab-config
+    RcppParallel = with pkgs; [
+      cmake
+    ];
     RcppPlanc = with pkgs; [
       which
       cmake
