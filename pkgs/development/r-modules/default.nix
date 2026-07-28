@@ -1651,6 +1651,8 @@ let
       zstd
     ];
     sf = with pkgs; [
+      gdal
+      geos
       proj
       sqlite
     ] ++ lib.optionals stdenv.hostPlatform.isDarwin [
@@ -1712,9 +1714,14 @@ let
     ];
     telegramR = [ pkgs.openssl ];
     terra = with pkgs; [
+      gdal
+      geos
       proj
       sqlite
-    ];
+    ] ++ lib.optionals stdenv.hostPlatform.isDarwin [
+        libtiff
+        curl
+      ];
     tesseract = with pkgs; [
       tesseract
       leptonica
@@ -2264,6 +2271,22 @@ let
     SynExtend = old.SynExtend.overrideAttrs (attrs: {
       # build might fail due to race condition
       enableParallelBuilding = false;
+    });
+
+    sf = old.sf.overrideAttrs (attrs: {
+      configureFlags = (attrs.configureFlags or [ ]) ++ [
+        "--with-proj-lib=${lib.getLib pkgs.proj}/lib"
+        "--with-proj-include=${lib.getDev pkgs.proj}/include"
+        "--with-proj-share=${pkgs.proj}/share/proj"
+      ];
+    });
+
+    terra = old.terra.overrideAttrs (attrs: {
+      configureFlags = (attrs.configureFlags or [ ]) ++ [
+        "--with-proj-lib=${lib.getLib pkgs.proj}/lib"
+        "--with-proj-include=${lib.getDev pkgs.proj}/include"
+        "--with-proj-share=${pkgs.proj}/share/proj"
+      ];
     });
 
     V8 = old.V8.overrideAttrs (attrs: {
