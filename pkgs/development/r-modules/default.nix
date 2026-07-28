@@ -1650,7 +1650,7 @@ let
       sqlite
     ] ++ lib.optionals stdenv.hostPlatform.isDarwin [
         libtiff
-        libcurl
+        curl
       ];
     showtext = with pkgs; [
       zlib
