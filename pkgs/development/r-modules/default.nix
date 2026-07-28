@@ -1656,7 +1656,9 @@ let
     sf = with pkgs; [
       proj
       sqlite
-    ];
+    ] ++ lib.optionals stdenv.hostPlatform.isDarwin [
+        libtiff
+      ];
     showtext = with pkgs; [
       zlib
       libpng
