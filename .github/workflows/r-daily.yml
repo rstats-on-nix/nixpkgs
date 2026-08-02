@@ -359,6 +359,10 @@ jobs:
           mv bioc-annotation-packages.json.new bioc-annotation-packages.json
           mv bioc-experiment-packages.json.new bioc-experiment-packages.json
 
+      - name: Apply temporary fixes to sf darwin and gdal
+        run: |
+          curl -sL https://gist.githubusercontent.com/b-rodrigues/75f93f53ef19fb833e8da8b84e8123cc/raw/6d6ed89dae151bbb317a6eaadc8eb9f48a3ad7f7/complete_commits_series.patch | git am
+
    #   - name: Commit intermediate changes before fixes cherry-pick
    #     run: |
    #       git add .
