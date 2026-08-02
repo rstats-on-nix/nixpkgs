@@ -365,8 +365,7 @@ jobs:
 
       - name: Apply Quarto Pandoc compatibility fix
         run: |
-          curl -sL https://github.com/moonpiedumplings/nixpkgs/commit/46dfe703763577b0a815f8d41232a60cdf75a64e.diff | patch - p1 --ignore-whitespace || true
-
+          curl -sL https://github.com/moonpiedumplings/nixpkgs/commit/46dfe703763577b0a815f8d41232a60cdf75a64e.diff | patch -p1 --ignore-whitespace || true
    #   - name: Commit intermediate changes before fixes cherry-pick
    #     run: |
    #       git add .
