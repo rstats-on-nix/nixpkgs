@@ -1,0 +1,11 @@
+--- pkgs/by-name/qu/quarto/package.nix
++++ pkgs/by-name/qu/quarto/package.nix
+@@ -93,7 +106,7 @@ stdenv.mkDerivation (finalAttrs: {
+     mkdir bin/tools/x86_64
+ 
+     ln -s ${lib.getExe pandoc} bin/tools/x86_64/pandoc
+-    ln -s ${lib.makeBinPath [ pandoc ]}/pandoc bin/tools/aarch64/pandoc
++    ln -s ${lib.getExe pandoc} bin/tools/aarch64/pandoc
+ 
+ 
+     mv bin/* $out/bin
