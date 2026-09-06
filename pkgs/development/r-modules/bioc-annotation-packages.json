@@ -1,6 +1,6 @@
 {
   "extraArgs": {
-    "biocVersion": "3.23"
+    "biocVersion": "3.24"
   },
   "packages": {
     "AHCytoBands": {
@@ -1379,14 +1379,14 @@
     },
     "TxDb_Athaliana_BioMart_plantsmart22": {
       "name": "TxDb.Athaliana.BioMart.plantsmart22",
-      "version": "3.0.1",
-      "sha256": "0j2zr4cddad7z1lxx9m9kfgyy7jajjnblpk9j8igd39ia3ixrpzc",
+      "version": "3.0.2",
+      "sha256": "19b7jc13k1yq3zk5jmxxf9m9m0kbdl317vsnhs1s85x6hkjdgnr8",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Athaliana_BioMart_plantsmart25": {
       "name": "TxDb.Athaliana.BioMart.plantsmart25",
-      "version": "3.1.3",
-      "sha256": "0a6v0l6p13zmiysi3k8dxzdlxng552qqj9rnlbdavdiidla0pvm3",
+      "version": "3.1.4",
+      "sha256": "0f3zahkb3lyd5gbzkidmshsvfrzbj6mc79s4xkdzpy6f12ywldv8",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Athaliana_BioMart_plantsmart28": {
@@ -1433,14 +1433,14 @@
     },
     "TxDb_Cfamiliaris_UCSC_canFam3_refGene": {
       "name": "TxDb.Cfamiliaris.UCSC.canFam3.refGene",
-      "version": "3.11.0",
-      "sha256": "0rigyddnqxb3dfrj93198j0l8s1flp051xbkmz0b55qp1cyrl5kr",
+      "version": "3.11.1",
+      "sha256": "1q20rrfmavl06ksljp158cdipfsmgyk4bhhw9mspikzlfpz8k5my",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Cfamiliaris_UCSC_canFam4_refGene": {
       "name": "TxDb.Cfamiliaris.UCSC.canFam4.refGene",
-      "version": "3.14.0",
-      "sha256": "1xw3kkn2kbrv0yni95sm4sbrxzsg5y21si1plpfcdij78ndhia7d",
+      "version": "3.14.1",
+      "sha256": "1h2q3532nfzwccmxssql7j8wnfyryc0s4l54w55rdl8zim30k3qg",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Cfamiliaris_UCSC_canFam5_refGene": {
@@ -1481,8 +1481,8 @@
     },
     "TxDb_Ggallus_UCSC_galGal4_refGene": {
       "name": "TxDb.Ggallus.UCSC.galGal4.refGene",
-      "version": "3.12.0",
-      "sha256": "0c9msvqhx7zcxyhfj9h7rmlwmax1n48cwz1c0v58djcms6bqq2m5",
+      "version": "3.12.1",
+      "sha256": "0qqqm09cl3q93xz1bfr70dqmm7dlwqdvgrb6dwvjzrr0knrz5p4l",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Ggallus_UCSC_galGal5_refGene": {
@@ -1499,8 +1499,8 @@
     },
     "TxDb_Hsapiens_BioMart_igis": {
       "name": "TxDb.Hsapiens.BioMart.igis",
-      "version": "2.3.2",
-      "sha256": "0590a2hkrpm33hmjg5g0gm6sig3xvc09m0q6lwmafgaajf90h6ky",
+      "version": "2.3.3",
+      "sha256": "0i3nc0xi0nz9zc0hrv8w86p6806hwf49hh0kq7h7kngdfndcik26",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Hsapiens_UCSC_hg18_knownGene": {
@@ -1547,8 +1547,8 @@
     },
     "TxDb_Mmulatta_UCSC_rheMac3_refGene": {
       "name": "TxDb.Mmulatta.UCSC.rheMac3.refGene",
-      "version": "3.12.0",
-      "sha256": "1a0wbh4dajpgynmw2iwbvp836nklzlk0cfhqnwmqq9l4gzzh2w07",
+      "version": "3.12.1",
+      "sha256": "036rqjlsc596h0k9ni9b66b2hnhy86azdrc7gf93fwi0pgdcp3xb",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Mmulatta_UCSC_rheMac8_refGene": {
@@ -1559,8 +1559,8 @@
     },
     "TxDb_Mmusculus_UCSC_mm10_ensGene": {
       "name": "TxDb.Mmusculus.UCSC.mm10.ensGene",
-      "version": "3.4.0",
-      "sha256": "0saxi1fdiwd38sfvy1rynd3v44rbp158jv6sjqcivvaqnd84zg9s",
+      "version": "3.4.1",
+      "sha256": "1r09v9b35ykwzvc6nj5i1719szf40x2qxvw5p266vn2nhil8lv7j",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Mmusculus_UCSC_mm10_knownGene": {
@@ -1589,8 +1589,8 @@
     },
     "TxDb_Ptroglodytes_UCSC_panTro4_refGene": {
       "name": "TxDb.Ptroglodytes.UCSC.panTro4.refGene",
-      "version": "3.12.0",
-      "sha256": "036g5zn9rzy8qivb1snhpancsz1z60i3r7z3g91bgla4jpgwwjv6",
+      "version": "3.12.1",
+      "sha256": "1v6krci9yncc0b7yl23rixwz2a632r5w8jdq19xdwrsxicqx2xjf",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Ptroglodytes_UCSC_panTro5_refGene": {
@@ -1607,14 +1607,14 @@
     },
     "TxDb_Rnorvegicus_BioMart_igis": {
       "name": "TxDb.Rnorvegicus.BioMart.igis",
-      "version": "2.3.2",
-      "sha256": "1099vkk8g3lxbgjxsm1p1m3mjj08nsw282mqxgzpnrxf7m6jll76",
+      "version": "2.3.3",
+      "sha256": "0bg6jq6brp587yh6v9yhwc4dcdrs8qzlwdl8r1yh9j0s9zsqm5dg",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Rnorvegicus_UCSC_rn4_ensGene": {
       "name": "TxDb.Rnorvegicus.UCSC.rn4.ensGene",
-      "version": "3.2.2",
-      "sha256": "0gv8bynfxxa471ap069mjvfrb1d7a0c4w5k8hxkr4hnsm44mschm",
+      "version": "3.2.3",
+      "sha256": "0n0nny3z1v864fl2rc4d8jixxbjmi8ycpkw49fzcwd6a3gddyp5w",
       "depends": ["AnnotationDbi", "GenomicFeatures"]
     },
     "TxDb_Rnorvegicus_UCSC_rn5_refGene": {
@@ -2121,6 +2121,12 @@
       "sha256": "0mc26d0sgmpmfmqsqinqv5k6vhg0hlc8hsjkcnvf369yav224nq1",
       "depends": []
     },
+    "geneslator": {
+      "name": "geneslator",
+      "version": "0.99.10",
+      "sha256": "1a0qri8qm14n5laf7jhp2hssdyzb4pky9dvs2ma7qp719rf2rwwj",
+      "depends": ["AnnotationDbi", "BiocFileCache", "DBI", "IRanges", "KEGGREST", "curl", "jsonlite", "zen4R"]
+    },
     "genomewidesnp5Crlmm": {
       "name": "genomewidesnp5Crlmm",
       "version": "1.0.6",
@@ -2510,12 +2516,6 @@
       "version": "2.18.0",
       "sha256": "1jv4qzajikz7x4vq87wzn7hf6hx9r4c2gkjhfp93kqzwzddmigf4",
       "depends": ["AnnotationDbi"]
-    },
-    "hpAnnot": {
-      "name": "hpAnnot",
-      "version": "1.1.3",
-      "sha256": "0gnir407flzzkkljxf2brqrw2kaycl8azi0wc5yn1fhl7x5zidq1",
-      "depends": ["AnnotationHub"]
     },
     "hs25kresogen_db": {
       "name": "hs25kresogen.db",
@@ -2953,12 +2953,6 @@
       "name": "human660quadv1aCrlmm",
       "version": "1.0.3",
       "sha256": "0gz9r08jdmc8zg9fpr8xs51krvbmi6g2ni7aaxq3yzzyv3ip04xx",
-      "depends": []
-    },
-    "humanCHRLOC": {
-      "name": "humanCHRLOC",
-      "version": "2.1.6",
-      "sha256": "1mxj7h8qjalax9hjxqydykldl3spavnpr5x9ar74784wabsllhgi",
       "depends": []
     },
     "humancytosnp12v2p1hCrlmm": {
@@ -3506,12 +3500,6 @@
       "version": "2.18.0",
       "sha256": "1f7a6mvcpv57h7kfj1qzkcwh7mdl2w9z6ysmrgan9037rd0652sz",
       "depends": ["AnnotationDbi"]
-    },
-    "mouseCHRLOC": {
-      "name": "mouseCHRLOC",
-      "version": "2.1.6",
-      "sha256": "0xylgnz43xmjnqdwv7pn034wfs61va21lvcpn9igdik2s42ykpp2",
-      "depends": []
     },
     "mpedbarray_db": {
       "name": "mpedbarray.db",
@@ -5091,12 +5079,6 @@
       "sha256": "1zwjgbcb9d4ib6z1iyjz8x11lq0b5gqs08y6j3idb5wf3i2p521v",
       "depends": ["AnnotationDbi"]
     },
-    "ratCHRLOC": {
-      "name": "ratCHRLOC",
-      "version": "2.1.6",
-      "sha256": "0mgk6lwvvdwjzjh4r1q1q6nfnx4vqx9iy6gmbrb9f31jf30hqnsb",
-      "depends": []
-    },
     "rattoxfxcdf": {
       "name": "rattoxfxcdf",
       "version": "2.18.0",
@@ -6649,6 +6631,13 @@
       "depends": ["AnnotationDbi"],
       "broken": true
     },
+    "hpAnnot": {
+      "name": "hpAnnot",
+      "version": "1.1.3",
+      "sha256": "0gnir407flzzkkljxf2brqrw2kaycl8azi0wc5yn1fhl7x5zidq1",
+      "depends": ["AnnotationHub"],
+      "broken": true
+    },
     "hta20stprobeset_db": {
       "name": "hta20stprobeset.db",
       "version": "8.3.0",
@@ -6663,11 +6652,25 @@
       "depends": ["AnnotationDbi", "org_Hs_eg_db"],
       "broken": true
     },
+    "humanCHRLOC": {
+      "name": "humanCHRLOC",
+      "version": "2.1.6",
+      "sha256": "1mxj7h8qjalax9hjxqydykldl3spavnpr5x9ar74784wabsllhgi",
+      "depends": [],
+      "broken": true
+    },
     "mirbase_db": {
       "name": "mirbase.db",
       "version": "1.2.1",
       "sha256": "06dgj82jlggb272b0nvx0y4q9w4kkq7lbn9i0z4m8h6z23qlw7d9",
       "depends": ["AnnotationDbi"],
+      "broken": true
+    },
+    "mouseCHRLOC": {
+      "name": "mouseCHRLOC",
+      "version": "2.1.6",
+      "sha256": "0xylgnz43xmjnqdwv7pn034wfs61va21lvcpn9igdik2s42ykpp2",
+      "depends": [],
       "broken": true
     },
     "mta10stprobeset_db": {
@@ -6703,6 +6706,13 @@
       "version": "1.0",
       "sha256": "1vq3qbk6jswfffj5lfwsic71h8ga7a6gqf6wfa7qcda3gvfhnwlc",
       "depends": ["AnnotationDbi"],
+      "broken": true
+    },
+    "ratCHRLOC": {
+      "name": "ratCHRLOC",
+      "version": "2.1.6",
+      "sha256": "0mgk6lwvvdwjzjh4r1q1q6nfnx4vqx9iy6gmbrb9f31jf30hqnsb",
+      "depends": [],
       "broken": true
     },
     "ribosomaldatabaseproject11_5MgDb": {
