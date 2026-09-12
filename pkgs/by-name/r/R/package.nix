@@ -52,7 +52,7 @@ stdenv.mkDerivation (finalAttrs: {
       inherit (finalAttrs) pname version;
     in
     fetchurl {
-      url = "https://cran.r-project.org/src/base/R-${lib.versions.major version}/${pname}-${version}.tar.gz";
+      url = "https://cran.r-project.org/src/base-prerelease/R-devel.tar.gz";
       hash = "sha256-TabmHSwKrF8UoufkMstfzCae/oPaQpMFC6fwPf9OLPQ=";
     };
 
