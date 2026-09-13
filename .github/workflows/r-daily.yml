@@ -190,6 +190,13 @@ jobs:
           # Insert talvez after takethetime
           sed -i '/takethetime = callPackage .*;/a \
           \  talvez = callPackage ../development/python-modules/talvez { };' "$FILE"
+
+      - name: Disable checks for plum-dispatch
+        run: |
+          FILE="pkgs/development/python-modules/plum-dispatch/default.nix"
+          if [ -f "$FILE" ] && ! grep -q "doCheck = false;" "$FILE"; then
+            sed -i '/pyproject = true;/a \  doCheck = false;' "$FILE"
+          fi
    
       - name: Get patches for Bioc devel
         run: |
