@@ -349,6 +349,10 @@ jobs:
               patchShebangs src/library/tsitter/configure\
               patchShebangs src/library/tstoml/configure' \
             pkgs/development/r-modules/default.nix
+
+      - name: Add cmake and which to s2
+        run: |
+          sed -i 's/s2 = \[ pkgs\.pkg-config \];/s2 = [ pkgs.pkg-config pkgs.cmake pkgs.which ];/g' pkgs/development/r-modules/default.nix
       
       - name: Update R packages, again
         run: |
