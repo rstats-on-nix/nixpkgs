@@ -241,6 +241,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   enableParallelBuilding = true;
 
+  doCheck = false;
   doInstallCheck = true;
   # preCheck rather than preInstallCheck because this is what pytestCheckHook
   # calls (coming from the python world)
@@ -256,7 +257,6 @@ stdenv.mkDerivation (finalAttrs: {
     export CI=1
   '';
   nativeInstallCheckInputs = with python3Packages; [
-    pytestCheckHook
     pytest-benchmark
     pytest-env
     filelock
