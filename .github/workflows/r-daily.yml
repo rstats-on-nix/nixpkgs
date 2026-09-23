@@ -362,9 +362,9 @@ jobs:
         run: |
           sed -i 's/"test_pdf_extra_rasters"/"test_pdf_extra_rasters"\n    "test_gdalalg_raster_tile_fork_forced"/' pkgs/by-name/gd/gdal/package.nix
 
-      - name: Add cmake to RcppParallel
-        run: |
-          sed -i 's/RcppMeCab = \[ pkgs\.mecab \]; # for mecab-config/RcppMeCab = [ pkgs.mecab ]; # for mecab-config\n    RcppParallel = [ pkgs.cmake ];/' pkgs/development/r-modules/default.nix
+   #   - name: Add cmake to RcppParallel
+  #      run: |
+   #       sed -i 's/RcppMeCab = \[ pkgs\.mecab \]; # for mecab-config/RcppMeCab = [ pkgs.mecab ]; # for mecab-config\n    RcppParallel = [ pkgs.cmake ];/' pkgs/development/r-modules/default.nix
           
       - name: Update R packages, again
         run: |
@@ -384,7 +384,7 @@ jobs:
 
       - name: Apply temporary fixes to sf darwin and gdal
         run: |
-          curl -sL https://github.com/rstats-on-nix/nixpkgs/commit/862cb78b45d6bdadc2de279448dbd5199bfe10e0.diff
+          curl -sL https://github.com/rstats-on-nix/nixpkgs/commit/862cb78b45d6bdadc2de279448dbd5199bfe10e0.diff | patch -p1 --ignore-whitespace || true
      
       - name: Apply Quarto Pandoc compatibility fix
         run: |
