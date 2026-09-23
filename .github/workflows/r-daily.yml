@@ -361,6 +361,10 @@ jobs:
       - name: Disable flaky fork test in gdal
         run: |
           sed -i 's/"test_pdf_extra_rasters"/"test_pdf_extra_rasters"\n    "test_gdalalg_raster_tile_fork_forced"/' pkgs/by-name/gd/gdal/package.nix
+
+      - name: Add cmake to RcppParallel
+        run: |
+          sed -i 's/RcppMeCab = \[ pkgs\.mecab \]; # for mecab-config/RcppMeCab = [ pkgs.mecab ]; # for mecab-config\n    RcppParallel = [ pkgs.cmake ];/' pkgs/development/r-modules/default.nix
           
       - name: Update R packages, again
         run: |
