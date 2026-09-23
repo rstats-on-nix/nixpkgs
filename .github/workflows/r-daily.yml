@@ -357,7 +357,11 @@ jobs:
       - name: Disable flaky BAG CreateCopy test in gdal
         run: |
           sed -i 's/"test_pdf_extra_rasters"/"test_pdf_extra_rasters"\n    "test_misc_12"/' pkgs/by-name/gd/gdal/package.nix
-      
+
+      - name: Disable flaky fork test in gdal
+        run: |
+          sed -i 's/"test_pdf_extra_rasters"/"test_pdf_extra_rasters"\n    "test_gdalalg_raster_tile_fork_forced"/' pkgs/by-name/gd/gdal/package.nix
+          
       - name: Update R packages, again
         run: |
           cd pkgs/development/r-modules/
