@@ -43,6 +43,18 @@ jobs:
       #      exit 1
       #    fi
 
+      - name: Cherry-pick mistralai-timestral
+        run: |
+          set -e
+          git remote add personal https://github.com/b-rodrigues/nixpkgs.git || true
+          git fetch personal 1ca4251ea4acb2fc2f65327ac146cba93ae85837
+          if git cherry-pick 1ca4251ea4acb2fc2f65327ac146cba93ae85837; then
+            echo "Cherry-pick successful"
+          else
+            echo "Cherry-pick failed, aborting"
+            git cherry-pick --abort
+          fi
+
       - name: Cherry-pick pypmml PR
         run: |
           set -e
