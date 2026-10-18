@@ -10972,6 +10972,8 @@ self: super: with self; {
 
   mistralai = callPackage ../development/python-modules/mistralai { };
 
+  mistralai-timestral = callPackage ../development/python-modules/mistralai-timestral { };
+
   mistune = callPackage ../development/python-modules/mistune { };
 
   mistune_2 = callPackage ../development/python-modules/mistune/2.nix { };
