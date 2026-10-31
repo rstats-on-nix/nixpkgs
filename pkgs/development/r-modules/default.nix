@@ -1012,7 +1012,7 @@ let
     rtracklayer = [ pkgs.pkg-config ];
     runjags = [ pkgs.pkg-config ];
     rzmq = [ pkgs.pkg-config ];
-    s2 = [ pkgs.pkg-config ];
+    s2 = [ pkgs.pkg-config pkgs.cmake pkgs.which ];
     salso = with pkgs; [
       cargo
       rustc
