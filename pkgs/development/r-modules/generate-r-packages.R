@@ -14,12 +14,8 @@ library(jsonlite)
 locale <- Sys.setlocale(locale = "C")
 
 biocVersion <- BiocManager:::.version_map()
-biocVersion <- biocVersion[biocVersion$R == getRversion()[, 1:2],c("Bioc", "BiocStatus")]
-if ("release" %in% biocVersion$BiocStatus) {
-  biocVersion <-  as.character(biocVersion[biocVersion$BiocStatus == "release", "Bioc"])
-} else {
-  biocVersion <-  max(as.character(biocVersion$Bioc))
-}
+
+biocVersion <- subset(biocVersion, BiocStatus == "devel")$Bioc
 
 mirrorUrls <- list( bioc=paste0("http://bioconductor.org/packages/", biocVersion, "/bioc/src/contrib/")
                   , "bioc-annotation"=paste0("http://bioconductor.org/packages/", biocVersion, "/data/annotation/src/contrib/")
