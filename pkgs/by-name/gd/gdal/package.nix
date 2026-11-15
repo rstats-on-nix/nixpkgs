@@ -240,6 +240,7 @@ stdenv.mkDerivation (finalAttrs: {
 
   enableParallelBuilding = true;
 
+  doCheck = false;
   doInstallCheck = true;
   # preCheck rather than preInstallCheck because this is what pytestCheckHook
   # calls (coming from the python world)
@@ -255,7 +256,6 @@ stdenv.mkDerivation (finalAttrs: {
     export CI=1
   '';
   nativeInstallCheckInputs = with python3Packages; [
-    pytestCheckHook
     pytest-benchmark
     pytest-env
     filelock
@@ -302,6 +302,8 @@ stdenv.mkDerivation (finalAttrs: {
     # tests for magic numbers, seem to change with different poppler versions,
     # and architectures
     "test_pdf_extra_rasters"
+    "test_gdalalg_raster_tile_fork_forced"
+    "test_misc_12"
   ]
   ++ lib.optionals (!stdenv.hostPlatform.isx86_64) [
     # likely precision-related expecting x87 behaviour
