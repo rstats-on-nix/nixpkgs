@@ -74,7 +74,7 @@ jobs:
           # Fetch the PR from upstream
           git fetch upstream pull/588575/head:pr-588575
           # Try cherry-pick
-          if git cherry-pick pr-588575; then
+          if git cherry-pick 77edbfd3915ce1adaeecbf8adb14cec6926054b5 e83fcf302b04ce6a0b1885ae999a8f21d5379508 8d87cd2fca54827de9dec0ed1863d2402caf6c87; then
             echo "Cherry-pick successful"
           else
             echo "Cherry-pick failed, aborting"
