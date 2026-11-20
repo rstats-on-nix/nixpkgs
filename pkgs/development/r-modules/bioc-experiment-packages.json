@@ -1923,9 +1923,9 @@
     },
     "curatedMetagenomicData": {
       "name": "curatedMetagenomicData",
-      "version": "3.20.0",
+      "version": "3.20.1",
       "spdx": ["Artistic-2.0"],
-      "sha256": "1pg4l32v8p56i4s3nvpskz7fkz6qf1yha8d8ffk482sv2jx1sxf1",
+      "sha256": "16lk59k1zmp20a81v5k4cp5kba4gk7hics14vcrj8zwdahxl909l",
       "depends": ["AnnotationHub", "ExperimentHub", "S4Vectors", "SummarizedExperiment", "TreeSummarizedExperiment", "dplyr", "magrittr", "mia", "purrr", "rlang", "stringr", "tibble", "tidyr", "tidyselect"]
     },
     "curatedOvarianData": {
@@ -2315,9 +2315,9 @@
     },
     "humanHippocampus2024": {
       "name": "humanHippocampus2024",
-      "version": "1.4.0",
-      "spdx": ["Artistic-2.0"],
-      "sha256": "0k5y9bzr91whw0pqlgszsdlg9ijp249rbpsv6ni4fzx82knn9sqk",
+      "version": "1.4.2",
+      "spdx": [null],
+      "sha256": "0b3fd65cr7jjakq5l952vgbipy6hb3vmjmqcpr00xr9ii6m5dr02",
       "depends": ["ExperimentHub", "SpatialExperiment", "SummarizedExperiment"]
     },
     "humanStemCell": {
