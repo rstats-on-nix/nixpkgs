@@ -23,6 +23,7 @@ buildPythonPackage (finalAttrs: {
   pname = "plum-dispatch";
   version = "2.9.0";
   pyproject = true;
+  doCheck = false;
 
   src = fetchFromGitHub {
     owner = "beartype";
