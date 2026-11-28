@@ -1,6 +1,6 @@
 {
   "extraArgs": {
-    "biocVersion": "3.24"
+    "biocVersion": "3.25"
   },
   "packages": {
     "AHCytoBands": {
@@ -15,847 +15,847 @@
       "version": "1.7.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0a4gddq5w0bn0z8msbq0qsk47rm91nmxhfnk29vq07xsvmz5cz21",
-      "depends": ["AnnotationHubData", "ensembldb"]
+      "depends": []
     },
     "AHLRBaseDbs": {
       "name": "AHLRBaseDbs",
       "version": "1.8.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "038i0338zyqzkvmhxcdiykb0rwa3bzi0vv18j643b1a64bsnvcxi",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "AHMeSHDbs": {
       "name": "AHMeSHDbs",
       "version": "1.8.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "09acd6xipzillw9z68nqqxjxa0hbshclv504na7l2dkhpppx6934",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "AHPathbankDbs": {
       "name": "AHPathbankDbs",
       "version": "0.99.5",
       "spdx": ["Artistic-2.0"],
       "sha256": "10wcrglm521xcrfbzc39dkbjvg1pkz0zq70vgnh68akiwmdirp89",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "AHPubMedDbs": {
       "name": "AHPubMedDbs",
       "version": "1.8.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1p9jxs8ci4yv7yi4n86gpg49jigdmw0nrfnm8ls0jxwm0371vm7l",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "AHWikipathwaysDbs": {
       "name": "AHWikipathwaysDbs",
       "version": "0.99.4",
       "spdx": ["Artistic-2.0"],
       "sha256": "0vz3p9sx36bwzl9rq0ffh7klbq13pv2yhgjq1cjk7ll8z226c0q4",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "AlphaMissense_v2023_hg19": {
       "name": "AlphaMissense.v2023.hg19",
       "version": "3.18.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0622yzywf3655rsh1ckmfvx0crm715a227bg5zz5znz7zfnlsl8y",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "AlphaMissense_v2023_hg38": {
       "name": "AlphaMissense.v2023.hg38",
       "version": "3.18.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "080c0282hcls96pd9mjljv2y1y6sy6nhqzlqwl5a2knq1aql4mna",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "BSgenome_Alyrata_JGI_v1": {
       "name": "BSgenome.Alyrata.JGI.v1",
       "version": "1.0.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "062ap94m6s4w8clg1zlj223wmgbmq19yhksx9fcdcqrxr5kbfv85",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Amellifera_BeeBase_assembly4": {
       "name": "BSgenome.Amellifera.BeeBase.assembly4",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "02zs16q441zcbfp7xvv1gny5nn02ivfr8md1wh5s5rpnj6sdl6kj",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Amellifera_NCBI_AmelHAv3_1": {
       "name": "BSgenome.Amellifera.NCBI.AmelHAv3.1",
       "version": "1.5.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1cglml4rlqr5hmf4dx51grx6s25h6xc3lqv569nx2sl4gdz28s47",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Amellifera_UCSC_apiMel2": {
       "name": "BSgenome.Amellifera.UCSC.apiMel2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1967w7aly7qydykk7rar712kvgsav3zjr4kirybkj17nwiynd74g",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Amellifera_UCSC_apiMel2_masked": {
       "name": "BSgenome.Amellifera.UCSC.apiMel2.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "128jmpnpbz1afqvhvdc9vrc8gmlyg26ca7qz362qsx89jrm4khpr",
-      "depends": ["BSgenome", "BSgenome_Amellifera_UCSC_apiMel2"]
+      "depends": ["BSgenome_Amellifera_UCSC_apiMel2"]
     },
     "BSgenome_Aofficinalis_NCBI_V1": {
       "name": "BSgenome.Aofficinalis.NCBI.V1",
       "version": "1.0.0",
       "spdx": ["GPL-3.0-only"],
       "sha256": "0n6m5jnpiz6bv46b7s396qkxha2d8271j747j50v2zb6a7wd0rjr",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Athaliana_TAIR_04232008": {
       "name": "BSgenome.Athaliana.TAIR.04232008",
       "version": "1.3.1000",
       "spdx": ["Artistic-2.0"],
       "sha256": "0dsbjfh2yf0v3zmbypn9p3alvwhfw2qyr5vivyj7x9ablylb6qxc",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Athaliana_TAIR_TAIR9": {
       "name": "BSgenome.Athaliana.TAIR.TAIR9",
       "version": "1.3.1000",
       "spdx": ["Artistic-2.0"],
       "sha256": "0n45sn80c5nchfj1wzbcaicfyg66id2zhr5xm3w238idkbj05l00",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Btaurus_UCSC_bosTau3": {
       "name": "BSgenome.Btaurus.UCSC.bosTau3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0vh3664q7pynfw763pwg2h74h0ncmi5nslvj7y5bj1q7pvf03zpc",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Btaurus_UCSC_bosTau3_masked": {
       "name": "BSgenome.Btaurus.UCSC.bosTau3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "03l9xgbsfmrw3yk0hpza5gfhgd3cfflp5pqzi36ifnmpr40ca722",
-      "depends": ["BSgenome", "BSgenome_Btaurus_UCSC_bosTau3"]
+      "depends": ["BSgenome_Btaurus_UCSC_bosTau3"]
     },
     "BSgenome_Btaurus_UCSC_bosTau4": {
       "name": "BSgenome.Btaurus.UCSC.bosTau4",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1z86qdpmilwrnjysn8qgxj3g7pqp9hwr25cpiabyczd216wy3zy5",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Btaurus_UCSC_bosTau4_masked": {
       "name": "BSgenome.Btaurus.UCSC.bosTau4.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0dkz9ixxa5x9l1v733a3sfrbnjd2kfmd5a2vxskkx9jm3hfbg6gr",
-      "depends": ["BSgenome", "BSgenome_Btaurus_UCSC_bosTau4"]
+      "depends": ["BSgenome_Btaurus_UCSC_bosTau4"]
     },
     "BSgenome_Btaurus_UCSC_bosTau6": {
       "name": "BSgenome.Btaurus.UCSC.bosTau6",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0waaf9wfmdl5jbi3la64vsiqb83lyw9fqg3sn90bf1q7k3k617p3",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Btaurus_UCSC_bosTau6_masked": {
       "name": "BSgenome.Btaurus.UCSC.bosTau6.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "07isv0lcvlsl0aha1p474l0pps0j7bsh455m33vfxwahivqsfy27",
-      "depends": ["BSgenome", "BSgenome_Btaurus_UCSC_bosTau6"]
+      "depends": ["BSgenome_Btaurus_UCSC_bosTau6"]
     },
     "BSgenome_Btaurus_UCSC_bosTau8": {
       "name": "BSgenome.Btaurus.UCSC.bosTau8",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "16wjy1aw9nvx03r7w8yh5w7sw3pn8i9nczd0n0728l6nnyqxlsz6",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Btaurus_UCSC_bosTau9": {
       "name": "BSgenome.Btaurus.UCSC.bosTau9",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0vx9z101faybqqdqfk306m7m3j490svmx7bn7knh5if66g0mzi7g",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Btaurus_UCSC_bosTau9_masked": {
       "name": "BSgenome.Btaurus.UCSC.bosTau9.masked",
       "version": "1.4.4",
       "spdx": ["Artistic-2.0"],
       "sha256": "04wzhrp0kb8mv7dg732daqr58djs5dwjm54hgmzbaafv1715i74k",
-      "depends": ["BSgenome", "BSgenome_Btaurus_UCSC_bosTau9"]
+      "depends": ["BSgenome_Btaurus_UCSC_bosTau9"]
     },
     "BSgenome_Carietinum_NCBI_v1": {
       "name": "BSgenome.Carietinum.NCBI.v1",
       "version": "1.0.0",
       "spdx": ["GPL-3.0-only"],
       "sha256": "1asyyb1p1bzc7dv9s2igjxrf9f144vvz2xbv9qxg15w9qzzx7r33",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Celegans_UCSC_ce10": {
       "name": "BSgenome.Celegans.UCSC.ce10",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1zaym97jk4npxk14ifvwz2rvhm4zx9xgs33r9vvx9rlynp0gydrk",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Celegans_UCSC_ce11": {
       "name": "BSgenome.Celegans.UCSC.ce11",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0d4bxfglpqiv1f0n6imdgz101g9383hfj3ra91268wryzlm0yk5w",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Celegans_UCSC_ce2": {
       "name": "BSgenome.Celegans.UCSC.ce2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1x7nvisz7mjrpqlsiw4an04f8hksygzn96p5ld0388hljg78dax8",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Celegans_UCSC_ce6": {
       "name": "BSgenome.Celegans.UCSC.ce6",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0mqzb353xv2c3m3vkb315dkmnxkgczp7ndnknyhpgjlybyf715v9",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Cfamiliaris_UCSC_canFam2": {
       "name": "BSgenome.Cfamiliaris.UCSC.canFam2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "052p2lsm1ny0rjvhgd56w6z4nrqfc74vh0q7cmqz55xkhk01h7hm",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Cfamiliaris_UCSC_canFam2_masked": {
       "name": "BSgenome.Cfamiliaris.UCSC.canFam2.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "14108j73z7959d070xiqar5s14pac18cs8a22lcggbmp5x93hmqz",
-      "depends": ["BSgenome", "BSgenome_Cfamiliaris_UCSC_canFam2"]
+      "depends": ["BSgenome_Cfamiliaris_UCSC_canFam2"]
     },
     "BSgenome_Cfamiliaris_UCSC_canFam3": {
       "name": "BSgenome.Cfamiliaris.UCSC.canFam3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ir092yh1h03ag1lnj2rh5hjp2mqrw7fcyb6mqyjm0h8g1pmpicr",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Cfamiliaris_UCSC_canFam3_masked": {
       "name": "BSgenome.Cfamiliaris.UCSC.canFam3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "07y28g6b4sbp38yg5rwldda7s1cwcpil6rzsb4csskvs0xi5286l",
-      "depends": ["BSgenome", "BSgenome_Cfamiliaris_UCSC_canFam3"]
+      "depends": ["BSgenome_Cfamiliaris_UCSC_canFam3"]
     },
     "BSgenome_Cjacchus_UCSC_calJac3": {
       "name": "BSgenome.Cjacchus.UCSC.calJac3",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1s1srg6lr3dndbpv83bqlxz5lhyhxh431yrd919yl4fwmr5rvx0z",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Cjacchus_UCSC_calJac4": {
       "name": "BSgenome.Cjacchus.UCSC.calJac4",
       "version": "1.5.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0hfrcsarcm65hqr6032aar1rz09pvj22wj5dlmy459cqrpgr5prf",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_CneoformansVarGrubiiKN99_NCBI_ASM221672v1": {
       "name": "BSgenome.CneoformansVarGrubiiKN99.NCBI.ASM221672v1",
       "version": "1.0.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0hmxpm9mj8ahmpk2xp0qgsblvjz7wjcdmsz41ab5s404ggiylx79",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Creinhardtii_JGI_v5_6": {
       "name": "BSgenome.Creinhardtii.JGI.v5.6",
       "version": "1.5.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0px1p3hgbpk3pvmg77knqxwmh1jd8jjf763kzxf0725pnl9dca2v",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Dmelanogaster_UCSC_dm2": {
       "name": "BSgenome.Dmelanogaster.UCSC.dm2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1vnqbm1123zmpn1iwyygr1p4js0j6vifyz7iwzgkiw543yb1mwnl",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Dmelanogaster_UCSC_dm2_masked": {
       "name": "BSgenome.Dmelanogaster.UCSC.dm2.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "1qclf62c3qrdhnrb6p4rhj7wrarlsbm716d37k0gbdzkfm2vhyr7",
-      "depends": ["BSgenome", "BSgenome_Dmelanogaster_UCSC_dm2"]
+      "depends": ["BSgenome_Dmelanogaster_UCSC_dm2"]
     },
     "BSgenome_Dmelanogaster_UCSC_dm3": {
       "name": "BSgenome.Dmelanogaster.UCSC.dm3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "19bm3lkhhkag3gnwp419211fh0cnr0x6fa0r1lr0ycwrikxdxsv8",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Dmelanogaster_UCSC_dm3_masked": {
       "name": "BSgenome.Dmelanogaster.UCSC.dm3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "1756csb09f1br9rj1l3f08qyh4hlymdbd0cfn8x3fq39dn45m5ap",
-      "depends": ["BSgenome", "BSgenome_Dmelanogaster_UCSC_dm3"]
+      "depends": ["BSgenome_Dmelanogaster_UCSC_dm3"]
     },
     "BSgenome_Dmelanogaster_UCSC_dm6": {
       "name": "BSgenome.Dmelanogaster.UCSC.dm6",
       "version": "1.4.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1bhj0rdgf7lspw4xby9y9mf7v7jxxz8001bc8vw8kf04rjsx6060",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Drerio_UCSC_danRer10": {
       "name": "BSgenome.Drerio.UCSC.danRer10",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1grlxihdx65fwgb9gbp1jibbqan9a5667w4jgswhg0qsia608lzs",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Drerio_UCSC_danRer11": {
       "name": "BSgenome.Drerio.UCSC.danRer11",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "08a928mqzv2jxngjcs4yr6ni1b9z9al6jdngwi438j8hm41cwk4v",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Drerio_UCSC_danRer5": {
       "name": "BSgenome.Drerio.UCSC.danRer5",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1mxmy4ika192xvlrsynyvnb7kvcvbsl89g39q53vrkibhml1q0v5",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Drerio_UCSC_danRer5_masked": {
       "name": "BSgenome.Drerio.UCSC.danRer5.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "03y08jlknb52x37wg95xaf62n5fbsfpmx57bjyxz2gj0n8zhcdgv",
-      "depends": ["BSgenome", "BSgenome_Drerio_UCSC_danRer5"]
+      "depends": ["BSgenome_Drerio_UCSC_danRer5"]
     },
     "BSgenome_Drerio_UCSC_danRer6": {
       "name": "BSgenome.Drerio.UCSC.danRer6",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0h2chcpdi2vy29fg43r6q37vvb7p4d4cpnszlsmiy7ax358sd5ji",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Drerio_UCSC_danRer6_masked": {
       "name": "BSgenome.Drerio.UCSC.danRer6.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "175gy5xfp5kzbgmagvls3233i925wppyk9alw75f7jnxfddxvq4k",
-      "depends": ["BSgenome", "BSgenome_Drerio_UCSC_danRer6"]
+      "depends": ["BSgenome_Drerio_UCSC_danRer6"]
     },
     "BSgenome_Drerio_UCSC_danRer7": {
       "name": "BSgenome.Drerio.UCSC.danRer7",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "17x3hj08jag05y8q4aziy455jy15dpwkdbh97v3byzcda0kpwbpg",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Drerio_UCSC_danRer7_masked": {
       "name": "BSgenome.Drerio.UCSC.danRer7.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "153cf2ni7xffi7j7dafg04v6i65gh8d21v7l9szm4c18bywvcn5z",
-      "depends": ["BSgenome", "BSgenome_Drerio_UCSC_danRer7"]
+      "depends": ["BSgenome_Drerio_UCSC_danRer7"]
     },
     "BSgenome_Dvirilis_Ensembl_dvircaf1": {
       "name": "BSgenome.Dvirilis.Ensembl.dvircaf1",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0dwqshpx3mm9k9p3x53hc62czpvqs6v2jw5i977x0y4hfig0zv8m",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ecoli_NCBI_20080805": {
       "name": "BSgenome.Ecoli.NCBI.20080805",
       "version": "1.3.1000",
       "spdx": ["Artistic-2.0"],
       "sha256": "1l7mjyys1kaq4mbia9jamyw6sd0ij1wypwxvwy8aksan3gcfnh27",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Gaculeatus_UCSC_gasAcu1": {
       "name": "BSgenome.Gaculeatus.UCSC.gasAcu1",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1w0jpv58kbjvjlsprn5g4nd3g6jhiyw3k6mlfnpnffcbdh27cq0k",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Gaculeatus_UCSC_gasAcu1_masked": {
       "name": "BSgenome.Gaculeatus.UCSC.gasAcu1.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "13g2xc6v8qlrc0a0zly4ibhzgwg5dsrx1bmw4rrwnkk652alaivx",
-      "depends": ["BSgenome", "BSgenome_Gaculeatus_UCSC_gasAcu1"]
+      "depends": ["BSgenome_Gaculeatus_UCSC_gasAcu1"]
     },
     "BSgenome_Ggallus_UCSC_galGal3": {
       "name": "BSgenome.Ggallus.UCSC.galGal3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1bgw45nizdm1kq0624asr4ky61cm8pmrq32574phvvq1jjpg4isp",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ggallus_UCSC_galGal3_masked": {
       "name": "BSgenome.Ggallus.UCSC.galGal3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0igi02g46h1j87hv9bk45nbqahyjd0k75jkg0s6m9a62jsssg63l",
-      "depends": ["BSgenome", "BSgenome_Ggallus_UCSC_galGal3"]
+      "depends": ["BSgenome_Ggallus_UCSC_galGal3"]
     },
     "BSgenome_Ggallus_UCSC_galGal4": {
       "name": "BSgenome.Ggallus.UCSC.galGal4",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1qfl046akdf43azigprc13sssgbmxdz9dmlrvy13ag8fgfkjxign",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ggallus_UCSC_galGal4_masked": {
       "name": "BSgenome.Ggallus.UCSC.galGal4.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0fvqimjf1xvgka4nw66nd0rbyb7r93v8cyw33776lhfv68ny058v",
-      "depends": ["BSgenome", "BSgenome_Ggallus_UCSC_galGal4"]
+      "depends": ["BSgenome_Ggallus_UCSC_galGal4"]
     },
     "BSgenome_Ggallus_UCSC_galGal5": {
       "name": "BSgenome.Ggallus.UCSC.galGal5",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0gi82xr2b3fn3wi608nmqp3cgjx63rm82wy24p9l0s1qqh2z3jdb",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ggallus_UCSC_galGal6": {
       "name": "BSgenome.Ggallus.UCSC.galGal6",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "00b0awki35xkfjsvv9x1h0sykg5jbf36a37hj4spw028bkg8k7v2",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Gmax_NCBI_Gmv40": {
       "name": "BSgenome.Gmax.NCBI.Gmv40",
       "version": "4.0",
       "spdx": [],
       "sha256": "0w6pa6pcjmxy9zj21m4c585s7fihy3hcg0ysbjkizlsskmlva0dr",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_1000genomes_hs37d5": {
       "name": "BSgenome.Hsapiens.1000genomes.hs37d5",
       "version": "0.99.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1cg0g5fqmsvwyw2p9hp2yy4ilk21jkbbrnpgqvb5c36ihjwvc7sr",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_NCBI_GRCh38": {
       "name": "BSgenome.Hsapiens.NCBI.GRCh38",
       "version": "1.3.1000",
       "spdx": ["Artistic-2.0"],
       "sha256": "0y75qdq578fh6420vbvsbwmdw8jvr3g06qli2h3vj3pxmjykh9c1",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_NCBI_T2T_CHM13v2_0": {
       "name": "BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0",
       "version": "1.5.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "080zq71fl1cx7sxi2il5v0mfj79hw93qy3fr1514fax8vslh5lfz",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_UCSC_hg17": {
       "name": "BSgenome.Hsapiens.UCSC.hg17",
       "version": "1.3.1001",
       "spdx": ["Artistic-2.0"],
       "sha256": "10vxkdr7vjbyginq5dnw6199l6kwvis45dhl9khh4aywv9l0ky0x",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_UCSC_hg17_masked": {
       "name": "BSgenome.Hsapiens.UCSC.hg17.masked",
       "version": "1.3.999",
       "spdx": ["Artistic-2.0"],
       "sha256": "0mycmcp6j0zl3nw8fwypc94i9v1ii910myyr2ipawxi3yb3ch136",
-      "depends": ["BSgenome", "BSgenome_Hsapiens_UCSC_hg17"]
+      "depends": ["BSgenome_Hsapiens_UCSC_hg17"]
     },
     "BSgenome_Hsapiens_UCSC_hg18": {
       "name": "BSgenome.Hsapiens.UCSC.hg18",
       "version": "1.3.1000",
       "spdx": ["Artistic-2.0"],
       "sha256": "1bd7hn4ksgpyhnbjb9qdqfz5cg6x5lsizbls55v9s9hnvfzq3yi6",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_UCSC_hg18_masked": {
       "name": "BSgenome.Hsapiens.UCSC.hg18.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "031sr3y95c32igk3lrrsafdm9i1zprjran8gak06arqc0hvzbfk0",
-      "depends": ["BSgenome", "BSgenome_Hsapiens_UCSC_hg18"]
+      "depends": ["BSgenome_Hsapiens_UCSC_hg18"]
     },
     "BSgenome_Hsapiens_UCSC_hg19": {
       "name": "BSgenome.Hsapiens.UCSC.hg19",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "06lx7q7i52lg3vkjkqy492z9ianzgi4nhs9m1jrxjjb4hgbnbyjv",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_UCSC_hg19_masked": {
       "name": "BSgenome.Hsapiens.UCSC.hg19.masked",
       "version": "1.3.993",
       "spdx": ["Artistic-2.0"],
       "sha256": "19533ihgad67bzhavycv6z708012ylz9cw1qdfmk2b7ikf3kiaz9",
-      "depends": ["BSgenome", "BSgenome_Hsapiens_UCSC_hg19"]
+      "depends": ["BSgenome_Hsapiens_UCSC_hg19"]
     },
     "BSgenome_Hsapiens_UCSC_hg38": {
       "name": "BSgenome.Hsapiens.UCSC.hg38",
       "version": "1.4.5",
       "spdx": ["Artistic-2.0"],
       "sha256": "0lp94r9dsx8sl1ifysavgjf4aamhjc4n71zif5jyfnwmzpj7g4ml",
-      "depends": ["BSgenome", "GenomeInfoDb"]
+      "depends": ["GenomeInfoDb"]
     },
     "BSgenome_Hsapiens_UCSC_hg38_dbSNP151_major": {
       "name": "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major",
       "version": "0.0.9999",
       "spdx": ["CC-BY-NC-ND-4.0"],
       "sha256": "0290fk7jvlcb1mh6nlyqagqskfh0dvaysj1d6s15bgygnlm3r726",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_UCSC_hg38_dbSNP151_minor": {
       "name": "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.minor",
       "version": "0.0.9999",
       "spdx": ["CC-BY-NC-ND-4.0"],
       "sha256": "1xw8vckhsak35r942yyvlrpbhb2w4vzah8wfgmn3vyj1zklk3913",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Hsapiens_UCSC_hg38_masked": {
       "name": "BSgenome.Hsapiens.UCSC.hg38.masked",
       "version": "1.4.5",
       "spdx": ["Artistic-2.0"],
       "sha256": "0j71hdxqvvc0s8mc6jp6zk502mrf095qazj95yzzb4rm6sjvd20m",
-      "depends": ["BSgenome", "BSgenome_Hsapiens_UCSC_hg38", "GenomeInfoDb"]
+      "depends": ["BSgenome_Hsapiens_UCSC_hg38", "GenomeInfoDb"]
     },
     "BSgenome_Hsapiens_UCSC_hs1": {
       "name": "BSgenome.Hsapiens.UCSC.hs1",
       "version": "1.4.4",
       "spdx": ["Artistic-2.0"],
       "sha256": "1y5rxlms9fj20fz32l56i5j1c4fzly5zzvlxz01fs46qimnfb3ms",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mdomestica_UCSC_monDom5": {
       "name": "BSgenome.Mdomestica.UCSC.monDom5",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "16kzb66kjpmf9j92pwh98ah5rhrnfyzdpr0rk659zham6dzga9ck",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mfascicularis_NCBI_5_0": {
       "name": "BSgenome.Mfascicularis.NCBI.5.0",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1lrdj7aibx4i60hpbaqgk3qir9zjs67mxdgp5jmgmw7gf2nwyn3x",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mfascicularis_NCBI_6_0": {
       "name": "BSgenome.Mfascicularis.NCBI.6.0",
       "version": "1.5.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0zl73jkg56jrvqyqvp67jx63dl8li6pypkgn1dqj959qzdzc57j0",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mfuro_UCSC_musFur1": {
       "name": "BSgenome.Mfuro.UCSC.musFur1",
       "version": "1.4.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0c0569a1k36sk0vzf7afhnfm0n2nwcdp3dc88s1hghpg7lwi9g9j",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmulatta_UCSC_rheMac10": {
       "name": "BSgenome.Mmulatta.UCSC.rheMac10",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "06ja5fn3sgk2lmfwf7m5sqcz0dq732v8y4vhc2cnbbvhpyax0mbd",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmulatta_UCSC_rheMac2": {
       "name": "BSgenome.Mmulatta.UCSC.rheMac2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "15vswd1fq7a7g1dkm0wzkmclih8z373nfzjyc3zrn9l0nawdv9jj",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmulatta_UCSC_rheMac2_masked": {
       "name": "BSgenome.Mmulatta.UCSC.rheMac2.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "1j4z4iy13n4qbi9a50qw1hn8z14xz0z8hbiwhy2bb9znykkf4chd",
-      "depends": ["BSgenome", "BSgenome_Mmulatta_UCSC_rheMac2"]
+      "depends": ["BSgenome_Mmulatta_UCSC_rheMac2"]
     },
     "BSgenome_Mmulatta_UCSC_rheMac3": {
       "name": "BSgenome.Mmulatta.UCSC.rheMac3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0r3v4p567rxcczwqi7zdz7pmdiffgrq83j488libdb4s0hdg5jmi",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmulatta_UCSC_rheMac3_masked": {
       "name": "BSgenome.Mmulatta.UCSC.rheMac3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0k3j40hrys60qdij5rsxdzyx9bfmryaki5p7i4d5m0xmldlk9anr",
-      "depends": ["BSgenome", "BSgenome_Mmulatta_UCSC_rheMac3"]
+      "depends": ["BSgenome_Mmulatta_UCSC_rheMac3"]
     },
     "BSgenome_Mmulatta_UCSC_rheMac8": {
       "name": "BSgenome.Mmulatta.UCSC.rheMac8",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "18z6vl89jkjzvppz3r93b2s32l17hz6pfp36wv5wvhm0c0rhnhmw",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmusculus_UCSC_mm10": {
       "name": "BSgenome.Mmusculus.UCSC.mm10",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "1vprkywr72nqf847vzmgymylcdb45g4hy30fwx6fzwddkyzh5xnw",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmusculus_UCSC_mm10_masked": {
       "name": "BSgenome.Mmusculus.UCSC.mm10.masked",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "04352r264jmpm5abbcyylz0axw24sm58ki3xvp434kp3cfdx32gc",
-      "depends": ["BSgenome", "BSgenome_Mmusculus_UCSC_mm10"]
+      "depends": ["BSgenome_Mmusculus_UCSC_mm10"]
     },
     "BSgenome_Mmusculus_UCSC_mm39": {
       "name": "BSgenome.Mmusculus.UCSC.mm39",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0rpxdaa5w0p841kl5h6ngb49zr9q33ad0zgnw9xdpp1vfh0l47xm",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmusculus_UCSC_mm8": {
       "name": "BSgenome.Mmusculus.UCSC.mm8",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1al34aa11d6kr0cr4xrabix1xmqc96zzgik5p4yc8r0rba3n100a",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmusculus_UCSC_mm8_masked": {
       "name": "BSgenome.Mmusculus.UCSC.mm8.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "1a2ywmy96cbwmvbdid73c0kln56qrbd7ipfzkzl97f56k3g985j5",
-      "depends": ["BSgenome", "BSgenome_Mmusculus_UCSC_mm8"]
+      "depends": ["BSgenome_Mmusculus_UCSC_mm8"]
     },
     "BSgenome_Mmusculus_UCSC_mm9": {
       "name": "BSgenome.Mmusculus.UCSC.mm9",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1birqw30g2azimxpnjfzmkphan7x131yy8b9h85lfz5fjdg7841i",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Mmusculus_UCSC_mm9_masked": {
       "name": "BSgenome.Mmusculus.UCSC.mm9.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "00bpbm3havqcxr4g63zhllsbpd9q6svgihks7qp7x73nm4gvq7fn",
-      "depends": ["BSgenome", "BSgenome_Mmusculus_UCSC_mm9"]
+      "depends": ["BSgenome_Mmusculus_UCSC_mm9"]
     },
     "BSgenome_Osativa_MSU_MSU7": {
       "name": "BSgenome.Osativa.MSU.MSU7",
       "version": "0.99.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1rppki62c916drc24jd2j1cmbhn3x316z16123gc654wj1c5s9vi",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ppaniscus_UCSC_panPan1": {
       "name": "BSgenome.Ppaniscus.UCSC.panPan1",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0schlki35jmv678hgxv7jmrcmbv2wixqhpk18awpr2pwq2j1ahmc",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ppaniscus_UCSC_panPan2": {
       "name": "BSgenome.Ppaniscus.UCSC.panPan2",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0jbxfix328qzsd94vjh7dlnzpygkdwbglcn4d1pdivm43ggww10a",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ptroglodytes_UCSC_panTro2": {
       "name": "BSgenome.Ptroglodytes.UCSC.panTro2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "14yvajlldr3qhclg9n2j48q60rgbz6x1ypgzd6dgf4c6jxl90p0q",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ptroglodytes_UCSC_panTro2_masked": {
       "name": "BSgenome.Ptroglodytes.UCSC.panTro2.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "1dy1bf6rsmzv6qj9d2a1sz56w33pk63g3qxm8znfdw11hmdbq9m1",
-      "depends": ["BSgenome", "BSgenome_Ptroglodytes_UCSC_panTro2"]
+      "depends": ["BSgenome_Ptroglodytes_UCSC_panTro2"]
     },
     "BSgenome_Ptroglodytes_UCSC_panTro3": {
       "name": "BSgenome.Ptroglodytes.UCSC.panTro3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1vbfx0zrj4rcwcsm1q09xdiv0mmrycj8223lnxqb8nr5r017f7gm",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ptroglodytes_UCSC_panTro3_masked": {
       "name": "BSgenome.Ptroglodytes.UCSC.panTro3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "18ga0whdcp5zpigrmh68wjmn99lzvfyvgxjm58y0jx66rmg94mir",
-      "depends": ["BSgenome", "BSgenome_Ptroglodytes_UCSC_panTro3"]
+      "depends": ["BSgenome_Ptroglodytes_UCSC_panTro3"]
     },
     "BSgenome_Ptroglodytes_UCSC_panTro5": {
       "name": "BSgenome.Ptroglodytes.UCSC.panTro5",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0wxciajcyf0hr6g6zcji125jm18nnspwvnv5x3jibjvxzx55gcds",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Ptroglodytes_UCSC_panTro6": {
       "name": "BSgenome.Ptroglodytes.UCSC.panTro6",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1l1fqnw1iqb2a7kvyvb0m1vdvq6cxs6py92yvbaf4zwklmgmdq0b",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Rnorvegicus_UCSC_rn4": {
       "name": "BSgenome.Rnorvegicus.UCSC.rn4",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1aww2bxyqbb81iln3vgrb0659r82v9yv1z41k9r3zws8b7k7df6x",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Rnorvegicus_UCSC_rn4_masked": {
       "name": "BSgenome.Rnorvegicus.UCSC.rn4.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0jfv1873ab1nwwdr18vrjqcdl4rhv3xgqbf4jfnjk7sjx154pfi6",
-      "depends": ["BSgenome", "BSgenome_Rnorvegicus_UCSC_rn4"]
+      "depends": ["BSgenome_Rnorvegicus_UCSC_rn4"]
     },
     "BSgenome_Rnorvegicus_UCSC_rn5": {
       "name": "BSgenome.Rnorvegicus.UCSC.rn5",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1s92983m73bi08ihvyd8c17yx29hz5xxrnrs2if8fda4asw1f3f0",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Rnorvegicus_UCSC_rn5_masked": {
       "name": "BSgenome.Rnorvegicus.UCSC.rn5.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0ss14nlr6gqs414ckcz4zmyhfrwdp2snw9wh48yk4s8r4ij3z9rj",
-      "depends": ["BSgenome", "BSgenome_Rnorvegicus_UCSC_rn5"]
+      "depends": ["BSgenome_Rnorvegicus_UCSC_rn5"]
     },
     "BSgenome_Rnorvegicus_UCSC_rn6": {
       "name": "BSgenome.Rnorvegicus.UCSC.rn6",
       "version": "1.4.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1lyvf7l5vyrsmjhn5kz0lrj784hd0b0bcrwb4lavd3p5g38b3mmm",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Rnorvegicus_UCSC_rn7": {
       "name": "BSgenome.Rnorvegicus.UCSC.rn7",
       "version": "1.4.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0bgmgxk5rq6m42z0mcpvq9i7r8rid3ws80jx5g9kkklv5kglfidy",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Scerevisiae_UCSC_sacCer1": {
       "name": "BSgenome.Scerevisiae.UCSC.sacCer1",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1smx3zdmllrx5f1a7hv1w3jc59jwvkd2n37hz6hgb80da7lajn2b",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Scerevisiae_UCSC_sacCer2": {
       "name": "BSgenome.Scerevisiae.UCSC.sacCer2",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ilz326qx1ikapmsz00hg5g6i637qm9kwc21z93q890h7sgaz4k0",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Scerevisiae_UCSC_sacCer3": {
       "name": "BSgenome.Scerevisiae.UCSC.sacCer3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1pnd394xfy413nvxq3hrlv33girj8f9kzdzi9gx232lm12av6hxm",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Sscrofa_UCSC_susScr11": {
       "name": "BSgenome.Sscrofa.UCSC.susScr11",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0m7c2r74qp3rjnkxxyz18gd8xjk2f3cp1cr07bwd8v60mvgdn8cq",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Sscrofa_UCSC_susScr3": {
       "name": "BSgenome.Sscrofa.UCSC.susScr3",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0l70arnpshiviq3xj61fw87dhf8sggq6k1yryagbhdb40d5cq8lq",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Sscrofa_UCSC_susScr3_masked": {
       "name": "BSgenome.Sscrofa.UCSC.susScr3.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "0ym82vysn131anp8zmmkgyx6zmyh44am5i1m3j9kj5lvq874ycha",
-      "depends": ["BSgenome", "BSgenome_Sscrofa_UCSC_susScr3"]
+      "depends": ["BSgenome_Sscrofa_UCSC_susScr3"]
     },
     "BSgenome_Tgondii_ToxoDB_7_0": {
       "name": "BSgenome.Tgondii.ToxoDB.7.0",
       "version": "0.99.1",
       "spdx": ["GPL-3.0-only"],
       "sha256": "1naxnls0r1r6csfs88mmjnfa7nmsgjx5lngn1ln4llragjrqnngm",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Tguttata_UCSC_taeGut1": {
       "name": "BSgenome.Tguttata.UCSC.taeGut1",
       "version": "1.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0v8g4q64pj4mxr8wzyxm9w2d2lyzq1qzl5yvh2dvwpqnghicj10v",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Tguttata_UCSC_taeGut1_masked": {
       "name": "BSgenome.Tguttata.UCSC.taeGut1.masked",
       "version": "1.3.99",
       "spdx": ["Artistic-2.0"],
       "sha256": "05g9qp2vkp8ia6kqgy07ihnr1w1ca8c96rg7vfahh2nsr5j6ymba",
-      "depends": ["BSgenome", "BSgenome_Tguttata_UCSC_taeGut1"]
+      "depends": ["BSgenome_Tguttata_UCSC_taeGut1"]
     },
     "BSgenome_Tguttata_UCSC_taeGut2": {
       "name": "BSgenome.Tguttata.UCSC.taeGut2",
       "version": "1.4.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ikbd5q77l2zmbmbm511s41h00627zi0gq31cm4qr3k1cvlz8617",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Vvinifera_URGI_IGGP12Xv0": {
       "name": "BSgenome.Vvinifera.URGI.IGGP12Xv0",
       "version": "0.1",
       "spdx": ["CC0-1.0"],
       "sha256": "1m8mqkiqs7291hccb8pfyf2yxpky45qr6j3d9wkvp9x3ra3h0yxf",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Vvinifera_URGI_IGGP12Xv2": {
       "name": "BSgenome.Vvinifera.URGI.IGGP12Xv2",
       "version": "0.1",
       "spdx": ["CC0-1.0"],
       "sha256": "1saavsi75gw33jphhm3qb5psyfrv850ss4cmqr4i7aw1kc0fvs1j",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BSgenome_Vvinifera_URGI_IGGP8X": {
       "name": "BSgenome.Vvinifera.URGI.IGGP8X",
       "version": "0.1",
       "spdx": ["CC0-1.0"],
       "sha256": "0v0hi2pbbi5ynd92bvbv4bzr7bgv48kvyz62hdv7k9gh7s5pg0id",
-      "depends": ["BSgenome"]
+      "depends": []
     },
     "BioMartGOGeneSets": {
       "name": "BioMartGOGeneSets",
@@ -869,7 +869,7 @@
       "version": "0.99.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0415hphy7rqjgxjl6ayrjd9s9097698j757x7jlghibfj2sjpnvh",
-      "depends": ["AnnotationHub", "BiocGenerics", "DBI", "RSQLite"]
+      "depends": ["BiocGenerics", "DBI", "RSQLite"]
     },
     "CTCF": {
       "name": "CTCF",
@@ -883,7 +883,7 @@
       "version": "1.0.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0l47ac6lkycmghra2cbcdcxcv47ari8xg6lxpzilvkf4n6ld6064",
-      "depends": ["BiocGenerics", "ChemmineR", "RSQLite"]
+      "depends": ["BiocGenerics", "RSQLite"]
     },
     "DO_db": {
       "name": "DO.db",
@@ -904,126 +904,126 @@
       "version": "0.99.7",
       "spdx": ["Artistic-2.0"],
       "sha256": "1rskd8zhdxvvf119ngsmr6bzrmabhy5zqdh1w5azcyf4c39svp6k",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "EnsDb_Hsapiens_v75": {
       "name": "EnsDb.Hsapiens.v75",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0jx6rf6v0j8yr07q3c1h7s121901dc400nm6xaiv4i7kb5czjn9c",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EnsDb_Hsapiens_v79": {
       "name": "EnsDb.Hsapiens.v79",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0k94iml0417m3k086d0bzd83fndyb2kn7pimsfzcdmafgy6sxwgg",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EnsDb_Hsapiens_v86": {
       "name": "EnsDb.Hsapiens.v86",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1gp7xrzddpvmh2vrcp571wyy00skxgxfl39ksj4h0hm1qay0fb2m",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EnsDb_Mmusculus_v75": {
       "name": "EnsDb.Mmusculus.v75",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "00c92l6ii2p3hila8xpblmidx8pmy11x1xh4gnwsq3f3rn1q200g",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EnsDb_Mmusculus_v79": {
       "name": "EnsDb.Mmusculus.v79",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1zpmq7v55if6q9r0h883q9k8l70ym20b01m9hxf121wb256rl9f7",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EnsDb_Rnorvegicus_v75": {
       "name": "EnsDb.Rnorvegicus.v75",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "02sx9l1p67ihkn0dfzbi08cpp8x4k2mjdqn7hvzfiaibsbqp70bb",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EnsDb_Rnorvegicus_v79": {
       "name": "EnsDb.Rnorvegicus.v79",
       "version": "2.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ki2hrn0a55f3ipxny0hpgl5ld9pjkhcwmvvqwwd99f3sqbxf3br",
-      "depends": ["ensembldb"]
+      "depends": []
     },
     "EpiTxDb_Hs_hg38": {
       "name": "EpiTxDb.Hs.hg38",
       "version": "0.99.7",
       "spdx": ["Artistic-2.0"],
       "sha256": "1vsi24q902wqlnbxp8hks03x53n4yh5cmpyyxdvmxfbn1rxfvnyf",
-      "depends": ["AnnotationHub", "EpiTxDb"]
+      "depends": []
     },
     "EpiTxDb_Mm_mm10": {
       "name": "EpiTxDb.Mm.mm10",
       "version": "0.99.6",
       "spdx": ["Artistic-2.0"],
       "sha256": "16zsqnrb3ypwv0sqfmhqmkxqhp90k21in7bjhjf0zagywsyyhpww",
-      "depends": ["AnnotationHub", "EpiTxDb"]
+      "depends": []
     },
     "EpiTxDb_Sc_sacCer3": {
       "name": "EpiTxDb.Sc.sacCer3",
       "version": "0.99.5",
       "spdx": ["Artistic-2.0"],
       "sha256": "0qlifdpppxxn2xmb0f1ghjbx47a7rrkrzr2lvky5p8lb0dnh3zxv",
-      "depends": ["AnnotationHub", "EpiTxDb"]
+      "depends": []
     },
     "EuPathDB": {
       "name": "EuPathDB",
       "version": "1.0.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0k23f34hnvcf2ig9sic7gf7pypc2jmwymg605qym7x32bjhi6rlm",
-      "depends": ["AnnotationHub", "AnnotationHubData", "Biobase", "BiocManager", "Biostrings", "GenomeInfoDbData", "GenomicRanges"]
+      "depends": ["Biobase", "BiocManager", "Biostrings", "GenomeInfoDbData", "GenomicRanges"]
     },
     "FDb_FANTOM4_promoters_hg19": {
       "name": "FDb.FANTOM4.promoters.hg19",
       "version": "1.0.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "04sn5x1r5fcbghzw6n1bvy0z8zyhrbk86wsqz1p5gk665vicz8rw",
-      "depends": ["AnnotationDbi", "Biostrings", "GenomicFeatures"]
+      "depends": ["AnnotationDbi", "Biostrings"]
     },
     "FDb_InfiniumMethylation_hg18": {
       "name": "FDb.InfiniumMethylation.hg18",
       "version": "2.2.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0vwzqzj49imjdsn8ssiwqi7qic7rqw5pbsiinyxgy7y10fn2i42a",
-      "depends": ["AnnotationDbi", "Biostrings", "GenomicFeatures", "TxDb_Hsapiens_UCSC_hg18_knownGene", "org_Hs_eg_db"]
+      "depends": ["AnnotationDbi", "Biostrings", "TxDb_Hsapiens_UCSC_hg18_knownGene", "org_Hs_eg_db"]
     },
     "FDb_InfiniumMethylation_hg19": {
       "name": "FDb.InfiniumMethylation.hg19",
       "version": "2.2.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0gq90fvph6kgrpjb89nvzq6hl1k24swn19rgjh5g98l86mja6nk0",
-      "depends": ["AnnotationDbi", "Biostrings", "GenomicFeatures", "TxDb_Hsapiens_UCSC_hg19_knownGene", "org_Hs_eg_db"]
+      "depends": ["AnnotationDbi", "Biostrings", "TxDb_Hsapiens_UCSC_hg19_knownGene", "org_Hs_eg_db"]
     },
     "FDb_UCSC_snp135common_hg19": {
       "name": "FDb.UCSC.snp135common.hg19",
       "version": "1.0.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ykyixrbw86ajx65w1jwr068ma5cvzl4kypaw77kpggmf1qqgkxp",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "FDb_UCSC_snp137common_hg19": {
       "name": "FDb.UCSC.snp137common.hg19",
       "version": "1.0.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1q1r7rk29q0zlzxz6fvfy1kjfli6wxzvhvhhfnf3z4ksy5332q63",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "FDb_UCSC_tRNAs": {
       "name": "FDb.UCSC.tRNAs",
       "version": "1.0.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1dymdalx9fzrplxyc0fd9faa4r5jimi7zyry9k65lyz1pabpkwqz",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "GGHumanMethCancerPanelv1_db": {
       "name": "GGHumanMethCancerPanelv1.db",
@@ -1058,7 +1058,7 @@
       "version": "0.99.17",
       "spdx": ["Artistic-2.0"],
       "sha256": "1hdzf75rqq63dx2mjjjpiqvsvlqpk4ymkcll6j763wr1rdagdh3r",
-      "depends": ["AnnotationDbi", "AnnotationHub", "GenomicFeatures", "IRanges", "Seqinfo", "bumphunter", "derfinder", "org_Hs_eg_db", "rtracklayer", "txdbmaker"]
+      "depends": ["AnnotationDbi", "IRanges", "Seqinfo", "org_Hs_eg_db"]
     },
     "HDO_db": {
       "name": "HDO.db",
@@ -1072,14 +1072,14 @@
       "version": "0.99.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1brzrnafvyh76h8a663gk5lprhixxpi9xi65vwgxwf7jh6yw0was",
-      "depends": ["AnnotationDbi", "AnnotationHub", "BiocFileCache", "DBI"]
+      "depends": ["AnnotationDbi", "BiocFileCache", "DBI"]
     },
     "Homo_sapiens": {
       "name": "Homo.sapiens",
       "version": "1.3.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "151vj7h5p1c8yd5swrchk46z469p135wk50hvkl0nhgndvy0jj01",
-      "depends": ["AnnotationDbi", "GO_db", "GenomicFeatures", "OrganismDbi", "TxDb_Hsapiens_UCSC_hg19_knownGene", "org_Hs_eg_db"]
+      "depends": ["AnnotationDbi", "GO_db", "TxDb_Hsapiens_UCSC_hg19_knownGene", "org_Hs_eg_db"]
     },
     "Hs6UG171_db": {
       "name": "Hs6UG171.db",
@@ -1142,28 +1142,28 @@
       "version": "0.6.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0idy6xn3x5c640d47q52na03s29pj4l38dpxy8q9mh6hy8g29vp3",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylation27kmanifest": {
       "name": "IlluminaHumanMethylation27kmanifest",
       "version": "0.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1kvz6z7g61zdrc1i93wsk1zv5mwcswfkxkl114644q09djwbz1fx",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylation450kanno_ilmn12_hg19": {
       "name": "IlluminaHumanMethylation450kanno.ilmn12.hg19",
       "version": "0.6.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1272n72fvj4agszd9cv8l9h9qr2pzmd0rbvdz83x7x03cdddf9rn",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylation450kmanifest": {
       "name": "IlluminaHumanMethylation450kmanifest",
       "version": "0.4.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0qx75xwifrbkqmbkd8dhf44c34ibmbivqh7y8rvgrsizmi5ybcj1",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylation450kprobe": {
       "name": "IlluminaHumanMethylation450kprobe",
@@ -1177,56 +1177,56 @@
       "version": "0.6.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0sfdx0lpiw3l4passx93pjfswd0iv3hxdc7ciazh53baib3xpv2d",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationEPICanno_ilm10b3_hg19": {
       "name": "IlluminaHumanMethylationEPICanno.ilm10b3.hg19",
       "version": "0.6.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1rdkvbpbz8a8bd9ipycfmgn8a3x519abhwywka21ii9ziv3s6ah6",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationEPICanno_ilm10b4_hg19": {
       "name": "IlluminaHumanMethylationEPICanno.ilm10b4.hg19",
       "version": "0.6.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0687b4k8hwfc18qgdd9ypv1skp37jd204fszba0gmrv3dc92i09c",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationEPICmanifest": {
       "name": "IlluminaHumanMethylationEPICmanifest",
       "version": "0.3.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0alhjda5g186z8b1nsmnpfswrlj7prdz8mkwx60wkkl6hkcnk6p3",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationEPICv2anno_20a1_hg38": {
       "name": "IlluminaHumanMethylationEPICv2anno.20a1.hg38",
       "version": "1.0.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "18y92h02dh3pcc27dn1m9jr4m6srwv7w25a4wg3c6jlrggnm5210",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationEPICv2manifest": {
       "name": "IlluminaHumanMethylationEPICv2manifest",
       "version": "1.0.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0dwynwhjf3dnbw6975fxvncrqk5si22vrcyf6wivvgak1zim9bjl",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationMSAanno_ilm10a1_hg38": {
       "name": "IlluminaHumanMethylationMSAanno.ilm10a1.hg38",
       "version": "0.1.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "07vzgmzf4sshva1xchxfzvks7qd6png63vzi2vvawalsbh7nmibw",
-      "depends": ["minfi"]
+      "depends": []
     },
     "IlluminaHumanMethylationMSAmanifest": {
       "name": "IlluminaHumanMethylationMSAmanifest",
       "version": "0.1.1",
       "spdx": ["Apache-2.0"],
       "sha256": "1ksw8nr4ghvih4imc9bj7xm1wvnw5wg4mhzw8mcvdvw3bjz4ly64",
-      "depends": ["minfi"]
+      "depends": []
     },
     "JASPAR2018": {
       "name": "JASPAR2018",
@@ -1289,112 +1289,112 @@
       "version": "0.99.8",
       "spdx": ["Artistic-2.0"],
       "sha256": "1aaz4s8ydcqxx5qwfqxxs7fc20bjbdjxzg700gwd59kjgk6ijm92",
-      "depends": ["AnnotationDbi", "AnnotationHub", "BiocFileCache", "DBI"]
+      "depends": ["AnnotationDbi", "BiocFileCache", "DBI"]
     },
     "MafDb_1Kgenomes_phase1_GRCh38": {
       "name": "MafDb.1Kgenomes.phase1.GRCh38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "057531mvxip32lyqak4hh964ms0cil29p5cch5fpjw5vbbzidrlc",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_1Kgenomes_phase1_hs37d5": {
       "name": "MafDb.1Kgenomes.phase1.hs37d5",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0vsjik59qa36w402bcrd5z27wc9vyp4gl0ffcwskd9iwjqim0phi",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_1Kgenomes_phase3_GRCh38": {
       "name": "MafDb.1Kgenomes.phase3.GRCh38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0ibww7ml5cfyx8h198fgrnf13vvsxxb5spf7hcmm6z3hha6j2ij0",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_1Kgenomes_phase3_hs37d5": {
       "name": "MafDb.1Kgenomes.phase3.hs37d5",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1c2bxgy3bpbszfsqlk262lv45x1fgqyywk9i9nax7bpahlcpp68d",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_ExAC_r1_0_GRCh38": {
       "name": "MafDb.ExAC.r1.0.GRCh38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "02mlwkx9kal4h1q1h3c2pdragir9bh63vg1wyagmh8capf19zx5c",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_ExAC_r1_0_hs37d5": {
       "name": "MafDb.ExAC.r1.0.hs37d5",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "18czbllphsccb2hs02g6jz517ylxsvx12czwh4xz7vym6q4br0cz",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_ExAC_r1_0_nonTCGA_GRCh38": {
       "name": "MafDb.ExAC.r1.0.nonTCGA.GRCh38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "16rsm24nlz7jdnqk1p0avn9dlxkbbjd50nja5pcg0z18m30srlya",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_ExAC_r1_0_nonTCGA_hs37d5": {
       "name": "MafDb.ExAC.r1.0.nonTCGA.hs37d5",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1srwc9n9x0ilipqwvm95khy4w2dnn1fkxyrrlcqfwv96gl7141x5",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_TOPMed_freeze5_hg19": {
       "name": "MafDb.TOPMed.freeze5.hg19",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1fxq5jq4g6rys909v0a4lbrcgfdk844wgihn0ary509w8ifdkxdv",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_TOPMed_freeze5_hg38": {
       "name": "MafDb.TOPMed.freeze5.hg38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0yd9r26l2s3ykw5d2lndnx4m1h401g7hsnkk0wywczdc1xa39y4n",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_gnomAD_r2_1_GRCh38": {
       "name": "MafDb.gnomAD.r2.1.GRCh38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1bshq6ncns7xdrpkkc84m4x6a1pnm3ssp02f0d23yhlkhh0h40zd",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_gnomAD_r2_1_hs37d5": {
       "name": "MafDb.gnomAD.r2.1.hs37d5",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "153dy3lx0islfdkmyik7lxp1w2yzb0bqmia673hlwi4rmvns112h",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_gnomADex_r2_1_GRCh38": {
       "name": "MafDb.gnomADex.r2.1.GRCh38",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1v0sdjmn9z8gqn4yj4v04zycj3ngr32r04zqmkp6y41hcgdr8lxw",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafDb_gnomADex_r2_1_hs37d5": {
       "name": "MafDb.gnomADex.r2.1.hs37d5",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0y42ncmilijdxsgqsmskz7gff3il3fdf2kpflknmz1z9kybzaday",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "MafH5_gnomAD_v4_0_GRCh38": {
       "name": "MafH5.gnomAD.v4.0.GRCh38",
       "version": "3.19.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1hb905rvxvzh2nap52agcm488yarn2j99d23yxa133jw9d8a9zqk",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "HDF5Array", "IRanges", "S4Vectors", "rhdf5"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "HDF5Array", "IRanges", "S4Vectors", "rhdf5"]
     },
     "MmAgilentDesign026655_db": {
       "name": "MmAgilentDesign026655.db",
@@ -1429,7 +1429,7 @@
       "version": "1.3.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "143zdf83gbfqhy8jm9df7gzhw5q3a64jrjrxrzjf0zd76j8s8j6y",
-      "depends": ["AnnotationDbi", "GO_db", "GenomicFeatures", "OrganismDbi", "TxDb_Mmusculus_UCSC_mm10_knownGene", "org_Mm_eg_db"]
+      "depends": ["AnnotationDbi", "GO_db", "TxDb_Mmusculus_UCSC_mm10_knownGene", "org_Mm_eg_db"]
     },
     "Norway981_db": {
       "name": "Norway981.db",
@@ -1457,7 +1457,7 @@
       "version": "1.0.13",
       "spdx": ["Artistic-2.0"],
       "sha256": "0q72jyar6hi66x1k3scfjk3f769d4mnpk0m7nkyxzrgbxs92bmrf",
-      "depends": ["AnnotationDbi", "AnnotationHub", "BiocFileCache", "RSQLite"]
+      "depends": ["AnnotationDbi", "BiocFileCache", "RSQLite"]
     },
     "PFAM_db": {
       "name": "PFAM.db",
@@ -1485,7 +1485,7 @@
       "version": "1.0.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1kikygkli41sn3rqihz0924prmqg2264ifj29vmg1a7qccm0kf7c",
-      "depends": ["AnnotationDbi", "RSQLite", "VariantAnnotation"]
+      "depends": ["AnnotationDbi", "RSQLite"]
     },
     "RaExExonProbesetLocation": {
       "name": "RaExExonProbesetLocation",
@@ -1499,7 +1499,7 @@
       "version": "1.3.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0bpd7i5jvl2jvf822mhxankx7cqqr4l70xp4f7hcknxw3lxia2f1",
-      "depends": ["AnnotationDbi", "GO_db", "GenomicFeatures", "OrganismDbi", "TxDb_Rnorvegicus_UCSC_rn5_refGene", "org_Rn_eg_db"]
+      "depends": ["AnnotationDbi", "GO_db", "TxDb_Rnorvegicus_UCSC_rn5_refGene", "org_Rn_eg_db"]
     },
     "RmiR_Hs_miRNA": {
       "name": "RmiR.Hs.miRNA",
@@ -1541,56 +1541,56 @@
       "version": "1.0.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1akqhmv9hp41q2jrvz4xvpdi30c4c6v4xbz6ykn6pdf0217p7xry",
-      "depends": ["AnnotationDbi", "RSQLite", "VariantAnnotation"]
+      "depends": ["AnnotationDbi", "RSQLite"]
     },
     "SIFT_Hsapiens_dbSNP137": {
       "name": "SIFT.Hsapiens.dbSNP137",
       "version": "1.0.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1472abqanbwziyynr851xzhg7ck8w1n98ymmggg7s46hzix5mlj8",
-      "depends": ["AnnotationDbi", "RSQLite", "VariantAnnotation"]
+      "depends": ["AnnotationDbi", "RSQLite"]
     },
     "SNPlocs_Hsapiens_dbSNP144_GRCh37": {
       "name": "SNPlocs.Hsapiens.dbSNP144.GRCh37",
       "version": "0.99.20",
       "spdx": ["Artistic-2.0"],
       "sha256": "1z8kx43ki1jvj7ms7pcybakcdimfwr6zpjvspkjmma97bdz093iz",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SNPlocs_Hsapiens_dbSNP144_GRCh38": {
       "name": "SNPlocs.Hsapiens.dbSNP144.GRCh38",
       "version": "0.99.20",
       "spdx": ["Artistic-2.0"],
       "sha256": "0yxmsnxncr7w30r0d7bg5i96pclm2vf40p9jdqa02rc67a6sximn",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SNPlocs_Hsapiens_dbSNP149_GRCh38": {
       "name": "SNPlocs.Hsapiens.dbSNP149.GRCh38",
       "version": "0.99.21",
       "spdx": ["Artistic-2.0"],
       "sha256": "03qjbsazd9i804z5lg3ywkm2gj5md8qjflz72yqb7xvwjnn3l3x2",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SNPlocs_Hsapiens_dbSNP150_GRCh38": {
       "name": "SNPlocs.Hsapiens.dbSNP150.GRCh38",
       "version": "0.99.21",
       "spdx": ["Artistic-2.0"],
       "sha256": "0zsfbp31lzbg3zlhw9qgvj3h5lhvys8fd71hyi620vfp2i6a4h4f",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SNPlocs_Hsapiens_dbSNP155_GRCh37": {
       "name": "SNPlocs.Hsapiens.dbSNP155.GRCh37",
       "version": "0.99.24",
       "spdx": ["Artistic-2.0"],
       "sha256": "0am2r8hn5ybxlvlw7c0i91n5xii0km3iy7d9a0wc9v1ykvk6qmgz",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SNPlocs_Hsapiens_dbSNP155_GRCh38": {
       "name": "SNPlocs.Hsapiens.dbSNP155.GRCh38",
       "version": "0.99.24",
       "spdx": ["Artistic-2.0"],
       "sha256": "1yzywcyk1yngjys9pyykilzw0w4nfxdmwz04w3b17chsbxvckl5s",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "SomaScan_db": {
       "name": "SomaScan.db",
@@ -1604,364 +1604,364 @@
       "version": "1.1.0",
       "spdx": ["GPL-2.0-only"],
       "sha256": "1m4nbz4d606f6w9b5p93pmk15qmd4cg5ajpsjhc5pfvf4xwz3wcy",
-      "depends": ["AnnotationHub", "GenomicRanges"]
+      "depends": ["GenomicRanges"]
     },
     "TxDb_Athaliana_BioMart_plantsmart22": {
       "name": "TxDb.Athaliana.BioMart.plantsmart22",
       "version": "3.0.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "19b7jc13k1yq3zk5jmxxf9m9m0kbdl317vsnhs1s85x6hkjdgnr8",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Athaliana_BioMart_plantsmart25": {
       "name": "TxDb.Athaliana.BioMart.plantsmart25",
       "version": "3.1.4",
       "spdx": ["Artistic-2.0"],
       "sha256": "0f3zahkb3lyd5gbzkidmshsvfrzbj6mc79s4xkdzpy6f12ywldv8",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Athaliana_BioMart_plantsmart28": {
       "name": "TxDb.Athaliana.BioMart.plantsmart28",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1yjyvrbx55y024lqg3b2rlf8pngqw5xi3p83j5ipan05wf0aq6ir",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Athaliana_BioMart_plantsmart51": {
       "name": "TxDb.Athaliana.BioMart.plantsmart51",
       "version": "0.99.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "17vbgpxzr7xkd4dnggj89hbnziczgdgk01gvmysl0cw68zsalsi6",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Athaliana_Ensembl_TAIR10": {
       "name": "TxDb.Athaliana.Ensembl.TAIR10",
       "version": "0.99.7",
       "spdx": ["Artistic-2.0"],
       "sha256": "0ymmlll6ggv7vsi921sczw27f6x3apcj2xs3zrk799pkhf7pd9di",
-      "depends": ["AnnotationHub", "GenomicFeatures", "GenomicRanges"]
+      "depends": ["GenomicRanges"]
     },
     "TxDb_Btaurus_UCSC_bosTau8_refGene": {
       "name": "TxDb.Btaurus.UCSC.bosTau8.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1k06p4jk3lw8xkn31yjwmwk96rkrl6wqq3rmc8bxlbrdi99lh09c",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Btaurus_UCSC_bosTau9_refGene": {
       "name": "TxDb.Btaurus.UCSC.bosTau9.refGene",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1v7q9jaaj1n2vabjj6ij6pz0g89nqlyy4y4g65irz6cm5mvik4q9",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Celegans_UCSC_ce11_ensGene": {
       "name": "TxDb.Celegans.UCSC.ce11.ensGene",
       "version": "3.15.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0pr1f94bc0g88hnwnxf0gx4k83ic9mvdlhwmrjm3k1j5xjp8w0bi",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Celegans_UCSC_ce11_refGene": {
       "name": "TxDb.Celegans.UCSC.ce11.refGene",
       "version": "3.4.6",
       "spdx": ["Artistic-2.0"],
       "sha256": "1aq4jhn2c67wibq02l8drrjscmicbj6z35d0jksq8mwhz8k30zn6",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Celegans_UCSC_ce6_ensGene": {
       "name": "TxDb.Celegans.UCSC.ce6.ensGene",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1sgppva33cdy4isj2is8mfalj5gmmkpbkq9w1d83a4agcq31mi90",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Cfamiliaris_UCSC_canFam3_refGene": {
       "name": "TxDb.Cfamiliaris.UCSC.canFam3.refGene",
       "version": "3.11.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1q20rrfmavl06ksljp158cdipfsmgyk4bhhw9mspikzlfpz8k5my",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Cfamiliaris_UCSC_canFam4_refGene": {
       "name": "TxDb.Cfamiliaris.UCSC.canFam4.refGene",
       "version": "3.14.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1h2q3532nfzwccmxssql7j8wnfyryc0s4l54w55rdl8zim30k3qg",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Cfamiliaris_UCSC_canFam5_refGene": {
       "name": "TxDb.Cfamiliaris.UCSC.canFam5.refGene",
       "version": "3.14.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ikadiq14rn8f5ayas0ndkwpafzhpbmawgczyq2hcrl4jpky8vdj",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Cfamiliaris_UCSC_canFam6_refGene": {
       "name": "TxDb.Cfamiliaris.UCSC.canFam6.refGene",
       "version": "3.17.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0ywbgcpd9cpyz7gjjv38fqin89iiqv3mmh3q16yv5aqqx0sykjsq",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Dmelanogaster_UCSC_dm3_ensGene": {
       "name": "TxDb.Dmelanogaster.UCSC.dm3.ensGene",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1337x23rdmiiza83ms225kri37h16q5hw1lw0m577abcgip3d7c7",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Dmelanogaster_UCSC_dm6_ensGene": {
       "name": "TxDb.Dmelanogaster.UCSC.dm6.ensGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0yij7zyqkmmr13389rs2gfa5anvvw648nnl1kjbsgvyxkggif8q4",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Drerio_UCSC_danRer10_refGene": {
       "name": "TxDb.Drerio.UCSC.danRer10.refGene",
       "version": "3.4.6",
       "spdx": ["Artistic-2.0"],
       "sha256": "1isd4idvh9flvirrq760cw5lc1nwqjx0q76p9dp01wbbbsb3rfnk",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Drerio_UCSC_danRer11_refGene": {
       "name": "TxDb.Drerio.UCSC.danRer11.refGene",
       "version": "3.4.6",
       "spdx": ["Artistic-2.0"],
       "sha256": "0p5pr0fq1l9bp019w2214szf78y3nbw0p4819jcnba1v50y3336l",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Ggallus_UCSC_galGal4_refGene": {
       "name": "TxDb.Ggallus.UCSC.galGal4.refGene",
       "version": "3.12.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0qqqm09cl3q93xz1bfr70dqmm7dlwqdvgrb6dwvjzrr0knrz5p4l",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Ggallus_UCSC_galGal5_refGene": {
       "name": "TxDb.Ggallus.UCSC.galGal5.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1fl0jnim4lx1a4b82b9nrgmb91najwhggqb611axcqp9bdkkhw1q",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Ggallus_UCSC_galGal6_refGene": {
       "name": "TxDb.Ggallus.UCSC.galGal6.refGene",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0ddibdn6shlhqfmlajnq754z4vad7gi55vb5y8j89nc2k1sc5a3i",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_BioMart_igis": {
       "name": "TxDb.Hsapiens.BioMart.igis",
       "version": "2.3.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0i3nc0xi0nz9zc0hrv8w86p6806hwf49hh0kq7h7kngdfndcik26",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_UCSC_hg18_knownGene": {
       "name": "TxDb.Hsapiens.UCSC.hg18.knownGene",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1yk9ggclkqqfzrdp8gcqyplvif824pa7df54ck5gb1xb9q5s975w",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_UCSC_hg19_knownGene": {
       "name": "TxDb.Hsapiens.UCSC.hg19.knownGene",
       "version": "3.24.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0i8pal0klpj5s9w391vdjqp5a55zw3l68f3mvcwfn77s22a7cflb",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_UCSC_hg19_lincRNAsTranscripts": {
       "name": "TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts",
       "version": "3.2.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0clbqlwq17hf8w5jdln2286q9c6ha7pw52zb6hvy902r4gwh9j2a",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_UCSC_hg19_refGene": {
       "name": "TxDb.Hsapiens.UCSC.hg19.refGene",
       "version": "3.22.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0l2fpmyacyf644pkrrf35gsdpfplk4i9009miqbfg6p09gm5815p",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_UCSC_hg38_knownGene": {
       "name": "TxDb.Hsapiens.UCSC.hg38.knownGene",
       "version": "3.24.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0qwgmvkdbrzv14ramddm11p83kf4czyk9n78s1mfgppsm24n2dcl",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Hsapiens_UCSC_hg38_refGene": {
       "name": "TxDb.Hsapiens.UCSC.hg38.refGene",
       "version": "3.19.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1ylqdh23767x20npbx0527r353h4kdhc2cz6s2xdadjm3ia8zynn",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmulatta_UCSC_rheMac10_refGene": {
       "name": "TxDb.Mmulatta.UCSC.rheMac10.refGene",
       "version": "3.14.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "12gxs6s57l22013g40b7hb09vxhmdri73cp9rgs2icb88p7sjlib",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmulatta_UCSC_rheMac3_refGene": {
       "name": "TxDb.Mmulatta.UCSC.rheMac3.refGene",
       "version": "3.12.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "036rqjlsc596h0k9ni9b66b2hnhy86azdrc7gf93fwi0pgdcp3xb",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmulatta_UCSC_rheMac8_refGene": {
       "name": "TxDb.Mmulatta.UCSC.rheMac8.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1k7mq3p96wfd0694zw00hs4529zvv8nnfdwlsb94bn11qjhr1zrz",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmusculus_UCSC_mm10_ensGene": {
       "name": "TxDb.Mmusculus.UCSC.mm10.ensGene",
       "version": "3.4.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1r09v9b35ykwzvc6nj5i1719szf40x2qxvw5p266vn2nhil8lv7j",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmusculus_UCSC_mm10_knownGene": {
       "name": "TxDb.Mmusculus.UCSC.mm10.knownGene",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0xs9npnhbwll7p62hibs02y4ac23jchdcr25i6a7qwq1kms82qk9",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmusculus_UCSC_mm39_knownGene": {
       "name": "TxDb.Mmusculus.UCSC.mm39.knownGene",
       "version": "3.24.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1aycyy46fv1bndfvi81hi66anhrgkcjc9zyvhycyv9kr2aahw00m",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmusculus_UCSC_mm39_refGene": {
       "name": "TxDb.Mmusculus.UCSC.mm39.refGene",
       "version": "3.19.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1rhfr4s0lxz86vigrbyyx27q1gbg0g512ld0rkfv2vxwdbcl9hc0",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Mmusculus_UCSC_mm9_knownGene": {
       "name": "TxDb.Mmusculus.UCSC.mm9.knownGene",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "16bjxy00363hf91ik2mqlqls86i07gia72qh92xc3l1ncch61mx2",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Osativa_MSU_RGAP7": {
       "name": "TxDb.Osativa.MSU.RGAP7",
       "version": "0.99.10",
       "spdx": ["Artistic-2.0"],
       "sha256": "0751aq6ckyxrihjgsczn31fknvqa7i70zw26xi3za7fdmbayfpsv",
-      "depends": ["GenomicFeatures"]
+      "depends": []
     },
     "TxDb_Ptroglodytes_UCSC_panTro4_refGene": {
       "name": "TxDb.Ptroglodytes.UCSC.panTro4.refGene",
       "version": "3.12.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1v6krci9yncc0b7yl23rixwz2a632r5w8jdq19xdwrsxicqx2xjf",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Ptroglodytes_UCSC_panTro5_refGene": {
       "name": "TxDb.Ptroglodytes.UCSC.panTro5.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0yypv9iqn4i36hnvcr2lsfgaabl8g2pm72ya4psvia261jr2i12i",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Ptroglodytes_UCSC_panTro6_refGene": {
       "name": "TxDb.Ptroglodytes.UCSC.panTro6.refGene",
       "version": "3.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0z4lq7wy48kkxnx29zmrbmrq4qjrj3digwxkw3x54qq80nvzxiza",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Rnorvegicus_BioMart_igis": {
       "name": "TxDb.Rnorvegicus.BioMart.igis",
       "version": "2.3.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0bg6jq6brp587yh6v9yhwc4dcdrs8qzlwdl8r1yh9j0s9zsqm5dg",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Rnorvegicus_UCSC_rn4_ensGene": {
       "name": "TxDb.Rnorvegicus.UCSC.rn4.ensGene",
       "version": "3.2.3",
       "spdx": ["Artistic-2.0"],
       "sha256": "0n0nny3z1v864fl2rc4d8jixxbjmi8ycpkw49fzcwd6a3gddyp5w",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Rnorvegicus_UCSC_rn5_refGene": {
       "name": "TxDb.Rnorvegicus.UCSC.rn5.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "08kf9kmdvifcbz0lc8paqp10x272b0f1jh6bj241ii455xsby2zi",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Rnorvegicus_UCSC_rn6_ncbiRefSeq": {
       "name": "TxDb.Rnorvegicus.UCSC.rn6.ncbiRefSeq",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1gb8l88z1xiyc1r8hvv4kdahd0py2dr5k0zizsrfh013p6q7z5yw",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Rnorvegicus_UCSC_rn6_refGene": {
       "name": "TxDb.Rnorvegicus.UCSC.rn6.refGene",
       "version": "3.4.6",
       "spdx": ["Artistic-2.0"],
       "sha256": "1piqli0wdq3r289is8lmijnshm8rmx7rphp2qfymlvc0jmvgs9wr",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Rnorvegicus_UCSC_rn7_refGene": {
       "name": "TxDb.Rnorvegicus.UCSC.rn7.refGene",
       "version": "3.15.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0vvz341sclwxrgn14srdingyah6skd4a2qp8978qnd871n2z394f",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Scerevisiae_UCSC_sacCer2_sgdGene": {
       "name": "TxDb.Scerevisiae.UCSC.sacCer2.sgdGene",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "0l5gcwhbvzx60p9hjhd31angamb0hkgdg2avga7341j77rd5pwza",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Scerevisiae_UCSC_sacCer3_sgdGene": {
       "name": "TxDb.Scerevisiae.UCSC.sacCer3.sgdGene",
       "version": "3.2.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1sjwl7fb3l3zxxbk8gkvzxwdsind0xjj7kmh7dachm6fi17hpb3d",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Sscrofa_UCSC_susScr11_refGene": {
       "name": "TxDb.Sscrofa.UCSC.susScr11.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1i3w8avi5ihkynapya1wy70i6f0nq4jyy5nvlwikppqpdjwn7gb4",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "TxDb_Sscrofa_UCSC_susScr3_refGene": {
       "name": "TxDb.Sscrofa.UCSC.susScr3.refGene",
       "version": "3.12.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "01bl7zdxyhhg4706jhi7271fs09riixkyr3x0bancl1fpzwszc6p",
-      "depends": ["AnnotationDbi", "GenomicFeatures"]
+      "depends": ["AnnotationDbi"]
     },
     "UCSCRepeatMasker": {
       "name": "UCSCRepeatMasker",
       "version": "3.22.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "035q9j685kb7fjrg8x7xg2hyw7k9j1d2wi4127x9d8kdc21zg8q0",
-      "depends": ["AnnotationHub", "GenomeInfoDb", "GenomicRanges", "RCurl", "XML"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "RCurl", "XML"]
     },
     "UniProtKeywords": {
       "name": "UniProtKeywords",
@@ -1975,14 +1975,14 @@
       "version": "0.99.12",
       "spdx": ["Artistic-2.0"],
       "sha256": "0k823fvqjmdkmd47m7wyra6jxmv8lnk2i1xl4pp0mh3zgb87hgfb",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "XtraSNPlocs_Hsapiens_dbSNP144_GRCh38": {
       "name": "XtraSNPlocs.Hsapiens.dbSNP144.GRCh38",
       "version": "0.99.12",
       "spdx": ["Artistic-2.0"],
       "sha256": "0d4q32ij2x4726wvw06sgmivid0n94vfdmszdyh607xlcahqxa5z",
-      "depends": ["BSgenome", "BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
+      "depends": ["BiocGenerics", "GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "adme16cod_db": {
       "name": "adme16cod.db",
@@ -2017,14 +2017,14 @@
       "version": "1.1.0",
       "spdx": ["MIT"],
       "sha256": "0q90nw3ds66zbyn3ch19lq1qimd1hz1s3jyyd6zi3v10p5s8bm0y",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "alternativeSplicingEvents_hg38": {
       "name": "alternativeSplicingEvents.hg38",
       "version": "1.1.0",
       "spdx": ["MIT"],
       "sha256": "18qabggvs9mcg8fwd6prdca8lfxn9r9i0493l667n8jl9vy2pbfc",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "anopheles_db0": {
       "name": "anopheles.db0",
@@ -2136,14 +2136,14 @@
       "version": "3.18.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "1g8pk1bmq2p6a7r1skfs54a2b8106znasympyz3dq3vahm5ia0dq",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "cadd_v1_6_hg38": {
       "name": "cadd.v1.6.hg38",
       "version": "3.18.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0088wv3a082ircmgpx23822bvjwqd5jdvilkgvhaypksbnbdkq68",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "canine_db": {
       "name": "canine.db",
@@ -2465,7 +2465,7 @@
       "version": "3.7.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "19isa4x8js0pdb4k8a11bw3bzmzv6jc4jphzrvav7piqkvrgykzx",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "fly_db0": {
       "name": "fly.db0",
@@ -2521,7 +2521,7 @@
       "version": "1.1.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "14a8j7vzx4pif3l05qsg1zvmb9364z1g0kh9q4ispwgific3sl12",
-      "depends": ["AnnotationHub", "GenomeInfoDb", "RSQLite", "Seqinfo", "dbplyr", "digest", "dplyr"]
+      "depends": ["GenomeInfoDb", "RSQLite", "Seqinfo", "dbplyr", "digest", "dplyr"]
     },
     "gwascatData": {
       "name": "gwascatData",
@@ -3599,7 +3599,7 @@
       "version": "1.10.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0j29cd01z840jg4zq0yczjsqnya1vpx6hajqdq96msiy4i5fj534",
-      "depends": ["AnnotationDbi", "DBI", "lumi"]
+      "depends": ["AnnotationDbi", "DBI"]
     },
     "lumiMouseAll_db": {
       "name": "lumiMouseAll.db",
@@ -3613,7 +3613,7 @@
       "version": "1.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "18mc7vwp2p53ns2paa4glj570shmbq9lk318g3p9nl09mxyadim9",
-      "depends": ["AnnotationDbi", "lumi"]
+      "depends": ["AnnotationDbi"]
     },
     "lumiRatAll_db": {
       "name": "lumiRatAll.db",
@@ -3627,7 +3627,7 @@
       "version": "1.10.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1d30c3xkxcl8qk68ab7nf8k13m4yb2aqiavhi917yfic1mcbi9gh",
-      "depends": ["AnnotationDbi", "lumi"]
+      "depends": ["AnnotationDbi"]
     },
     "m10kcod_db": {
       "name": "m10kcod.db",
@@ -3683,21 +3683,21 @@
       "version": "1.0.0",
       "spdx": ["GPL-3.0-only"],
       "sha256": "0nflpvla3wn8i2gaja5wwjkxk0jich95f5ws3rnhh2a6rx3xi3ql",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "methylTFRAnnotationHg38": {
       "name": "methylTFRAnnotationHg38",
       "version": "0.99.12",
       "spdx": ["Artistic-2.0"],
       "sha256": "15zs4dq84bh0d856rrninq4zwhvjwf8v1k38bn2d8n0griiwbp50",
-      "depends": ["AnnotationHub", "GenomicRanges"]
+      "depends": ["GenomicRanges"]
     },
     "methylTFRAnnotationMm10": {
       "name": "methylTFRAnnotationMm10",
       "version": "0.99.13",
       "spdx": ["Artistic-2.0"],
       "sha256": "07kl7y78zlxpbsv0ycv01bnmqib92cwhcdrvf0r2fmjpxb2a57y7",
-      "depends": ["AnnotationHub", "GenomicRanges"]
+      "depends": ["GenomicRanges"]
     },
     "mgu74a_db": {
       "name": "mgu74a.db",
@@ -4411,7 +4411,7 @@
       "version": "1.0.27",
       "spdx": ["Artistic-2.0"],
       "sha256": "1jqwsdjz1d8fwqhq26lavb2kq739ddlb8khsh4b096vhnwv3dxg5",
-      "depends": ["AnnotationDbi", "AnnotationHub", "BiocFileCache", "BiocStyle"]
+      "depends": ["AnnotationDbi", "BiocFileCache", "BiocStyle"]
     },
     "org_Pf_plasmo_db": {
       "name": "org.Pf.plasmo.db",
@@ -5671,42 +5671,42 @@
       "version": "3.7.2",
       "spdx": ["Artistic-2.0"],
       "sha256": "1jmc4k4zgkx5vr2plnidnd9bidlwlb0kr7mjg60cqjw7dq7jl1fa",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "phastCons100way_UCSC_hg38": {
       "name": "phastCons100way.UCSC.hg38",
       "version": "3.7.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "0dka39rvx4d3wbcjypcgvc19s6cnxkkfywa4irv23kpibq1sjyv0",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "phastCons30way_UCSC_hg38": {
       "name": "phastCons30way.UCSC.hg38",
       "version": "3.13.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "18bxj3f2zh304nyjrvcy7pdwbd96yfccvvikwcccx6nw4fh9pm80",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "phastCons35way_UCSC_mm39": {
       "name": "phastCons35way.UCSC.mm39",
       "version": "3.16.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "0lniqakqxja8inq3gn168w1xja1m2kbmww0cw971smsnddypmig7",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "phastCons7way_UCSC_hg38": {
       "name": "phastCons7way.UCSC.hg38",
       "version": "3.7.1",
       "spdx": ["Artistic-2.0"],
       "sha256": "105isdrb3nsy30wd8yy9vrrv8b7c8izc11xqqixg6rcriacd0rl0",
-      "depends": ["BSgenome", "GenomeInfoDb", "GenomicRanges", "GenomicScores", "IRanges", "S4Vectors"]
+      "depends": ["GenomeInfoDb", "GenomicRanges", "IRanges", "S4Vectors"]
     },
     "phyloP35way_UCSC_mm39": {
       "name": "phyloP35way.UCSC.mm39",
       "version": "3.16.0",
       "spdx": ["Artistic-2.0"],
       "sha256": "1n0iywfs23dhc54mapirvaqcbx38zjf8lknbsz80p5lxp24n2lf9",
-      "depends": ["AnnotationHub", "GenomicScores"]
+      "depends": []
     },
     "pig_db0": {
       "name": "pig.db0",
@@ -5790,7 +5790,7 @@
       "version": "0.99.0",
       "spdx": ["GPL-3.0-only"],
       "sha256": "1b9g8409b0b6nrskzhm7zrr61la885b8vkp0v1qf72jclbq762ka",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "rae230a_db": {
       "name": "rae230a.db",
@@ -5944,7 +5944,7 @@
       "version": "0.99.11",
       "spdx": ["GPL-2.0-only", "GPL-3.0-only"],
       "sha256": "0qy5hf86lrkn20yg6d46kcw9fjc0qhsbzbyavaj1v2zl34xvr1ii",
-      "depends": ["affy", "frma"]
+      "depends": ["affy"]
     },
     "rat2302probe": {
       "name": "rat2302probe",
@@ -6224,14 +6224,14 @@
       "version": "0.99.6",
       "spdx": ["Artistic-2.0"],
       "sha256": "00cqgx06wysz0qyicwnxlc8hpqkj5rwqlyfzsvy7agvcjjkarwg5",
-      "depends": ["AnnotationHub"]
+      "depends": []
     },
     "synaptome_db": {
       "name": "synaptome.db",
       "version": "0.99.17",
       "spdx": ["Artistic-2.0"],
       "sha256": "112m6ajmi2kpbpwkmnka65hfiz4lvl78p5d9al8qk4hw4srb3mh0",
-      "depends": ["AnnotationHub", "DBI", "RSQLite", "Rdpack", "dbplyr", "dplyr", "igraph", "synaptome_data"]
+      "depends": ["DBI", "RSQLite", "Rdpack", "dbplyr", "dplyr", "igraph", "synaptome_data"]
     },
     "test1cdf": {
       "name": "test1cdf",
